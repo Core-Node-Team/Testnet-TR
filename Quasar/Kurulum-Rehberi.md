@@ -59,10 +59,10 @@ quasard init MONIKER --chain-id qsr-questnet-04
 ```
 # Yapılandırma dosyası ayarları
 ```
-curl -Ls https://github.com/Core-Node-Team/Testnet-TR/blob/main/Quasar/genesis.json > $HOME/.quasarnode/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Quasar/genesis.json?token=GHSAT0AAAAAAB7FFZGZVW35KLYYA72ZEZB4ZACE54Q > $HOME/.quasarnode/config/genesis.json
 ```
 ```
-curl -Ls https://github.com/Core-Node-Team/Testnet-TR/blob/main/Quasar/addrbook.json > $HOME/.quasarnode/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Quasar/addrbook.json?token=GHSAT0AAAAAAB7FFZGZ6WQQCGWDCPGC2XZWZACE6RQ > $HOME/.quasarnode/config/addrbook.json
 ```
 ```
 sed -i -e "s|^seeds *=.*|seeds = \"3f472746f46493309650e5a033076689996c8881@quasar-testnet.rpc.kjnodes.com:48659\"|" $HOME/.quasarnode/config/config.toml
