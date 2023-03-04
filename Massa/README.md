@@ -27,36 +27,36 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install curl tar wget
 ```
 # Rust
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
 ```
 ```
-source $HOME/.cargo/env
+source $HOME/.cargo/env 
 ```
 ```
-rustc --version
+rustc --version 
 ```
 ```
-rustup toolchain install nightly-2022-12-24
+rustup toolchain install nightly-2022-12-24 
 ```
 ```
-rustup default nightly-2022-12-24
+rustup default nightly-2022-12-24 
 ```
 ```
-rustc --version
+rustc --version 
 ```
 
 
 # Massa kaynak kodları
 ```
-git clone --branch testnet https://github.com/massalabs/massa.git
+git clone --branch testnet https://github.com/massalabs/massa.git 
 ```
 
 # Nodu başlatın
 ```
-screen -S massa
+screen -S massa 
 ```
 ```
-cd massa/massa-node/
+cd massa/massa-node/ 
 ```
 * `<PASSWORD>` kısmına kendi belirlediğiniz bir şifre girin
 ```
@@ -69,10 +69,10 @@ RUST_BACKTRACE=full cargo run --release -- -p <PASSWORD> |& tee logs.txt
 
 # Clienti başlatın
 ```
-screen -S client
+screen -S client 
 ```
 ```
-cd massa/massa-client/
+cd massa/massa-client/ 
 ```
 * `<PASSWORD>` değiştirmeyi unutmayın
 ```
@@ -91,7 +91,7 @@ wallet_add_secret_keys <SecretKey>
 ```
 * Cüzdan bilgileri için
 ```
-wallet_info
+wallet_info 
 ```
 ## Massa [discord](https://discord.gg/massa)a gidip `#testnet-faucet` kanalına sadece cüzdan adresinizi göndererek test tokenlarını alın
 
