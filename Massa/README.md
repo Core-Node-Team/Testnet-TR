@@ -5,11 +5,17 @@
   ![image](https://user-images.githubusercontent.com/108215275/222922517-cceadc51-a833-409d-8b70-386c360fe83c.png)
 
 
-<h3>
-  
-Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Core Node Chat](https://t.me/corenodechat)
+ <h3>
+ 
+  Massa Resmi Linkler: [Twitter](https://twitter.com/MassaLabs) | [Discord](https://discord.gg/massa) | [Website](https://massa.net/) | [MassaDocs](https://docs.massa.net/en/latest/index.html)
   
 </h3>
+
+ <h3>
+ 
+   Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Core Node Chat](https://t.me/corenodechat)
+  
+ </h3>
   
 </div>
 
