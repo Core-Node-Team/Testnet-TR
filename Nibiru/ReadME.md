@@ -141,6 +141,11 @@ Alttaki linke girin ve Nodedda kullandığınız cüzdan ile Siteye bağlanın. 
 
 ![image](https://user-images.githubusercontent.com/76253089/222187928-d796b4aa-39ff-4898-a4e4-5937572f2766.png)
 
+### Sitede claim işlemini yapamazsanız bu komut ile node üzerinden yapabilirsiniz
+```
+nibid tx distribution withdraw-all-rewards --from wallet --chain-id nibiru-itn-1 --fees 100unibi --gas auto
+```
+
 Claim işlemi bu kadardı.
 
 ## REDELEGATE (DEĞİŞİKLİK YAPMAYIN, GÖREVLERİ YAPABİLMENİZ İÇİN VALOPERLERİ BEN SEÇTİM)
@@ -162,7 +167,7 @@ nibid tx staking unbond nibivaloper1u40w3kzng8af0enr5wy7702s20td79g89h2k83 10000
 ## Validatörümüzü olusturduk 75 puan cepte. Aktif veya İnaktifin hiç bir önemi yok.
 
 # 4) Oracle Görevi (200 Puan / ZOR)
-## En az 10k TX yapın. (Aktif Sette Olmanız Gerekiyor)
+## Pricefeeder çalıştırmak gerekiyor. Bu görev için active sette olma şartı var. Aktiv sete girebilmek mümkün olmadığı için bu görevi yazmıyorum. Eğer bir değişiklik olursa burayı güncellerim
 
 # 5) Geliştiriciler için (+250 puan)
 Bir hata düzeltmesini depoyla nibirubirleştirme(yeni pencere açar)
