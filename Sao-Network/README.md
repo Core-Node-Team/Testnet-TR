@@ -37,10 +37,10 @@ saod init MONIKER --chain-id sao-testnet0
 ```
 # Genesis ve Addrbook
 ```
-curl -Ls https://ss-t.sao.nodestake.top/genesis.json > $HOME/.sao/config/genesis.json 
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Sao-Network/genesis.json > $HOME/.sao/config/genesis.json 
 ```
 ```
-curl -Ls https://ss-t.sao.nodestake.top/addrbook.json > $HOME/.sao/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Sao-Network/addrbook.json > $HOME/.sao/config/addrbook.json
 ```
 # Peer
 ```
