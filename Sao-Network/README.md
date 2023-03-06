@@ -1,17 +1,36 @@
-<h1 align="center"> SaoNetwork Node Kurulum </h1>
+<h1 align="center"> Sao Network Testnet </h1>
 <div align="center">
 
 
 ![ss](https://user-images.githubusercontent.com/76253089/223120665-7831ebca-6019-416a-accc-e7569343705e.png)
 
+  
+</div>
+
+# Sao Network
+> ## ***SAO Network, Hedra Labs tarafından desteklenen Web3 için merkezi olmayan bir depolama altyapısıdır. Web3 içerik depolamanın benimsenmesini artırmak ve ekosistem uygulamalarını kolaylaştırmak için Cosmos SDK ve IPFS'ye dayalı merkezi olmayan bir depolama protokolü sağlar.***
+> ### ***Sao Network resmi hesapları: [Twitter](https://twitter.com/SAONetwork) | [Discord](https://discord.gg/KMhCKkjd) | [Website](https://www.sao.network/) | [Medium](https://saonetwork.medium.com/) | [SaoDocs](https://docs.sao.network/)***
+> ### ***Sao Network tarafından yayınlanan testnet ile ilgili dökümanlar: [link1](https://saonetwork.medium.com/sao-network-announces-testnet-0-launch-320e489e787f)|[link2](https://saonetwork.medium.com/a-complete-guide-to-sao-network-testnet-e70117bd294)|[link3](https://saonetwork.notion.site/Testnet-0-FAQs-f2f7f4a745c04034984e3af509b12166)***
+> ### ***Arkadaşlar bu testnette yapacağımız üç aşama var;***
+> ### ***Birincisi full node kurup validatör oluşturmak.***
+
+> ### ***İkincisi Sao Storage node kurmak.***
+
+> ### ***Son olarak da Sao networkte modül oluşturucaz. Bu işlemi [Notater](https://notater.sao.network/) platformundan yapabilirsiniz (platform şu an çalışmıyor) ya da sao cli client ile sunucu üzerinden yapabilirsiniz.***
+
+> ### Bu rehberde ilk olarak full node kurulumu ve validatör oluşturma ardından storage node kurulumu son olarak da cli client kurup modül oluşturma adımları var.
+> ### Hazırsanız başlayabilirsiniz...
+<div align="center">
 
 <h3>
   
 Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Core Node Chat](https://t.me/corenodechat)
   
 </h3>
-  
+
 </div>
+
+<h1 align="center"> SaoNetwork Full Node ve Validatör </h1>
 
 ### Minimum Gereksinimler
 * İşlemci : 2 Cpu
@@ -19,7 +38,6 @@ Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Co
 * Depolama : 160GB SSD
 
 # Sunucu Güncellemesi
-
 ```
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt install curl tar wget tmux htop net-tools clang pkg-config libssl-dev jq build-essential git screen make ncdu -y
 ```
@@ -37,9 +55,6 @@ go version
 # Binary Kurulumu
 ```
 git clone https://github.com/SaoNetwork/sao-consensus.git
-```
-```
-cd sao-consensus
 ```
 ```
 git checkout testnet0
@@ -124,7 +139,7 @@ saod keys add wallet
 ### `moniker`, `website`, `identity`, `details` kısımlarını kendinize göre değiştirin.
 ```
 saod tx staking create-validator \
-  --amount 900000usao \
+  --amount 900000sao \
   --from wallet \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
@@ -137,6 +152,82 @@ saod tx staking create-validator \
   --identity KEYBASE_ID \
   --chain-id sao-testnet0
 ```
+
+<h1 align="center"> Sao Storage Node Kurulum </h1>
+
+> ### ***Arkadaşlar storage node kurulumunu valiadör oluşturduğunuz sunucuya yapacağınızı varsayarak yazdım. Eğer başka bir sunucuya kuracaksanız önce yukarıdaki sunucu güncellemesi ve go kurulumu adımlarını yapın***
+# Binary kurun
+```
+cd /$HOME
+git clone https://github.com/SAONetwork/sao-node.git
+```
+```
+cd sao-node
+make
+go mod tidy
+sudo chmod u+x saonode
+```
+## Sao zincirinde node account oluşturun
+* bu komut yeni bir cüzdan oluşturacak, bilgileri kaydetmeyi unutmayın
+```
+./saonode --chain-address "https://rpc-testnet-node0.sao.network:443/"  --keyring ~/.sao  account export --key-name wallet2
+```
+* Sonraki adıma geçmeden önce yeni oluşturduğunuz cüzdana test tokenları atmanız gerekiyor. Fauceti kullanın ya da önceki cüzdanınızdan gönderin.
+## İnit
+* Yeni oluşturduğun cüzdana test tokenları almadan bu adımı yapmayın
+* `<address>` kısmına yukarıdaki komutta oluşturduğunuz adresi girmeniz gerekiyor
+```
+./saonode --repo ~/.sao-node --chain-address "https://rpc-testnet-node0.sao.network:443/" init --creator <address>
+```
+* Çıkan soruya `yes`yazıp geçin. verdiği txhashi explorerda arayın işlemin başarılı olduğunu kontrol edin.
+![image](https://user-images.githubusercontent.com/108215275/223184092-7980077a-f6af-4932-936c-7b2871111544.png)
+
+## Sao storage nodu başlatın
+```
+screen -S saonode
+```
+```
+./saonode run
+```
+### Doğru çalışan logların görünümü bu şekilde
+![image](https://user-images.githubusercontent.com/108215275/223185630-f4187aec-6f0e-4bf6-bb8a-728983fe326e.png)
+
+### CTRL+A+D ile screenden çıkış yapın
+
+
+
+# Arkadaşlar cli client rehberini yarın ekleyeceğim...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
