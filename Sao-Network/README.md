@@ -13,8 +13,7 @@ Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Co
   
 </div>
 
-#Minimum Gereksinimler
-
+### Minimum Gereksinimler
 * İşlemci : 2 Cpu
 * Bellek : 4 GB RAM
 * Depolama : 160GB SSD
