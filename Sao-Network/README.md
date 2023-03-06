@@ -1,4 +1,16 @@
+<h1 align="center"> SaoNetwork Node Kurulum </h1>
+<div align="center">
 
+
+
+
+<h3>
+  
+Herhangi bir sorunla karşılaşırsanız Telegram Sohbet Grubumuza bekleriz [Core Node Chat](https://t.me/corenodechat)
+  
+</h3>
+  
+</div>
 
 
 # Sunucu Güncellemesi
