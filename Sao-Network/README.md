@@ -39,6 +39,9 @@ go version
 git clone https://github.com/SaoNetwork/sao-consensus.git
 ```
 ```
+cd sao-consensus
+```
+```
 git checkout testnet0
 ```
 ```
