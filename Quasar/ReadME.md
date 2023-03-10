@@ -40,17 +40,17 @@ go version
 ```
 # Binary kurulumu
 ```
-mkdir -p $HOME/.quasar/genesis/bin
-wget -O $HOME/.quasar/genesis/bin/quasard https://github.com/quasar-finance/binary-release/raw/main/v0.0.2-alpha-11/quasarnoded-linux-amd64
+mkdir -p $HOME/.quasarnode/genesis/bin
+wget -O $HOME/.quasarnode/genesis/bin/quasard https://github.com/quasar-finance/binary-release/raw/main/v0.0.2-alpha-11/quasarnoded-linux-amd64
 ```
 ```
-chmod +x $HOME/.quasar/genesis/bin/*
+chmod +x $HOME/.quasarnode/genesis/bin/*
 ```
 ```
-ln -s $HOME/.quasar/genesis $HOME/.quasar/current
+ln -s $HOME/.quasarnode/genesis $HOME/.quasarnode/current
 ```
 ```
-sudo ln -s $HOME/.quasar/current/bin/quasard /usr/local/bin/quasard
+sudo ln -s $HOME/.quasarnode/current/bin/quasard /usr/local/bin/quasard
 ```
 # İnitalize
 * `MONİKER` kısmına kendi isminizi yazın.
@@ -158,6 +158,21 @@ quasard tx staking create-validator \
   --chain-id qsr-questnet-04
 ```
 ### Komutu girip onayladıktan sonra verdiği txhashi explorerda arayarak kontrol edebilirsiniz. Eğer işlem başarısız olmuşsa sebebi txhash detaylarında yazar.
+
+### Validatör oluşturduktan sonra `.quasarnode/config/` altındaki `priv_validator_key.json` dosyasının yedeğini almayı unutmayın
+
+### Node silmek için
+```
+sudo systemctl stop quasard
+sudo systemctl disable quasard
+sudo rm -rf /etc/systemd/system/quasard.service
+sudo rm -rf /usr/local/bin/quasard
+sudo rm -rf $(which quasard)
+sudo rm -rf $HOME/.quasarnode
+```
+
+
+
 
 # Platform Testneti
 ### [Site](https://testnet.quasar.fi/vault/quasar1xt4ahzz2x8hpkc0tk6ekte9x6crw4w6u0r67cyt3kz9syh24pd7slqr7s5)'ye gidip cüzdanınızı bağladıktan sonra bond işelmini yapın.
