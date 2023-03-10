@@ -129,7 +129,7 @@ quasard keys add wallet
 ```
 var olan bir cüzdanı import etmek için
 ```
-guasard keys add wallet --recover
+quasard keys add wallet --recover
 ```
 # Faucet
 Quasar [Discord](https://discord.gg/quasarfi)'a gidip `#testnet-faucet` kanalından
