@@ -138,7 +138,10 @@ Quasar [Discord](https://discord.gg/quasarfi)'a gidip `#testnet-faucet` kanalın
 
 # Validatör oluşturma
 ### Arkadaşlar validatör olışturmadan önce nodunuzun ağ ile senkronize olmasını beklemeniz gerekiyor.
-### `sudo journalctl -u quasard -fo cat` komutu ile loglara baktığınızda gördüğünüz `height` sizin nodun ulaştığı blok yüksekliğidir, bununağın geri kalanı ile ([explorer](https://testnet.ping.pub/quasar/)) aynı yüksekliğe ulaşması gerekir.
+### `sudo journalctl -u quasard -fo cat` komutu ile loglara baktığınızda gördüğünüz `height` sizin nodun ulaştığı blok yüksekliğidir, bununağın geri kalanı ile ([explorer](https://testnet.ping.pub/quasar/)) aynı yüksekliğe ulaşması gerekir. Aşağıdaki çıktı false vermesi gerekli
+```
+quasard status 2>&1 | jq .SyncInfo
+```
 ### Senkronize olmanın belirli bir süresi yok. Kurduğunuz zaman ve blokların boyutuna göre bu süre bazen çok uzun olabilir.
 ### Senkronize olduktan sonra aşağıdaki komutta `moniker` ve `wallet`,  kısımlarınını kendinize göre değiştirip girin
 ### bu komuta isteğinize göre `--website`, `--identity`, `--details` flagları ekleyebilirsiniz
