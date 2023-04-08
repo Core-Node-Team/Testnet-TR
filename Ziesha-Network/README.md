@@ -1,3 +1,3 @@
 ```
-wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/ziesha.sh && chmod +x ziesha.sh && bash ./ziesha.sh
+wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/cn-ziesha-kurulum.sh && chmod +x cn-ziesha-kurulum.sh && bash ./cn-ziesha-kurulum.sh
 ```
