@@ -62,9 +62,7 @@ cargo install --path .
 source "$HOME/.cargo/env"
 echo -e ""
 echo -e ""
-echo -e ""
 sleep 2
-
 echo ""
 echo -e "\033[0;34mBazuka Başlatılacak"
 echo ""
@@ -146,7 +144,7 @@ echo -e ""
 echo -e "\e[0;34mNode başlatıldı.\e[0m"
 echo -e ""
 sleep 2
-echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;35m           sudo journalctl -u bazuka -fo cat\e[0m"
+echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;35m  sudo journalctl -u bazuka -fo cat\e[0m"
 echo -e ""
 echo -e ""
 sleep 3
@@ -154,7 +152,7 @@ echo -e "\e[0;34mKurulum Tamamlandı\e[0m"
 echo -e ""
 sleep 2
 echo -e "\033[33m"
-echo -e "  - Validatör oluşturmadan ve işlem yapmadan önce senkonize olmayı beklemelisiniz"
+echo -e "  - İşlem yapmadan önce senkonize olmayı beklemelisiniz"
 echo -e "  - Explorerdan nodenizi kontrol edin.  http://65.108.193.133:8000/"
 echo -e "  - Güncellemeler için Discordu takip etmeyi unutmayın. Sorularınız olursa yine discorddan sorabilirsiniz"
 sleep 2
