@@ -64,20 +64,66 @@ echo -e ""
 echo -e ""
 echo -e ""
 sleep 2
-echo -e "\e[0;34mBazuka Başlatıldı."
-echo -e ""
+
+echo ""
+echo -e "\033[0;34mBazuka Başlatılacak"
+echo ""
+sleep 2
+echo -e "\e[0;32mCüzdan seçiminizi yapın\033[0m"
+echo -e "\e[0;33m"
 sleep 1
-echo -e "    \033[031m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-echo -e "    Mnemoniclerinizi kaydetmeyi unutmayın."
-echo -e "    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[0m"
-echo -e ""
-echo -e ""
-sleep 3
-bazuka init --network tahdig --external $(wget -qO- eth0.me):8765 --bootstrap 178.128.199.164:8765
-echo -e ""
-echo -e ""
-echo -e ""
-sleep 8
+echo -e "1-) Eski cüzdanımı kullanmak istiyorum."
+echo -e "2-) Yeni bir cüzdan oluştur."
+echo -e "\033[0;35m"
+read -p "Seçiminiz (1/2): " CUZDAN
+echo ""
+echo -e '\e[0m'
+
+while [[ $CUZDAN != "1" && $CUZDAN != "2" ]];
+ do 
+ echo "\033[031mHatalı seçim yaptınız\033[0m"
+ echo ""
+ sleep 2
+ echo -e "\e[0;32mCüzdan seçiminizi yapın\033[0m"
+ sleep 1
+ echo -e "\e[0;33m"
+ echo -e "1-) Eski cüzdanımı kullanmak istiyorum."
+ echo -e "2-) Yeni bir cüzdan oluştur."
+ echo -e "\033[0;35m"
+ read -p "Seçiminiz (1/2): " CUZDAN
+ echo ""
+ echo -e '\e[0m'
+done 
+
+if [ $CUZDAN == "1" ]; then
+ sleep 1
+ echo -e "\e[0;35m"
+ read -p "Mnemonicleri girin: " MNEMONIC
+ echo ""
+ echo -e '\e[0m'
+ sleep 2
+ echo -e "\e[0;34mBazuka Başlatıldı.\033[0m"
+ echo ""
+ sleep 2
+ bazuka init --network tahdig --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765 --mnemonic "$MNEMONIC"
+ sleep 3
+  elif [ $CUZDAN == "2" ]; then
+   sleep 1
+   echo -e "\033[32mYeni cüzdan oluşturulacak.\033[0m"
+   echo ""
+   sleep 1
+   echo -e "\e[0;34mBazuka Başlatıldı.\033[0m"
+   echo ""
+   sleep 1
+   echo -e "    \033[031m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+   echo -e "    Mnemoniclerinizi kaydetmeyi unutmayın!!!"
+   echo -e "    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[0m"
+   echo ""
+   echo ""
+   sleep 3
+   bazuka init --network tahdig --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765
+   sleep 8
+fi 
 
 sudo tee /etc/systemd/system/bazuka.service > /dev/null <<EOF
 [Unit]
