@@ -22,6 +22,48 @@ wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Net
 > ### Kurulumu tamamladıktan sonra yapılacak diğer işlemler ve gelecek güncellemeler için Ziesha [Discordu](https://discord.gg/zieshanetwork) takip etmeyi unutmayın.
 # 
 #
+# Komutlar
+
+> ### Logları görüntülemek
+```
+sudo journalctl -u bazuka -fo cat
+```
+> ### Restart
+```
+sudo systemctl restart bazuka
+```
+> ### Node durumunu görüntüleyin
+```
+bazuka node status
+```
+> ### Cüzdan bilgisi
+```
+bazuka wallet info
+```
+> ### Token gönderme
+```
+bazuka wallet send --amount <miktar> --from <adres> --to <hedefadres>
+```
+> ### Validatör oluşturma
+```
+bazuka wallet register-validator --commision <commision>
+```
+> ###  Delegate 
+```
+bazuka wallet delegate --amount <miktar> --fee <fee> --to <validatöradresi>
+```
+> ### ReClaim
+```
+bazuka wallet reclaim-delegate --amount <miktar> --fee <fee> --from <validatöradresi>
+```
+> ### Token oluşturma
+```
+bazuka wallet new-token --name <isim> --supply <supply> --symbol <sembol>
+```
+> ### Cüzdana token ekleme
+```
+bazuka wallet add-token --id <id>
+```
 <div align="center">
 
 # Core Node Sosyal Medya [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)
