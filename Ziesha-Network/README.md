@@ -64,6 +64,15 @@ bazuka wallet new-token --name <isim> --supply <supply> --symbol <sembol>
 ```
 bazuka wallet add-token --id <id>
 ```
+> ### Pendingdeki işlmeleri tekrar gönderme
+```
+bazuka wallet resend-pending
+```
+> ### Wallet nonce sıfırlama
+```
+bazuka wallet reset
+```
+
 <div align="center">
 
 # Core Node Sosyal Medya [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)
