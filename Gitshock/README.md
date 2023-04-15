@@ -304,3 +304,84 @@ nohup lighthouse beacon \
 ### Son olarak ip adresinizi discordda `#cartenz-testnet-server`kanalına gönderin. Nodeniz [nodemoonda](https://nodemoon.cartenz.works/) görünmeye başlayacak.
 
 
+
+# 
+
+<h1 align="center"> Staking ve Validatör Oluşturma </h1>
+
+### Arkadaşlar beklediğimiz güncelleme geldi ve artık Cartenz chainde staking aktif. Yukarıdaki işlemleri tamamlayıp execution ve consensus layerleri başarılı bir şekilde çalıştırıyorsanız staking işlemine devam edelim.
+
+> ### Aşağıdaki işlemler; daha önceki adımları (execution, consensus layerlar, validatör key oluşturma işlemleri). bu rehbere göre yaprığınız varsayılarak oluşturulmuş bir rehberdir. Eğer başka bir şekilde kurulum yaptıysanız bazı dosya ve klasör isimleri muhtemelen farklıdır, işlemleri yapğarken bunu göz önünde bulundurun.
+
+## İlk olrak validatör keylerin yedeğini alın.
+> Sunucunuza winscp veya mobaxterm ile bağlanıp `/root/testnet-list/staking-cli/validator_keys` altındaki `deposit_data-xxx.json` ve `keystore-xxx.json` ismindeki iki dosyayı bilgisayarınıza aktarın
+>
+> Sadece `deposit_data-xxx.json` dosyasını ile işlem yapacağız, diğer dosyayı sadece saklayın.
+
+## Metamaskınıza Cartenz Chain ağını ekleyin.
+> Ağ bilgileri
+> - Cartenz Chain (EVM)
+> - https://rpc-phase1.cartenz.works/
+> - 1881
+> - tGTFX
+> - https://scan.cartenz.works/
+
+> [Faucetten](https://faucet.cartenz.works/) test tokenları alın.
+
+## Stake
+> Bu işlemi [Staking Lunchpad](https://stake-phase1.cartenz.works/en/) üzerinden yapacağız.
+
+> Siteye gidin, sırasıyla yapacaklarınız;
+> - **BECOME A VALİDATOR** butonun atıklayın. Ardından açılan sayfada uyarılar, şartlar ve bilgilendirmelerin hepsini okuyup **CONTINUE** veya **I ACCEPT** diyerek ilerleyin.
+> - Sonraki sayfada execution layer için hangi clienti kullandığınızı soruyor bu rehberde Geth clientini kullandık. **GETH** seçip **CONTINUE** tıklayın.
+> - Consensus layer için kullandığımız client Lighthouse. **LIGHTHOUSE** seçip **CONTINUE** tıklayın.
+> - Sonraki adımda kaç tane validatör çalıştırmak istediğini soruyor. ***How many validators would you like to run?*** sorusuna **1** seçin.
+> - Bu sayfanın devamında validatör keyleri olışturmaktan bahsediyor. İşletim sistemi için **LINUX** seçin, keyleri nasıl oluşturacağınızı anlatıyor, biz bu işlemleri daha önce yaptık bu nedenle sayfanın en altına inip uyarı kutucuğunu işarteleyin ve **CONTINUE** tıklayın.
+> - Bu adımda daha önce bilgisayarınıza yedeklediğiniz `deposit_data-xxx.json` dosyasını yükleyin ve **CONTINUE** tıklayın.
+> - Cüzdanınızı bağlayın **CONTINUE** basın
+> - Açılan sayfada uyarıların, bilgilendirmelerin olduğu kutucukların hepsini işaretleyin.
+> - Son olarak **CONFİRM DEPOSİT** dedikten sonra cüzdan onayı verin ve işlem tamam.
+
+# Validatör
+
+### Steak işlemini tamamladıktan sonra validatör node başlatacağız. Bu işlemler için sunucunuza geri dönün.
+
+### İlk önce `password.txt` dosyası oluşturun
+```
+cd /root/testnet-list
+```
+```
+nano password.txt
+```
+> ### Dosya içine validatör keyleri oluştururken belirlediğiniz şifreyi yazın. CTRL+X Y ENTER ile kaydedip çıkın.
+
+## Validatör keyleri import edin
+```
+lighthouse account validator import \
+--testnet-dir /root/testnet-list/consensus \
+--datadir "/root/testnet-list/validator" \
+--directory /root/testnet-list/staking-cli/validator_keys \
+--password-file /root/testnet-list/password.txt \
+--reuse-password
+```
+![image](https://user-images.githubusercontent.com/108215275/232234635-af0d2a66-bc75-4902-9aaf-02020d0cf7d7.png)
+
+## Validatör Node başlatın
+```
+screen -S validator
+```
+```
+lighthouse vc --suggested-fee-recipient $CUZDAN  --metrics-address 0.0.0.0 --metrics-allow-origin "*" --metrics-port 8801 --http-allow-origin "*" --http-address 0.0.0.0 --http --unencrypted-http-transport --graffiti "$ISIM" --testnet-dir "/root/testnet-list/consensus" --datadir "/root/testnet-list/validator" --beacon-nodes "http://127.0.0.1:5052" > /root/testnet-list/logs/validator.log
+```
+> ### Screenden CTRL+A+D ile çıkış yapın.
+
+![image](https://user-images.githubusercontent.com/108215275/232234956-91a46435-89ac-48da-b1b5-414ae95228b6.png)
+
+# 
+
+> ### Loglara bakmak için `screen -r validator` ile screene girebilirsiniz. CTRL+A+D ile çıkış yapın
+
+
+> ## Loglar böyle görünecek
+![image](https://user-images.githubusercontent.com/108215275/232235483-8040d1a4-3b60-459e-99c6-431dc1a3ccc9.png)
+
