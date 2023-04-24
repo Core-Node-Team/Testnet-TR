@@ -46,7 +46,7 @@ bazuka wallet send --amount <miktar> --from <adres> --to <hedefadres>
 ```
 > ### Validatör oluşturma
 ```
-bazuka wallet register-validator --commision <commision>
+bazuka wallet register-validator --commission <commision>
 ```
 > ###  Delegate 
 ```
