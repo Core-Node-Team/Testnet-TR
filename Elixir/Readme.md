@@ -30,7 +30,7 @@ wget https://files.elixir.finance/Dockerfile
 ```
 nano Dockerfile
 ```
-> ### `ENV ADDRESS` karşısına metamask adresinizi, `ENV PRIVATE_KEY`karşısına bu cüzdanın private keyini, `ENV VALIDATOR_NAME` karşısına validatörünüz için belirlediğiniz ismi girin.
+> ### `ENV ADDRESS` karşısına metamask adresinizi, `ENV PRIVATE_KEY`karşısına bu cüzdanın private keyini, `ENV VALIDATOR_NAME` karşısına discord kullanıcı adınızı girin.
 > ![image](https://user-images.githubusercontent.com/108215275/235474096-6d832a60-2699-44a6-b8b6-dec34819042a.png)
 > ### Görseldeki gibi başka bir şey eklemeyin. Validatör isminde boşluk bırakmayın `=` işaretinden sonra boşluk bırakmayın
 > ### **CTRL+X Y ENTER** ile kaydedip çıkış yapın
@@ -58,7 +58,7 @@ docker logs -f ev
 > ### `0xb6806650A5345DA2A7C119648944A52e7faA0eb1` bu token contractını metamaskınıza ekleyebilirsiniz.
 > ### Sağ üstten `stake` butonuna tıklayın. 100-1000 arası ELXR stake edin.
 > ### Ardından yine sağ üstten `enroll` yapın.
-> ### Transaction tamamladıktan sonra sitede üstten **Leaderboard** kısmında cüzdan adresinizi aratın görünüyorsa okay.
+> ### Transaction tamamladıktan sonra sitede üstten **Leaderboard** kısmına girin, cüzdan adresinizi aratın görünüyorsa okay.
 
 #
 #
