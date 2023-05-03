@@ -39,7 +39,9 @@ wget https://files.elixir.finance/Dockerfile
 ```
 nano Dockerfile
 ```
-> ### `ENV ADDRESS` karşısına metamask adresinizi, `ENV PRIVATE_KEY`karşısına bu cüzdanın private keyini, `ENV VALIDATOR_NAME` karşısına discord kullanıcı adınızı girin.
+> ### `ENV ADDRESS` karşısına metamask adresinizi
+> ### `ENV PRIVATE_KEY`karşısına bu cüzdanın private keyini
+> ### `ENV VALIDATOR_NAME` karşısına discord kullanıcı adınızı girin.
 > ![image](https://user-images.githubusercontent.com/108215275/235474096-6d832a60-2699-44a6-b8b6-dec34819042a.png)
 > ### Görseldeki gibi başka bir şey eklemeyin. Validatör isminde boşluk bırakmayın `=` işaretinden sonra boşluk bırakmayın
 > ### **CTRL+X Y ENTER** ile kaydedip çıkış yapın
@@ -54,7 +56,7 @@ docker run -d --restart unless-stopped --name ev elixir-validator
 ```
 ## Loglar
 ```
-docker logs -f ev
+docker logs -f --tail 100 ev
 ```
 ### Buna benzer görünür
 ![image](https://user-images.githubusercontent.com/108215275/235475416-4a34aefe-0ed3-441d-b8b5-7b1e04f2fadf.png)
