@@ -385,3 +385,31 @@ lighthouse vc --suggested-fee-recipient $CUZDAN  --metrics-address 0.0.0.0 --met
 > ## Loglar böyle görünecek
 ![image](https://user-images.githubusercontent.com/108215275/232235483-8040d1a4-3b60-459e-99c6-431dc1a3ccc9.png)
 
+
+
+#
+#
+#
+
+## Sunucudan gitshock node silmek isterseniz bu komutları sırayla girin
+```
+sudo killall geth
+sudo killall lighthouse
+rm -rf go1.19.1.linux-amd64.tar.gz
+rm -rf go .ethereum .rustup lighthouse testnet-list .cargo
+rm -rf /usr/local/go
+screen -X -S geth kill
+screen -X -S beacon1 kill
+screen -X -S beacon2 kill
+screen -X -S validator kill
+pkill -f lighthouse beacon vc
+sudo ufw disable
+sudo ufw status
+```
+
+
+
+
+
+
+
