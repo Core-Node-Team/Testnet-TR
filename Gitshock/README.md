@@ -344,7 +344,7 @@ nohup lighthouse beacon \
 
 # Validatör
 
-### Steak işlemini tamamladıktan sonra validatör node başlatacağız. Bu işlemler için sunucunuza geri dönün.
+### Stake işlemini tamamladıktan sonra validatör node başlatacağız. Bu işlemler için sunucunuza geri dönün.
 
 ### İlk önce `password.txt` dosyası oluşturun
 ```
