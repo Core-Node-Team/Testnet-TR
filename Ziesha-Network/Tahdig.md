@@ -17,7 +17,7 @@
 > ### Testnete katılmak için; hazırladığımız kurulum scriptini kullanabilirsiniz
 > ### Aşağıdaki komutu kopyalayıp terminale yapıştırın ve yönergeleri takip edin.
 ```
-wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/cn-ziesha-kurulum.sh && chmod +x cn-ziesha-kurulum.sh && bash ./cn-ziesha-kurulum.sh
+wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x corenode-ziesha.sh && bash ./corenode-ziesha.sh
 ```
 > ### Kurulumu tamamladıktan sonra yapılacak diğer işlemler ve gelecek güncellemeler için Ziesha [Discordu](https://discord.gg/zieshanetwork) takip etmeyi unutmayın.
 # 
