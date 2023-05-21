@@ -21,7 +21,7 @@
 #
 > ## Bu komut girip yönergeleri takip ederek kurulumu tamamlayabilirsiniz.
 ```
-wget -q -O corenode-ziesha.sh 
+wget -q -O corenode-ziesha.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x corenode-ziesha.sh && bash ./corenode-ziesha.sh
 ```
 > ## Node kurulumunu tamamladıktan sonra bu komut ile validatörünüzü kaydedin
 ```
