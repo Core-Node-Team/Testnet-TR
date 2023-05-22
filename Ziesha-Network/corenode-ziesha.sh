@@ -61,6 +61,7 @@ git pull origin master
 cargo update
 cargo install --path .
 source "$HOME/.cargo/env"
+export PATH=/root/.cargo/bin:$PATH
 echo -e ""
 echo -e ""
 sleep 2
