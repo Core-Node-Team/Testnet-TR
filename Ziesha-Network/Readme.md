@@ -21,7 +21,7 @@
 #
 > ## Bu komut girip yönergeleri takip ederek kurulumu tamamlayabilirsiniz.
 ```
-curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh | bash
+curl -sSL -o ziesha.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x ziesha.sh && bash ziesha.sh
 ```
 > ## Node kurulumunu tamamladıktan sonra bu komut ile validatörünüzü kaydedin
 ```
