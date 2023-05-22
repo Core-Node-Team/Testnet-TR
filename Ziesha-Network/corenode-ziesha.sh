@@ -104,7 +104,7 @@ if [ $CUZDAN == "1" ]; then
  echo -e "\e[0;34mBazuka Başlatıldı.\033[0m"
  echo ""
  sleep 2
- bazuka init --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765 --bootstrap 165.22.212.230:8765 --bootstrap 31.210.53.186:8765 --mnemonic "$MNEMONIC"
+ bazuka init --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765 --mnemonic "$MNEMONIC"
  sleep 3
   elif [ $CUZDAN == "2" ]; then
    sleep 1
@@ -120,7 +120,7 @@ if [ $CUZDAN == "1" ]; then
    echo ""
    echo ""
    sleep 3
-   bazuka init --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765 --bootstrap 165.22.212.230:8765 --bootstrap 31.210.53.186:8765
+   bazuka init --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765
    sleep 8
 fi 
 
