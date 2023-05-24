@@ -1,4 +1,4 @@
-<h1 align="center"> Ziesha Network | Deruny Testnet </h1>
+<h1 align="center"> Opside Network | Pre-Alpha Testnet </h1>
 
 <div align="center">
 
