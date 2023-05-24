@@ -86,3 +86,21 @@ NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOK
 
 ### Validatör loglarını göster.
 `` opside-chain/show-validator-log.sh ``
+
+
+#
+#
+
+<div align="center">
+
+# Core Node Sosyal Medya [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)
+
+  
+![1500x500](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/92b50dd4-8043-4500-b906-bc8d15b75525)
+
+### Sorularınız olursa telegram sohbet grubumuz ve discord sunucumuza katılabilirsiniz.
+
+
+</div>
+
+
