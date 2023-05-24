@@ -2,24 +2,18 @@
 
 <div align="center">
 
-![image](https://user-images.githubusercontent.com/108215275/230774400-08a2c51b-ee74-4884-95a9-de45d1bd8725.png)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/76253089/1e5e96ef-77de-4db3-bf78-42304b162bc8)
 
-#  [Twitter](https://twitter.com/ZieshaNetwork)|[Discord](https://discord.gg/zieshanetwork)|[Website](https://ziesha.network/)|[Telegram](https://t.me/ZieshaNetworkOfficial)|[Whitepaper](https://hackmd.io/_Sw5u2lUR9GfBV5vwtoMSQ)
+#  [Twitter](https://twitter.com/OpsideZK)|[Discord](https://discord.gg/opside)|[Website](https://ziesha.network/)|[Telegram](https://t.me/OpsideTurkish)|
 
 </div>
 
 # Arkadaşlar merhaba; biliyorsunuz Ziesha Network'ün geliştirilme sürecinde büyük ilerlemeler sağlandı ve mainnete hiç olmadığı kadar yaklaştık.
 # Mainnet öncesi son ve ödüllü testnet olması planlanan Deruny Testnet başladı.
 #
-> ## Testnete katılım herkese açık.
+> ## Testnete sadece seçilenler katılabiliyor.
 > ## Bitiş tarihi belli değil.
-> ## Gerksinimler: `2CPU 2RAM 50GB SSD`(min)
-> ## Bu rehberde full node kurucaz ve ardından validatör olucaz.
-> ## Prover olarak katılmak isterseniz [buradan](https://github.com/ziesha-network/zoro)devam edin.
-> ## Kurulumu tamamladıkran sonra, yapılacak diğer işlemler ve gelecek güncellemeler için Discord duyurularını takip etmeyi unutmatın.
-> ## Sorularınız olursa yine discorddan sorabilirsiniz.
+> ## Gerksinimler: `6CPU 16RAM ?GB SSD`(min)
+> ## Sorularınızı Sohbet grubumuza gelip sorabilirsiniz. [Sohbet Grubumuz](https://t.me/corenodechat)
 #
-> ## Bu komut girip yönergeleri takip ederek kurulumu tamamlayabilirsiniz.
-```
-curl -sSL -o ziesha.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x ziesha.sh && bash ziesha.sh
-```
+> ## Kuruluma Başlayalım.
