@@ -1,4 +1,4 @@
-
+<div align="center"> 
 
 <h1 align="center"> Testnetler-Rehberler</h1>
 
@@ -6,7 +6,6 @@
 ## Hata adığınız veya takıldığınız yer olursa [Telegram](https://t.me/corenodechat) grubumuz veya [Discord](https://discord.gg/fzzUAU9k) sunucumuzda topluluğumuzdan yardım alabilirsiniz.
 ## Bu repoda eksik veya hatalı bir yer bulursanız bize bildirmekten çekinmeyin lütfen
 
-#
 #
 
 <div align="center">
@@ -17,3 +16,4 @@
 
 </div>
 
+  </div>
