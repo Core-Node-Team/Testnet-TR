@@ -16,7 +16,8 @@
 > ## Gerksinimler: `Ubuntu 20.04, 4+CPU 16+RAM 500GB SSD`(min)
 > ## Sorularınızı Sohbet grubumuza gelip sorabilirsiniz. [Sohbet Grubumuz](https://t.me/corenodechat)
 #
-## Kuruluma Başlayalım.
+
+<h1 align="center"> Node Kurulumu </h1>
 
 ## Sunucu Güncellemesi
 ```
@@ -50,7 +51,17 @@ cd ./testnet-auto-install-v2
 > ## 4. Şifreyi tekrar yazın
 > ## Sonrasında size 24 haneli Mnemonicler verecek bunları not defterine yedekleyin, kelimeleri kopyalayın ve sizden istediği yere yapıştırın.
 
-## Sunucudaki işlemimiz bitti. [Discord kanalından](https://discord.gg/opside) kullandığımız cüzdana token talep edip Website kullanarak Validatör oluşturacağız. 
+## Sunucudaki işlemimiz bitti. Validatör keylerin yedeğini aldıktan sonra  [Discord kanalından](https://discord.gg/opside) kullandığımız cüzdana token talep edip Website kullanarak Validatör oluşturacağız. 
+
+<h1 align="center"> Yedek Alma </h1>
+
+> ### Winscp veya Mobaxter ile sunucunuzda `/root/testnet-auto-install/validator_keys/` altındaki `deposit_data-xxx.json` ve `keystore-m_x_x-xxxx.json` ismindeki iki dosyayı bilgisayarınıza indirip yedekleyin.
+
+> ### Sadece `keystore-m_x_x-xxxx.json` isimli dosya ile işlem yapacağız diğerini `deposit_data-xxx.json` dosyasını sadece güvenle saklayın
+
+#
+
+<h1 align="center"> Validatör Oluşturma </h1>
 
 ## Öncelikle faucetten token talep edelim.
 
@@ -59,9 +70,17 @@ cd ./testnet-auto-install-v2
 > ### Başarılı olursanız alttaki gibi çıktı alacaksınız. Hata verirse adresiniz testnete seçilmemiştir. :(
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/85e01c3c-1b85-4331-be75-67ea4dc1eedc)
 
-## Validatörümüzü oluşturalım.
+## Sync Kontrol
 
-NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOKENLERİ STAKE EDECEĞİZ! BURASI ÇOK ÖNEMLİ!
+## NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOKENLERİ STAKE EDECEĞİZ! BURASI ÇOK ÖNEMLİ!
+> ### Geth loglarında ulaştığınız blok yüksekliğini öğrenebilirsiniz `opside-chain/show-geth-log.sh`
+>  - `number` ulaştığınız blok yüksekliğidir, explorer ile karşılaştırarak sync kontrol edebilirsiniz.
+>  
+>  ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/07767b57-86ff-4823-a3f6-7b598b4fad48)
+> ### [Explorer](https://pre-alpha.opside.info/)
+
+
+## Stake İşlemi
 
 >## [Websiteye girin](https://opside.network/validator/deposit)
 >## Testnet cüzdanınızı bağlayın (Faucetten token talep ettiğinizi)
@@ -76,23 +95,20 @@ NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOK
 >## Sonrasında 25K Tokenimizi stake etmek kalıyor. ANCAK EĞER NODE SYNC OLMADIYSA SYNC OLMASINI BEKLEYİN!!! Confirm deposit tuşuna basın, metamask onayını verin, contiune tuşuna basın.. <br> İşlemlerimiz bu kadardı.
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/6ac4d5bc-fcc7-4dab-b7c1-d506cf67c868)
 
-## İşe yarar komutlar
-### Client Logları göster. (Başarılı Log örneği)
-`` opside-chain/show-geth-log.sh ``
+## Validatörünüz aktif hale gelmesi 16-24 saat arası sürebilir.
+
+
+
+## Buraya kadar hata almadan yaptıysanız
+## Geth Logları böyle görünecek. `` opside-chain/show-geth-log.sh ``
 ![image](https://github.com/enzifiri/asdasd/assets/76253089/96ba203f-b2f0-4496-98e0-28f336dfd76b)
-
-### Consensus client logları göster.
-`` opside-chain/show-beaconChain-log.sh ``
-
-### Validatör loglarını göster. (Başarılı Log Örneği)
-`` opside-chain/show-validator-log.sh `` <br>
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/76253089/6fe9f7db-b6e8-4203-b1b6-5280d580f7a1)
-
-
-
+## Beacon logları buna benzer görünecek `` opside-chain/show-beaconChain-log.sh ``
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/e71c760c-506c-40fa-b8ab-1f7a1d1e4fbf)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/f49589d4-9f1a-4916-b86e-1c6da2095be8)
+## Validatör logları (aktif olana kadar) `` opside-chain/show-validator-log.sh ``
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/09b30163-eb24-45e1-be62-1467003fc1b0)
 #
 #
-
 <div align="center">
 
 # Core Node Sosyal Medya [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)
