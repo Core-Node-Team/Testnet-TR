@@ -13,6 +13,7 @@
 #
 > ## Testnete sadece seçilenler katılabiliyor.
 > ## 3 Ay Sürecek.
+> ## Kurulumdan sonra Validatörün explorerda gözükmesi 16-24 saat sürüyor. Acele etmeyin.
 > ## Gerksinimler: `Ubuntu 20.04, 4+CPU 16+RAM 500GB SSD`(min)
 > ## Sorularınızı Sohbet grubumuza gelip sorabilirsiniz. [Sohbet Grubumuz](https://t.me/corenodechat)
 #
