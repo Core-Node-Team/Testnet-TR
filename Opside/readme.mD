@@ -48,8 +48,7 @@ cd ./testnet-auto-install-v2
 > ## 2. Şifre belirleyin. (Validatör imza anahtarınızı şifreleyecek)
 > ## 3. Tekrar Metamask adresinizi yazın.
 > ## 4. Şifreyi tekrar yazın
-> ## Sonrasında size 24 haneli Mnemonicler verecek bunları not defterine yedekleyin, sonraki adımda bizden isteyecek fakat kopyala yapıştır yapmamamız gerekiyor! Nedeni ise her kelimenin sadece ilk 4 hanesini kabul ediyor. O yüzden sizden kelimeleri istediğinizde kelimelerin sadece ilk 4 hanesini gireceksiniz, alttaki görselde örneği görebilirsiniz. 
-![image](https://github.com/enzifiri/asdasd/assets/76253089/0c2a3c51-18b9-4536-84ad-006f9bcfad12)
+> ## Sonrasında size 24 haneli Mnemonicler verecek bunları not defterine yedekleyin, kelimeleri kopyalayın ve sizden istediği yere yapıştırın.
 
 ## Sunucudaki işlemimiz bitti. [Discord kanalından](https://discord.gg/opside) kullandığımız cüzdana token talep edip Website kullanarak Validatör oluşturacağız. 
 
