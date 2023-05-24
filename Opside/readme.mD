@@ -84,8 +84,10 @@ NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOK
 ### Consensus client logları göster.
 `` opside-chain/show-beaconChain-log.sh ``
 
-### Validatör loglarını göster.
+### Validatör loglarını göster. (Başarılı Log Örneği)
 `` opside-chain/show-validator-log.sh ``
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/76253089/6fe9f7db-b6e8-4203-b1b6-5280d580f7a1)
+
 
 
 #
