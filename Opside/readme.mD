@@ -76,6 +76,11 @@ NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOK
 >## Sonrasında 25K Tokenimizi stake etmek kalıyor. ANCAK EĞER NODE SYNC OLMADIYSA SYNC OLMASINI BEKLEYİN!!! Confirm deposit tuşuna basın, metamask onayını verin, contiune tuşuna basın.. <br> İşlemlerimiz bu kadardı.
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/6ac4d5bc-fcc7-4dab-b7c1-d506cf67c868)
 
+## [Explorerdan](https://pre-alpha-beacon.opside.info/) Validatörünüzü kontrol etmek için,
+>## "/root/testnet-auto-install-v2/validator_keys/" dizinindeki keystore ile başlayan dosyanın içini açın ve pubkey adresinizi kopyalayıp explorerda aratın
+>![image](https://github.com/Core-Node-Team/Testnet-TR/assets/76253089/9ced6fac-76d7-47ef-9793-30720e362021)
+
+
 ## İşe yarar komutlar
 ### Client Logları göster. (Başarılı Log örneği)
 `` opside-chain/show-geth-log.sh ``
