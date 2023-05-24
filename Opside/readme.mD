@@ -12,7 +12,7 @@
 # Merhaba Arkadaşlar, Merakla beklediğimiz Opside Testneti nihayet bizimle. Sağ üstten Fork + Star tusuna basarak destek olabilirsiniz. 
 #
 > ## Testnete sadece seçilenler katılabiliyor.
-> ## Bitiş tarihi belli değil.
+> ## 3 Ay Sürecek.
 > ## Gerksinimler: `Ubuntu 20.04, 4+CPU 16+RAM 500GB SSD`(min)
 > ## Sorularınızı Sohbet grubumuza gelip sorabilirsiniz. [Sohbet Grubumuz](https://t.me/corenodechat)
 #
