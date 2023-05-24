@@ -73,7 +73,7 @@ NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOK
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/ac9bb626-9fea-4ee3-bd59-8db34d81ffed)
 >## Dosyayı yükledikten sonra sizden yine onaylar isteyecek hepsinin tikini onaylayıp Contiune tuşuna basın.
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/0dd22d89-91b3-4b79-8ef3-8fd9410e6eff)
->## Sonrasında 25K Tokenimizi stake etmek kalıyor. Confirm deposit tuşuna basın, metamask onayını verin, contiune tuşuna basın.. <br> İşlemlerimiz bu kadardı.
+>## Sonrasında 25K Tokenimizi stake etmek kalıyor. ANCAK EĞER NODE SYNC OLMADIYSA SYNC OLMASINI BEKLEYİN!!! Confirm deposit tuşuna basın, metamask onayını verin, contiune tuşuna basın.. <br> İşlemlerimiz bu kadardı.
 >![image](https://github.com/enzifiri/asdasd/assets/76253089/6ac4d5bc-fcc7-4dab-b7c1-d506cf67c868)
 
 ## İşe yarar komutlar
