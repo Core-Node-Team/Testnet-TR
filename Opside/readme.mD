@@ -61,6 +61,8 @@ cd ./testnet-auto-install-v2
 
 ## Validatörümüzü oluşturalım.
 
+NOT: NODE SYNC OLMADAN TOKENLERİ STAKE ETMEYECEĞİZ!!! SYNC OLDUKTAN SONRA TOKENLERİ STAKE EDECEĞİZ! BURASI ÇOK ÖNEMLİ!
+
 >## [Websiteye girin](https://opside.network/validator/deposit)
 >## Testnet cüzdanınızı bağlayın (Faucetten token talep ettiğinizi)
 >## Karşınıza çıkacak olan tüm Contiune, I accept tuşlarına basıp şartları kabul edin.
