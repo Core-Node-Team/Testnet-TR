@@ -17,6 +17,10 @@ sleep 4
 echo -e "\e[0;34mZiesha Kurulumu Başlatılıyor\033[0m"
 echo -e ''
 cd /$HOME
+sudo systemctl stop bazuka
+sudo systemctl disable bazuka
+rm -rf /etc/systemd/system/bazuka.service
+cd /$HOME
 rm -rf .bazuka
 rm -rf .bazuka.yaml
 rm -rf .bazuka-wallet
