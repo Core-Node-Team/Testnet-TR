@@ -114,6 +114,9 @@ cd ./testnet-auto-install-v2
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/45fb5221-e87e-4237-855e-2e12e1dfc058)
 
 
+## Validatör logları (aktif olduktan sonra) böyle görünecek
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/63f7c82c-fe45-4a81-ae3f-420b55be7ba6)
+
 #
 #
 
