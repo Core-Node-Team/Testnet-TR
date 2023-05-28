@@ -17,10 +17,6 @@ sleep 4
 echo -e "\e[0;34mZiesha Kurulumu Başlatılıyor\033[0m"
 echo -e ''
 cd /$HOME
-sudo systemctl stop bazuka
-sudo systemctl disable bazuka
-rm -rf /etc/systemd/system/bazuka.service
-cd /$HOME
 rm -rf .bazuka
 rm -rf .bazuka.yaml
 rm -rf .bazuka-wallet
@@ -127,6 +123,10 @@ if [ $CUZDAN == "1" ]; then
    bazuka init --external $(wget -qO- eth0.me):8765 --bootstrap 31.210.53.186:8765
    sleep 8
 fi 
+
+sudo systemctl stop bazuka
+sudo systemctl disable bazuka
+rm -rf /etc/systemd/system/bazuka.service
 
 sudo tee /etc/systemd/system/bazuka.service > /dev/null <<EOF
 [Unit]
