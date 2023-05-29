@@ -21,6 +21,9 @@ rm -rf .bazuka
 rm -rf .bazuka.yaml
 rm -rf .bazuka-wallet
 rm -rf bazuka
+sudo killall bazuka
+screen -XS ziesha kill
+screen -XS bazuka kill
 sleep 2
 echo -e '\e[0;35m' && read -p "Discord isminizi girin: " DISCORD 
 echo -e "\033[035mDiscord isminiz\033[034m $DISCORD \033[035molarak kaydedildi"
