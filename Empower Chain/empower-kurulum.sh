@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 sleep 1
-echo -e '\e[0;32m'
+echo -e '\e[0;36m'
 echo " ▄████████  ▄██████▄     ▄████████    ▄████████     ███▄▄▄▄    ▄██████▄  ████████▄     ▄████████ ";
 echo "███    ███ ███    ███   ███    ███   ███    ███     ███▀▀▀██▄ ███    ███ ███   ▀███   ███    ███ ";
 echo "███    █▀  ███    ███   ███    ███   ███    █▀      ███   ███ ███    ███ ███    ███   ███    █▀  ";
@@ -32,7 +32,6 @@ sudo rm -rf /usr/local/bin/empowerd
 sudo rm -rf /root/go/bin/empowerd
 sudo rm -rf $(which empowerd)
 exec > /dev/tty 2>&1
-echo -e '\e[0;32m✔'
 echo -e ''
 sleep 1
 echo -e "\e[0;34mSunucu Güncelleniyor\033[0m"
@@ -63,7 +62,7 @@ echo 'export GO111MODULE=on' >> $HOME/.bash_profile &&  . $HOME/.bash_profile
 rm -rf go1.20.4.linux-amd64.tar.gz
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
-echo -e "\e[0;36m$(go version) Kuruldu\033[0m"
+echo -e "\e[0;33m$(go version) Kuruldu\033[0m"
 echo -e ''
 sleep 1
 echo -e "\e[0;34mEmpowerchain Kuruluyor\033[0m"
@@ -76,7 +75,7 @@ git checkout v0.0.3
 make install 
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
-echo -e "\e[0;36mEmpowerd $(empowerd version) Kuruldu\033[0m"
+echo -e "\e[0;33mEmpowerd $(empowerd version) Kuruldu\033[0m"
 sleep 1
 echo -e ''
 exec > /dev/null 2>&1
@@ -147,26 +146,20 @@ echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;33m           sudo journ
 echo -e ""
 echo -e ""
 echo -e "\e[0;34mKurulum Tamamlandı\e[0m\u2600"
-echo -e '\e[0;35m'
-echo -e ' '
-echo " ██████╗ ██████╗ ██████╗ ███████╗    ███╗   ██╗ ██████╗ ██████╗ ███████╗";
-echo "██╔════╝██╔═══██╗██╔══██╗██╔════╝    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝";
-echo "██║     ██║   ██║██████╔╝█████╗      ██╔██╗ ██║██║   ██║██║  ██║█████╗  ";
-echo "██║     ██║   ██║██╔══██╗██╔══╝      ██║╚██╗██║██║   ██║██║  ██║██╔══╝  ";
-echo "╚██████╗╚██████╔╝██║  ██║███████╗    ██║ ╚████║╚██████╔╝██████╔╝███████╗";
-echo " ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝";
-echo "                                                                        ";
-echo -e "\033[31m            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-echo -e "\033[34m \e[4m               https://twitter.com/corenodeHQ"
-echo -e "    \e[4m            https://github.com/Core-Node-Team"
-echo -e "      \e[4m          https://t.me/corenodechat"
-echo -e "      \e[4m          https://discord.gg/g5nYhGWh"
-echo -e "\033[31m            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-echo -e '\e[0m'
+echo -e ""
+echo -e ""
+echo -e '\e[0;36m'
+echo " ▄████████  ▄██████▄     ▄████████    ▄████████     ███▄▄▄▄    ▄██████▄  ████████▄     ▄████████ ";
+echo "███    ███ ███    ███   ███    ███   ███    ███     ███▀▀▀██▄ ███    ███ ███   ▀███   ███    ███ ";
+echo "███    █▀  ███    ███   ███    ███   ███    █▀      ███   ███ ███    ███ ███    ███   ███    █▀  ";
+echo "███        ███    ███  ▄███▄▄▄▄██▀  ▄███▄▄▄         ███   ███ ███    ███ ███    ███  ▄███▄▄▄     ";
+echo "███        ███    ███ ▀▀███▀▀▀▀▀   ▀▀███▀▀▀         ███   ███ ███    ███ ███    ███ ▀▀███▀▀▀     ";
+echo "███    █▄  ███    ███ ▀███████████   ███    █▄      ███   ███ ███    ███ ███    ███   ███    █▄  ";
+echo "███    ███ ███    ███   ███    ███   ███    ███     ███   ███ ███    ███ ███   ▄███   ███    ███ ";
+echo "████████▀   ▀██████▀    ███    ███   ██████████      ▀█   █▀   ▀██████▀  ████████▀    ██████████ ";
+echo "                        ███    ███                                                               ";
 echo ""
+echo -e ""
+echo -e '\e[0m' 
 sleep 3
-echo -e ''
-echo -e ''
-echo -e '\e[0m'
-sleep 2
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/y%C4%B1ld%C4%B1z.sh | bash
