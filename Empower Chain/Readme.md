@@ -10,7 +10,7 @@
  
 #
 ## Herkese merhaba arkadaşlar daha önce katıldığımız EmpowerChain'in beklenen ödüllü testneti başladı.
-## Kuruluma başlamadan önce kısaca bilmeniz gerkenler
+## Kuruluma başlamadan önce kısaca bilmeniz gerekenler
 >  Testnet 3 aşamadan oluşuyor
  > -  1. 31 Mayıs - 6 Haziran: Ağ önyükleme aşaması
  > -  2. 7 Haziran - 20 Haziran: Ana aşama
