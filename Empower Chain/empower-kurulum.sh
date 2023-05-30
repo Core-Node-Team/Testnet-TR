@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 sleep 1
-echo -e '\e[0;36m'
+echo -e '\e[0;35m'
 echo " ▄████████  ▄██████▄     ▄████████    ▄████████     ███▄▄▄▄    ▄██████▄  ████████▄     ▄████████ ";
 echo "███    ███ ███    ███   ███    ███   ███    ███     ███▀▀▀██▄ ███    ███ ███   ▀███   ███    ███ ";
 echo "███    █▀  ███    ███   ███    ███   ███    █▀      ███   ███ ███    ███ ███    ███   ███    █▀  ";
@@ -78,19 +78,13 @@ echo -e '\e[0;32m✔'
 echo -e "\e[0;33mEmpowerd $(empowerd version) Kuruldu\033[0m"
 sleep 1
 echo -e ''
+echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
+sleep 1
 exec > /dev/null 2>&1
 empowerd config chain-id circulus-1
 empowerd config keyring-backend test
 empowerd config node tcp://localhost:15057
 empowerd init $MONIKER --chain-id circulus-1
-exec > /dev/tty 2>&1
-echo -e "\e[0;34mEmpowerd İnitalize\033[0m"
-echo -e '\e[0;32m✔\033[0m'
-sleep 2
-echo -e ''
-echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
-sleep 1
-exec > /dev/null 2>&1
 curl -Ls https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/EmpowerChain/genesis.json > $HOME/.empowerchain/config/genesis.json
 sleep 1
 curl -Ls https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/EmpowerChain/addrbook.json > $HOME/.empowerchain/config/addrbook.json
@@ -103,15 +97,13 @@ sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.
 sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:15017\"%; s%^address = \":8080\"%address = \":15080\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:15090\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:15091\"%; s%:8545%:15045%; s%:8546%:15046%; s%:6065%:15065%" $HOME/.empowerchain/config/app.toml
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m'
+echo -e "İnitalize ✔"
+sleep 1
 echo -e "Min gas price ✔"
 sleep 1
-echo -e "Seeds ✔"
+echo -e "Seeds ✔  Peers ✔"
 sleep 1
-echo -e "Peers ✔"
-sleep 1
-echo -e "Genesis ✔"
-sleep 1
-echo -e "Addrbook ✔"
+echo -e "Genesis ✔  Addrbook ✔"
 sleep 1
 echo -e "Port ✔"
 echo -e '\e[0m'
@@ -148,7 +140,7 @@ echo -e ""
 echo -e "\e[0;34mKurulum Tamamlandı\e[0m\u2600"
 echo -e ""
 echo -e ""
-echo -e '\e[0;36m'
+echo -e '\e[0;35m'
 echo " ▄████████  ▄██████▄     ▄████████    ▄████████     ███▄▄▄▄    ▄██████▄  ████████▄     ▄████████ ";
 echo "███    ███ ███    ███   ███    ███   ███    ███     ███▀▀▀██▄ ███    ███ ███   ▀███   ███    ███ ";
 echo "███    █▀  ███    ███   ███    ███   ███    █▀      ███   ███ ███    ███ ███    ███   ███    █▀  ";
