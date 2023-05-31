@@ -21,16 +21,16 @@ mkdir translate
 ```
 Aşağıdaki komutları sıra ile giriyoruz
 ```
-wget -c https://github.com/ahmkah/Testnet-TR/blob/main/Opside/testnet-auto-install-v2/translate/control-panel_en_US.transhell -O ./translate/control-panel_en_US.transhell
+wget -c https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Opside/testnet-auto-install-v2/translate/control-panel_en_US.transhell -O ./translate/control-panel_en_US.transhell
 ```
 ```
-wget -c https://github.com/ahmkah/Testnet-TR/blob/main/Opside/testnet-auto-install-v2/translate/control-panel_zh_CN.transhell -O ./translate/control-panel_zh_CN.transhell
+wget -c https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Opside/testnet-auto-install-v2/translate/control-panel_zh_CN.transhell -O ./translate/control-panel_zh_CN.transhell
 ```
 ```
-wget -c https://github.com/ahmkah/Testnet-TR/blob/main/Opside/testnet-auto-install-v2/translate/control-panel_tr_TR.transhell -O ./translate/control-panel_tr_TR.transhell
+wget -c https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Opside/testnet-auto-install-v2/translate/control-panel_tr_TR.transhell -O ./translate/control-panel_tr_TR.transhell
 ```
 ```
-wget -c https://github.com/ahmkah/Testnet-TR/blob/main/Opside/testnet-auto-install-v2/control-panel.sh -O ./control-panel.sh 
+wget -c https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Opside/testnet-auto-install-v2/control-panel.sh -O ./control-panel.sh 
 ```
 ```
 chmod +x ./control-panel.sh
