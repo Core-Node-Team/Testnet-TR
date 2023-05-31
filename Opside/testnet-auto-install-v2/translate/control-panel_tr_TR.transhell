@@ -1,1 +1,58 @@
+#!/bin/bash
+HelpInfo="Lütfen ihtiyacınız olan işlemi seçin"
+SwapSyncMode="1. Senkronizasyon modunu değiştir"
+NormalMode="1. Normal Mod"
+QuickSync="2. Hızlı Senkronizasyon"
 
+NetworkRestart="2. İstemcileri yeniden başlat"
+RestartAll="1. Tümünü yeniden başlat"
+RestartGeth="2. Geth'i yeniden başlat"
+RestartBeaconChain="3. Beacon-chain'i yeniden başlat"
+RestartValidator="4. Doğrulayıcıyı yeniden başlat"
+
+NetworkStop="3. İstemcileri durdur"
+StopAll="1. Tümünü durdur"
+StopGeth="2. Geth'i durdur"
+StopBeaconChain="3. Beacon-chain'i durdur"
+StopValidator="4. Doğrulayıcıyı durdur"
+
+ShowLog="4. Düğüm kayıtlarını görüntüle"
+ShowLogGeth="1. Geth kaydını görüntüle"
+ShowLogBeaconChain="2. Beacon-chain kaydını görüntüle"
+ShowLogValidator="3. Doğrulayıcı kaydını görüntüle"
+
+ShowStatus="5. Düğüm durumunu görüntüle"
+IsSynced="1. Senkronizasyon tamamlandı mı?"
+ShowPeerCount="2. Bağlı düğüm sayısı"
+ShowHealthStatus="3. Düğüm sağlık durumunu görüntüle"
+
+MigrateNode="6. Düğüm Taşıma"
+ExportNode="1. Düğüm Keystore ve sifrelerini dışa aktar"
+ImportNode="2. Düğüm Keystore ve sifrelerini içeri aktar"
+
+ClearNode="7. Yerel zincir verilerini temizle"
+ClearConfirm="Yerel zincir blok verileri silinsin mi? Temizlendikten sonra yeniden senkronize edilecektir."
+ClearConfirmInfo="Lütfen silmeyi onaylayın; onaylanırsa 'yes' yazın"
+ClearContinueInfo="Yerel zincir verileri silindi, lütfen kontrol panelini yeniden başlatın ve ağı tamamen yeniden başlatın"
+
+LocalData="8. Yerel verileri görüntüle"
+LocalDataValidatorPubKey="1. Doğrulayıcı genel anahtar adresini görüntüle"
+
+Other="9. Dosya güncellemesi"
+ControlPanelUpdate="1. Kontrol Paneli Güncelle"
+GethConfigUpdate="2. Geth yapılandırmasını güncelle"
+
+NoneSelect="Seçim mevcut değil"
+Wait10Seconds="İşlemin tamamlanması için 10 saniye bekleniyor"
+NeedInstallJq="jq yüklü değil, otomatik olarak yüklenecek"
+NeedInstallCurl="curl yüklü değil, otomatik olarak yüklenecek"
+WaitingForSupport="Destek bekleniyor..."
+WaitingForRestartControlPanel="Script güncellendi, kontrol panelini yeniden çalıştırın"
+WaitingForRestartGeth="Yeni yapılandırmayı uygulamak için Geth yeniden başlatılmalıdır"
+HealthStatus="Mevcut düğüm bağlantısı normal"
+
+LocalBlockHeight="Mevcut düğüm blok yüksekliği:"
+RemoteBlockHeight="Uzak düğüm blok yüksekliği:"
+DiffBlockHeight="Blok yüksekliği farkı:"
+HeightHealth="Tespit sonucu: En son yüksekliğe eşitlendi"
+HeightNotHealth="Tespit sonucu: Mevcut düğüm en son yüksekliğe eşitlenmedi"
