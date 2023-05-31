@@ -22,7 +22,6 @@ sleep 2
 echo -e '\e[0;35m' && read -p "Moniker isminizi girin: " MONIKER 
 echo -e "\033[035mMoniker isminiz\033[034m $MONIKER \033[035molarak kaydedildi"
 echo -e '\e[0m'
-echo "export MONIKER=$MONIKER" >> $HOME/.bash_profile
 echo -e ''
 exec > /dev/null 2>&1
 cd /$HOME
