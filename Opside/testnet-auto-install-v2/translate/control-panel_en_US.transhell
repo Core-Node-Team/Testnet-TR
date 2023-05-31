@@ -1,1 +1,59 @@
+#!/bin/bash
+HelpInfo="Please select the function you need"
+SwapSyncMode="1. Switch synchronization mode"
+NormalMode="1. Normal Mode"
+QuickSync="2. Quick Sync"
 
+NetworkRestart="2. Restart the clients"
+RestartAll="1. Restart all"
+RestartGeth="2. Restart Geth"
+RestartBeaconChain="3. Restart Beacon-chain"
+RestartValidator="4. Restart Validator"
+
+NetworkStop="3. Stop the clients"
+StopAll="1. Stop all"
+StopGeth="2. Stop Geth"
+StopBeaconChain="3. Stop Beacon-chain"
+StopValidator="4. Stop Validator"
+
+ShowLog="4. View node logs"
+ShowLogGeth="1. View Geth log"
+ShowLogBeaconChain="2. View Beacon-chain log"
+ShowLogValidator="3. View Validator log"
+
+ShowStatus="5. Display node status"
+IsSynced="1. Whether the synchronization has been completed"
+ShowPeerCount="2. Number of connected nodes"
+ShowHealthStatus="3. Display node health status"
+
+MigrateNode="6. Node Migration"
+ExportNode="1. Export node Keystroe and password"
+ImportNode="2. Import node Keystroe and password"
+
+ClearNode="7. Clean up local chain data"
+ClearConfirm="Are you sure to clear the local chain block data? It will resynchronize after clearing."
+ClearConfirmInfo="Please confirm again whether to clear, if confirmed, please enter yes"
+ClearContinueInfo="The local chain data has been cleared, please restart the control panel and restart the entire network"
+
+LocalData="8. View local data"
+LocalDataValidatorPubKey="1. View validator public key address"
+
+Other="9. File update"
+ControlPanelUpdate="1. Update Control Panel"
+GethConfigUpdate="2. Update Geth configuration"
+
+NoneSelect="The selection does not exist"
+Wait10Seconds="Wait 10 seconds for execution to complete"
+NeedInstallJq="It is detected that jq is not installed, it will be installed automatically"
+NeedInstallCurl="It is detected that curl is not installed, it will be installed automatically"
+WaitingForSupport="Waiting for support..."
+WaitingForRestartControlPanel="Script updated, rerun control panel"
+WaitingForRestartGeth="Restart Geth to apply new configuration"
+HealthStatus="The current node link is normal"
+
+LocalBlockHeight="Current node block height:"
+RemoteBlockHeight="Remote node block height:"
+DiffBlockHeight="Block height difference:"
+HeightHealth="Detection result: Synchronized to the latest height"
+HeightNotHealth="Detection result: The current node has not been synchronized to the latest height"
+CheckUpdate="Checking for updates"
