@@ -1,1 +1,1 @@
- <h1 align="center"> Opside Network | Otomatik Validator Node Kontrol Etme Aracı </h1>
+ <h1 align="center"> Opside Network | Validator Node Otomatik Kontrol Etme Aracı </h1>
