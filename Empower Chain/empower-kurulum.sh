@@ -71,7 +71,7 @@ exec > /dev/null 2>&1
 cd /$HOME
 git clone https://github.com/EmpowerPlastic/empowerchain.git
 cd empowerchain/chain
-git checkout v0.0.3
+git checkout v1.0.0-rc0
 make install 
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
@@ -92,9 +92,17 @@ sleep 1
 seeds="d6a7cd9fa2bafc0087cb606de1d6d71216695c25@51.159.161.174:26656"
 peers="e8b3fa38a15c426e046dd42a41b8df65047e03d5@95.217.144.107:26656,89ea54a37cd5a641e44e0cee8426b8cc2c8e5dfb@51.159.141.221:26656,0747860035271d8f088106814a4d0781eb7b2bc7@142.132.203.60:27656,3c758d8e37748dc692621a0d59b454bacb69b501@65.108.224.156:26656,41b97fced48681273001692d3601cd4024ceba59@5.9.147.185:26656"
 sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persistent_peers = "'$peers'"|' $HOME/.empowerchain/config/config.toml
-sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.025umpwr\"|" $HOME/.empowerchain/config/app.toml
+sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.025umpwr\"/" $HOME/.empowerchain/config/app.toml
 sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:15058\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:15057\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:15060\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:15056\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":15066\"%" $HOME/.empowerchain/config/config.toml
 sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:15017\"%; s%^address = \":8080\"%address = \":15080\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:15090\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:15091\"%; s%:8545%:15045%; s%:8546%:15046%; s%:6065%:15065%" $HOME/.empowerchain/config/app.toml
+sed -i \
+  -e 's|^pruning *=.*|pruning = "custom"|' \
+  -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
+  -e 's|^pruning-keep-every *=.*|pruning-keep-every = "0"|' \
+  -e 's|^pruning-interval *=.*|pruning-interval = "19"|' \
+  $HOME/.empowerchain/config/app.toml
+sleep 1
+sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/.empowerchain/config/config.toml
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m'
 echo -e "İnitalize ✔"
@@ -106,6 +114,8 @@ sleep 1
 echo -e "Genesis ✔  Addrbook ✔"
 sleep 1
 echo -e "Port ✔"
+sleep 1
+echo -e "Pruning ✔  İndexer ✔"
 echo -e '\e[0m'
 exec > /dev/null 2>&1
 sudo systemctl stop empowerd
@@ -135,9 +145,11 @@ echo -e "\e[0;34mNode Başlatıldı\033[0m"
 sleep 1
 echo -e ""
 echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;33m           sudo journalctl -u empowerd -fo cat\e[0m"
+sleep 1
 echo -e ""
 echo -e ""
 echo -e "\e[0;34mKurulum Tamamlandı\e[0m\u2600"
+sleep 2 
 echo -e ""
 echo -e ""
 echo -e '\e[0;35m'
