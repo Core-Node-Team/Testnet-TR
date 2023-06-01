@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-curl sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/matrix.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/matrix.sh | bash
 sleep 1
 echo -e '\e[0;32m'
 echo " ▄████████  ▄██████▄     ▄████████    ▄████████     ███▄▄▄▄    ▄██████▄  ████████▄     ▄████████ ";
