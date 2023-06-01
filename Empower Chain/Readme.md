@@ -36,7 +36,7 @@ curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team
 ```
 empowerd keys add wallet
 ```
-### Senkronize olmayı bekleyin ardından validatör oluşturun
+### Senkronize olmayı bekleyin ardından validatör oluşturun (not: faucetin bir kaç gün içinde açılacağı söylendi)
 ```
 empowerd tx staking create-validator \
   --amount 1000000umpwr \
