@@ -24,6 +24,8 @@
 ## Testnet ile ilgili tüm sorularınıza cevap bulacağınız bu [dökümanı](https://docs.empowerchain.io/testnet/overview) mutlaka okuyun.
 #
 ## Kurulum ile ilgili sorularınız ve sohbet için Core Node [Discord](https://discord.gg/fzzUAU9k) ve [Telegram](https://t.me/corenodechat) katılabilirsiniz.
+## Şu an testnetin 1. aşaması için kurulum yapıyoruz bunun için acele etmenize gerk yok 6 Hazirana kadar kurabilirsiniz, görevler 2. aşamada başlayacak.
+## Şu an faucet yok, bir kaç gün içinde açılacak. yani şu an sadece kurup bekleyebilirsiniz validatör oluşturmak için.
 #
 ### Script ile kurulum yapmak için aşağıdaki komutu girin
 
