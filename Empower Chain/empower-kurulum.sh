@@ -125,12 +125,12 @@ sudo systemctl disable empowerd
 sudo rm -rf /etc/systemd/system/empowerd.service
 sudo tee /etc/systemd/system/empowerd.service > /dev/null <<EOF
 [Unit]
-Description=EmpowerChain Node
+Description=empowerd Daemon
 After=network-online.target
 [Service]
 User=$USER
-ExecStart=$(which empowerd) start --home $HOME/.empowerchain
-Restart=on-failure
+ExecStart=/root/go/bin/empowerd start
+Restart=always
 RestartSec=3
 LimitNOFILE=65535
 [Install]
