@@ -1,3 +1,4 @@
+corenodeempower() {
 #!/bin/bash
 clear
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/matrix.sh | bash
@@ -141,9 +142,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable empowerd
 sudo systemctl start empowerd
 sudo systemctl restart empowerd
-sleep 2
-source $HOME/.bash_profile
-systemctl restart empowerd
+sleep 1
 exec > /dev/tty 2>&1
 echo -e ' '
 echo -e "\e[0;34mNode Başlatıldı\033[0m"
@@ -173,3 +172,6 @@ echo -e '\e[0m'
 sleep 3
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/y%C4%B1ld%C4%B1z.sh | bash
 sleep 1
+source $HOME/.bash_profile
+}
+corenodeempower
