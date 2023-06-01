@@ -74,3 +74,16 @@ empowerd tx staking create-validator \
 #
 
 </div>
+
+
+## Node Silmek
+```
+sudo systemctl stop empowerd && \
+sudo systemctl disable empowerd && \
+rm /etc/systemd/system/empowerd.service && \
+sudo systemctl daemon-reload && \
+cd $HOME && \
+rm -rf .empowerchain && \
+rm -rf empowerchain && \
+rm -rf $(which empowerd)
+```
