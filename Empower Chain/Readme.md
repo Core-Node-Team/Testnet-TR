@@ -33,7 +33,7 @@
 curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Empower%20Chain/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
 ``` 
 #
-### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/edit/main/Empower%20Chain/Manuel-Kurulum.md)
+### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/blob/main/Empower%20Chain/Manuel-Kurulum.md)
 ### Kurulum tamamlandıktan sonra cüzdan oluşturun
 ```
 empowerd keys add wallet
