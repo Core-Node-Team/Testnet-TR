@@ -27,14 +27,18 @@
 ## Şu an testnetin 1. aşaması için kurulum yapıyoruz bunun için acele etmenize gerk yok 6 Hazirana kadar kurabilirsiniz, görevler 2. aşamada başlayacak.
 ## Şu an faucet yok, bir kaç gün içinde açılacak. yani şu an sadece kurup bekleyebilirsiniz validatör oluşturmak için.
 #
+### ### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/blob/main/Empower%20Chain/Manuel-Kurulum.md)
+#
 ### Script ile kurulum yapmak için aşağıdaki komutu girin
 
 ```
 curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Empower%20Chain/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
 ``` 
-#
-### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/blob/main/Empower%20Chain/Manuel-Kurulum.md)
-### Kurulum tamamlandıktan sonra cüzdan oluşturun
+### Kurulum tamamlandıktan sonra bu komutu girin
+```
+source $HOME/.bash_profile
+```
+###  cüzdan oluşturun
 ```
 empowerd keys add wallet
 ```
