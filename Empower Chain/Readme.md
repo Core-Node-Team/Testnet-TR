@@ -27,7 +27,7 @@
 ## Şu an testnetin 1. aşaması için kurulum yapıyoruz bunun için acele etmenize gerk yok 6 Hazirana kadar kurabilirsiniz, görevler 2. aşamada başlayacak.
 ## Şu an faucet yok, bir kaç gün içinde açılacak. yani şu an sadece kurup bekleyebilirsiniz validatör oluşturmak için.
 #
-### ### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/blob/main/Empower%20Chain/Manuel-Kurulum.md)
+### Manuel kurulum yapmak istyenler için [rehber](https://github.com/0xSocrates/Testnet-Rehberler/blob/main/Empower%20Chain/Manuel-Kurulum.md)
 #
 ### Script ile kurulum yapmak için aşağıdaki komutu girin
 
