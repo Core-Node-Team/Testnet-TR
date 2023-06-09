@@ -10,7 +10,7 @@
  * [Discord](https://discord.gg/Zs3GMUhg)<br> 
  * [Görevler ve Ödüller](https://docs.empowerchain.io/testnet/tasks-and-rewards)
 
-## Sistem Gereksinimleri
+## Sistem Gereksinimleri.
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
 | CPU |	4 |
