@@ -72,7 +72,7 @@ exec > /dev/null 2>&1
 cd /$HOME
 git clone https://github.com/EmpowerPlastic/empowerchain.git
 cd empowerchain/chain
-git checkout v1.0.0-rc1
+git checkout v1.0.0-rc2
 make install 
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
