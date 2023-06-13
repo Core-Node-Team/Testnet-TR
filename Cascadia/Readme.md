@@ -31,7 +31,7 @@ source $HOME/.bash_profile
 ```
 cascadiad keys add wallet
 ```
-> ### [Discordda](https://discord.gg/cascadia) `#faucet` kanalından test tokenlarını alın
+> ### [Discordda](https://discord.gg/cascadia) `#faucet` kanalından test tokenlarını alın ($request cüzdanadresi)
 
 ## Senkronize olduktan sonra valiadatör oluşturabilirsiniz
 > ### Sync kontrol `cascadiad status 2>&1 | jq .SyncInfo`
