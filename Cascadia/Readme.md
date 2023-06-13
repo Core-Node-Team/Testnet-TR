@@ -11,8 +11,10 @@
 </div>
 
 #
-# Başlamadan önce [Türkiye Telegram](https://t.me/CascadiaTR) grubuna katılmayı unutmatın.
-
+## Arkadaşlar şu anki Devnete katılmanın herhangi bir teşviki yok
+## İleride teşvikli bir test ağı daha olacak
+## Proje ve testnet süreci ile ilgili tüm sorularınız için [Türkiye Telegram](https://t.me/CascadiaTR) grubuna katılabilirsiniz.
+## Sistem gereksinimleri `4CPU 8GB RAM 160GB SSD`
 
 ## Script ile kurulum yapmak için bu komutu girin
 ```
