@@ -19,6 +19,10 @@
 > ## Kurulumu tamamladıkran sonra, yapılacak diğer işlemler ve gelecek güncellemeler için Discord duyurularını takip etmeyi unutmatın.
 > ## Sorularınız olursa yine discorddan sorabilirsiniz.
 #
+> ## Bu komut girip yönergeleri takip ederek kurulumu tamamlayabilirsiniz.
+```
+curl -sSL -o ziesha.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x ziesha.sh && bash ziesha.sh
+```
 > ## Kurulum tamamlandıktan sonra bu komutu girin
 ```
 source "$HOME/.cargo/env"
