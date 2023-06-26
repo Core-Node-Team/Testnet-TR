@@ -57,7 +57,7 @@ babylond tx checkpointing create-validator \
  --amount="1000000ubbn" \
  --pubkey=$(babylond tendermint show-validator) \
  --moniker $MONİKER \
- --website "WEBSİTENİZ"
+ --website "WEBSİTENİZ" \
  --identity KEYBASE.İO İD \
  --details "Core Node Community" \
  --chain-id bbn-test-2 \
