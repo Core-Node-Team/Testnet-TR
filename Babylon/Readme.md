@@ -54,7 +54,7 @@ sed -i -e "s|^timeout_commit *=.*|timeout_commit = \"10s\"|" $HOME/.babylond/con
 
 ```
 babylond tx checkpointing create-validator \
- --amount="$AMOUNT" \
+ --amount="1000000ubbn" \
  --pubkey=$(babylond tendermint show-validator) \
  --moniker $MONİKER \
  --website "WEBSİTENİZ"
