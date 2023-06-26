@@ -50,7 +50,7 @@ sed -i -e "s|^timeout_commit *=.*|timeout_commit = \"10s\"|" $HOME/.babylond/con
 # Validatör
 > ### Senkronizasyon durumunuzu kontrol edin
 > - `babylond status 2>&1 | jq .SyncInfo` 
-> -  Ulaştığınız blok yüksekliğini [Explorer]() ile karşılaştırın. Senkronize olduktan sonra `"catching_up": false` çıktısı verir
+> -  Ulaştığınız blok yüksekliğini [Explorer](https://babylon.explorers.guru/) ile karşılaştırın. Senkronize olduktan sonra `"catching_up": false` çıktısı verir
 
 ```
 babylond tx checkpointing create-validator \
