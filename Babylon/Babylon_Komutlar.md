@@ -210,35 +210,36 @@ curl -sS http://localhost:31157/net_info | jq -r ".result.peers[] | "\(.node_inf
 ```
 <h1 align=center> Service Yönetimi </h1>
  
-Servisi Etkinleştir
+## Servisi Etkinleştir
 ```
 sudo systemctl enable babylond
 ```
-Servisi Devre Dışı Bırak
+## Servisi Devre Dışı Bırak
 ```
 sudo systemctl disable babylond
 ```
-Servisi Başlat
+## Servisi Başlat
 ```
 sudo systemctl start babylond
 ```
-Servisi Durdur
+## Servisi Durdur
 ```
 sudo systemctl stop babylond
 ```
-Servisi Yeniden Başlat
+## Servisi Yeniden Başlat
 ```
 sudo systemctl restart babylond
 ```
-Servis Durumunu Kontrol Et
+## Servis Durumunu Kontrol Et
 ```
 sudo systemctl status babylond
 ```
-Servis Loglarını Kontrol Et
+## Servis Loglarını Kontrol Et
 ```
 sudo journalctl -u babylond -f --no-hostname -o cat
 ```
 <h1 align=center> Node Silmek </h1>
+
 ```
 sudo systemctl stop babylond && sudo systemctl disable babylond && sudo rm /etc/systemd/system/babylond.service && sudo systemctl daemon-reload && rm -rf $HOME/.babylond && rm -rf $HOME/babylon && sudo rm -rf $(which babylond)
 ```
