@@ -22,7 +22,7 @@
 
 ## Kurulum yapmak için bu komutu girin
 ```
-curl -sSL -o sarcophagus.sh https://raw.githubusercontent.com/0xSocrates/Sarcophagus-Mainnet/main/sarcophagus.sh && chmod +x sarcophagus.sh && bash ./sarcophagus.sh
+curl -sSL -o sarcophagus.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Sarcophagus/Mainnet/sarcophagus.sh && chmod +x sarcophagus.sh && bash ./sarcophagus.sh
 ```
 ## Tamamlandıktan sonra arkeolog kaydını yapmak için
 ```
