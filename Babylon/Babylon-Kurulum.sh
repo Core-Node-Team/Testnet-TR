@@ -17,7 +17,7 @@ echo -e '\e[0m'
 echo -e ''
 echo -e ''
 sleep 4
-corenodecascadia() {
+corenodebabylon() {
 echo -e "\e[0;34mBabylon Kurulumu Başlatılıyor\033[0m"
 echo -e ''
 sleep 2
@@ -183,6 +183,6 @@ curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Sc
 sleep 1
 source $HOME/.bash_profile
 }
-corenodecascadia
+corenodebabylon
 
 source $HOME/.bash_profile
