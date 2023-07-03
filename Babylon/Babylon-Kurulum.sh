@@ -76,6 +76,7 @@ git clone https://github.com/babylonchain/babylon.git
 cd babylon
 git checkout v0.7.2
 make install
+source $HOME/.bash_profile
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
 echo -e ''
