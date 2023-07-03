@@ -239,6 +239,7 @@ Servis Loglarını Kontrol Et
 sudo journalctl -u cascadiad -f --no-hostname -o cat
 ```
 <h1 align=center> Node Silmek </h1>
+
 ```
 sudo systemctl stop cascadiad && sudo systemctl disable cascadiad && sudo rm /etc/systemd/system/cascadiad.service && sudo systemctl daemon-reload && rm -rf $HOME/.cascadiad && rm -rf $HOME/cascadia && sudo rm -rf $(which cascadiad)
 ```
