@@ -72,10 +72,9 @@ echo -e "\e[0;34mCascadia Kuruluyor\033[0m"
 sleep 1
 exec > /dev/null 2>&1
 cd /$HOME
-git clone https://github.com/CascadiaFoundation/cascadia.git
-cd cascadia
-git checkout v0.1.3
-make install
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.3/cascadiad-v0.1.3-linux-amd64 -o cascadiad
+chmod +x cascadiad
+sudo cp cascadiad /usr/local/bin/cascadiad
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
 echo -e ''
