@@ -74,7 +74,7 @@ exec > /dev/null 2>&1
 cd /$HOME
 git clone https://github.com/CascadiaFoundation/cascadia.git
 cd cascadia
-git checkout v0.1.2
+git checkout v0.1.3
 make install
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
