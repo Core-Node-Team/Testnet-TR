@@ -7,7 +7,7 @@ systemctl stop cascadiad
 cd $HOME
 rm -rf cascadiad
 rm -rf $(which cascadiad)
-https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad -o cascadiad
 chmod +x cascadiad
 sudo cp cascadiad /usr/local/bin/cascadiad
 sudo systemctl start cascadiad
