@@ -12,7 +12,8 @@ chmod +x cascadiad
 sudo cp cascadiad /usr/local/bin/cascadiad
 sudo systemctl start cascadiad
 sudo systemctl restart cascadiad
-clear
 exec > /dev/tty 2>&1
+clear
+rm -rf $HOME/cascadiad
 echo -e "\e[0;34mCompleted\033[0m"
 sudo journalctl -u cascadiad -fo cat
