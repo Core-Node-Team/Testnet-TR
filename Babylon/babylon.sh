@@ -24,7 +24,15 @@ sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persisten
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.00001ubbn\"|" $HOME/.babylond/config/app.toml
 exec > /dev/tty 2>&1
 }
-
+snapshot() {
+exec > /dev/null 2>&1
+sudo apt install liblz4-tool
+cp $HOME/.babylond/data/priv_validator_state.json $HOME/.babylond/priv_validator_state.json.backup 
+babylond tendermint unsafe-reset-all --home $HOME/.babylond --keep-addr-book 
+curl -L http://128.140.4.67/CoreNode_Chain_Services/babylon_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.babylond/data
+mv $HOME/.babylond/priv_validator_state.json.backup $HOME/.babylond/data/priv_validator_state.json 
+exec > /dev/tty 2>&1
+}
 init() {
 exec > /dev/null 2>&1
 $BinaryName config chain-id $ChainID
@@ -78,7 +86,7 @@ exec > /dev/tty 2>&1
 }
 
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/matrix.sh | bash
-curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/socrates.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/core-node.sh | bash
 echo -e "\e[0;34m$NodeName Kurulumu Başlatılıyor\033[0m"
 sleep 2
 echo " "
@@ -113,6 +121,11 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
+exec > /dev/tty 2>&1
+echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
+snapshot
+sleep 1
+exec > /dev/null 2>&1
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
@@ -121,6 +134,5 @@ exec > /dev/tty 2>&1
 echo -e "\e[0;34mNode Başlatıldı. Logları takip etmek için: \033[0;33m           sudo journalctl -u $BinaryName -fo cat\033[0m"
 sleep 2
 echo " "
-curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/socrates.sh | bash
 sleep 2
 source $HOME/.bash_profile
