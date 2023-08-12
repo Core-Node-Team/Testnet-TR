@@ -13,7 +13,7 @@
 # Script ile kurlum için aşağıdaki komutu girin
 
 ```
-curl -sSL -o babylon-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/Babylon-Kurulum.sh && chmod +x babylon-kurulum.sh && bash ./babylon-kurulum.sh
+curl -sSL -o babylon-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/babylon.sh && chmod +x babylon-kurulum.sh && bash ./babylon-kurulum.sh
 ``` 
 ## Manuel kurulum yapmak isteyenler için [Link](https://github.com/molla202/Babylon/blob/main/Turkish.md)
 ## Kurulumu tamamladıktan sonra bu komutu girin
