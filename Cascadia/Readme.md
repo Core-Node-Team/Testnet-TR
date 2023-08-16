@@ -18,7 +18,7 @@
 
 ## Script ile kurulum yapmak için bu komutu girin
 ```
-curl -sSl -o cascadia-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/Cascadia-Kurulum.sh && chmod +x cascadia-kurulum.sh && bash ./cascadia-kurulum.sh
+curl -sSl -o cascadia-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/cascadia.sh && chmod +x cascadia-kurulum.sh && bash ./cascadia-kurulum.sh
 ```
 ## Manuel kurulum yapmak isterseniz: [Link](https://github.com/Core-Node-Team/Testnet-TR/blob/main/Cascadia/Manuel%20Kurulum.md)
 
