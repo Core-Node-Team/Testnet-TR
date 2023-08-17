@@ -42,12 +42,11 @@ sudo tee /etc/systemd/system/elysd.service > /dev/null <<EOF
 [Unit] 
 Description=Elys Network node 
 After=network.target
-
 [Service] 
 Type=simple 
 Restart=on-failure 
 RestartSec=5 
-User=elys 
+User=$USER 
 ExecStart=$(which cosmovisor) run start
 LimitNOFILE=65535
 Environment="DAEMON_NAME=elysd"
@@ -55,7 +54,6 @@ Environment="DAEMON_HOME=$HOME/.elys"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="UNSAFE_SKIP_BACKUP=true"
-
 [Install] 
 WantedBy=multi-user.target
 EOF
