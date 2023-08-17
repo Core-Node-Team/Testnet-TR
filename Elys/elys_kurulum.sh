@@ -32,6 +32,10 @@ $BinaryName config node tcp://localhost:${CustomPort}57
 $BinaryName init $MONIKER --chain-id $ChainID > $HOME/init.txt
 exec > /dev/tty 2>&1
 }
+snapshot() {
+elysd tendermint unsafe-reset-all --home $HOME/.elys
+curl -L http://202.61.243.24/CoreNode_ChainServices/elys_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.elys/data
+}
 cosmovisor() {
 exec > /dev/null 2>&1
 go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
@@ -130,8 +134,10 @@ config
 ge_ad_se_pe
 sleep 2
 echo -e "\e[0;33mTamamlandı\033[0m"
-
 cosmovisor
+echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
+snapshot
+exec > /dev/null 2>&1
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
