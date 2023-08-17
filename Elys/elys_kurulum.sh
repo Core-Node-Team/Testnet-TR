@@ -33,7 +33,9 @@ $BinaryName init $MONIKER --chain-id $ChainID > $HOME/init.txt
 exec > /dev/tty 2>&1
 }
 snapshot() {
+exec > /dev/null 2>&1
 elysd tendermint unsafe-reset-all --home $HOME/.elys
+exec > /dev/tty 2>&1
 curl -L http://202.61.243.24/CoreNode_ChainServices/elys_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.elys/data
 }
 cosmovisor() {
