@@ -1,26 +1,26 @@
 #!/bin/bash
 clear
-BinaryName="noded"
-DirectName=".noded" #database directory
-CustomPort="111"
-NodeName="node"  # project folder
-ChainID=" "
+BinaryName="elysd"
+DirectName=".elys" #database directory
+CustomPort="313"
+NodeName="elys"  # project folder
+ChainID="elystestnet-1"
 install_binary() {
 exec > /dev/null 2>&1
-git clone ...
-cd ...
-git checkout ...
+git clone https://github.com/elys-network/elys.git
+cd elys
+git checkout v0.9.0
 make install
 exec > /dev/tty 2>&1
 }
 ge_ad_se_pe() {
 exec > /dev/null 2>&1
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/---/addrbook.json > $HOME/$DirectName/config/addrbook.json
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/----/genesis.json > $HOME/$DirectName/config/genesis.json
-peers=""
-seeds=""
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/addrbook.json > $HOME/$DirectName/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/genesis.json > $HOME/$DirectName/config/genesis.json
+peers="258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.elystestnet-1.elys.aviaone.com:20273"
+seeds="ae7191b2b922c6a59456588c3a262df518b0d130@elys-testnet-seed.itrocket.net:38656"
 sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persistent_peers = "'$peers'"|' $HOME/$DirectName/config/config.toml
-# min gas price
+sed -i 's/minimum-gas-prices =.*/minimum-gas-prices = "0.0uelys"/g' $HOME/.elys/config/app.toml
 exec > /dev/tty 2>&1
 }
 
@@ -30,6 +30,35 @@ $BinaryName config chain-id $ChainID
 $BinaryName config keyring-backend test
 $BinaryName config node tcp://localhost:${CustomPort}57
 $BinaryName init $MONIKER --chain-id $ChainID > $HOME/init.txt
+exec > /dev/tty 2>&1
+}
+cosmovisor() {
+exec > /dev/null 2>&1
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
+mkdir -p ~/.elys/cosmovisor/genesis/bin && mkdir -p ~/.elys/cosmovisor/upgrades
+cp $(which elysd) ~/.elys/cosmovisor/genesis/bin/
+
+sudo tee /etc/systemd/system/elysd.service > /dev/null <<EOF
+[Unit] 
+Description=Elys Network node 
+After=network.target
+
+[Service] 
+Type=simple 
+Restart=on-failure 
+RestartSec=5 
+User=elys 
+ExecStart=$HOME/.elys/cosmovisor/genesis/bin/ run start
+LimitNOFILE=65535
+Environment="DAEMON_NAME=elysd"
+Environment="DAEMON_HOME=$HOME/.elys"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
+Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
+Environment="UNSAFE_SKIP_BACKUP=true"
+
+[Install] 
+WantedBy=multi-user.target
+EOF
 exec > /dev/tty 2>&1
 }
 
@@ -77,7 +106,7 @@ exec > /dev/tty 2>&1
 }
 
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/matrix.sh | bash
-curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/socrates.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/core-node.sh | bash
 echo -e "\e[0;34m$NodeName Kurulumu Başlatılıyor\033[0m"
 sleep 2
 echo " "
@@ -102,21 +131,8 @@ config
 ge_ad_se_pe
 sleep 2
 echo -e "\e[0;33mTamamlandı\033[0m"
-exec > /dev/null 2>&1
-sudo tee /etc/systemd/system/$BinaryName.service > /dev/null <<EOF
-[Unit]
-Description=$NodeName Node
-After=network-online.target
-[Service]
-User=$USER
-ExecStart=$(which $BinaryName) start --home $HOME/$DirectName
-Restart=on-failure
-RestartSec=3
-LimitNOFILE=65535
-[Install]
-WantedBy=multi-user.target
-EOF
-sleep 2
+
+cosmovisor
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
@@ -126,6 +142,5 @@ echo " "
 echo -e "\e[0;34mNode Başlatıldı. Logları takip etmek için: \033[0;33m           sudo journalctl -u $BinaryName -fo cat\033[0m"
 sleep 2
 echo " "
-curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/socrates.sh | bash
 sleep 2
 source $HOME/.bash_profile
