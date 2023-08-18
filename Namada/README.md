@@ -98,6 +98,7 @@ cd $HOME && git clone https://github.com/anoma/namada && cd namada && git checko
 ```
 screen -S corenode
 ```
+👉Not: ALtaki kodu çalıştırdığınızda çok şey yukluyor son 4 5 dosyada hata verebilir sanırım cpu aşırı kullandımdan crash yiyor yada baska bişi bi kaç deneme tekrarı ile make install dediğimizde kuruluyor. kısaca artık make install dediğimizde bişi kurmuyorsa herşey kurulmuştur :D bele vaziyetin :D
 ```
 cd $HOME && cd namada
 make install
