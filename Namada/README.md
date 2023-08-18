@@ -98,6 +98,7 @@ cd $HOME && git clone https://github.com/anoma/namada && cd namada && git checko
 ```
 screen -S corenode
 ```
+```
 cd $HOME && cd namada
 make install
 ```
