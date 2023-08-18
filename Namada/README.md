@@ -94,6 +94,11 @@ source ~/.bash_profile
 ##  NAMADA Yükle
 ```
 cd $HOME && git clone https://github.com/anoma/namada && cd namada && git checkout $NAMADA_TAG
+```
+```
+screen -S corenode
+```
+cd $HOME && cd namada
 make install
 ```
 ```
