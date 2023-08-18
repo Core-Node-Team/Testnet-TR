@@ -8,7 +8,7 @@
  * [Discord](https://discord.gg/RrQ2S9zg)<br>
  * [Twitter](https://twitter.com/namada)<br>
  * [Resmi Dokuman](https://docs.namada.net/introduction/testnets)<br>
-## NOT: ödül bilgisi var var ben öle diola :D hadi yine iyisiniz. değiştir yazmamışssak elleşmeyin.
+## NOT: Ödül konusunda net bilgi yok olabilirde olmayabilirde. 
 
 ##  Gereksinimler
 | Bileşenler | Minimum Gereksinimler | 
