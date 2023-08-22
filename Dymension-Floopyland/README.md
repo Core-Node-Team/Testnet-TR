@@ -119,6 +119,10 @@ dymd tx staking create-validator \
   --chain-id froopyland_100-1 \
   -y
   ```
+## delege
+```
+dymd tx staking delegate valoper-adres 450000000udym --from cüzdan-adı --chain-id froopyland_100-1 --gas-adjustment 1.8 -y
+```
 ## Silme Kodu
  ```
 sudo systemctl stop dymd
