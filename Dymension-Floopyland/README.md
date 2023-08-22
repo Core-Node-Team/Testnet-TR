@@ -118,3 +118,12 @@ dymd tx staking create-validator \
   --chain-id froopyland_100-1 \
   -y
   ```
+## Silme Kodu
+ ```
+sudo systemctl stop dymd
+sudo systemctl disable dymd
+sudo rm -rf /etc/systemd/system/dymd.service
+sudo rm $(which dymension)
+sudo rm -rf $HOME/.dymension
+sed -i "/DYMENSİON_/d" $HOME/.bash_profile
+ ```
