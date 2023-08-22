@@ -16,9 +16,10 @@ sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip -
 ```
 # go kuruyoruz
 ```
-wget -O go_install.sh https://raw.githubusercontent.com/itrocket-team/testnet_guides/main/utils/go_install.sh && chmod +x go_install.sh && ./go_install.sh
-source ~/.bash_profile
-go version
+sudo rm -rvf /usr/local/go/
+wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
+rm go1.19.3.linux-amd64.tar.gz
 ```
 
 
