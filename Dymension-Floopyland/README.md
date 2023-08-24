@@ -93,7 +93,8 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 
-
+peers=$(curl -s https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Dymension-Floopyland/peer.txt)
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.dymension/config/config.toml
 
 sudo systemctl daemon-reload
 sudo systemctl enable dymd
