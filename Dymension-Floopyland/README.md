@@ -14,7 +14,12 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git make wget htop tmux build-essential jq make lz4 gcc unzip -y  
 ```
-# go kuruyoruz
+# go kuruyoruz ( bazısında problem oluyor go version çıktı kontrol edin birden fazla go kurulumu ekledim )
+```
+wget -O go_install.sh https://raw.githubusercontent.com/itrocket-team/testnet_guides/main/utils/go_install.sh && chmod +x go_install.sh && ./go_install.sh
+source ~/.bash_profile
+go version
+```
 ```
 sudo rm -rvf /usr/local/go/
 wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
