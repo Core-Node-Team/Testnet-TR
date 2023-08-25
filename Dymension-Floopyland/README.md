@@ -21,7 +21,21 @@ wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
 rm go1.19.3.linux-amd64.tar.gz
 ```
-
+Not: go version çıktısı alamazsanız altakini deneyin.
+```
+cd $HOME
+! [ -x "$(command -v go)" ] && {
+VER="1.19.3"
+wget "https://golang.org/dl/go$VER.linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf "go$VER.linux-amd64.tar.gz"
+rm "go$VER.linux-amd64.tar.gz"
+[ ! -f ~/.bash_profile ] && touch ~/.bash_profile
+echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
+source $HOME/.bash_profile
+}
+[ ! -d ~/go/bin ] && mkdir -p ~/go/bin
+```
 
 # cüzdan adı ve node adını değiştirin.
 ```
