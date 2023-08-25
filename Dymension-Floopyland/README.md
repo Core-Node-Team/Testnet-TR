@@ -126,7 +126,7 @@ dymd keys add cüzdan-adı
 ```
 dymd keys add cüzdan-adı --recover
 ```
-# hiç bişi değiştirmiyoruz olduğu gibi en başta ayarladık zaten
+# hiç bişi değiştirmiyoruz olduğu gibi en başta ayarladık zaten ( ancak cüzdan import ettiyseniz $WALLET kısmını silip verdiğiniz ismi yazınız)
 ```
 dymd tx staking create-validator \
   --amount 1000000udym \
