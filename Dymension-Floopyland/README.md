@@ -16,7 +16,7 @@ sudo apt install curl git make wget htop tmux build-essential jq make lz4 gcc un
 ```
 # go kuruyoruz ( bazısında problem oluyor go version çıktı kontrol edin birden fazla go kurulumu ekledim )
 ```
-wget -O go_install.sh https://raw.githubusercontent.com/itrocket-team/testnet_guides/main/utils/go_install.sh && chmod +x go_install.sh && ./go_install.sh
+wget -O go_install.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Dymension-Floopyland/go_install.sh && chmod +x go_install.sh && ./go_install.sh
 source ~/.bash_profile
 go version
 ```
