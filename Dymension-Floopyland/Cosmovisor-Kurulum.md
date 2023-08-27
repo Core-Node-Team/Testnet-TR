@@ -81,8 +81,8 @@ dymd config node tcp://localhost:14657
 dymd init $MONIKER --chain-id froopyland_100-1
 
 
-curl -Ls https://snapshots.kjnodes.com/dymension-testnet/genesis.json > $HOME/.dymension/config/genesis.json
-curl -Ls https://snapshots.kjnodes.com/dymension-testnet/addrbook.json > $HOME/.dymension/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/molla202/Dymension-Froopyland/main/genesis.json
+curl -Ls https://raw.githubusercontent.com/molla202/Dymension-Froopyland/main/addrbook.json
 
 
 sed -i -e "s|^seeds *=.*|seeds = \"3f472746f46493309650e5a033076689996c8881@dymension-testnet.rpc.kjnodes.com:14659\"|" $HOME/.dymension/config/config.toml
