@@ -16,6 +16,12 @@
 ## Proje ve testnet süreci ile ilgili tüm sorularınız için [Türkiye Telegram](https://t.me/CascadiaTR) grubuna katılabilirsiniz.
 ## Sistem gereksinimleri `4CPU 8GB RAM 160GB SSD`
 
+## Peer Eklemek isterseniz
+```
+peers=$(curl -s https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/peer.txt)
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.cascadiad/config/config.toml
+systemctl restart cascadiad && journalctl -u cascadiad -fo cat
+```
 ## Script ile kurulum yapmak için bu komutu girin
 ```
 curl -sSl -o cascadia-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/cascadia.sh && chmod +x cascadia-kurulum.sh && bash ./cascadia-kurulum.sh
