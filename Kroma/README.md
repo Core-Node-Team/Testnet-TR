@@ -28,11 +28,15 @@ wget -q -O kroma.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/
 * kurulum sırasında çakışan port olursa kurmaz. 
 * Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
 * Kurulum sırasında rpc soracak [infura](https://www.infura.io/) yada [alchemy](https://dashboard.alchemy.com/) den almanız gerekiyor üye olarak. sepolia ağı rpc oluşturulacak.
-
 ## Log Komutu
 ```
 cd $HOME/kroma-up/ && docker compose --profile validator logs -f
 ```
+### Yetki konusu
+👉 Not: kroma-up dosyasının yetki kısmında değişiklik gerekiyor aşağıdaki kodu yazın. kurulum bittikten sonra. ve `reboot` yazarak reset atın olmazza tekrar yazıp tekrar reboot edin sonra log komutu ile bakınız permisson denied hatası almıyorsanız akıyordur zaten yok hata verip exit code çıkar bu işlemi yapmassanız
+```
+sudo chmod -R a+rwx kroma-up
+```       
 ## Deposit İşlemi
 ```
 docker exec kroma-validator kroma-validator deposit --amount 1000000000000000000
