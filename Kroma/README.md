@@ -28,7 +28,7 @@ wget -q -O kroma.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/
 * kurulum sırasında çakışan port olursa kurmaz. 
 * Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
 * Kurulum sırasında rpc soracak [infura](https://www.infura.io/) yada [alchemy](https://dashboard.alchemy.com/) den almanız gerekiyor üye olarak. sepolia ağı rpc oluşturulacak.
-* Aşağıda manuel kulanıma bir göz atın fikir edinmek için.
+
 ## Log Komutu
 ```
 cd $HOME/kroma-up/ && docker compose --profile validator logs -f
