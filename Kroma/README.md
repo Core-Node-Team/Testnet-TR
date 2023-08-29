@@ -37,6 +37,8 @@ cd $HOME/kroma-up/ && docker compose --profile validator logs -f
 ```
 docker exec kroma-validator kroma-validator deposit --amount 1000000000000000000
 ```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/5b74a753-32fd-4334-8173-4653514f5416)
+
 ## Durdurma Ve Silme
 ```
 cd $HOME/kroma-up/ && docker compose --profile validator down -v
