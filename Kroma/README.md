@@ -21,7 +21,7 @@
 
 # Oto Kurulum
 ```
-wget -q -O kroma.sh https://raw.githubusercontent.com/molla202/Kroma/main/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
+wget -q -O kroma.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Kroma/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
 ```
 * Not:
   * kurulum sırasında çakışan port olursa kurmaz. 
