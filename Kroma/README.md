@@ -23,8 +23,36 @@
 ```
 wget -q -O kroma.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Kroma/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
 ```
-* Not:
-  * kurulum sırasında çakışan port olursa kurmaz. 
-  * Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
-  * Kurulum sırasında rpc soracak infura aalchemy den almanız gerekiyor üye olarak.
-  * Aşağıda manuel kulanıma bir göz atın fikir edinmek için.
+
+👉 Not:
+* kurulum sırasında çakışan port olursa kurmaz. 
+* Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
+* Kurulum sırasında rpc soracak [infura](https://www.infura.io/) yada [alchemy](https://dashboard.alchemy.com/) den almanız gerekiyor üye olarak. sepolia ağı rpc oluşturulacak.
+* Aşağıda manuel kulanıma bir göz atın fikir edinmek için.
+## Log Komutu
+```
+cd $HOME/kroma-up/ && docker compose --profile validator logs -f
+```
+## Deposit İşlemi
+```
+docker exec kroma-validator kroma-validator deposit --amount 1000000000000000000
+```
+## Durdurma Ve Silme
+```
+cd $HOME/kroma-up/ && docker compose --profile validator down -v
+```
+
+
+## Kroma Explorer
+
+[https://blockscout.sepolia.kroma.network](https://blockscout.sepolia.kroma.network)
+
+### Sepolia Faucet
+
+[https://sepoliafaucet.com/](https://sepoliafaucet.com/)
+
+https://sepolia-faucet.pk910.de/
+
+
+
+
