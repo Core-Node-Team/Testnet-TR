@@ -18,7 +18,7 @@
 | CPU |	2+ |
 | RAM	| 4+ GB |
 | Storage	| 250 GB SSD |
-
+👉 Not: Odül bilgisi bulunmamaktadır.
 # Oto Kurulum
 ```
 wget -q -O kroma.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Kroma/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
