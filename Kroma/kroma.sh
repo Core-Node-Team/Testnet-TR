@@ -46,7 +46,7 @@ if ss -tulpen | awk '{print $5}' | grep -q ":30303-$" ; then
 	exit
 fi
 read -p "Paste your ETH_PRIVATE_KEY: " PRIVATE_KEY
-read -p "Paste your Ethereum Sepolia RPC URL(EXAMPLE, DO NOT COPY: https://eth-sepolia.g.alchemy.com/v2/corenode.info): " SEPOLIA_RPC_URL
+read -p "Paste your Ethereum Sepolia RPC URL(EXAMPLE, BU DEGIL KENDINIZ ALICAKSINIZ: https://eth-sepolia.g.alchemy.com/v2/corenode.info): " SEPOLIA_RPC_URL
 
 sudo apt update
 sudo apt install git ca-certificates curl gnupg unzip wget -y
