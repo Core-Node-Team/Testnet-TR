@@ -87,7 +87,7 @@ NOT: control panelinden yapanlar. önce stoplasın biraz beklesin sonra restart 
 
 
 ## Port Değiştirme.
-Not: içlerinde portlar yazıyor. değiştirmeniz gerekeni değiştirip ctrl+x y enterla kaydedin sonra opsideye reset atın ve portları kontrol edin.
+Not: içlerinde portlar yazıyor. değiştirmeniz gerekeni değiştirip ctrl+x y enterla kaydedin sonra opsideye reset atın ve portları kontrol edin. bazı yerlerden v2 v3 yazıyor sizde hangisi kurulu ise onu yazarsınız 
 port kontrol
 ```
 sudo lsof -nP -iTCP -sTCP:LISTEN
