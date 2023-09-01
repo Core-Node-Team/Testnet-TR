@@ -27,6 +27,10 @@ cd ./testnet-auto-install-v3
 
 /———OPSİDE RESETLEME———-\
 
+* control panelinden durdur restart et.v2 ise aşağıda v3 kısmını v2 yaz
+```
+bash testnet-auto-install-v3/opside-chain/control-panel.sh
+```
 ———-durdurma komutları v2———-
 ```
 cd
