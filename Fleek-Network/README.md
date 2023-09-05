@@ -93,7 +93,10 @@ lgtn run
 ```
 screen -ar light
 ```
-
+### tekrar keyleri görmek için 
+```
+cd lightning && cargo run -- keys show
+```
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
