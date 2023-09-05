@@ -52,21 +52,22 @@ sudo apt-get install protobuf-compiler
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
-git clone https://github.com/fleek-network/lightning.git
+git clone https://github.com/fleek-network/lightning-node.git
 cd lightning
 ```
 ```
 cargo +stable build
 ```
+```
+sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
+```
 * `cargo +stable build` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning --version`
-* version: `lightning 0.1.0`✅
+* daha sonra version kontrol edin: 📖`lgtn --version`
+* version: `lightning-node 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
+
 ```
-sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
-```
-```
-cargo run -- keys generate
+lgtn keys generate
 ```
 ```
 screen -S light
@@ -80,7 +81,9 @@ cd lightning
 ```
 lgtn run
 ```
-* discord üzerinden işlem yapılması gerekiyor. 
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/d9ac7ef6-ba60-4952-a52d-c2a8cb92ae31)
+
+* discord üzerinden işlem yapmamız gerekiyor şuan aktif değil detayları paylaşacağız.
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
 * Screen'e Tekrar Girmek için
