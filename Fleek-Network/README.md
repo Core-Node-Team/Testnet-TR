@@ -56,7 +56,7 @@ git clone https://github.com/fleek-network/lightning-node.git
 cd lightning
 ```
 ```
-cargo +stable build
+cargo run -- keys generate
 ```
 ```
 sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
