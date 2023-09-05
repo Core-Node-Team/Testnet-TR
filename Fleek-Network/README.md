@@ -55,7 +55,7 @@ sudo apt-get install protobuf-compiler
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
-git clone https://github.com/fleek-network/lightning-node.git
+git clone https://github.com/fleek-network/lightning.git
 cd lightning-node
 ```
 ```
