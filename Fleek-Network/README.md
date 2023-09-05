@@ -58,7 +58,7 @@ cd lightning
 ```
 cargo +stable build
 ```
-* `make install` uzun sürer.
+* `cargo +stable build` uzun sürer.
 * daha sonra version kontrol edin: 📖`lightning --version`
 * version: `lightning 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
