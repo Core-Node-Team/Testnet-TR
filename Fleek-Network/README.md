@@ -63,10 +63,10 @@ cargo +stable build
 * version: `lightning 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
 ```
-sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lightning
+sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
 ```
 ```
-lightning keys generate
+cargo run -- keys generate
 ```
 ```
 screen -S light
@@ -78,8 +78,9 @@ cd $HOME
 cd lightning
 ```
 ```
-lightning run
+lgtn run
 ```
+* discord üzerinden işlem yapılması gerekiyor. 
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
 * Screen'e Tekrar Girmek için
