@@ -69,6 +69,7 @@ sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
 ```
 lgtn keys generate
 ```
+NOT: çıkan bilgileri kaydedin
 ```
 screen -S light
 ```
@@ -83,7 +84,9 @@ lgtn run
 ```
 ![image](https://github.com/molla202/Fleek-Network/assets/91562185/d9ac7ef6-ba60-4952-a52d-c2a8cb92ae31)
 
-* discord üzerinden işlem yapmamız gerekiyor şuan aktif değil detayları paylaşacağız.
+* discord üzerinden işlem yapmamız gerekiyor şuan aktif değil detayları paylaşacağız.bilgileri giriyoruz 2 dane key ve ip adresi
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b3289542-9cc3-4868-a723-3536d19c5a4a)
+
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
 * Screen'e Tekrar Girmek için
