@@ -68,7 +68,7 @@ screen -S light
 ```
 cd $HOME
 cd lightning-node 
-lightning
+lightning-node
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
