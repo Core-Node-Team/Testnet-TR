@@ -20,10 +20,7 @@
 | ✔️ RAM	| 8 GB |
 | ✔️ Storage	| ~GB SSD |
 
-## OTO Kurulum.
-```
-curl -o fleek.sh -fsSL https://raw.githubusercontent.com/molla202/Fleek-Network/main/fleek.sh && chmod +x fleek.sh && ./fleek.sh
-```
+
 ### 🏠 Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
@@ -52,23 +49,23 @@ sudo apt-get install protobuf-compiler
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
-git clone https://github.com/fleek-network/lightning-node.git
-cd lightning-node
+git clone https://github.com/fleek-network/lightning.git
+cd lightning
 ```
 ```
 make install
 ```
 * `make install` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning-node --version`
-* version: `lightning-node 0.1.0`✅
+* daha sonra version kontrol edin: 📖`lightning --version`
+* version: `lightning 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
 ```
 screen -S light
 ```
 ```
 cd $HOME
-cd lightning-node 
-lightning-node
+cd lightning 
+lightning
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
