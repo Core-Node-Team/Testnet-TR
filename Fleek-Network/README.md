@@ -11,6 +11,7 @@
 * [Fleek Network Twitter](https://twitter.com/fleek_net)<br>
 * [Fleek Network DOC](https://docs.fleek.network/docs)<br>
 
+# DUYURUYU BEKLEYİN...
 
  ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
