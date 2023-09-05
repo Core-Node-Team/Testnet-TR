@@ -16,7 +16,7 @@
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
 | ✔️ CPU |	4 |
-| ✔️ RAM	| 8 GB |
+| ✔️ RAM	| 16 GB |
 | ✔️ Storage	| ~GB SSD |
 
 ### RESMİ OTO KURULUM UBUNTU 22 HERSEY DAHİL
@@ -61,7 +61,7 @@ cargo +stable build
 ```
 sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
 ```
-* `cargo +stable build` uzun sürer.
+* `cargo +stable build` uzun sürer. hata verirse tekrar gir hata vermeyeseye kadar.
 * daha sonra version kontrol edin: 📖`lgtn --version`
 * version: `lightning-node 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
