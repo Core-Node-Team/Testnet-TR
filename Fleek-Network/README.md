@@ -56,7 +56,7 @@ sudo apt-get install protobuf-compiler
 ```
 cd $HOME 
 git clone https://github.com/fleek-network/lightning.git
-cd lightning-node
+cd lightning
 ```
 ```
 cargo +stable build
