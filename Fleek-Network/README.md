@@ -27,7 +27,7 @@ sudo apt update; sudo apt upgrade
 ```
 ### 🤖 Gerekli olanlar
 ```
-sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc
+sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc sudo apt-get gcc-multilib
 ```
 ### 🤖 Rustup kuruyoruz
 ✏️ Not: 1 seçeceksiniz. daha önce kuruluysa kurmanıza gerek yok.
@@ -53,11 +53,17 @@ git clone https://github.com/fleek-network/lightning.git
 cd lightning
 ```
 ```
-make install
+make install   cargo build
 ```
+sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
 * `make install` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning --version`
-* version: `lightning 0.1.0`✅
+* daha sonra version kontrol edin: 📖`lgtn --version`
+* version: `lgtn 0.1.0`✅
+
+### KEy oluşturalım.
+```
+lgtn keys generate
+```
 ### 🚀 Screen'de node'u çalıştıralım.
 ```
 screen -S light
@@ -65,7 +71,7 @@ screen -S light
 ```
 cd $HOME
 cd lightning 
-lightning
+lgtn run
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
@@ -75,8 +81,8 @@ screen -ar light
 ```
 
 ### ♻️ Key dosyası yedekleme
-* Dosyalarınız bu konumda yer alıyor. ~/.lightning-node/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
+* Dosyalarınız bu konumda yer alıyor. ~/.lightning/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
-nano ~/.lightning-node/config.toml
+nano ~/.lightning/config.toml
 ```
 
