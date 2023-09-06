@@ -7,7 +7,7 @@ NodeName="Cascadia"  # project folder
 ChainID="cascadia_6102-1"
 install_binary() {
 exec > /dev/null 2>&1
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad-v0.1.4-linux-amd64 -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.5/cascadiad-v0.1.5-linux-amd64 -o cascadiad
 sudo chmod u+x cascadiad
 sudo cp cascadiad /usr/local/bin/cascadiad
 rm -rf cascadiad
@@ -115,7 +115,7 @@ Description=$NodeName Node
 After=network-online.target
 [Service]
 User=$USER
-ExecStart=$(which $BinaryName) start --home $HOME/$DirectName
+ExecStart=$(which $BinaryName) start --home $HOME/$DirectName --chain-id cascadia_6102-1
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
