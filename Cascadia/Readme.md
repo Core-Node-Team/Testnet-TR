@@ -16,6 +16,14 @@
 ## Proje ve testnet süreci ile ilgili tüm sorularınız için [Türkiye Telegram](https://t.me/CascadiaTR) grubuna katılabilirsiniz.
 ## Sistem gereksinimleri `4CPU 8GB RAM 160GB SSD`
 
+### Güncelleme v0.1.5
+```
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.5.sh | bash
+```
+### Güncelleme v0.1.4
+```
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.4.sh | bash
+```
 ## Peer Eklemek isterseniz
 ```
 peers=$(curl -s https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/peer.txt)
