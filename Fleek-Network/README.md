@@ -88,6 +88,7 @@ cd lightning
 cargo +stable build --release
 ```
 ```
+sudo rm -f "/usr/local/bin/lgtn"
 sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
 ```
 * `cargo +stable build` uzun sürer. hata verirse tekrar gir hata vermeyeseye kadar.
