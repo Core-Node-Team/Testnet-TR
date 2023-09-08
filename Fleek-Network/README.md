@@ -62,7 +62,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 source ~/.profile
 source ~/.cargo/env
-rustup update
 ```
 ### 🤖 Protobuf ve sccache Kuruyoruz
 ```
