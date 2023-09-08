@@ -42,6 +42,7 @@ sudo apt install screen curl tar wget jq build-essential make clang pkg-config l
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 ```
+rustup update
 source ~/.profile
 source ~/.cargo/env
 ```
@@ -82,28 +83,29 @@ lgtn keys generate
 ### servis olarak çalıştıralım...
 ```
 sudo tee /etc/systemd/system/lightning.service > /dev/null <<EOF
-    [Unit]
-    Description=Fleek Network Node lightning service
+[Unit]
+Description=Fleek Network Node lightning service
     
-    [Service]
-    User=root
-    Type=simple
-    MemoryHigh=32G
-    RestartSec=15s
-    Restart=always
-    ExecStart=lgtn -c /$HOME/lightning.toml run
-    StandardOutput=append:/var/log/lightning/output.log
-    StandardError=append:/var/log/lightning/diagnostic.log
+[Service]
+User=root
+Type=simple
+MemoryHigh=32G
+RestartSec=15s
+Restart=always
+ExecStart=lgtn -c /$HOME/lightning.toml run
+StandardOutput=append:/var/log/lightning/output.log
+StandardError=append:/var/log/lightning/diagnostic.log
     
-    [Install]
-    WantedBy=multi-user.target
-    EOF
-
-
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+```
 sudo mkdir -p /var/log/lightning
 sudo touch /var/log/lightning/output.log
 sudo touch /var/log/lightning/diagnostic.log
-
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable lightning
 sudo systemctl restart lightning
@@ -118,6 +120,8 @@ sudo systemctl status lightning.service
 ```
 tail -f /var/log/lightning/output.log
 ```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/c641da48-87f1-4eec-810f-56d2c7b67b51)
+
 ```
 tail -f /var/log/lightning/diagnostic.log
 ```
