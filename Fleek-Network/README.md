@@ -23,7 +23,7 @@
 ```
 curl https://get.fleek.network | bash
 ```
-NOT: eğer ilk kurup whitelist onaylandıysa alttan update edin...
+NOT: eğer ilk kurup waitlist onaylandıysa alttan update edin...
 ```
 curl https://get.fleek.network/update | bash
 ```
