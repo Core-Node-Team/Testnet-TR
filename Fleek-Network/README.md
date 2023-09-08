@@ -46,6 +46,29 @@ NOT: ekranda gözükmesse keyler...
 ```
 lgtn keys show
 ```
+```
+sudo systemctl daemon-reload
+sudo systemctl enable lightning
+sudo systemctl restart lightning
+```
+### durumuna bakalım...
+```
+sudo systemctl status lightning.service
+```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/67730088-6dd2-4f3d-9c4b-f7587898e3e7)
+
+### Log kontrol
+```
+tail -f /var/log/lightning/output.log
+```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/c641da48-87f1-4eec-810f-56d2c7b67b51)
+
+```
+tail -f /var/log/lightning/diagnostic.log
+```
+
+* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir. discord üzerinden whitelist işlemini onaylatırsak olacak dalga dalga olaucak dıyorlar.
+
 # MANUEL KURULUM....
 ### 🏠 Update edelim
 ```bash
