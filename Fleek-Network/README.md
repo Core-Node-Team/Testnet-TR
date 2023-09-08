@@ -92,7 +92,7 @@ Type=simple
 MemoryHigh=32G
 RestartSec=15s
 Restart=always
-ExecStart=lgtn -c /$HOME/lightning.toml run
+ExecStart=lgtn run
 StandardOutput=append:/var/log/lightning/output.log
 StandardError=append:/var/log/lightning/diagnostic.log
     
@@ -126,7 +126,7 @@ tail -f /var/log/lightning/output.log
 tail -f /var/log/lightning/diagnostic.log
 ```
 
-* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir.
+* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir. discord üzerinden whitelist işlemini onaylatırsak olacak dalga dalga olaucak dıyorlar.
 
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
