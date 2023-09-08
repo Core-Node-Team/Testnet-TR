@@ -42,7 +42,10 @@ NOT: eğer ilk kurup waitlist onaylandıysa alttan update edin...
 ```
 curl https://get.fleek.network/update | bash
 ```
-
+NOT: ekranda gözükmesse keyler...
+```
+lgtn keys show
+```
 ### 🏠 Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
