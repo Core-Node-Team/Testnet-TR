@@ -56,7 +56,8 @@ git clone -b testnet-alpha-0 https://github.com/fleek-network/lightning.git ~/li
 cd lightning
 ```
 ```
-cargo run -- keys generate
+
+cargo +stable build --release
 ```
 ```
 sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
