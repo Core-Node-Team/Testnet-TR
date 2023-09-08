@@ -48,7 +48,13 @@ cargo install sccache
 ```
 sudo apt-get install protobuf-compiler
 ```
-
+### diski ram oalrka kullanalım kurarken hata vermesin diye
+```
+sudo fallocate -l 10240M /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
@@ -56,7 +62,6 @@ git clone -b testnet-alpha-0 https://github.com/fleek-network/lightning.git ~/li
 cd lightning
 ```
 ```
-
 cargo +stable build --release
 ```
 ```
@@ -65,32 +70,55 @@ sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
 * `cargo +stable build` uzun sürer. hata verirse tekrar gir hata vermeyeseye kadar.
 * daha sonra version kontrol edin: 📖`lgtn --version`
 * version: `lightning-node 0.1.0`✅
-### 🚀 Screen'de node'u çalıştıralım.
+### 🚀 key alma işlemi...
 
 ```
 lgtn keys generate
 ```
+### servis olarak çalıştıralım...
 ```
-screen -S light
-```
-```
-cd $HOME
-```
-```
-cd lightning
-```
-```
-lgtn run
-```
-![image](https://github.com/molla202/Fleek-Network/assets/91562185/d9ac7ef6-ba60-4952-a52d-c2a8cb92ae31)
+sudo tee /etc/systemd/system/lightning.service > /dev/null <<EOF
+    [Unit]
+    Description=Fleek Network Node lightning service
+    
+    [Service]
+    User=root
+    Type=simple
+    MemoryHigh=32G
+    RestartSec=15s
+    Restart=always
+    ExecStart=lgtn -c /$HOME/lightning.toml run
+    StandardOutput=append:/var/log/lightning/output.log
+    StandardError=append:/var/log/lightning/diagnostic.log
+    
+    [Install]
+    WantedBy=multi-user.target
+    EOF
 
-* discord üzerinden işlem yapmamız gerekiyor şuan aktif değil detayları paylaşacağız.
-* Loglar akıyorsa sorun yok.
-* Loglar aktıktan sonra CTRL + A + D ile çıkın.
-* Screen'e Tekrar Girmek için
+
+sudo mkdir -p /var/log/lightning
+sudo touch /var/log/lightning/output.log
+sudo touch /var/log/lightning/diagnostic.log
+
+sudo systemctl daemon-reload
+sudo systemctl enable lightning
+sudo systemctl restart lightning
 ```
-screen -ar light
+### durumuna bakalım...
 ```
+sudo systemctl status lightning.service
+```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/67730088-6dd2-4f3d-9c4b-f7587898e3e7)
+
+### Log kontrol
+```
+tail -f /var/log/lightning/output.log
+```
+```
+tail -f /var/log/lightning/diagnostic.log
+```
+
+* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir.
 
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
