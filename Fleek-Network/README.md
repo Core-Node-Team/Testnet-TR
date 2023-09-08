@@ -60,9 +60,9 @@ sudo apt install screen curl tar wget jq build-essential make clang pkg-config l
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 ```
-rustup update
 source ~/.profile
 source ~/.cargo/env
+rustup update
 ```
 ### 🤖 Protobuf ve sccache Kuruyoruz
 ```
