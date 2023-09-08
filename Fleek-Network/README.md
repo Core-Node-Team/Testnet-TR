@@ -46,6 +46,7 @@ NOT: ekranda gözükmesse keyler...
 ```
 lgtn keys show
 ```
+# MANUEL KURULUM....
 ### 🏠 Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
