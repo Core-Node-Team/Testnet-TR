@@ -3,7 +3,8 @@
   <h1>Fleek-Network </h1>
 </div>
 
-![ghjklz](https://github.com/molla202/Fleek-Network/assets/91562185/83355aab-fdc4-46c8-bbe4-14f2cc19e76b)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/74fad132-3c1f-4bf8-a90a-9afa5cba3f64)
+
 
 * [CoreNode Telegram](https://t.me/corenodechat)<br>
 * [CoreNode Twitter](https://twitter.com/corenodeHQ)<br>
@@ -55,13 +56,15 @@ sudo systemctl restart lightning
 ```
 sudo systemctl status lightning.service
 ```
-![image](https://github.com/molla202/Fleek-Network/assets/91562185/67730088-6dd2-4f3d-9c4b-f7587898e3e7)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/87cb0357-c904-406a-ba4f-0484fc2ca2e2)
+
 
 ### Log kontrol
 ```
 tail -f /var/log/lightning/output.log
 ```
-![image](https://github.com/molla202/Fleek-Network/assets/91562185/c641da48-87f1-4eec-810f-56d2c7b67b51)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/26aa640f-43e5-4fec-a8d6-c2aa4957435b)
+
 
 ```
 tail -f /var/log/lightning/diagnostic.log
@@ -156,13 +159,13 @@ sudo systemctl restart lightning
 ```
 sudo systemctl status lightning.service
 ```
-![image](https://github.com/molla202/Fleek-Network/assets/91562185/67730088-6dd2-4f3d-9c4b-f7587898e3e7)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/87cb0357-c904-406a-ba4f-0484fc2ca2e2)
 
 ### Log kontrol
 ```
 tail -f /var/log/lightning/output.log
 ```
-![image](https://github.com/molla202/Fleek-Network/assets/91562185/c641da48-87f1-4eec-810f-56d2c7b67b51)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/26aa640f-43e5-4fec-a8d6-c2aa4957435b)
 
 ```
 tail -f /var/log/lightning/diagnostic.log
