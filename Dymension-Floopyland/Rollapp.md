@@ -63,17 +63,17 @@ roller config export
 
 * bu çıktıyı kaydedelim dursun.
 * şimdide bu olusturduğumuz jsonu düzenleyeceğiz...
-
+```
 cd rollapp-registry
-
+```
 not: aşağıya buraya yazan yere sizin rollapp idnizi yazacaksınız mesel cd molla_456453-1 gibi idniz neyse o dosyaya giricez.
-
+```
 cd BURAYA
-
+```
 * json adınız rollap id adınız. BURAYA kısmına diyelim rollapp idniz molla_456453-1     nano molla_456453-1.json gibi yazıcaz anliyomusun mubarek... :D
-
+```
 nano BURAYA.json
-
+```
 * Aşağıdaki yerleri bulup ip adresini yazıcaksınız vps'in. sonra ctrl+x y enter dicez kaydedicez...
 
 ``"rpc": "http://IP-ADRES:26657"``
