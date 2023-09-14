@@ -4,7 +4,7 @@
 
 
 
-
+- `Bir elin nesi var iki elin sesi var` ✔️TESTNETRUN ✔️NODEİST ✔️CORENODE 
 - Evet arkadaslar. platformu test için keplr ve mm cüzdanı işimizi görecektir.
 - Daha önce hiç `dymensiona` girmediyseniz de `rollape` rolu dağıtımında faucet açıklabilir ancak erkenden yer almak için coin ihtiyacı için grubdan isteyebilirsiniz.
 - https://discord.gg/gkAeHSWr  Buradan discorda giriniz. `rollfam` rolunuz varsa faucet açıktır
@@ -19,9 +19,19 @@ $request  dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 mytestnetrunrollapp_3448-1
 ```
 $request  dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 nodeist_6452664-1
 ```
-- Faucet aldık tokenleride aldık sıra geldi işlemlere. https://portal.dymension.xyz/ibc sitesine gidelim cüzdanları otomatik bağlayıp ağları ekiyor zaten.
+- Faucet aldık tokenleride aldık sıra geldi işlemlere.
+ ```
+https://portal.dymension.xyz/ibc
+```
+ sitesine gidelim cüzdanları otomatik bağlayıp ağları ekiyor zaten.
 - Buradan mm yada keplr seçerek ağlar arası tarnsferler yapalım. olurda `rollape fam` rolu gelir ve platform için olur ki bence öyle olacak erkenden işlemlere başlamış oluruz.
 - Unutmayın DYM harici rollapın kendi tokenınden de talep ettik onlarıda kullanın
+- Son olarak hub sayfasından stake işlemide yapalım. delege redelege ve undelege işlemleri Search kısmından aratarak validatorlere ulaşabilirsiniz.
+```
+https://portal.dymension.xyz/hub
+```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/1a447a91-622f-4b3a-9eed-22cae4f101b3)
+
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b0657e11-71be-4fbc-ae70-78b8ef75082b)
 
