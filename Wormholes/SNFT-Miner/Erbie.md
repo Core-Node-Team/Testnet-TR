@@ -27,7 +27,7 @@ sudo apt-get install wget && sudo apt-get update && sudo apt install jq git && s
 ```
 ## Erbie Kurulum
 ```
-wget -O erbie_install.sh https://docker.erbie.io/erbie_install.sh && sudo bash erbie_install.sh
+wget -O erbie_install.sh https://raw.githubusercontent.com/erbieio/erbie/master/erbie_install.sh && sudo bash erbie_install.sh
 ```
 
 👉 Private keyimizi girelim.
