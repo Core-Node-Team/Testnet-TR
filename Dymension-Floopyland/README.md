@@ -115,6 +115,9 @@ EOF
 peers=$(curl -s https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Dymension-Floopyland/peer.txt)
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.dymension/config/config.toml
 
+peers=55730501bda0d20bd0e88163aa948c26a2806367@89.163.157.64:36656,1e92b79a713b18dffd4e075ddfa1dab87dd215a9@70.34.197.147:26656,863978ef83da4b76a8dc61787c8edd2027ab4abf@81.0.220.100:26656,e7857b8ed09bd0101af72e30425555efa8f4a242@148.251.177.108:20556,3410e9bc9c429d6f35e868840f6b7a0ccb29020b@46.4.5.45:20556
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.dymension/config/config.toml
+
 sudo systemctl daemon-reload
 sudo systemctl enable dymd
 sudo systemctl restart dymd && sudo journalctl -u dymd -fo cat
