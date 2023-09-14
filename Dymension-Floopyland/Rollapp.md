@@ -15,6 +15,7 @@
    - curl -L https://dymensionxyz.github.io/roller/install.sh | bash
    - zaten ``roller run`` dediğiniz de size migrate dicek ``roller migrate`` yazıcaksınız. eğer olursa  ``roller tx fund-faucet`` bu kod çalışır. olmazsa olmaz :D
    - Diyelim yeni kurmak zorunda kaldık ``roller config init --interactive`` çıkan adresleri kaydediniz... bu arada roller id nizi direk isim yazın mesela ahmet mehmet die sayı çizgi rakam yazmayın kendi eklesin
+   - faucet dicorda açıksa alınız... `$request cüzdan-adresi` kendi coninizi almak için `$request cüzdan-adresiniz rollapp-idniz`
    -  celestia faucet kapalıdır. açalım :D ``https://faucet-arabica-9.celestia-arabica.com/``
    -  node kurduysanız coin vardır ordan aktarıcaz roller kurunca 3 adres verior 2si dym  celestiayı yukarıda faucetten hallettik dymleride node cüzdandan aktaralım artık ne kadar varsa ufaktan atalım..
    -  ``dymd tx bank send node-cüzdan-adresi atacağın-dym-adresi 100dym --gas auto --gas-adjustment 1.5 -y``
