@@ -127,6 +127,8 @@ git push -u origin main
 
 ![image](https://github.com/molla202/Dymension/assets/91562185/45e20818-d8b7-4691-a2d4-2b6cda0042e2)
 
+- Eğer olmuyorsa dosyayı pcnize çekin sonra manuel githuba yükleyin. neden bukadar anlattın derseniz öğrenmekten zarar çıkmaz...
+
 * şimdide bu repoya pr çekelim
 
 ![image](https://github.com/molla202/Dymension/assets/91562185/95b23072-75df-4ecc-a2a4-ab3b4501bb03)
