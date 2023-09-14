@@ -8,7 +8,7 @@
 - Evet arkadaslar. platformu test için keplr ve mm cüzdanı işimizi görecektir.
 - Daha önce hiç `dymensiona` girmediyseniz de `rollape` rolu dağıtımında faucet açıklabilir ancak erkenden yer almak için coin ihtiyacı için grubdan isteyebilirsiniz.
 - https://discord.gg/gkAeHSWr  Buradan discorda giriniz. `rollfam` rolunuz varsa faucet açıktır
-- Froopyland-faucetkanalından `$request cüzdan-adresi` yazarak coin talep ediniz
+- Froopyland-faucet kanalından `$request cüzdan-adresi` yazarak coin talep ediniz
 - Aynı zamanda rollapp tokenlerinden de talep edebiliriniz. aşağıdakileri değiştirmeden yazınız.
 ```
 $request  dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 corenode_1303285-1
