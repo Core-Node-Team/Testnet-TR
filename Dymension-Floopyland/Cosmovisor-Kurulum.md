@@ -91,6 +91,8 @@ curl -Ls https://raw.githubusercontent.com/molla202/Dymension-Froopyland/main/ad
 
 sed -i -e "s|^seeds *=.*|seeds = \"3f472746f46493309650e5a033076689996c8881@dymension-testnet.rpc.kjnodes.com:14659\"|" $HOME/.dymension/config/config.toml
 
+peers=55730501bda0d20bd0e88163aa948c26a2806367@89.163.157.64:36656,1e92b79a713b18dffd4e075ddfa1dab87dd215a9@70.34.197.147:26656,863978ef83da4b76a8dc61787c8edd2027ab4abf@81.0.220.100:26656,e7857b8ed09bd0101af72e30425555efa8f4a242@148.251.177.108:20556,3410e9bc9c429d6f35e868840f6b7a0ccb29020b@46.4.5.45:20556
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.dymension/config/config.toml
 
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.025udym,0.025uatom\"|" $HOME/.dymension/config/app.toml
 
