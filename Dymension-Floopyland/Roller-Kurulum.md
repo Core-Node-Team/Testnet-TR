@@ -34,7 +34,7 @@ https://dymension.explorers.guru/
 ```
 ```
 # Bu komuttan sonra has been successfully  çıktısı almalısınız.
-roller register
+roller tx register
 ```
 ```console
 # Çalıştıralım
