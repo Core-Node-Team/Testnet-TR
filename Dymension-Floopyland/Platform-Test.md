@@ -50,10 +50,7 @@ Stake işlemi için `TestNetRun-Nodeist-CoreNode` RollApp sayfalarındaki (linkl
 
 ![alt text](https://i.hizliresim.com/m4bv8ro.png)
 
-```
-https://portal.dymension.xyz/hub
-```
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/1a447a91-622f-4b3a-9eed-22cae4f101b3)
+
 
 
 
