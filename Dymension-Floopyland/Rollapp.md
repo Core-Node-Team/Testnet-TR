@@ -142,9 +142,11 @@ git push -u origin main
 
 ![image](https://github.com/molla202/Dymension/assets/91562185/697ebde4-a798-407f-bc23-b739f7231bb9)
 
-* daha sonra discorda gidiyoruz...  cr famfam kanalına gidiyoruz
+* daha sonra discorda gidiyoruz...  cr list-your-rollapp kanalına gidiyoruz
 
-![image](https://github.com/molla202/Dymension/assets/91562185/18b9016b-93ec-4bc5-8123-1bba20a2b5db)
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/f8cf73bb-a2e7-4f12-8c5d-d8d1511d22f6)
+
 
 * burası suan kapalı ama açılacak ve buraya $pair molla_34521-1  gibi yazıcaz sizin rollapp idniz neyse onu yazıcaksınız
 
