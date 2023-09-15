@@ -150,7 +150,7 @@ git push -u origin main
 
 ``$pair BURAYA``
 
-* yöneticilerden biri ayrı kanal açıp size rollapınızın linkini vericek daha sonra prtaldan kendiniz görebilicek ve işlemler yapmak için insanları yonlendirebiliceksiniz. hayırlı olsun
+* yöneticilerden biri ayrı kanal açıp size rollapınızın linkini vericek daha sonra prtaldan kendiniz görebilicek ve işlemler yapmak için insanları yonlendirebiliceksiniz. lütfen kanala attııktan sonra sağ tıklayıp alt kanal olusturun ve buraya pr sayfanızı atın  hayırlı olsun
 
 https://portal.dymension.xyz/rollapps
 
