@@ -54,7 +54,7 @@ mkdir -p $ROLLAPP_ID/logos
 cd $ROLLAPP_ID && touch $ROLLAPP_ID.json
 ```
 
-* şimdi sunucumuzdaki dosyanın içine logo muzu atıcaz desteklediği uzantılar SVG, PNG, or JPG attığınız resmide rollap id yapıcaz arkadaslar mesela idmiz molla_456453-1 buysa molla_456453-1.png gibi
+* şimdi sunucumuzdaki dosyanın içine logo muzu atıcaz desteklediği uzantılar SVG, PNG, or JPG attığınız resmide rollap id yapıcaz arkadaslar mesela idmiz molla_456453-1 buysa molla_456453-1.png gibi 50kb üstü kabul etmıyor dosya boyutunu düşürmeniz lazım https://www.resizepixel.com/ buradan yapabilirsiniz
 * winscple yada mobo uzerinden buraya yazan yer sizin rollapp idniz adında klasör  `/root/rollapp-registry/BURAYA/logos/`
 * şimdide yaptığımız ayarlamaları çıktı alalım.
 ```
