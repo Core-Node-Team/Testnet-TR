@@ -22,6 +22,10 @@
    -  şimdide register edelim ``roller tx register``
    -  şimdide çalıştıralım ``roller run``
    -  kanal bulunca alttan devamke...
+   -  ÇOK ÖNEMLİ : http://SUNUCU-İP-ADRESİNİ-YAZ:26657/status   Bunu kendi browserinize yazınız bir çıktı almıyorsanız rollerda soru vardır düzgün çalışıyorsa çıktı şöle olmalı
+
+![image](https://github.com/molla202/Dymension/assets/91562185/e67610ed-5d04-49c9-9c9b-b23637e3882b)
+
 
 
 * roller kurdunuz kanal buldu mu ? evetse devam edelim
