@@ -23,7 +23,11 @@
 ```
 curl -sSL -o ziesha.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Ziesha-Network/corenode-ziesha.sh && chmod +x ziesha.sh && bash ziesha.sh
 ```
-> ## Node kurulumunu tamamladıktan sonra bu komut ile validatörünüzü kaydedin
+> ## Kurulum tamamlandıktan sonra bu komutu girin
+```
+source "$HOME/.cargo/env"
+```
+> ## Senkronize olduktan sonra bu komut ile validatörünüzü kaydedin
 ```
 bazuka wallet register-validator --commission <commision>
 ```

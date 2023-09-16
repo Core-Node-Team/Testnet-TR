@@ -6,7 +6,7 @@
 ![240452111-1e5e96ef-77de-4db3-bf78-42304b162bc8](https://github.com/enzifiri/asdasd/assets/76253089/7a6be974-2ee9-4457-ae11-15b49ab73a79)
 
 
-#  | [Twitter](https://twitter.com/OpsideZK) | [Discord](https://discord.gg/opside) | [Website](https://opside.network/) | [Telegram](https://t.me/OpsideTurkish) |
+#  | [Twitter](https://twitter.com/OpsideZK) | [Discord](https://discord.gg/opside) | [Website](https://opside.network/) | [Telegram](https://t.me/corenodechat) |
 
 </div>
 
