@@ -24,7 +24,8 @@
    -  kanal bulunca alttan devamke...
    -  ÇOK ÖNEMLİ : http://SUNUCU-İP-ADRESİNİ-YAZ:26657/status   Bunu kendi browserinize yazınız bir çıktı almıyorsanız rollerda soru vardır düzgün çalışıyorsa çıktı şöle olmalı
 
-![image](https://github.com/molla202/Dymension/assets/91562185/ff5d44db-f234-4b94-be7e-814b9779d24f)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/5e4998ef-128e-466c-96ac-5a160b09e5d1)
+
 
 
 
