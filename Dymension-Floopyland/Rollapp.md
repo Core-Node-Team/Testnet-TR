@@ -166,8 +166,11 @@ https://portal.dymension.xyz/rollapps
 NOT: corenode onaylandığın işlem yapın arkadaslar. ibc bolumunden topluluğun gücünü gösterelim...
 
 
-
-
+### rollerdan baska kişilere kendi tokeninden atma
+NOT: dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 faucetin discordaki adresi orayada gondermek ısterseniz aşağıdaki kodu yazmanız yeterli sadece kanal kısmını değiştiriceksiniz sizde ne bulduysa artıkın.tabi baskasına atacaksanız adresi değiştiriniz 
+```
+rollapp_evm tx ibc-transfer transfer transfer channel-0 dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 500000000000000000uMGA --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp
+```
 
 
 
