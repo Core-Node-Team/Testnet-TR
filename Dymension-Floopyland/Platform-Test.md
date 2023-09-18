@@ -10,7 +10,7 @@
 - Daha önce hiç `dymensiona` girmediyseniz de `rollape` rolu dağıtımında faucet açıklabilir ancak erkenden yer almak için coin ihtiyacı için grubdan isteyebilirsiniz.
 - https://discord.gg/gkAeHSWr  Buradan discorda giriniz. `rollfam` rolunuz varsa faucet açıktır
 - Froopyland-faucet kanalından `$request cüzdan-adresi` yazarak coin talep ediniz
-- Aynı zamanda rollapp tokenlerinden de talep edebiliriniz. aşağıdakileri değiştirmeden yazınız.`TNR-NDST-CRN`
+- Aynı zamanda rollapp tokenlerinden de talep edebiliriniz. aşağıdakileri adresinizi yazınız.`TNR-NDST-CRN`
 ```
 $request cüzdan-adresiniz corenode_1303285-1
 ```
