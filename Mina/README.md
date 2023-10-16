@@ -69,7 +69,7 @@ chmod 600 ~/.mina-env
 ```
 sudo tee /usr/lib/systemd/user/mina.service > /dev/null << EOF
 [Unit]
-[Unit]
+
 Description=Mina Daemon Service
 After=network.target
 StartLimitIntervalSec=60
