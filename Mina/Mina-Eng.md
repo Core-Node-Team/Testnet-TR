@@ -1,6 +1,6 @@
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/42bd08c8-a812-4a31-beaf-ecfaa698e94e)
 
-NOT: ubuntu 20
+NOT: Need ubuntu 20
 
 ### Mina
 ```
