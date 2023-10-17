@@ -1,6 +1,6 @@
 <h1 align="center"> Roller Kurulumu </h1>
 
-👉 roller için node veya validatör kurmanıza gerek yok.
+👉 roller için node veya validatör kurmanıza gerek yok. 👉 burda kurup kanal bulduktan sonra soldan rollapp sayfasından devam ediniz
 
 ```
 curl -L https://dymensionxyz.github.io/roller/install.sh | bash
