@@ -136,7 +136,7 @@ git push -u origin main
 
 - Eğer olmuyorsa dosyayı pcnize çekin sonra manuel githuba yükleyin. neden bukadar anlattın derseniz öğrenmekten zarar çıkmaz...
 
-* şimdide bu repoya pr çekelim
+* şimdide bu repoya pr çekelim. gördüğünüz gibi  kendimize forkladığımız repodan pr çekiyoruz. eğer dosyayı pcnize çektiyseniz add files kısmında upload var ordan hazırladığınız dosyayı upload edebilirsiniz. 
 
 ![image](https://github.com/molla202/Dymension/assets/91562185/95b23072-75df-4ecc-a2a4-ab3b4501bb03)
 
