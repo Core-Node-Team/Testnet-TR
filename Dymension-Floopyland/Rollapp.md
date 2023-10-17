@@ -85,7 +85,7 @@ cd BURAYA
 nano BURAYA.json
 ```
 * şimdi export dediğimizde çıkan çıktıyı kaydetmiştik bi yere ordan kopyalayıp  gerekli değişiklikleri aşağıdaki gibi yapıcaz... tabi içinde zaten yazıyorsa sıkıntı yok
-* Aşağıdaki yerleri bulup ip adresini yazıcaksınız vps'in. sonra ctrl+x y enter dicez kaydedicez...
+* Aşağıdaki yerleri bulup ip adresini yazıcaksınız vps'in. sonra ctrl+x y enter dicez kaydedicez... Portlarınızı değiştirdiyseniz ona göre yazın hee
 
 ``"rpc": "http://IP-ADRES:26657"``
 
