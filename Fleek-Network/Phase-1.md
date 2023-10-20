@@ -62,7 +62,18 @@ tail -f /var/log/lightning/output.log
 ```
 tail -f /var/log/lightning/diagnostic.log
 ```
-
+#### oto detay öğrenme
+```
+curl https://get.fleek.network/node_details | bash
+```
+#### oto healt check
+```
+curl https://get.fleek.network/healthcheck | bash
+```
+#### healt check
+```
+http://sunucuipsi:4230/health
+```
 # MANUEL KURULUM....
 ### 🏠 Update edelim
 ```bash
