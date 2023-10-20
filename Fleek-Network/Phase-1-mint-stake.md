@@ -28,7 +28,22 @@ Currency symbol: tFLK
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/2ca27c5a-3046-4295-a7ab-bd47f186dc16)
 
 
+Not: çıktılar ilk basta 
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/0cebd5fc-ab0a-4cea-b915-938c3b7b58f4)
+
+- stake işleminden sonra `sudo systemctl restart lightning` diyoruz ve akmaya başlıyor.
 
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3872fdbb-fabc-4002-afd2-052ee344113a)
+
+```
+tail -f /var/log/lightning/output.log
+```
+
+- Healt check
+```
+http://sunucuipsi:4230/health
+```
 
 
