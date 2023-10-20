@@ -20,13 +20,14 @@
 | ✔️ RAM	| 16 GB |
 | ✔️ Storage	| ~GB SSD |
 
+```
 ufw allow 4230
 ufw allow 4200
 ufw allow 6969
 ufw allow 18000
 ufw allow 18101
 ufw allow 18102
-
+```
 ### RESMİ OTO KURULUM UBUNTU 22 HERSEY DAHİL
 
 ```
