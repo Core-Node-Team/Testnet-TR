@@ -20,6 +20,8 @@
 | ✔️ RAM	| 16 GB |
 | ✔️ Storage	| ~GB SSD |
 
+
+### Portları açınız. daha sonra ister manuel ister oto kurulumu tercih edebilirsiniz.
 ```
 ufw allow 4230
 ufw allow 4200
