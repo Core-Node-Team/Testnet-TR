@@ -186,7 +186,7 @@ nano ~/.lightning/config.toml
 ```
 
 -------------------
-### Docker versiyon (alternatif) YAPIM AŞAMASINDA !!!
+### Docker versiyon (alternatif) YAPIM AŞAMASINDA !!! BURASI DAHİL DEĞİLDİR. ALTERNATİFTİR VE BİTMEMİŞTİR...
 
 ### Update & docker kurulum 
 ```
