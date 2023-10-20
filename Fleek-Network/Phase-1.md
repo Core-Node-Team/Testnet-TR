@@ -79,9 +79,13 @@ curl https://get.fleek.network/node_details | bash
 curl https://get.fleek.network/healthcheck | bash
 ```
 #### healt check
+Not: internet tarayıcısına ipnizi yazarak bakıcaksınız
 ```
 http://sunucuipsi:4230/health
 ```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b5d5703a-4274-4872-a8ae-d69dd24c3689)
+
+
 # MANUEL KURULUM....
 ### 🏠 Update edelim
 ```bash
