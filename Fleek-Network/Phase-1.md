@@ -223,6 +223,7 @@ sudo docker run --name lightning-node -d \
     -p 18000:18000 \
     -p 18101:18101 \
     -p 18102:18102 \
+    --restart=always \
     --mount type=bind,source=$HOME/.lightning,target=/root/.lightning \
     -it ghcr.io/fleek-network/lightning:latest
 ```
