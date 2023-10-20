@@ -162,6 +162,7 @@ sudo systemctl status lightning.service
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/87cb0357-c904-406a-ba4f-0484fc2ca2e2)
 
 ### Log kontrol
+Not: loglar akmaya bilir hata görebilirsiniz. aşağıda miint ve stake sayfası var ordan devam edin
 ```
 tail -f /var/log/lightning/output.log
 ```
@@ -170,6 +171,10 @@ tail -f /var/log/lightning/output.log
 ```
 tail -f /var/log/lightning/diagnostic.log
 ```
+
+# Devamı aşağıdan
+
+https://github.com/Core-Node-Team/Testnet-TR/blob/main/Fleek-Network/Phase-1-mint-stake.md
 
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
