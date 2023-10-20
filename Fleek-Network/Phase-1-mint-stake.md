@@ -23,7 +23,7 @@ Currency symbol: tFLK
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/5ce0327b-4217-4c35-8d70-c08ab2dea706)
 
-- `Node Public Key` `Consensus Public Key` ve Sunucu `IP` ekliyoruz. Stake diyruz nerden bulucaz ben görmedim diyenler için `lgtn keys show` diyoruz
+- `Node Public Key` `Consensus Public Key` ve Sunucu `IP` ekliyoruz. Stake diyruz nerden bulucaz ben görmedim diyenler için `lgtn keys show` diyoruz. yada `curl https://get.fleek.network/node_details | bash` 
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/2ca27c5a-3046-4295-a7ab-bd47f186dc16)
 
