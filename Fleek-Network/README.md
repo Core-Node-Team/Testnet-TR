@@ -178,3 +178,31 @@ tail -f /var/log/lightning/diagnostic.log
 ```
 nano ~/.lightning/config.toml
 ```
+
+### Docker versiyon (alternatif) YAPIM AŞAMASINDA !!!
+
+### Update & docker kurulum 
+```
+sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin
+```
+```
+sudo docker run --name lgtn -d \
+    -p 4230:4230 \
+    -p 4200:4200 \
+    -p 6969:6969 \
+    -p 18000:18000 \
+    -p 18101:18101 \
+    -p 18102:18102 \
+    --mount type=bind,source=$HOME/.lightning,target=/root/.lightning \
+    -it ghcr.io/fleek-network/lightning:latest
+```
+
+### keyleri görmek için
+```
+docker exec -it lgtn lgtn keys show
+```
+### key olusturmamışsa olusturmak için
+```
+docker exec -it lgtn lgtn keys generate
+```
+
