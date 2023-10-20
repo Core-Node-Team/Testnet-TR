@@ -238,5 +238,5 @@ docker exec -it lightning-node lgtn keys generate
 
 ## Log
 ```
-sudo docker logs -f lightning-node
+sudo docker logs -f lightning-node --since 1m
 ```
