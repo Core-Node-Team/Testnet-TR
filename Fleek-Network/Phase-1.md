@@ -169,7 +169,16 @@ sudo systemctl daemon-reload
 sudo systemctl enable lightning
 sudo systemctl restart lightning
 ```
-### durumuna bakalım...
+# Durumuna bakalım...
+
+#### oto detay öğrenme
+```
+curl https://get.fleek.network/node_details | bash
+```
+#### oto healt check
+```
+curl https://get.fleek.network/healthcheck | bash
+```
 ```
 sudo systemctl status lightning.service
 ```
