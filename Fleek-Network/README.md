@@ -178,6 +178,7 @@ tail -f /var/log/lightning/diagnostic.log
 ```
 nano ~/.lightning/config.toml
 ```
+NOT: MİNT STAKE SAYFASINDAN DEVAM EDİN
 
 ### Docker versiyon (alternatif) YAPIM AŞAMASINDA !!!
 
