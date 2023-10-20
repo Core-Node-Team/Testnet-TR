@@ -229,11 +229,11 @@ sudo docker run --name lightning-node -d \
 
 ### keyleri görmek için
 ```
-docker exec -it lightning-node lightning-node keys show
+docker exec -it lightning-node lgtn keys show
 ```
 ### key olusturmamışsa olusturmak için
 ```
-docker exec -it lightning-node lightning-node keys generate
+docker exec -it lightning-node lgtn keys generate
 ```
 
 ## Log
