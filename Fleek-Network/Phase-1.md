@@ -176,12 +176,16 @@ tail -f /var/log/lightning/diagnostic.log
 
 https://github.com/Core-Node-Team/Testnet-TR/blob/main/Fleek-Network/Phase-1-mint-stake.md
 
+---------------
+
+
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
 nano ~/.lightning/config.toml
 ```
 
+-------------------
 ### Docker versiyon (alternatif) YAPIM AŞAMASINDA !!!
 
 ### Update & docker kurulum 
