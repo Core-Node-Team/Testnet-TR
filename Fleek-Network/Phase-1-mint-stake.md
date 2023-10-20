@@ -14,7 +14,7 @@ Currency symbol: tFLK
 - **Faucet:** **https://faucet.testnet.fleek.network/**
 
 - Siteye cüzdanınız bağlayın ve mint edin
-- 
+
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/65db344a-a6a9-4af5-bae9-7c2d92b0acad)
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/5c4916ec-76b6-4fe2-a8ae-5a1d00e6ff1a)
