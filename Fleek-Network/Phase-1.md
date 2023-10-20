@@ -192,3 +192,8 @@ docker exec -it lightning-node lightning-node keys show
 ```
 docker exec -it lightning-node lightning-node keys generate
 ```
+
+## Log
+```
+sudo docker logs -f lightning-node
+```
