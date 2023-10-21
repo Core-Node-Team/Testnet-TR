@@ -4,6 +4,7 @@ NOT: ubuntu 20
 ```
 sudo ufw allow 22
 sudo ufw allow 8301
+sudo ufw allow 8302
 sudo ufw allow 3089
 ```
 ### Mina
