@@ -16,7 +16,7 @@
 ## Proje ve testnet süreci ile ilgili tüm sorularınız için [Türkiye Telegram](https://t.me/CascadiaTR) grubuna katılabilirsiniz.
 ## Sistem gereksinimleri `4CPU 8GB RAM 160GB SSD`
 
-### Güncelleme v0.1.6 Block=2,820,000
+### Güncelleme v0.1.7 Block=2,820,000
 ```
 curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.7.sh | bash
 ```
