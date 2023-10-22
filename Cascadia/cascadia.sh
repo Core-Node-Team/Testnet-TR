@@ -7,7 +7,7 @@ NodeName="Cascadia"  # project folder
 ChainID="cascadia_6102-1"
 install_binary() {
 exec > /dev/null 2>&1
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.7/cascadiad-v0.1.5-linux-amd64 -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.7/cascadiad-v0.1.7-linux-amd64 -o cascadiad
 sudo chmod u+x cascadiad
 sudo cp cascadiad /usr/local/bin/cascadiad
 rm -rf cascadiad
