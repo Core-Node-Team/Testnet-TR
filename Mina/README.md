@@ -57,7 +57,7 @@ mina libp2p generate-keypair -privkey-path /root/keys/keys
 ```
 nano ~/.mina-env
 ```
-* --external-ip `ipniziyazınız`  buraya sunucu ipnizi yazınız
+
 * nano ~/.mina-env dedikten sonra altaki kodu kopyalayıp içine yapıstırıyoruz mubarekler sona duzeltilicek yerleri düzeltin 
 ```
 MINA_PRIVKEY_PASS="şifre"
