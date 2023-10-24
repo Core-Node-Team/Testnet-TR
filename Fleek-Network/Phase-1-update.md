@@ -1,5 +1,5 @@
 ### Otocular tek kod
-Not: su lgtn diyerek lgtn kullanıcısına geçip deneyin hata alırsanız
+Not: su lgtn diyerek lgtn kullanıcısına geçip deneyin hata alırsanız. cd ~/fleek-network/lightning bide bu dizinde denersiniz
 ```
 curl -sS https://get.fleek.network/update | bash
 ```
