@@ -1,4 +1,5 @@
 ### Otocular tek kod
+Not: su lgtn diyerek lgtn kullanıcısına geçip deneyin hata alırsanız
 ```
 curl -sS https://get.fleek.network/update | bash
 ```
