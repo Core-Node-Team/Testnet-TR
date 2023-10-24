@@ -1,5 +1,9 @@
+### Otocular tek kod
+```
+curl -sS https://get.fleek.network/update | bash
+```
+### Update Manuelciler
 
-### Update
 ```
 cd
 cd ~/lightning
