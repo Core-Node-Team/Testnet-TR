@@ -25,6 +25,14 @@ cd ./testnet-auto-install-v3
 ./install-ubuntu-1.0.sh
 ```
 
+NOT: size sorucak mm adresi validator sayısı gibi mnemonickleri sorucak bunları yazıp bitiriceksiniz. standar kurulumda mnemonickelrden sonra sou sıfır olan bir yerde sıfır girmeniz gerekıyor
+
+
+
+
+
+-------------------
+
 /———OPSİDE RESETLEME———-\
 
 * control panelinden durdur restart et.v2 ise aşağıda v3 kısmını v2 yaz
