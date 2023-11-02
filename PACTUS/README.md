@@ -5,7 +5,7 @@
 
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/fc854b16-a554-419c-afbf-f99de720060a)
 
-#  | [Twitter](https://twitter.com/pactuschain/) | [Discord](https://discord.gg/zdX6wNUFvg) | [Website](https://pactus.org/) | [Github](https://github.com/pactus-project) |
+#  | [Twitter](https://twitter.com/pactuschain/) | [Discord](https://discord.gg/pactus-795592769300987944) | [Website](https://pactus.org/) | [Github](https://github.com/pactus-project) |
 
 </div>
 
