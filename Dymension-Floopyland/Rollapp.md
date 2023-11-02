@@ -22,7 +22,7 @@
    -  şimdide register edelim ``roller tx register``
    -  şimdide çalıştıralım ``roller run``
    -  kanal bulunca alttan devamke...
-   -  ÇOK ÖNEMLİ : http://SUNUCU-İP-ADRESİNİ-YAZ:26657/status   Bunu kendi browserinize yazınız bir çıktı almıyorsanız rollerda soru vardır düzgün çalışıyorsa çıktı şöle olmalı
+   -  ÇOK ÖNEMLİ : http://SUNUCU-İP-ADRESİNİ-YAZ:26657/status   Bunu kendi browserinize yazınız bir çıktı almıyorsanız rollerda soru vardır düzgün çalışıyorsa çıktı şöle olmalı. aynı zamanda 1317 ve 8545 portunada bakınız
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/5e4998ef-128e-466c-96ac-5a160b09e5d1)
 
