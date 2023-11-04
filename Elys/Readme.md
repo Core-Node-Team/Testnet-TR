@@ -8,5 +8,5 @@ curl -sSL -o elys_kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Te
 
 ### V0.13.0 UPGRADE
 ```
-curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.7.sh | bash
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/upgrade-v0.13.0.sh | bash
 ```
