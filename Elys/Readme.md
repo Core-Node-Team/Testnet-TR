@@ -6,3 +6,7 @@
 curl -sSL -o elys_kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/elys_kurulum.sh && chmod +x elys_kurulum.sh && bash ./elys_kurulum.sh
 ```
 
+### V0.13.0 UPGRADE
+```
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.7.sh | bash
+```
