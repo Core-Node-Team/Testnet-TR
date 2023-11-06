@@ -47,9 +47,8 @@ docker pull elixirprotocol/validator:testnet-2
 docker run -d --restart unless-stopped --name ev elixir-validator
 ```
 ### Log kontrol
-Not: `docker ps` yazıp container numarasını öğrenelim
 ```
-docker logs container-name -f
+docker logs -f --tail 100 ev
 ```
 ### Platform üzerinden işlemler
 
