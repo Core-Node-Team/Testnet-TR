@@ -37,7 +37,9 @@ nano Dockerfile
 Not: alttaki çıktı için yeni bir mm adresi olusturun goerli eth faucet bulun... gerekli olanalrı yazıp ctrl x y enterla kaydedip çıkın.
 
 ENV ADDRESS=metamask adresi
+
 ENV PRIVATE_KEY=private key
+
 ENV VALIDATOR_NAME=discord adı
 
 ### Güncel image çekip Çalıştıralım
