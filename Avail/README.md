@@ -1,7 +1,10 @@
-# Avail's Clash of Nodes Testnet
-## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
 
-![image](https://github.com/molla202/Avail/assets/91562185/6b726a06-d16c-4455-89a5-321ead104e37)
+
+
+# <h1 align="center">Avail's Clash of Nodes Testnet</h1>
+![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
+
+## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
 
 Not: Ubuntu 22 istiyore
 
