@@ -15,22 +15,16 @@ sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential
 ```
 
-### Create Avail File
+### Dosya olusturuyoruz
 ```
-cd ..
-```
-
-### Create Avail File in home Directory
-```
+cd
 sudo mkdir /root/avail-node/
 ```
-
-### Go To Avail File You Created
 ```
 cd /root/avail-node/
 ```
 
-### Download The Required Files
+### Dosyaları çekiyoruz
 ```
 wget https://github.com/availproject/avail/releases/download/v1.8.0.0/amd64-ubuntu-2204-data-avail.tar.gz
 ```
