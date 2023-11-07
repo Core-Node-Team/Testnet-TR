@@ -35,9 +35,9 @@ lsof -i -P -n | grep LISTEN
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install screen
 
-curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v0.16.0/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v0.16.1/pactus_downloader.sh | sh
 
-cd pactus-cli_0.16.0
+cd pactus-cli_0.16.1
 
 ### 12 kelimenizi alın ve şifrenizi yedekleyin.
 ./pactus-daemon init -w ~/pactus --testnet
