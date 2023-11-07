@@ -1,4 +1,5 @@
 # Avail's Clash of Nodes Testnet
+## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
 
 ![image](https://github.com/molla202/Avail/assets/91562185/6b726a06-d16c-4455-89a5-321ead104e37)
 
@@ -103,9 +104,9 @@ rm -rf /root/avail-node
 
 -----------------------------------------------------
 # Eski kurulum olan yere kurucaksanız
-
+```
 rm -rf /root/avail-node/data
-
+```
 
 ```
 cd /root/avail-node/
