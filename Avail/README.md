@@ -76,7 +76,7 @@ journalctl -f -u availd.service
 
 ### Cüzdan olusturma
 
-https://kate.avail.tools/
+https://goldberg.avail.tools/#/staking
 
 not: telemetry den ismizi yazarak bakınız.
 
