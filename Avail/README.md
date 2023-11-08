@@ -74,6 +74,9 @@ sudo systemctl status availd.service
 journalctl -f -u availd.service
 ```
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6a28e76b-c059-4878-9956-ecea4d8ac268)
+
+
 ### Cüzdan olusturma
 
 https://goldberg.avail.tools/#/staking
