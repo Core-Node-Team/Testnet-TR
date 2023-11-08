@@ -66,6 +66,10 @@ sudo systemctl restart availd
 journalctl -u availd -fo cat
 ```
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6c65bb10-3b46-4df8-a5b3-7cbf59e58cdc)
+
+
+
 #### Son blok görüntüleme
 ```
 curl "http://localhost:7000/v1/latest_block"
