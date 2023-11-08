@@ -100,7 +100,7 @@ rm -rf /root/avail-node
 ```
 
 -----------------------------------------------------
-# Eski kurulum olan yere kurucaksanız
+# Eski kurulum olan yere kurucaksanız - Old setup kate and new chain setup here
 ```
 rm -rf /root/avail-node/data
 ```
@@ -160,6 +160,22 @@ journalctl -f -u availd.service
 ```
 
 
+-------------------------------------------------------------------
+Not:seçilirseniz validator nasıl olursunuz...
+
+https://goldberg.avail.tools/#/staking/actions
+
+- Sağ kısımdan validatore tıklıyoruz
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/d1a6161f-6c49-46a7-82f4-2f290de3e6ea)
+
+- Sezon keyi olusturmustuk bundaki `"result":` dan sonraki uzun adresi kopyalıyoruz
+- validator demiştik açılan ekranda stake miktarı belirliyoruz ileri diyoruz
+- ve bizden key soruyor yazıyoruz ileri deyip cüzdandan onaylıyoruz. unutmayın polkadot cüzdanı lazım.
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/52029b07-2968-4495-a34c-8113b78cd865)
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/788a4687-66f7-4dd4-8faf-1d6e42e32591)
 
 
 
