@@ -22,8 +22,8 @@ bash testnet-auto-install-v2/opside-chain/control-panel.sh
 
 - 2. Import an existing mnemonic
 
-![image](https://github.com/molla202/Lumoz-Extra-Validator/assets/91562185/36b386ca-6c93-497d-af12-9244781612bf)
 
+- ekleyeceğiniz validator sayısına 1 dıyorsunuz sonra cüzdan adresi şifresi mnemonic soruyor ve son kısımlada 0 sıfır yazan yerede 1 yazıyoruz
 - evet bundan sonrası yine ilk kurulumda olduğu gibi cüzdan adresi aynı cüzdan adresimizi mnemonic sorucak onu yazıyoruz ve eklıyor.
 - ancak tabi bunla bitmiyor 2.ci bir deposit dosyamız olustu pcye kaydediyoruz winscple yada mobodan çek bırakla.
 - peki nerde bu dosya. dosyaların hengisi olduğunu anlamak için dosyayı metn belgesi oalrak açıp içersindeki public keyinize bakabilirsiniz. lumoz siteden zaten public keyinizi biliyorsunuz. ordaki adresden farklı olan yeni validator. yedek alıysanız yedek dosyanın adından farklı olanıda yeni validator olduğunu anlayabilirsiniz.
