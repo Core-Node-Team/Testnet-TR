@@ -9,7 +9,10 @@ make build
 sudo mv $HOME/elys/build/elysd $(which elysd)
 sudo systemctl restart elysd && sudo journalctl -u elysd -fo cat
 ```
-
+### OTO
+```
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/upgrade-v0.14.0.sh | bash
+```
 ### Cosmovisor Upgrade
 ```
 cd $HOME
