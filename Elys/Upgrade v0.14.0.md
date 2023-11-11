@@ -29,3 +29,8 @@ mkdir -p $HOME/.elys/cosmovisor/upgrades/v0.14.0/bin
 mv build/elysd $HOME/.elys/cosmovisor/upgrades/v0.14.0/bin/
 rm -rf build
 ```
+### Change block time
+```
+sed -i -e "s/^timeout_commit *=.*/timeout_commit = \"3s\"/" $HOME/.elys/config/config.toml
+sudo systemctl restart elysd && sudo journalctl -u elysd -f -o cat
+```
