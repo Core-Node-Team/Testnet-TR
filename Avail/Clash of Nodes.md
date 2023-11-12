@@ -2,6 +2,8 @@
 - Avail discord : https://discord.gg/MBHHyb3t
 - `goldberg faucet` kanalına gidin `/deposit` yazın çıkan kısayola tıklayın ve cüzdan adresinizi ekleyin
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9b383414-80ef-4dab-a752-d2177c1195a4)
+
 
 https://docs.availproject.org/clash-of-nodes/challenges/
 
