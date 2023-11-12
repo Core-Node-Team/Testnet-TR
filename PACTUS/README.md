@@ -55,5 +55,16 @@ explorer: https://explorer.codeblocklabs.com/pactus/validator.php
 
 - Bu aşamada bu adresinize otomatik `delege` edilecek ve `discord=validatör` bağlantısı yapılacak
 
-
-
+### Cüzdan bakiye kontrol
+Not: ilk validator adresine sonrada ilk reward adresinize bakınız reward adresinde bakiye toplandıysa tekrar kendinize stake edebilirsiniz.
+```
+cd
+cd pactus-cli_0.16.1
+./pactus-wallet --path ~/pactus/wallets/default_wallet address balance cüzdan-adresi
+```
+### Stake etme
+```
+cd
+cd pactus-cli_0.16.1
+./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
+```
