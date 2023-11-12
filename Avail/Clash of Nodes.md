@@ -1,5 +1,8 @@
 - Arkadaşlar ağa sadece light node validator olarak değil bir cüzdan olusturup buna faucet alıp nominator olarakta katılabiliyoruz etkinlik sadece validatorle sınırlı değil ve bu kısım herkese açık bir kısım. 
 - Avail discord : https://discord.gg/MBHHyb3t
+- goldberg faucet kanalına gidin /deposit yazın çıkan kısayola tıklayın ve cüzdan adresinizi ekleyin
+
+
 https://docs.availproject.org/clash-of-nodes/challenges/
 
 - Burada görevler ve başlama durumunu gösterıyor.
