@@ -1,6 +1,6 @@
-- Arkadaşlar ağa sadece light node validator olarak değil bir cüzdan olusturup buna faucet alıp nominator olarakta katılabiliyoruz etkinlik sadece validatorle sınırlı değil ve bu kısım herkese açık bir kısım. 
+- Arkadaşlar ağa sadece light node validator olarak değil bir cüzdan olusturup buna faucet alıp `nominator` olarakta katılabiliyoruz etkinlik sadece validatorle sınırlı değil ve bu kısım `herkese` açık bir kısım. 
 - Avail discord : https://discord.gg/MBHHyb3t
-- goldberg faucet kanalına gidin /deposit yazın çıkan kısayola tıklayın ve cüzdan adresinizi ekleyin
+- `goldberg faucet` kanalına gidin `/deposit` yazın çıkan kısayola tıklayın ve cüzdan adresinizi ekleyin
 
 
 https://docs.availproject.org/clash-of-nodes/challenges/
@@ -20,7 +20,7 @@ https://goldberg.avail.tools/#/accounts
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/e760ba26-b754-435c-b66e-84cbfd235aec)
 
 - Kaydettik peki puan topluyorsak bu nerde yazıyor ? ismimizi aratalım ustune geldiğimizde görevlerden hangisini yaptığımız yazıyor. doc sitesindeki görevlerden ne yapmamız gerektiği yazıyor.
-- suanlık 2 si validatorler için biri herkes için açık 
+- suanlık 2 si validatorler için biri `herkes` için açık 
 
 https://leaderboard.availproject.org/
 
