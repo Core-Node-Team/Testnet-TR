@@ -186,7 +186,80 @@ https://goldberg.avail.tools/#/staking/actions
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/788a4687-66f7-4dd4-8faf-1d6e42e32591)
 
 
+------------------------------------
+# Ubuntu 20
 
+
+## Update
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+```
+
+
+
+### Rust kuralım
+```
+curl https://sh.rustup.rs -sSf | sh
+```
+Not: 1 seçiyoruz
+```
+source $HOME/.cargo/env
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+```
+```
+screen -S alight
+```
+### Dosyaları çekelim
+```
+git clone https://github.com/availproject/avail.git
+cd avail
+git checkout v1.8.0.0
+```
+### Kuralım
+```
+cargo build --release
+```
+
+
+### Servis oluşturalım.
+NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
+```
+sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
+[Unit]
+Description=Avail Validator
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+User=root
+Type=simple
+Restart=always
+RestartSec=120
+ExecStart=/root/avail/target/release/data-avail -d `pwd`/data --chain goldberg --port 30333 --validator --name "molla202"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+### Nodu başlatalım
+```
+sudo systemctl daemon-reload
+sudo systemctl enable availd.service
+sudo systemctl restart availd.service
+```
+
+### Durmuna bakalım
+```
+sudo systemctl status availd.service
+```
+
+### Log kontrol
+```
+journalctl -f -u availd.service
+```
 
 
 
