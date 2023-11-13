@@ -187,7 +187,7 @@ https://goldberg.avail.tools/#/staking/actions
 
 
 ------------------------------------
-# Ubuntu 20
+# Ubuntu 20 yani uzun versiyon kurulum...
 
 
 ## Update
