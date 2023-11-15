@@ -34,6 +34,9 @@ journalctl -f -u availd.service
 
 ### Ubuntu 20 ( goldberg yada kate ağından ykseltecekseniz)
 ```
+sudo systemctl stop availd.service
+```
+```
 cd
 cd avail
 git pull
