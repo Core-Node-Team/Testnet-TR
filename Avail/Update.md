@@ -3,6 +3,7 @@
 ![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
 
 Not: şuan için güncelleme gerekli yazmamışlar bi kaç düzeltme ve senkron hızı artırmışlar...
+Not: ubuntu 22 içindir eğer ubuntu 20 için istiyorsanız uzun yoldan kurmanız gerekıyor...
 
 ```
 sudo systemctl stop availd.service
