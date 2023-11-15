@@ -42,8 +42,10 @@ git checkout v1.8.0.2
 ```
 cargo build --release
 ```
-Not: eğer eski kate ağından uzun kurulumu yaptıysanız alttaki servis dosyasınıda değiştirmeniz gerekiyor....
-
+Not: eğer eski kate ağından uzun kurulumu yaptıysanız alttaki servis dosyasınıda değiştirmeniz gerekiyor.... ve altaki kodu girip dataları silmeniz lazım eskisinin unutmayın kate den guncelleyecekseniz alttaki kod ve servis dosyası yapılacak
+```
+rm -rf /root/avail/data
+```
 ### Servis oluşturalım.
 NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
 ```
