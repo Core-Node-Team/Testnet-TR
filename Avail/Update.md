@@ -30,3 +30,54 @@ sudo systemctl restart availd.service
 ```
 journalctl -f -u availd.service
 ```
+------------------------------------------
+
+### Ubuntu 20 or build setup update
+```
+cd
+cd avail
+git checkout v1.8.0.2
+```
+### Kuralım
+```
+cargo build --release
+```
+Not: eğer eski kate ağından uzun kurulumu yaptıysanız alttaki servis dosyasınıda değiştirmeniz gerekiyor....
+
+### Servis oluşturalım.
+NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
+```
+sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
+[Unit]
+Description=Avail Validator
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+User=root
+Type=simple
+Restart=always
+RestartSec=120
+ExecStart=/root/avail/target/release/data-avail -d `pwd`/data --chain goldberg --port 30333 --validator --name "molla202"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+### Nodu başlatalım
+```
+sudo systemctl daemon-reload
+sudo systemctl enable availd.service
+sudo systemctl restart availd.service
+```
+
+### Durmuna bakalım
+```
+sudo systemctl status availd.service
+```
+
+### Log kontrol
+```
+journalctl -f -u availd.service
+```
