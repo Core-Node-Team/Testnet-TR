@@ -25,3 +25,6 @@ mv amd64-ubuntu-2204-data-avail data-avail
 ```
 sudo systemctl restart availd.service
 ```
+```
+journalctl -f -u availd.service
+```
