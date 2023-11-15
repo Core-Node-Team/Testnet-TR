@@ -36,6 +36,7 @@ journalctl -f -u availd.service
 ```
 cd
 cd avail
+git pull
 git checkout v1.8.0.2
 ```
 ### Kuralım
