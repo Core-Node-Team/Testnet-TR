@@ -46,6 +46,9 @@ git checkout v1.8.0.2
 ```
 cargo build --release
 ```
+
+---------------------
+
 Not: eğer eski kate ağından uzun kurulumu yaptıysanız alttaki servis dosyasınıda değiştirmeniz gerekiyor.... ve altaki kodu girip dataları silmeniz lazım eskisinin unutmayın kate den guncelleyecekseniz alttaki kod ve servis dosyası yapılacak
 ```
 rm -rf /root/avail/data
@@ -70,6 +73,7 @@ ExecStart=/root/avail/target/release/data-avail -d `pwd`/data --chain goldberg -
 WantedBy=multi-user.target
 EOF
 ```
+---------------------
 
 ### Nodu başlatalım
 ```
