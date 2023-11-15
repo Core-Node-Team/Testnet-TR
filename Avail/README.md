@@ -26,7 +26,7 @@ cd /root/avail-node/
 
 ### Dosyaları çekiyoruz
 ```
-wget https://github.com/availproject/avail/releases/download/v1.8.0.0/amd64-ubuntu-2204-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2204-data-avail.tar.gz
 ```
 
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
@@ -119,7 +119,7 @@ cd /root/avail-node/
 
 ### Download The Required Files
 ```
-wget https://github.com/availproject/avail/releases/download/v1.8.0.0/amd64-ubuntu-2204-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2204-data-avail.tar.gz
 ```
 
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
@@ -187,7 +187,7 @@ https://goldberg.avail.tools/#/staking/actions
 
 
 ------------------------------------
-# Ubuntu 20 yani uzun versiyon kurulum...
+# Ubuntu 20 yani uzun versiyon kurulum... (intel cpucular)
 
 
 ## Update
@@ -215,7 +215,7 @@ screen -S alight
 ```
 git clone https://github.com/availproject/avail.git
 cd avail
-git checkout v1.8.0.0
+git checkout v1.8.0.2
 ```
 ### Kuralım
 ```
