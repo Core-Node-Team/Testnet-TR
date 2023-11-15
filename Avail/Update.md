@@ -32,7 +32,7 @@ journalctl -f -u availd.service
 ```
 ------------------------------------------
 
-### Ubuntu 20 or build setup update
+### Ubuntu 20 ( goldberg yada kate ağından ykseltecekseniz)
 ```
 cd
 cd avail
