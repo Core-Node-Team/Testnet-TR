@@ -30,9 +30,37 @@ sudo systemctl restart availd.service
 ```
 journalctl -f -u availd.service
 ```
+--------------------
+### Ubuntu 20 
+```
+sudo systemctl stop availd.service
+```
+```
+cd /root/avail-node/
+```
+```
+rm -rf data-avail
+rm -rf amd64-ubuntu-2204-data-avail.tar.gz
+```
+```
+wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2004-data-avail.tar.gz
+```
+```
+tar xvzf amd64-ubuntu-2004-data-avail.tar.gz
+```
+```
+mv amd64-ubuntu-2004-data-avail data-avail
+```
+```
+sudo systemctl restart availd.service
+```
+```
+journalctl -f -u availd.service
+```
+
 ------------------------------------------
 
-### Ubuntu 20 ( goldberg yada kate ağından ykseltecekseniz)
+### Ubuntu 20 ( goldberg yada kate ağından ykseltecekseniz) uzun versiyon gerekliyse cpu hatası gibi
 ```
 sudo systemctl stop availd.service
 ```
