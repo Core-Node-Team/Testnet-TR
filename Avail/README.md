@@ -6,7 +6,7 @@
 
 ## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
 
-Not: Ubuntu 22 istiyore
+Not: Ubuntu 22 istiyore ancak 20 binary de eklendi kurarken ona dikkat edin ubuntunuz neyse onu kurun 20 özellikle belirtilmiştir.
 
 ### Update ve gereklilikleri yükleyelim
 
@@ -28,7 +28,12 @@ cd /root/avail-node/
 ```
 wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2204-data-avail.tar.gz
 ```
-
+------------------------
+Not: aşağıdaki ubuntu 20 için olan 2sini bir yapmıyorsunuz.  
+```
+wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2004-data-avail.tar.gz
+```
+------------------------
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
 ```
 tar xvzf amd64-ubuntu-2204-data-avail.tar.gz
@@ -36,6 +41,15 @@ tar xvzf amd64-ubuntu-2204-data-avail.tar.gz
 ```
 mv amd64-ubuntu-2204-data-avail data-avail
 ```
+------------------
+Not: aşağısı ubuntu 20 için olan
+```
+tar xvzf amd64-ubuntu-2004-data-avail.tar.gz
+```
+```
+mv amd64-ubuntu-2004-data-avail data-avail
+```
+------------------------
 ### Servis oluşturalım.
 NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
 ```
