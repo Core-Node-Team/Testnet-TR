@@ -4,7 +4,7 @@
 
 Not: şuan için güncelleme gerekli yazmamışlar bi kaç düzeltme ve senkron hızı artırmışlar...
 Not: ubuntu 22 içindir eğer ubuntu 20 için istiyorsanız uzun yoldan kurmanız gerekıyor...
-
+### Ubuntu 22
 ```
 sudo systemctl stop availd.service
 ```
