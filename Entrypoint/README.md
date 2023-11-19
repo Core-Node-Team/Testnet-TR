@@ -67,7 +67,7 @@ entrypointd init "$MONIKER" --chain-id entrypoint-pubtest-2
 ```
 ### 🚧Genesis ve adressbook indirelim
 ```
-wget -O $HOME/.entrypoint/config/genesis.json https://testnet-files.itrocket.net/entrypoint/genesis.json
+wget -O $HOME/.entrypoint/config/genesis.json https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Entrypoint/genesis.json
 wget -O $HOME/.entrypoint/config/addrbook.json https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Entrypoint/addrbook.json
 ```
 ### 🚧Seed ve peer
