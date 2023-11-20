@@ -2,6 +2,16 @@
 
 `height: 3,400,000`
 
+### Update block time
+```
+cd
+cd ~/.cascadiad/config
+sed -i "s/^timeout_propose =.*/timeout_propose = \"2.7s\"/" config.toml
+sed -i "s/^timeout_prevote =.*/timeout_prevote = \"0.9s\"/" config.toml
+sed -i "s/^timeout_precommit =.*/timeout_precommit = \"0.9s\"/" config.toml
+sed -i "s/^timeout_commit =.*/timeout_commit = \"3.6s\"/" config.toml
+sudo systemctl restart cascadiad
+```
 ### Scheduled Auto Update
 ```
 screen -S cascadiad-0.1.8
