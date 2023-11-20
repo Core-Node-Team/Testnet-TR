@@ -28,6 +28,8 @@ screen -S cascadiad-0.1.8
 wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/ScheduledUpdate_v0.1.8.sh && chmod +x ScheduledUpdate_v0.1.8.sh && bash ./ScheduledUpdate_v0.1.8.sh
 ```
 CTRL+A+D
+
+
 AND
 - Update block time
 ```
