@@ -21,7 +21,16 @@
 ```
 curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.8.sh | bash
 ```
+OR
+- Scheduled Auto Update
 ```
+screen -S cascadiad-0.1.8
+wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/ScheduledUpdate_v0.1.8.sh && chmod +x ScheduledUpdate_v0.1.8.sh && bash ./ScheduledUpdate_v0.1.8.sh
+```
+CTRL+A+D
+```
+AND
+- Update block time
 cd
 cd ~/.cascadiad/config
 sed -i "s/^timeout_propose =.*/timeout_propose = \"2.7s\"/" config.toml
