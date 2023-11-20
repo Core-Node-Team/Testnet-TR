@@ -29,7 +29,6 @@ sudo systemctl start cascadiad
 sudo journalctl -u cascadiad -f --no-hostname -o cat
 ```
 
-### Oto
 
 ### Güncelleme 
 ```
