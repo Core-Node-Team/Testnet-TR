@@ -21,7 +21,15 @@
 ```
 curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.8.sh | bash
 ```
-
+```
+cd
+cd ~/.cascadiad/config
+sed -i "s/^timeout_propose =.*/timeout_propose = \"2.7s\"/" config.toml
+sed -i "s/^timeout_prevote =.*/timeout_prevote = \"0.9s\"/" config.toml
+sed -i "s/^timeout_precommit =.*/timeout_precommit = \"0.9s\"/" config.toml
+sed -i "s/^timeout_commit =.*/timeout_commit = \"3.6s\"/" config.toml
+sudo systemctl restart cascadiad
+```
 ### Güncelleme v0.1.7 Block=2,820,000
 ```
 curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/update-version-0.1.7.sh | bash
