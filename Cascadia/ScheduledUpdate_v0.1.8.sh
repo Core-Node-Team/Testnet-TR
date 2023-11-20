@@ -9,8 +9,11 @@ sudo systemctl stop cascadiad
 cd $HOME && rm -rf cascadiad
 curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.8/cascadiad -o cascadiad
 chmod +x cascadiad
-sudo mv cascadiad $(which cascadiad)
+sudo mv cascadiad $(which cascadiad) && sleep 3
 sudo systemctl start cascadiad
+echo "Tamamlandı"
+echo -e "Güncel Version: $(cascadiad version)"
+echo -e "Logları Görüntüleyin: journalctl -u cascadiad -fo cat"
 }
 
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/core-node.sh | bash
