@@ -6,7 +6,7 @@ exec > /dev/null 2>&1
 systemctl stop elysd
 cd $HOME/elys
 git fetch --all
-git checkout v0.15.0
+git checkout v0.16.0
 make build
 sudo mv $HOME/elys/build/elysd $(which elysd)
 sudo systemctl restart elysd
