@@ -29,7 +29,7 @@ screen -S alight
 ### Avail Light Client'i yükleyin
 ```
 cd
-wget https://github.com/availproject/avail-light/releases/download/v1.7.3/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.5-rc2/avail-light-linux-amd64.tar.gz
 tar -xvzf avail-light-linux-amd64.tar.gz
 mv avail-light-linux-amd64 avail-light
 rm -rf avail-light-linux-amd64.tar.gz
@@ -105,7 +105,7 @@ screen -S alight
 ```
 git clone https://github.com/availproject/avail-light.git
 cd avail-light
-git checkout v1.7.3
+git checkout v1.7.5-rc2
 ```
 ### Kuralım
 ```
