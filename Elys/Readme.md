@@ -6,6 +6,10 @@
 curl -sSL -o elys_kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/elys_kurulum.sh && chmod +x elys_kurulum.sh && bash ./elys_kurulum.sh
 ```
 ---------------------
+### V0.18.0 UPGRADE Block:4225000
+```
+curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/upgrade-v0.19.0.sh | bash
+```
 ### V0.18.0 UPGRADE
 ```
 curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Elys/upgrade-v0.18.0.sh | bash
