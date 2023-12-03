@@ -16,7 +16,7 @@ rm -rf data-avail
 rm -rf amd64-ubuntu-2204-data-avail.tar.gz
 ```
 ```
-wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2204-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.8.0.3/amd64-ubuntu-2204-data-avail.tar.gz
 ```
 ```
 tar xvzf amd64-ubuntu-2204-data-avail.tar.gz
@@ -43,7 +43,7 @@ rm -rf data-avail
 rm -rf amd64-ubuntu-2204-data-avail.tar.gz
 ```
 ```
-wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2004-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.8.0.3/amd64-ubuntu-2004-data-avail.tar.gz
 ```
 ```
 tar xvzf amd64-ubuntu-2004-data-avail.tar.gz
@@ -68,7 +68,7 @@ sudo systemctl stop availd.service
 cd
 cd avail
 git pull
-git checkout v1.8.0.2
+git checkout v1.8.0.3
 ```
 ### Kuralım
 ```
