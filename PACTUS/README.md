@@ -42,7 +42,12 @@ cd pactus-cli_0.17.0
 ### 12 kelimenizi alın ve şifrenizi yedekleyin.
 ./pactus-daemon init -w ~/pactus --testnet
 # 7 sayısına enter diyin - çıktıyı yedekleyin
-
+--------------------
+Not: eğer taşıyorsanız. üsteki kod yerine bunu giriceksiniz
+```
+./pactus-daemon init -w ~/pactus --testnet --restore "mnemonic"
+```
+------------------
 screen -S pactus
 ./pactus-daemon start -w ~/pactus
 ```
