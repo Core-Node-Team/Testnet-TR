@@ -34,13 +34,17 @@ lsof -i -P -n | grep LISTEN
 ```console
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install screen
-
+```
+```
 curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v0.17.0/pactus_downloader.sh | sh
-
+```
+```
 cd pactus-cli_0.17.0
-
+```
 ### 12 kelimenizi alın ve şifrenizi yedekleyin.
+```
 ./pactus-daemon init -w ~/pactus --testnet
+```
 # 7 sayısına enter diyin - çıktıyı yedekleyin
 --------------------
 Not: eğer taşıyorsanız. üsteki kod yerine bunu giriceksiniz
