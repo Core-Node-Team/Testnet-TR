@@ -42,19 +42,15 @@ wget https://github.com/availproject/avail/releases/download/v1.8.0.3/x86_64-ubu
 ------------------------
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
 ```
-tar xvzf amd64-ubuntu-2204-data-avail.tar.gz
+tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
 ```
-```
-mv amd64-ubuntu-2204-data-avail data-avail
-```
+
 ------------------
 Not: aşağısı ubuntu 20 için olan
 ```
-tar xvzf amd64-ubuntu-2004-data-avail.tar.gz
+tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
-```
-mv amd64-ubuntu-2004-data-avail data-avail
-```
+
 ------------------------
 ### Servis oluşturalım.
 NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
