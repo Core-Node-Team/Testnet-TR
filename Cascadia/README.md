@@ -159,6 +159,34 @@ sudo systemctl daemon-reload
 sudo systemctl enable cascadiad
 sudo systemctl restart cascadiad && sudo journalctl -u cascadiad -fo cat
 ```
+### Wallet
+```
+cascadiad keys add wallet-name
+```
+OR İMPORT
+```
+cascadiad keys add wallet-name --recover
+```
+### Validator
+```
+cascadiad tx staking create-validator \
+--amount=1000000000000000000aCC \
+--pubkey=$(cascadiad tendermint show-validator) \
+--moniker="$MONIKER" \
+--identity="" \
+--website="" \
+--details="" \
+--chain-id=cascadia_11029-1 \
+--commission-rate=0.05 \
+--commission-max-rate=0.20 \
+--commission-max-change-rate=0.1 \
+--min-self-delegation=1 \
+--from=$WALLET \
+--gas-prices=7aCC \
+--gas-adjustment=2.5 \
+--gas=auto \
+-y
+```
 ### Delete
 ```
 cd $HOME
