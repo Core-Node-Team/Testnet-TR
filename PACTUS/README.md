@@ -52,7 +52,10 @@ Not: eğer taşıyorsanız. üsteki kod yerine bunu giriceksiniz
 ./pactus-daemon init -w ~/pactus --testnet --restore "mnemonic"
 ```
 ------------------
+```
 screen -S pactus
+```
+```
 ./pactus-daemon start -w ~/pactus
 ```
 ### sync olmasını bekleyin
@@ -75,5 +78,7 @@ cd pactus-cli_0.17.0
 ```
 cd
 cd pactus-cli_0.17.0
+```
+```
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
 ```
