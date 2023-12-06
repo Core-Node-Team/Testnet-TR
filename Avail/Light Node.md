@@ -75,10 +75,66 @@ journalctl -u availd -fo cat
 curl "http://localhost:7000/v1/latest_block"
 ```
 
+-------------------------------------------
+## <h1 align="center">Avail Light Node ubuntu 20 kısa yol </h1>
+
+## Update
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt-get install make clang pkg-config libssl-dev build-essential
+```
+```
+screen -S alight
+```
+
+### Avail Light Client'i yükleyin
+```
+cd
+wget https://github.com/molla202/Avail/raw/main/avail-light.tar.gz
+tar -xvzf avail-light.tar.gz
+```
+
+
+
+#### Servis dosyasını oluşturalım.
+```
+sudo tee /etc/systemd/system/availd.service > /dev/null <<EOF
+[Unit]
+Description=Avail Light Client
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+User=root
+ExecStart=/root/avail-light --network goldberg
+Restart=always
+RestartSec=120
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+#### Başlatalım
+```
+sudo systemctl daemon-reload
+systemctl enable availd
+sudo systemctl restart availd
+```
+
+## Loglar
+```
+journalctl -u availd -fo cat
+```
+
+Not: eğer hata verirse resimdeki gibi [bu kısımdaki](https://github.com/molla202/Avail/blob/main/Light-Node-Goldberg.md#rust-kural%C4%B1m) (rust kuralım kısmı sadece)kurulumu yapıp restart edip deneyin 
+
+#### Son blok görüntüleme
+```
+curl "http://localhost:7000/v1/latest_block"
+```
 
 --------------------------------------------
 
-## <h1 align="center">Avail Light Node ubuntu 20</h1>
+## <h1 align="center">Avail Light Node ubuntu 20 veya hata alanalr için uzun yol</h1>
 
 ## Update
 ```
