@@ -125,7 +125,7 @@ sudo systemctl restart availd
 journalctl -u availd -fo cat
 ```
 
-Not: eğer hata verirse resimdeki gibi [bu kısımdaki](https://github.com/molla202/Avail/blob/main/Light-Node-Goldberg.md#rust-kural%C4%B1m) (rust kuralım kısmı sadece)kurulumu yapıp restart edip deneyin 
+Not: eğer hata verirse resimdeki gibi [bu kısımdaki](https://github.com/Core-Node-Team/Testnet-TR/blob/main/Avail/Light%20Node.md#rust-kural%C4%B1m) (rust kuralım kısmı sadece)kurulumu yapıp restart edip deneyin 
 
 #### Son blok görüntüleme
 ```
