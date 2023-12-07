@@ -32,7 +32,6 @@ sudo systemctl stop availd.service
 ```
 cd /root/avail-node/
 ```
-rm - rf 
 ```
 wget https://github.com/availproject/avail/releases/download/v1.8.0.4/x86_64-ubuntu-2004-data-avail.tar.gz
 ```
