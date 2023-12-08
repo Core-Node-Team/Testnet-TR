@@ -22,6 +22,12 @@
 
 <table data-full-width="false"><thead><tr><th align="center">Chain-ID</th><th align="center">Latest Version</th><th align="center">Custom Port</th></tr></thead><tbody><tr><td align="center"><mark style="color:orange;">quicksilver-2</mark></td><td align="center"><mark style="color:green;">v1.2.17</mark></td><td align="center"><mark style="color:yellow;">111</mark></td></tr></tbody></table>
 
+# Script ile kurlum için aşağıdaki komutu girin
+
+```
+curl -sSL -o quick.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/babylon.sh && chmod +x quick.sh && bash ./quick.sh
+``` 
+
 ### Update
 ```
 sudo apt -q update
