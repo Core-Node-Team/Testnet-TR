@@ -27,3 +27,23 @@
 ```
 curl -sSL -o quick.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Testnet/quick.sh && chmod +x quick.sh && bash ./quick.sh
 ``` 
+# Faydalı Linkler
+
+## [Komutlar](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Ortak-Komutlar.md)
+## [Node Yedekleme ve Taşıma](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Yedekleme%20ve%20Ta%C5%9F%C4%B1ma.md)
+## [Port Değiştirme](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Port%20de%C4%9Fi%C5%9Ftirme.md)
+## [Sync-Peer-FAQ](https://github.com/Core-Node-Team/Cosmos-Aglarinda-Node-Calistirmak/blob/main/Sync-Peer%20Nedir.md)
+
+
+<div align="center">
+
+# Core Node 
+
+#  [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)|[Web Site](https://corenode.info/)  
+
+![1500x500](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/92b50dd4-8043-4500-b906-bc8d15b75525)
+
+## Sorularınız olursa telegram sohbet grubumuz ve discord sunucumuza katılabilirsiniz.
+#
+
+</div>
