@@ -11,7 +11,8 @@
 * [Github](https://github.com/ingenuity-build/)
 * [Quicksilver Liquid Staking Protocol](https://app.quicksilver.zone/)
 
-### Sistem Gereksinimleri
+### System
+
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
 | ✔️CPU |	8+ vcpu|
@@ -19,6 +20,7 @@
 | ✔️Storage	| 600+ GB SSD |
 | ✔️UBUNTU | 22 OR 20 |
 
+<table data-full-width="false"><thead><tr><th align="center">Chain-ID</th><th align="center">Latest Version</th><th align="center">Custom Port</th></tr></thead><tbody><tr><td align="center"><mark style="color:orange;">quicksilver-2</mark></td><td align="center"><mark style="color:green;">v1.2.17</mark></td><td align="center"><mark style="color:yellow;">111</mark></td></tr></tbody></table>
 
 ### Update
 ```
