@@ -100,8 +100,8 @@ quicksilverd init $MONIKER --chain-id quicksilver-2
 ```
 ### Download genesis and addrbook
 ```
-curl -Ls https://snapshots.kjnodes.com/quicksilver/genesis.json > $HOME/.quicksilverd/config/genesis.json
-curl -Ls https://snapshots.kjnodes.com/quicksilver/addrbook.json > $HOME/.quicksilverd/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Mainnet/genesis.json > $HOME/.quicksilverd/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Mainnet/addrbook.json > $HOME/.quicksilverd/config/addrbook.json
 ```
 ### Add seeds
 ```
