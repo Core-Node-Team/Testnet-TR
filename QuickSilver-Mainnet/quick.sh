@@ -17,8 +17,8 @@ exec > /dev/tty 2>&1
 }
 ge_ad_se_pe() {
 exec > /dev/null 2>&1
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/addrbook.json > $HOME/$DirectName/config/addrbook.json
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/genesis.json > $HOME/$DirectName/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Mainnet/addrbook.json > $HOME/$DirectName/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Mainnet/genesis.json > $HOME/$DirectName/config/genesis.json
 peers="79c85a81d055b41008c2b4bdf47c950d3aecf5cc@65.108.129.239:10656,97e4468ac589eac505a800411c635b14511a61bb@169.155.47.144:26656,cc091c4d385e449a718fb252de800a9caf01913f@95.217.225.212:11656,c6ff8c00fe62d98966c4a1f5072daeb9ffe9a144@95.214.52.166:25656,2309e82e7200ac8a81f1e1f57b3ee604a20af853@51.79.177.229:26667,c950a736496bec7abb89ff137e4c698fc061d9d4@193.34.212.165:36656,072c61dee7f205b237aae0eca698aa4a0639d93e@95.214.54.28:26356,89757803f40da51678451735445ad40d5b15e059@169.155.44.196:26656,3a5d0b97feb595375c24665dcf17d793be129e8b@51.89.155.2:28656,c124ce0b508e8b9ed1c5b6957f362225659b5343@134.65.192.12:26656,218078f9caa4253dc5228995f86e8d7ff65d0e04@54.39.107.110:26656,ddc359f7a5606a8adac2ba46a02c733dbc893fcb@54.177.253.23:26656,ff5643307ca6161d2e93b0126077a2bfd0f00b4b@65.108.203.149:30014,914bed178748772d7578d119cb2dc89d5076b9f4@135.181.223.115:2390,6053a39e67c6bae83430e354f53d99e160e4964b@65.109.28.177:28656,4aa6607f87ad0b458526d3405731e71553cf275c@219.100.163.35:26656,41fe8da4c67864723bf21055135954e0f6951c84@148.251.92.34:36656,5b63379fec9edfd0b1b475ae4d67c08bcb4abdc6@51.89.98.102:48656,67c3cc1397d0a0f03a45d4cae6ff3380be7364f9@95.217.229.18:11656,b4bcce87121963e1e97619dc135f2eb1a9fd5dfc@88.198.32.17:36656,6fefa26a43bffbfaa5668612c070e83598b58d21@[2a02:c206:2093:4875::1]:26656"
 seeds=""
 sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persistent_peers = "'$peers'"|' $HOME/$DirectName/config/config.toml
