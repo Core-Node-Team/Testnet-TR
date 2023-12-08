@@ -23,7 +23,8 @@ peers="79c85a81d055b41008c2b4bdf47c950d3aecf5cc@65.108.129.239:10656,97e4468ac58
 seeds=""
 sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persistent_peers = "'$peers'"|' $HOME/$DirectName/config/config.toml
 # min gas price
-sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.00001ubbn\"|" $HOME/.babylond/config/app.toml
+sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0.0uqck"|g' $HOME/.quicksilverd/config/app.toml
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.quicksilverd/config/config.toml
 exec > /dev/tty 2>&1
 }
 snapshot() {
@@ -54,7 +55,7 @@ sed -i \
   -e 's|^pruning-interval *=.*|pruning-interval = "10"|' \
   $HOME/$DirectName/config/app.toml
 # indexer
-sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/$DirectName/config/config.toml
+sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.quicksilverd/config/config.toml
 # custom port
 sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:${CustomPort}58\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:${CustomPort}57\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:${CustomPort}60\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:${CustomPort}56\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":${CustomPort}66\"%" $HOME/$DirectName/config/config.toml
 sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CustomPort}17\"%; s%^address = \":8080\"%address = \":${CustomPort}80\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:${CustomPort}90\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:${CustomPort}91\"%; s%:8545%:${CustomPort}45%; s%:8546%:${CustomPort}46%; s%:6065%:${CustomPort}65%" $HOME/$DirectName/config/app.toml
