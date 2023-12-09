@@ -2,6 +2,8 @@
  
 #
 <h1 align=center> Cüzdan Yönetimi </h1>
+
+NOT: HATA VEREN BAZI KODLARDA HATA BELİRTİYOR `staking` yerine `epoching` yazınız
  
 ## Cüzdan Oluştur
 ```
@@ -24,7 +26,7 @@ babylond keys delete wallet
 babylond q bank balances $(babylond keys show wallet -a)
 ```
 
-NOT: HATA VEREN BAZI KODLARDA HATA BELİRTİYOR `staking` yerine `epoching` yazınız
+
 
 #
 <h1 align=center> Validatör Yönetimi </h1>
