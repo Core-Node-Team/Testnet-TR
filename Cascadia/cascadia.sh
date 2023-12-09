@@ -4,30 +4,33 @@ BinaryName="cascadiad"
 DirectName=".cascadiad" #database directory
 CustomPort="119"
 NodeName="Cascadia"  # project folder
-ChainID="cascadia_6102-1"
+ChainID="cascadia_11029-1"
 install_binary() {
 exec > /dev/null 2>&1
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.7/cascadiad -o cascadiad
-sudo chmod u+x cascadiad
-sudo cp cascadiad /usr/local/bin/cascadiad
-rm -rf cascadiad
+cd $HOME || return
+rm -rf $HOME/cascadia
+git clone https://github.com/cascadiafoundation/cascadia.git
+cd $HOME/cascadia || return
+git checkout v0.1.9
+make install
 exec > /dev/tty 2>&1
 }
 ge_ad_se_pe() {
 exec > /dev/null 2>&1
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/addrbook.json > $HOME/$DirectName/config/addrbook.json
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Cascadia/genesis.json > $HOME/$DirectName/config/genesis.json
-peers="001933f36a6ec7c45b3c4cef073d0372daa5344d@194.163.155.84:49656,f78611ffa950efd9ddb4ed8f7bd8327c289ba377@65.109.108.150:46656,783a3f911d98ad2eee043721a2cf47a253f58ea1@65.108.108.52:33656,6c25f7075eddb697cb55a53a73e2f686d58b3f76@161.97.128.243:27656,8757ec250851234487f04466adacd3b1d37375f2@65.108.206.118:61556,df3cd1c84b2caa56f044ac19cf0267a44f2e87da@51.79.27.11:26656,d5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:55656,f075e82ca89acfbbd8ef845c95bd3d50574904f5@159.69.110.238:36656,63cf1e7583eabf365856027815bc1491f2bc7939@65.108.2.41:60556,d5ba7a2288ed176ae2e73d9ae3c0edffec3caed5@65.21.134.202:16756"
-seeds=""
-sed -i -e 's|^seeds *=.*|seeds = "'$seeds'"|; s|^persistent_peers *=.*|persistent_peers = "'$peers'"|' $HOME/$DirectName/config/config.toml
-sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.0025aCC\"/" ~/.cascadiad/config/app.toml
+curl -s https://raw.githubusercontent.com/molla202/Cascadia-11029-devnet/main/genesis.json > $HOME/.cascadiad/config/genesis.json
+curl -s https://raw.githubusercontent.com/molla202/Cascadia-11029-devnet/main/addrbook.json > $HOME/.cascadiad/config/addrbook.json
+SEEDS=""
+PEERS="21ca2712116138429aed3d72422379397c53fa86@65.109.65.248:34656"
+sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.cascadiad/config/config.toml
 exec > /dev/tty 2>&1
 }
 
 snapshot() {
 exec > /dev/null 2>&1
 sudo apt install liblz4-tool -y
-curl -L http://128.140.4.67/CoreNode_Chain_Services/cascadia_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.cascadiad/data
+sudo apt update && sudo apt install lz4 -y
+URL=https://snapshots-testnet.stake-town.com/cascadia/cascadia_11029-1_latest.tar.lz4
+curl -L $URL | lz4 -dc - | tar -xf - -C $HOME/.cascadiad
 exec > /dev/tty 2>&1
 }
 init() {
