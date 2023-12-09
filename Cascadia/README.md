@@ -199,7 +199,7 @@ rm -rf $HOME/.cascadiad
 rm -rf $HOME/cascadia
 ```
 
-# Manuel Installation Standart setup
+# Manuel Installation Standart setup (port 119)
 
 ### Prepare Server
 
