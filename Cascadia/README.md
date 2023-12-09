@@ -233,7 +233,7 @@ make install
 ### Initalize
 
 ```bash
-cascadiad config chain-id cascadia_6102-1
+cascadiad config chain-id cascadia_11029-1
 cascadiad config keyring-backend test
 cascadiad config node tcp://localhost:11957
 cascadiad init $MONIKER --chain-id cascadia_11029-1
