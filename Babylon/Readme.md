@@ -9,6 +9,12 @@
      
  </div>
 
+## Sistem Gereksinimleri
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| CPU |	4 |
+| RAM	| 8 GB |
+| Storage	| 250 GB SSD |
 
 # Script ile kurlum için aşağıdaki komutu girin
 
