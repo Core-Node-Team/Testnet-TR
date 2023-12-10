@@ -26,20 +26,17 @@ exec > /dev/tty 2>&1
 }
 
 snapshot() {
-exec > /dev/null 2>&1
+echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
 sudo apt install liblz4-tool -y
 sudo apt update && sudo apt install lz4 -y
 URL=https://snapshots-testnet.stake-town.com/cascadia/cascadia_11029-1_latest.tar.lz4
 curl -L $URL | lz4 -dc - | tar -xf - -C $HOME/.cascadiad
-exec > /dev/tty 2>&1
 }
 init() {
-exec > /dev/null 2>&1
 $BinaryName config chain-id $ChainID
 $BinaryName config keyring-backend test
 $BinaryName config node tcp://localhost:${CustomPort}57
-$BinaryName init $MONIKER --chain-id $ChainID > $HOME/init.txt
-exec > /dev/tty 2>&1
+$BinaryName init $MONIKER --chain-id $ChainID
 }
 
 config() {
@@ -125,11 +122,6 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
-exec > /dev/tty 2>&1
-echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-snapshot
-sleep 1
-exec > /dev/null 2>&1
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
