@@ -27,8 +27,9 @@ exec > /dev/tty 2>&1
 snapshot() {
 exec > /dev/null 2>&1
 sudo apt install liblz4-tool -y
-curl -L http://128.140.4.67/CoreNode_Chain_Services/babylon_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.babylond/data
 exec > /dev/tty 2>&1
+echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
+curl -L http://128.140.4.67/CoreNode_Chain_Services/babylon_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.babylond/data
 }
 init() {
 exec > /dev/null 2>&1
@@ -118,11 +119,6 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
-exec > /dev/tty 2>&1
-echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-snapshot
-sleep 1
-exec > /dev/null 2>&1
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
