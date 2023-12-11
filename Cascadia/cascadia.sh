@@ -1,4 +1,5 @@
 #!/bin/bash
+source <(curl -s https://raw.githubusercontent.com/0xSocrates/Scripts/main/style.sh)
 clear
 BinaryName="cascadiad"
 DirectName=".cascadiad" #database directory
@@ -30,6 +31,7 @@ SEEDS=""
 PEERS="21ca2712116138429aed3d72422379397c53fa86@65.109.65.248:34656"
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.cascadiad/config/config.toml
 
+# add min-gas prices command
 
 # puruning
 sed -i \
