@@ -6,6 +6,8 @@ CustomPort="119"
 NodeName="Cascadia"  # project folder
 ChainID="cascadia_11029-1"
 install_binary() {
+echo -e "\e[0;34m$BinaryName Kuruluyor\033[0m"
+sleep 1
 exec > /dev/null 2>&1
 cd $HOME || return
 rm -rf $HOME/cascadia
@@ -14,6 +16,7 @@ cd $HOME/cascadia || return
 git checkout v0.1.9
 make install
 exec > /dev/tty 2>&1
+echo -e "\e[0;33m$BinaryName $($BinaryName version) Kuruldu\033[0m"
 }
 ge_ad_se_pe() {
 exec > /dev/null 2>&1
@@ -27,8 +30,7 @@ exec > /dev/tty 2>&1
 
 snapshot() {
 echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-sudo apt install liblz4-tool -y
-sudo apt update && sudo apt install lz4 -y
+sleep 1
 URL=https://snapshots-testnet.stake-town.com/cascadia/cascadia_11029-1_latest.tar.lz4
 curl -L $URL | lz4 -dc - | tar -xf - -C $HOME/.cascadiad
 }
@@ -37,6 +39,7 @@ $BinaryName config chain-id $ChainID
 $BinaryName config keyring-backend test
 $BinaryName config node tcp://localhost:${CustomPort}57
 $BinaryName init $MONIKER --chain-id $ChainID
+echo -e "\e[0;34m$BinaryName Başlatıldı\033[0m"
 }
 
 config() {
@@ -88,26 +91,15 @@ echo -e "\e[0;34m$NodeName Kurulumu Başlatılıyor\033[0m"
 sleep 2
 echo " "
 get_moniker
-echo -e "\e[0;34mSunucu Hazırlanıyor\033[0m"
 removenode
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/preparing-server.sh | bash
-echo -e "\e[0;33mGüncellendi, Kütüphaneler Kuruldu, $(go version) Kuruldu\033[0m"
-sleep 2
-echo " "
-echo -e "\e[0;34m$BinaryName Kuruluyor\033[0m"
 install_binary
-echo -e "\e[0;33m$BinaryName $($BinaryName version) Kuruldu\033[0m"
-sleep 2
 init
-echo " "
-echo -e "\e[0;34m$BinaryName Başlatıldı\033[0m"
-sleep 2
-echo " "
 echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
 config
 ge_ad_se_pe
-sleep 2
 echo -e "\e[0;33mTamamlandı\033[0m"
+snapshot
 exec > /dev/null 2>&1
 sudo tee /etc/systemd/system/$BinaryName.service > /dev/null <<EOF
 [Unit]
@@ -115,7 +107,7 @@ Description=$NodeName Node
 After=network-online.target
 [Service]
 User=$USER
-ExecStart=$(which $BinaryName) start --home $HOME/$DirectName --chain-id cascadia_6102-1
+ExecStart=$(which $BinaryName) start --home $HOME/$DirectName --chain-id cascadia_11029-1
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
@@ -127,9 +119,7 @@ systemctl enable $BinaryName
 systemctl start $BinaryName
 systemctl restart $BinaryName
 exec > /dev/tty 2>&1
-echo " "
 echo -e "\e[0;34mNode Başlatıldı. Logları takip etmek için: \033[0;33m           sudo journalctl -u $BinaryName -fo cat\033[0m"
 sleep 2
 echo " "
-sleep 2
 source $HOME/.bash_profile
