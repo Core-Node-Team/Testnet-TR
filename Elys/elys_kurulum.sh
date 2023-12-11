@@ -119,21 +119,17 @@ removenode
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/preparing-server.sh | bash
 source $HOME/.bash_profile
 echo -e "\e[0;33mGüncellendi, Kütüphaneler Kuruldu, $(go version) Kuruldu\033[0m"
-sleep 2
 echo " "
 echo -e "\e[0;34m$BinaryName Kuruluyor\033[0m"
 install_binary
 echo -e "\e[0;33m$BinaryName $($BinaryName version) Kuruldu\033[0m"
-sleep 2
 init
 echo " "
 echo -e "\e[0;34m$BinaryName Başlatıldı\033[0m"
-sleep 2
 echo " "
 echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
 config
 ge_ad_se_pe
-sleep 2
 echo -e "\e[0;33mTamamlandı\033[0m"
 cosmovisor
 systemctl daemon-reload
