@@ -33,9 +33,8 @@ $BinaryName init $MONIKER --chain-id $ChainID > $HOME/init.txt
 exec > /dev/tty 2>&1
 }
 snapshot() {
-exec > /dev/null 2>&1
 elysd tendermint unsafe-reset-all --home $HOME/.elys
-exec > /dev/tty 2>&1
+echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
 curl -L http://202.61.243.24/CoreNode_ChainServices/elys_snapshot.tar.lz4 | tar -I lz4 -xf - -C $HOME/.elys/data
 }
 cosmovisor() {
@@ -137,14 +136,10 @@ ge_ad_se_pe
 sleep 2
 echo -e "\e[0;33mTamamlandı\033[0m"
 cosmovisor
-echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-snapshot
-exec > /dev/null 2>&1
 systemctl daemon-reload
 systemctl enable $BinaryName
 systemctl start $BinaryName
 systemctl restart $BinaryName
-exec > /dev/tty 2>&1
 echo " "
 echo -e "\e[0;34mNode Başlatıldı. Logları takip etmek için: \033[0;33m           sudo journalctl -u $BinaryName -fo cat\033[0m"
 sleep 2
