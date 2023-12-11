@@ -3,10 +3,10 @@ clear
 BinaryName="cascadiad"
 DirectName=".cascadiad" #database directory
 CustomPort="119"
-NodeName="Cascadia"  # project folder
+NodeName="cascadia"  # project folder
 ChainID="cascadia_11029-1"
 install_binary() {
-echo -e "\e[0;34m$BinaryName Kuruluyor\033[0m"
+print_color $Blue "$BinaryName Kuruluyor..."
 sleep 1
 exec > /dev/null 2>&1
 cd $HOME || return
@@ -16,37 +16,21 @@ cd $HOME/cascadia || return
 git checkout v0.1.9
 make install
 exec > /dev/tty 2>&1
-echo -e "\e[0;33m$BinaryName $($BinaryName version) Kuruldu\033[0m"
+print_color $Blue "$BinaryName $($BinaryName version) Kuruldu."
 }
-ge_ad_se_pe() {
+config() {
+print_color $Blue "Yapılandırma Dosyası Ayarları Yapılıyor..."
 exec > /dev/null 2>&1
+#genesis
 curl -s https://raw.githubusercontent.com/molla202/Cascadia-11029-devnet/main/genesis.json > $HOME/.cascadiad/config/genesis.json
+#addrbook
 curl -s https://raw.githubusercontent.com/molla202/Cascadia-11029-devnet/main/addrbook.json > $HOME/.cascadiad/config/addrbook.json
+#set,seed-peers
 SEEDS=""
 PEERS="21ca2712116138429aed3d72422379397c53fa86@65.109.65.248:34656"
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.cascadiad/config/config.toml
-exec > /dev/tty 2>&1
-}
 
-snapshot() {
-echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-sleep 1
-URL=https://snapshots-testnet.stake-town.com/cascadia/cascadia_11029-1_latest.tar.lz4
-curl -L $URL | lz4 -dc - | tar -xf - -C $HOME/.cascadiad
-}
-init() {
-$BinaryName config chain-id $ChainID
-$BinaryName config keyring-backend test
-$BinaryName config node tcp://localhost:${CustomPort}57
-$BinaryName init $MONIKER --chain-id $ChainID
-echo -e "\e[0;34m$BinaryName Başlatıldı\033[0m"
-}
 
-config() {
-exec > /dev/null 2>&1
-# set max in-out peers
-sed -i 's/max_num_inbound_peers =.*/max_num_inbound_peers = 50/g' $HOME/$DirectName/config/config.toml
-sed -i 's/max_num_outbound_peers =.*/max_num_outbound_peers = 50/g' $HOME/$DirectName/config/config.toml
 # puruning
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
@@ -61,15 +45,30 @@ sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.
 sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CustomPort}17\"%; s%^address = \":8080\"%address = \":${CustomPort}80\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:${CustomPort}90\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:${CustomPort}91\"%; s%:8545%:${CustomPort}45%; s%:8546%:${CustomPort}46%; s%:6065%:${CustomPort}65%" $HOME/$DirectName/config/app.toml
 sed -i -e "s%^address = \"tcp://localhost:1317\"%address = \"tcp://localhost:${CustomPort}17\"%; s%^address = \":8080\"%address = \":${CustomPort}80\"%; s%^address = \"localhost:9090\"%address = \"localhost:${CustomPort}90\"%; s%^address = \"localhost:9091\"%address = \"localhost:${CustomPort}91\"%; s%:8545%:${CustomPort}45%; s%:8546%:${CustomPort}46%; s%:6065%:${CustomPort}65%" $HOME/$DirectName/config/app.toml
 exec > /dev/tty 2>&1
+print_color $Blue "Tamamlandı."
 }
 
+snapshot() {
+print_color $Blue "Core Node Chain Services Snapshot İndiriliyor..."
+sleep 1
+URL=https://snapshots-testnet.stake-town.com/cascadia/cascadia_11029-1_latest.tar.lz4
+curl -L $URL | lz4 -dc - | tar -xf - -C $HOME/.cascadiad
+}
+init() {
+$BinaryName config chain-id $ChainID
+$BinaryName config keyring-backend test
+$BinaryName config node tcp://localhost:${CustomPort}57
+$BinaryName init $MONIKER --chain-id $ChainID
+print_color $Blue "$BinaryName Başlatıldı."
+}
+
+
+
+
 get_moniker () {
-echo -e '\e[0;35m' && read -p "Moniker isminizi girin: " MONIKER 
-echo -e "\033[035mMoniker isminiz\033[034m $MONIKER \033[035molarak kaydedildi"
-echo -e '\e[0m'
-echo "export MONIKER=$MONIKER" >> $HOME/.bash_profile
+echo -e '\e[0;35m' && read -p "Moniker isminizi girin: " MONIKER && echo -e '\e[0m' && echo "export MONIKER=$MONIKER" >> $HOME/.bash_profile
 source $HOME/.bash_profile
-sleep 2
+sleep 1
 }
 
 removenode() {
@@ -87,7 +86,7 @@ exec > /dev/tty 2>&1
 
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/matrix.sh | bash
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/core-node.sh | bash
-echo -e "\e[0;34m$NodeName Kurulumu Başlatılıyor\033[0m"
+print_color $Blue "$NodeName Kurulumu Başlatılıyor..."
 sleep 2
 echo " "
 get_moniker
@@ -95,10 +94,7 @@ removenode
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Scripts/main/preparing-server.sh | bash
 install_binary
 init
-echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
 config
-ge_ad_se_pe
-echo -e "\e[0;33mTamamlandı\033[0m"
 snapshot
 exec > /dev/null 2>&1
 sudo tee /etc/systemd/system/$BinaryName.service > /dev/null <<EOF
@@ -107,7 +103,7 @@ Description=$NodeName Node
 After=network-online.target
 [Service]
 User=$USER
-ExecStart=$(which $BinaryName) start --home $HOME/$DirectName --chain-id cascadia_11029-1
+ExecStart=$(which $BinaryName) start --home $HOME/$DirectName --chain-id $ChainID
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
@@ -119,7 +115,7 @@ systemctl enable $BinaryName
 systemctl start $BinaryName
 systemctl restart $BinaryName
 exec > /dev/tty 2>&1
-echo -e "\e[0;34mNode Başlatıldı. Logları takip etmek için: \033[0;33m           sudo journalctl -u $BinaryName -fo cat\033[0m"
+echo -e "${Green}Node Başlatıldı. Logları Görüntülemek İçin:${Yellow}           sudo journalctl -u $BinaryName -fo cat ${NC]"
 sleep 2
 echo " "
 source $HOME/.bash_profile
