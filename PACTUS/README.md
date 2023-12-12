@@ -36,10 +36,10 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install screen
 ```
 ```
-curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v0.17.0/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL  https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/PACTUS/pactus_downloader.sh | sh
 ```
 ```
-cd pactus-cli_0.17.0
+cd pactus-cli_0.18.0
 ```
 ### 12 kelimenizi alın ve şifrenizi yedekleyin.
 ```
@@ -71,13 +71,13 @@ explorer: https://explorer.codeblocklabs.com/pactus/validator.php (Şu an için 
 Not: ilk validator adresine sonrada ilk reward adresinize bakınız reward adresinde bakiye toplandıysa tekrar kendinize stake edebilirsiniz.
 ```
 cd
-cd pactus-cli_0.17.0
+cd pactus-cli_0.18.0
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address balance cüzdan-adresi
 ```
 ### Stake etme
 ```
 cd
-cd pactus-cli_0.17.0
+cd pactus-cli_0.18.0
 ```
 ```
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
