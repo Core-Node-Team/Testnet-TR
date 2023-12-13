@@ -120,7 +120,7 @@ case $OS in
 esac
 
 # Version number
-VERSION="0.18.0"
+VERSION="0.18.1"
 
 # Set the server URL where the binary and checksum files are hosted
 SERVER_URL="https://github.com/pactus-project/pactus/releases/download/v${VERSION}"
