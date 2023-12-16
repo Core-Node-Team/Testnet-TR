@@ -10,7 +10,7 @@
 * [Docs](https://docs.availproject.org/clash-of-nodes/challenges/)
 * [Github](https://github.com/availproject/avail/releases)
 
-#### Kurulum Video : https://www.youtube.com/watch?v=po4sDoMie6Q&t
+#### Kurulum Video : [TIKLA](https://www.youtube.com/watch?v=po4sDoMie6Q&t)
 
 ## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
 
