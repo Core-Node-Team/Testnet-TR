@@ -9,7 +9,7 @@
  * [Avail Light Node Dökümantasyon](https://docs.availproject.org/operate/node/light-client/)
  * [Avail Light Node Form](https://docs.google.com/forms/d/e/1FAIpQLSeL6aXqz6vBbYEgD1cZKaQ4vwbN2o3Rxys-wKTuKySVR-oS8g/viewform)
 
-#### Kurulum Video : https://www.youtube.com/watch?v=ToiTJdsGf_o&t=9s
+#### Kurulum Video : https://www.youtube.com/watch?v=ToiTJdsGf_o&t
 #### Cüzdan import video : https://www.youtube.com/watch?v=GcT0J6IUhI8
 
 ### Sistem Gereksinimleri
