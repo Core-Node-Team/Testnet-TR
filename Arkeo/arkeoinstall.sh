@@ -6,7 +6,7 @@ CustomPort="314"
 NodeName="arkeo"  # project folder
 ChainID="arkeo"
 install_binary() {
-wget http://37.120.189.81/Arkeo/arkeod
+wget http://37.120.189.81/arkeo_testnet/arkeod
 chmod +x arkeod
 mv arkeod $HOME/go/bin/
 }
