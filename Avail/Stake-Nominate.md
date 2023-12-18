@@ -19,7 +19,7 @@
 
 
 
-### NOT: İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler...
+### NOT: İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler... hergun faucet alıp stake mıktarınızı artırın arkadaslar buna görede avl kazancınız artacak ve puan kazanılacak. 
 
 # NOT: validatorler nominate kısmını yapmasınlar.kendimize ediyoruz zaten kurcuklamayın
 
