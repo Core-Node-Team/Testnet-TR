@@ -7,8 +7,7 @@
 
 
 
-
-
+### İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler...
 
 
 https://staking.goldberg.avail.tools/#/overview
@@ -55,6 +54,14 @@ https://staking.goldberg.avail.tools/#/overview
 - yine pool kısmından poola katılabilir 31 TURKIYE HAVUZU turk valıdatorler için ayarladım...  nominadeki gibi + - ile ilave edebilirsiniz  baska poolda olanlar sağ tarafta menuler var odan ayarlardan cıkabılırler. turk birinin havuzundaysanız çıkmayın
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3002f447-c900-4c7b-aebd-af758d6b978e)
+
+- ödülleri talep etme kısmı nainate ve pool kısımlarında +-  işlemlerinin sağında yazıyor.... ordan claim edebilirsiniz. 
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/38c632ea-8bae-4c93-b6a8-4203c5c9cbea)
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/ef41ee17-2a0e-4c5d-b9af-05da777a5127)
+
+- unutmayın bir havuzun max 100 kişi girme sınırı var. 
 
 
 
