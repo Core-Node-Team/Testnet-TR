@@ -75,6 +75,11 @@ https://staking.goldberg.avail.tools/#/overview
 
 - unutmayın bir havuzun max 100 kişi girme sınırı var. 
 
+- havuz için favorilere almayıda unutmayın şöle 
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3b1b8b39-0399-4dc0-9271-eaacc6529061)
+
+
 
 
 
