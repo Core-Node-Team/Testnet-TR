@@ -1,3 +1,16 @@
+# <h1 align="center">Avail Stake And Nominate</h1>
+![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
+
+
+## Linkler:
+ * [Avail Resmi Websitesi](https://www.availproject.org/)
+ * [Avail Resmi Twitter](https://twitter.com/AvailProject)
+ * [Avail Resmi Discord](https://discord.gg/kkHAXZCNZa)
+ * [Avail Light Node Dökümantasyon](https://docs.availproject.org/operate/node/light-client/)
+ * [Avail Light Node Form](https://docs.google.com/forms/d/e/1FAIpQLSeL6aXqz6vBbYEgD1cZKaQ4vwbN2o3Rxys-wKTuKySVR-oS8g/viewform)
+
+#### Kurulum Video : [LINK](https://www.youtube.com/watch?v=ToiTJdsGf_o&t)
+#### Cüzdan import video : [LINK](https://www.youtube.com/watch?v=GcT0J6IUhI8)
 
 
 
@@ -6,8 +19,7 @@
 
 
 
-
-### İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler...
+### NOT: İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler...
 
 
 https://staking.goldberg.avail.tools/#/overview
