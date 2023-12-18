@@ -21,6 +21,7 @@
 
 ### NOT: İster validator seçilin isterseniz herkese açık kısmı yapan olun bu işlemler size puan kazandırıcak yapın 2 dakkalık şeyler...
 
+# NOT: validatorler nominate kısmını yapmasınlar.kendimize ediyoruz zaten kurcuklamayın
 
 https://staking.goldberg.avail.tools/#/overview
 
