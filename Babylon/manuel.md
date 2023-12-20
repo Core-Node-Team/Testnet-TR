@@ -113,11 +113,32 @@ LimitNOFILE=10000
 [Install]
 WantedBy=multi-user.target
 EOF
+```
 
+### Snap
+```
+sudo systemctl stop babylond
+
+cp $HOME/.babylond/data/priv_validator_state.json $HOME/.babylond/priv_validator_state.json.backup 
+
+babylond tendermint unsafe-reset-all --home $HOME/.babylond --keep-addr-book 
+curl https://snapshots-testnet.nodejumper.io/babylon-testnet/babylon-testnet_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.babylond
+
+mv $HOME/.babylond/priv_validator_state.json.backup $HOME/.babylond/data/priv_validator_state.json 
+
+sudo systemctl restart babylond
+sudo journalctl -u babylond -f --no-hostname -o cat
+```
+
+
+
+
+```
 sudo systemctl daemon-reload
 sudo systemctl enable babylond
 sudo systemctl start babylond
-
+```
+```
 sudo journalctl -u babylond -f --no-hostname -o cat
 ```
 ### Cüzdan Oluşturma
