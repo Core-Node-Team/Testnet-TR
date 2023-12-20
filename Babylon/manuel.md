@@ -115,7 +115,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-### Snap
+### Snap atıyoruz
 ```
 sudo systemctl stop babylond
 
@@ -131,7 +131,7 @@ sudo journalctl -u babylond -f --no-hostname -o cat
 ```
 
 
-
+### Servisleri aktif edip başlatıyoruz
 
 ```
 sudo systemctl daemon-reload
