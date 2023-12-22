@@ -185,7 +185,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart= /root/avail-light/target/release/avail-light --network goldberg
+ExecStart=/root/avail-light/target/release/avail-light --network goldberg
 Restart=always 
 RestartSec=120
 [Install] 
