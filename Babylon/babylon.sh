@@ -29,7 +29,7 @@ exec > /dev/null 2>&1
 sudo apt install liblz4-tool -y
 exec > /dev/tty 2>&1
 echo -e "\e[0;34mCore Node Chain Services Snapshot İndiriliyor\033[0m"
-curl https://snapshots-testnet.nodejumper.io/babylon-testnet/babylon-testnet_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.babylond
+curl -L http://37.120.189.81/babylon_testnet/babylon_snap.tar.lz4 | tar -I lz4 -xf - -C /.babylond/data
 }
 init() {
 exec > /dev/null 2>&1
