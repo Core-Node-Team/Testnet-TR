@@ -233,7 +233,7 @@ screen -S alight
 ```
 git clone https://github.com/availproject/avail.git
 cd avail
-git checkout v1.8.0.4
+git checkout v1.8.0.5
 ```
 ### Kuralım
 ```
