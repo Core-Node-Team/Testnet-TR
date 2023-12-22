@@ -6,7 +6,7 @@ exec > /dev/null 2>&1
 systemctl stop cascadiad
 cd $HOME
 rm -rf cascadiad
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.8/cascadiad -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.2.0/cascadiad -o cascadiad
 chmod +x cascadiad
 sudo mv cascadiad $(which cascadiad)
 sudo systemctl start cascadiad
