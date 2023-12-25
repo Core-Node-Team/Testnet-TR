@@ -11,7 +11,7 @@
 
 #### Kurulum Video : [LINK](https://www.youtube.com/watch?v=ToiTJdsGf_o&t)
 #### Cüzdan import video : [LINK](https://www.youtube.com/watch?v=GcT0J6IUhI8)
-
+#### Stake And Pool Video : [LINK](https://www.youtube.com/watch?v=f7akGXXNHP8)
 
 
 
