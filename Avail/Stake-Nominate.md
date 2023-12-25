@@ -32,7 +32,7 @@ https://staking.goldberg.avail.tools/#/overview
 - Burda sol kısımda validator var aşağıdaki turk validatorlerinin listesini ekliyorum isimlerini yazarak aratıp kalp tıklayarak favorilere alın öncelikle bulması kolay olsun. ismini yazdırmak isteyen bana ulaşsın yazalım.
 
 - molla202
-- ozkay
+- ozky
 - mutu
 - buray
 - kocality
