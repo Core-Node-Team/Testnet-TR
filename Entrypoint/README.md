@@ -55,8 +55,8 @@ source $HOME/.bash_profile
 cd $HOME
 mkdir -p $HOME/entrypoint && cd entrypoint
 wget -O entrypointd https://github.com/entrypoint-zone/testnets/releases/download/v1.3.0/entrypointd-1.3.0-linux-amd64
-chmod +x entrypointd-1.3.0-linux-amd64
-mv entrypointd-1.3.0-linux-amd64 $HOME/go/bin/entrypointd
+chmod +x entrypointd
+mv entrypointd $HOME/go/bin/entrypointd
 ```
 ### 🚧init işlemi
 ```
