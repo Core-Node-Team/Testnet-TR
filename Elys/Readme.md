@@ -1,4 +1,5 @@
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6b8fb6e5-57f0-46c8-8dfd-6912d22fd6ce)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9d9b2b64-736b-4921-aa50-ae87f6d8d34b)
+
 
 ### OTO SETUP
 
