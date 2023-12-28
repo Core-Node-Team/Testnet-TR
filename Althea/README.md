@@ -28,12 +28,12 @@ source $HOME/.bash_profile
 ```
 #### ubuntu 20
 ```
-apt install npm
-cd $HOME
-rm -rf althea-L1
-git clone https://github.com/althea-net/althea-L1
-cd althea-L1
-make install
+mkdir -p $HOME/go/bin
+wget http://37.120.189.81/althea_testnet/althea.tar.gz
+tar xvzf althea.tar.gz
+mv althea $HOME/go/bin/althea
+chmod +x $HOME/go/bin/althea
+source $HOME/.bash_profile
 ```
 ## İnitalize
 ```bash
