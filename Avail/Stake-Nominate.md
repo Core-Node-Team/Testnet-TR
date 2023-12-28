@@ -38,6 +38,7 @@ https://staking.goldberg.avail.tools/#/overview
 - kocality
 - nodesruncom
 - cryptoloss
+- NODEIST
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/167b4059-b361-4db4-acf0-6c1547afc597)
 
