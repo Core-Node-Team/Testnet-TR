@@ -26,7 +26,11 @@
 
 ```
 curl -sSL -o quick.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Testnet/quick.sh && chmod +x quick.sh && bash ./quick.sh
-``` 
+```
+#### v1.4.5-rc4
+```
+curl -sSL -o quickupdate.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/QuickSilver-Testnet/upgrade-v1.4.5-rc4.sh && chmod +x quickupdate.sh && bash ./quickupdate.sh
+```
 # Faydalı Linkler
 
 ## [Komutlar](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Ortak-Komutlar.md)
