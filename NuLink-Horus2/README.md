@@ -24,6 +24,17 @@
 
 Ödüllendirmenin nasıl yapılacağı ile ilgili bilgiler [BURADA](https://www.nulink.org/blog-posts/nulink-testnet-horus-2-0-phase-one-testing-rules) yazıyor. bir sıralama ve çekiliş usulu olucak gibi gorunuyor. Kurallar [BURADA](https://www.nulink.org/blog-posts/nulink-testnet-horus-2-0-phase-one-testing-rules) yazıyor. Genel bilgilendirme de [BURADA](https://www.nulink.org/blog-posts/announcement-for-nulink-testnet-horus-2-0) Ve linklerde form ve açıklamalar var ona göre yapıp epoch geçtikten sonra formu doldurmayı unutmayınız.
 
+### Hata aldım silicem baştan kurucam nasıl silerim 
+```
+rm -rf geth-linux-amd64-1.10.23-d901d853
+rm -rf nulink
+```
+docker image da silinmeli `docker ps` yada `docker ps -a` yazıyoruz orda bi nulink containeri var en başındada kodu var o `docker-id`
+
+`docker stop docker-id`
+
+`dokcer rm docker-id`
+
 ### Docker kurulumu ve gereklilikler.
 
 ```
