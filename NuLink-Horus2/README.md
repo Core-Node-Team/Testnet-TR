@@ -137,7 +137,10 @@ nulink/nulink nulink ursula init \
 
 
 ### Başlatma
-Not: bişi değişmiyor aynen convaynen.
+Not: bişi değişmiyor aynen convaynen. ne olur ne olmaz port açalım 
+```
+ufw allow 9151
+```
 ```
 docker run --restart on-failure -d \
 --name ursula \
