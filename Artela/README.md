@@ -155,7 +155,7 @@ artelad tx staking create-validator \
 ```
 ### Delege
 Not: cüzdan-adınız kısımlarını değiştiriniz.
-
+```
 artelad tx staking delegate $(artelad keys show cüzdan-adınız --bech val -a) 1.5art --from cüzdan-adınız --chain-id artela_11822-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025uart --node http://localhost:45657 -y
-
+```
 
