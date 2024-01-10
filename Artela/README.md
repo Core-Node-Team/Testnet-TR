@@ -12,6 +12,13 @@
 
 Not: teşvik bilinmiyor...
 
+### Not: faucet almak için cüzdan olusturduktan sonra altaki kodla adresinizi öğrenin Address (EIP-55): adresiniz burda yazıor
+```
+artelad debug addr art-ile-başlayancüzdan-adresinizi-yazınız
+```
+
+
+
 ### Sistem Gereksinimleri
 
 | Bileşenler | Minimum Gereksinimler | 
