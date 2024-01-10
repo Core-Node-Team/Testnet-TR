@@ -77,6 +77,7 @@ sed -i 's|^snapshot-interval *=.*|snapshot-interval = 0|g' $HOME/.artelad/config
 
 sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.025art"|g' $HOME/.artelad/config/app.toml
 sed -i 's|^prometheus *=.*|prometheus = true|' $HOME/.artelad/config/config.toml
+sed -i 's|^indexer *=.*|indexer = "null"|' $HOME/.artelad/config/config.toml
 
 # set custom ports in app.toml
 sed -i.bak -e "s%:1317%:${ARTELA_PORT}317%g;
