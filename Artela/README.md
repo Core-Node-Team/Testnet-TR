@@ -9,7 +9,7 @@
  * [Artela Resmi Discord](https://discord.gg/TzmnmuCU)
  * [Artela Dökümantasyon](https://docs.artela.network/develop/node/run-full-node)
  * [Artela Tüm Linkler](https://linktr.ee/artela_network)
-
+ * [Artela EXPLORER](https://test.explorer.ist/artela/staking)
 Not: teşvik bilinmiyor...
 
 ### Not: faucet almak için cüzdan olusturduktan sonra altaki kodla adresinizi öğrenin Address (EIP-55): adresiniz burda yazıor
