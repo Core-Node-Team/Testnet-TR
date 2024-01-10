@@ -10,6 +10,7 @@
  * [Artela Dökümantasyon](https://docs.artela.network/develop/node/run-full-node)
  * [Artela Tüm Linkler](https://linktr.ee/artela_network)
 
+Not: teşvik bilinmiyor...
 
 ### Sistem Gereksinimleri
 
