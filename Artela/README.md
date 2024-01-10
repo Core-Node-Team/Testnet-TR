@@ -61,7 +61,7 @@ git checkout v0.4.7-rc4
 make install
 
 artelad config chain-id artela_11822-1
-artelad init "$NODE_MONIKER" --chain-id artela_11822-1
+artelad init "$MONIKER" --chain-id artela_11822-1
 
 wget -qO $HOME/.artelad/config/genesis.json https://docs.artela.network/assets/files/genesis-314f4b0294712c1bc6c3f4213fa76465.json
 wget -qO $HOME/.artelad/config/addrbook.json https://snapshots.theamsolutions.info/artela-addrbook.json
