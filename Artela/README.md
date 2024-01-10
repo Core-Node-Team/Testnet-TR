@@ -126,3 +126,30 @@ sudo systemctl start artelad
 ```
 sudo journalctl -fu artelad -o cat
 ```
+
+### Cüzdan olusturma
+
+artelad keys add cüzdan-adı
+
+### validator olusturma
+Not: 2 defa faucet alıp yapın.moniker ve cüzdan adınızı yazınız
+```
+artelad tx staking create-validator \
+--amount 950000uart \
+--from cüzdan-adınız \
+--commission-rate 0.1 \
+--commission-max-rate 0.2 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--pubkey $(artelad tendermint show-validator) \
+--moniker "moniker-adınız" \
+--identity="" \
+--website="" \
+--details="Mustafa Kemal ATATÜRK❤️" \
+--chain-id artela_11822-1 \
+--gas auto \
+--gas-adjustment 1.4 \
+--gas-prices 0.055uart \
+--node http://localhost:45657 \
+-y
+```
