@@ -2,7 +2,7 @@
 
 ![image](https://github.com/molla202/Tangle-Network/assets/91562185/65a58a93-a5a4-4507-b789-7adeee085311)
 
-
+### Discord : https://discord.gg/n5fx5xpt
 ## NOT: ubuntu 22
 ### Update
 ```
