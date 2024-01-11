@@ -2,7 +2,7 @@
 
 ![image](https://github.com/molla202/Tangle-Network/assets/91562185/65a58a93-a5a4-4507-b789-7adeee085311)
 
-FORM : https://docs.google.com/forms/d/e/1FAIpQLSc7pLiwetgx3DUkt6waXn8Kung9QzY5DT9Y_b5xnU1rtsYO7Q/viewform
+
 ## NOT: ubuntu 22
 ### Update
 ```
