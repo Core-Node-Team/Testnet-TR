@@ -16,7 +16,7 @@ cd quicksilver
 git checkout v1.4.6
 make install
 ```
-### Cosmovisor
+## Cosmovisor
 ```
 cd $HOME
 rm -rf quicksilver
@@ -24,11 +24,11 @@ git clone https://github.com/ingenuity-build/quicksilver.git
 cd quicksilver
 git checkout v1.4.6
 ```
-# Build binaries
+### Build binaries
 ```
 make build
 ```
-# Prepare binaries for Cosmovisor
+### Prepare binaries for Cosmovisor
 ```
 mkdir -p $HOME/.quicksilverd/cosmovisor/upgrades/v1.4.6/bin
 mv build/quicksilverd $HOME/.quicksilverd/cosmovisor/upgrades/v1.4.6/bin/
