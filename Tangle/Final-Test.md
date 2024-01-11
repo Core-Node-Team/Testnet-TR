@@ -90,6 +90,9 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc.tangle.tools#/staking/
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 ```
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7b31c8d0-22e7-4b7b-859d-f041a20f3053)
+
+
 * daha sonrası normal şeyler zaten beklemede gorunucez 
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc.tangle.tools#/staking
