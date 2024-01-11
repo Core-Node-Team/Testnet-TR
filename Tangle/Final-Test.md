@@ -22,11 +22,6 @@ sudo mv tangle /usr/bin/
 tangle --version
 ```
 
-### Ağ dosyasını çekiyoruz
-```
-wget -O $HOME/.tangle/tangle-standalone.json "https://raw.githubusercontent.com/webb-tools/tangle/main/chainspecs/testnet/tangle-standalone.json"
-chmod 744 ~/.tangle/tangle-standalone.json
-```
 
 ### Servis oluşturuyoruz
 Not: `yourname=<name>` kısmında `<name>` değiştiriyoruz adımızı yazıyoruz.
