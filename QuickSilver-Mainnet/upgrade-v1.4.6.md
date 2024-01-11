@@ -7,7 +7,15 @@ chmod +x quicksilverd
 sudo mv $HOME/quicksilverd $(which quicksilverd)
 sudo systemctl restart quicksilverd && sudo journalctl -u quicksilverd -f
 ```
-
+OR
+```
+cd $HOME
+rm -rf quicksilver
+git clone https://github.com/ingenuity-build/quicksilver.git
+cd quicksilver
+git checkout v1.4.6
+make install
+```
 ### Cosmovisor
 ```
 cd $HOME
