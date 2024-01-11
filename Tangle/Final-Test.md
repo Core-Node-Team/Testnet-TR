@@ -99,7 +99,9 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc.tangle.tools#/staking
 
 burda belirli dönemde onaylandıktan sonra aktive geçicez .
 
+* Lider toplasında puanlar zamanla yansıyacak
 
+https://leaderboard.tangle.tools/
 
 ### Nodu silmek
 ```
