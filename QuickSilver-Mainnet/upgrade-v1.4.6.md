@@ -1,4 +1,4 @@
-### manuel
+## Manuel
 ```
 cd $HOME
 wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.4.6/quicksilverd-v1.4.6-amd64
