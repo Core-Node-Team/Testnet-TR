@@ -4,6 +4,21 @@
 
 ### Discord : https://discord.gg/n5fx5xpt
 ## NOT: ubuntu 22
+
+## Sistem Gereksinimleri istenilen
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| CPU |	4|
+| RAM	| 8+ GB |
+| Storage	| 200 GB SSD |
+
+## Sistem Gereksinimleri minimum
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| CPU |	2|
+| RAM	| 4+ GB |
+| Storage	| 200 GB SSD |
+
 ### Update
 ```
 apt update && apt upgrade -y
