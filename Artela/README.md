@@ -117,7 +117,7 @@ EOF
 ```
 artelad tendermint unsafe-reset-all --home $HOME/.artelad --keep-addr-book
 
-curl -L https://snapshots2.stakerhouse.com/artela/artela_616025.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.artelad
+curl -L https://snap.nodex.one/artela-testnet/artela-latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.artelad
 ```
 ### Başlatalım
 ```
