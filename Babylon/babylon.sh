@@ -7,6 +7,9 @@ NodeName="babylon"  # project folder
 ChainID="bbn-test-2"
 install_binary() {
 exec > /dev/null 2>&1
+
+sudo apt install -y curl git jq lz4 build-essential unzip
+
 ver="1.21.5"
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
