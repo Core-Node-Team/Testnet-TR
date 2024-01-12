@@ -7,6 +7,14 @@ NodeName="babylon"  # project folder
 ChainID="bbn-test-2"
 install_binary() {
 exec > /dev/null 2>&1
+ver="1.21.5"
+wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
+rm "go$ver.linux-amd64.tar.gz"
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
 git clone https://github.com/babylonchain/babylon.git
 cd babylon
 git checkout v0.7.2
