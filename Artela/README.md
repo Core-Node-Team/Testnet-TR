@@ -65,9 +65,8 @@ make install
 artelad config chain-id artela_11822-1
 artelad init "$MONIKER" --chain-id artela_11822-1
 
-wget -qO $HOME/.artelad/config/genesis.json https://docs.artela.network/assets/files/genesis-314f4b0294712c1bc6c3f4213fa76465.json
-wget -qO $HOME/.artelad/config/addrbook.json https://snapshots.theamsolutions.info/artela-addrbook.json
-
+wget -qO $HOME/.artelad/config/genesis.json https://raw.githubusercontent.com/Core-Node-Team/scripts/main/artela/genesis.json
+wget -qO $HOME/.artelad/config/addrbook.json https://raw.githubusercontent.com/Core-Node-Team/scripts/main/artela/addrbook.json
 SEEDS=""
 PEERS="a996136dcb9f63c7ddef626c70ef488cc9e263b8@144.217.68.182:22256,de5612c035bd1875f0bd36d7cbf5d660b0d1e943@5.78.64.11:26656,bec6934fcddbac139bdecce19f81510cb5e02949@47.254.24.106:26656,30fb0055aced21472a01911353101bc4cd356bb3@47.89.230.117:26656,a03ae11a093c67e2554b73d174c4168fe715af10@57.128.103.184:26656,146d6011cce0423f564c9277c6a3390657c53730@157.90.226.23:26656,0188a9bcff4f411b29dbddda527d77803396e1c6@185.245.182.180:26656,b23bc610c374fd071c20ce4a2349bf91b8fbd7db@65.108.72.233:11656,aa416d3628dcce6e87d4b92d1867c8eca36a70a7@47.254.93.86:26656,978dee673bd447147f61aa5a1bdaabdfb8f8b853@47.88.57.107:26656,35ce36af33e289a29787eedb3127d21bf10edcff@81.0.218.194:45656,32d0e4aec8d8a8e33273337e1821f2fe2309539a@47.88.58.36:26656,1b73ac616d74375932fb6847ec67eee4a98174e9@116.202.85.52:25556,9e2fbfc4b32a1b013e53f3fc9b45638f4cddee36@47.254.66.177:26656,b23bc610c374fd071c20ce4a2349bf91b8fbd7db@65.108.72.233:11656,30fb0055aced21472a01911353101bc4cd356bb3@47.89.230.117:26656,9e2fbfc4b32a1b013e53f3fc9b45638f4cddee36@47.254.66.177:26656,978dee673bd447147f61aa5a1bdaabdfb8f8b853@47.88.57.107:26656,aa416d3628dcce6e87d4b92d1867c8eca36a70a7@47.254.93.86:26656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.artelad/config/config.toml
@@ -117,7 +116,7 @@ EOF
 ```
 artelad tendermint unsafe-reset-all --home $HOME/.artelad --keep-addr-book
 
-curl -L https://snap.nodex.one/artela-testnet/artela-latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.artelad
+curl -L http://37.120.189.81/artela_testnet/artela_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.artelad
 ```
 ### Başlatalım
 ```
