@@ -79,6 +79,7 @@ tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 sudo systemctl stop availd.service
 ```
+```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
 [Unit]
 Description=Avail Validator
