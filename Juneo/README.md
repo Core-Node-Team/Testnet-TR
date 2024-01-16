@@ -17,7 +17,7 @@
  * [Juneo explorer](https://mcnscan.io/)
 
 
-### Sistem Gereksinimleri
+### 💻Sistem Gereksinimleri
 
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
@@ -27,7 +27,7 @@
 | ✔️UBUNTU | 20.04/ 22.04 |
 
 
-### Docker kurulumu ve gereklilikler.
+### 🚧Docker kurulumu ve gereklilikler.
 
 ```
 sudo apt-get update
@@ -57,7 +57,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 apt install docker-compose
 ```
-### Dosyaları çekelim
+### 🚧Dosyaları çekelim
 ```
 git clone https://github.com/Juneo-io/juneogo-docker
 ```
@@ -70,12 +70,12 @@ docker-compose build
 ```
 docker-compose up -d juneogo
 ```
-### Port açalım(ufw allow yapmanız gerekirse 22 portunu yada hangi portla bağlanıyorsanız açmayı unutmayın. ufw allow 22)
+### 🚧Port açalım(ufw allow yapmanız gerekirse 22 portunu yada hangi portla bağlanıyorsanız açmayı unutmayın. ufw allow 22)
 ```
 sudo ufw allow 9650
 sudo ufw allow 9651
 ```
-### Kontrol
+### 🚧Kontrol
 ```
 curl -X POST --data '{
     "jsonrpc":"2.0",
@@ -90,7 +90,7 @@ curl -X POST --data '{
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/1847d059-c337-44fe-9934-4a9d2062c301)
 
-### izinler
+### 🚧izinler
 ```
 cd juneogo
 ```
@@ -98,7 +98,7 @@ cd juneogo
 sudo chown -R root .juneogo/
 ```
 
-### Node id alalım
+### 🚧Node id alalım
 Not: çıkan çıktıyı kayddin
 ```
 curl -X POST --data '{
@@ -111,7 +111,7 @@ curl -X POST --data '{
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/a6ea8685-958a-4158-9a88-5530f4fcaba9)
 
 
-### Cüzdan olusturalım
+### 🚧Cüzdan olusturalım
 
 * [BURAYA](https://www.mcnwallet.io/) tıklayıp cüzdan olusturmaya gidelim. create deyin kelimeleri yedekleyin juneo chain adresini alın kaydedin
 
