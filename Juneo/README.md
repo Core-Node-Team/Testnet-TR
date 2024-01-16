@@ -124,7 +124,7 @@ Wallet Adress :  0x le başlıyor mm adresim gibi
 
 Node-id : NodeID- bele başlıyore mubarek
 
-* Mallar gelince stake yapmamız lazım. web cüzdanında stakeye gelin.ordan validateye gelin. node idnizi yazın. miktarı yazın biraz kalsın hepsini etmeyin. tarih seçiyoruz burdan minimum 15 gün demişler.
+* Mallar gelince stake yapmamız lazım. web cüzdanında stakeye gelin.ordan validateye gelin. node idnizi yazın. miktarı yazın biraz kalsın hepsini etmeyin. tarih seçiyoruz burdan minimum 15 gün demişler.zaten sağda validate cıkıcak. onaylamaları geçtikten sonrası
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/18443616-0808-4105-b974-241054badf5b)
 
