@@ -207,6 +207,15 @@ npx ts-node ./src/supernet/addSupernetValidator.ts
 
 docker stop juneogo
 
+nano /root/juneogo-docker/juneogo/.juneogo/config.json
+
+* burada alttaki kodu duzenleyip içersine eklememiz lazım. kendi node id nizi yazın daha sonra ilk parantezden sonra enter deyip boşluk bırakarak aynı izaha gelin yapıstırın ctrlx y enterla kaydedin. aşağıda nasıl görüneceğinin resmi var.
+
+`"track-supernets":"ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP"`
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/abd179ca-c522-4af4-9d57-02ccb1ee57a9)
+
+
 
 
 
