@@ -140,7 +140,10 @@ Node-id : NodeID- bele başlıyore mubarek
 
 ---------------------------------------------------------------------------------------------------------
 
-# Create a Supernet ( Super mi net - net mi super - inanmassan dayıya sor )
+# Create a Supernet
+
+:laughing: ( Super mi net - net mi super - inanmassan dayıya sor )
+
 Not: sorarsa herşeye yes ovrayt :D
 ```
 apt install npm
