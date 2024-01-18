@@ -138,6 +138,82 @@ Node-id : NodeID- bele başlıyore mubarek
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8874fd8f-11c7-47e7-86ec-9f43aaa041f2)
 
+---------------------------------------------------------------------------------------------------------
+
+# Create a Supernet ( Super mi net - net mi super - inanmassan dayıya sor )
+Not: sorarsa herşeye yes ovrayt :D
+```
+apt install npm
+```
+```
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+```
+```
+sudo apt-get install -y nodejs
+```
+```
+sudo dpkg -i --force-overwrite  /var/cache/apt/archives/nodejs_20.11.0-1nodesource1_amd64.deb
+```
+```
+git clone https://github.com/Juneo-io/juneojs-examples
+```
+```
+cd juneojs-examples
+```
+```
+npm install
+```
+```
+cp .env.example .env
+```
+```
+nano .env
+```
+* Portaldakiolusturduğumuz cüzdanın kelimelerini içine girelim tırnakları silmeden ctrl x y enter ile kaydedip çıkalım.
+```
+```
+npx ts-node ./src/docs/crossJUNEtoJVM.ts
+```
+```
+npx ts-node ./src/docs/crossJVMtoP.ts
+```
+Not: yukarıda ki 2 işlemde ağlar arası mal taşımak için juneden jvmye ordanda 2ci kodla platform chaine 1.1 mal tasıyor. aslında bunları site üzerindende yapabilirsiniz ama kurulumunuzun doğru gittiğinden emin olmak için sunucuda yapıp yansıdığını sitede görüp devam etmek daha mantıklı. mumkunse işlemleri 2 şer kez yapınız.
+
+* şimdide sıper mi net net mi kuralım :D
+```
+npx ts-node ./src/supernet/createSupernet.ts
+```
+* ve bize bele bi ID vericek kaydedin.
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/eef28b97-72f8-4ed7-b1ba-600aa1fe906c)
+
+* şimdide supernetimizda bir doğrulayıcı yok o yuzden doğrulayıcı ayarlamamız lazım kim bu arkadaş tabiki biz amale olmak bunu gerektirir :D 
+```
+nano /root/juneojs-examples/src/supernet/addSupernetValidator.ts
+```
+NOT: değişiklikleri yaptıktan sonra ctrl x y enter kaydedip cıkıyoruz.
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/121d6a08-38dd-41cb-8156-3b14a3da8e88)
+
+`const nodeId: string = 'NodeID-Buraya node-id nizi yazın'`
+
+`const supernetId: string = 'ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP- temin bele bişi aldıkya onu yazın'`
+
+`const durationInDays: number = 4 // number of days you will validate your Supernet # Burayı ellemiyoruz`
+
+npx ts-node ./src/supernet/addSupernetValidator.ts
+
+* supernet için değişiklikleri yaptık. bu nodumuzu supernet ağımız için doğrulayıcı olarak ekleyecek ancak bişi daha var yapılcak devam
+* şimdi nodu durdurmamız gerekiyor.
+
+docker stop juneogo
+
+
+
+
+
+
+
+
 
 
 
