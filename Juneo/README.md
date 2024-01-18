@@ -271,13 +271,21 @@ nano /root/juneogo-docker/juneogo/.juneogo/configs/chains/yukarıda verdiği adr
   "eth-apis": ["public-eth", "public-eth-filter","net","web3","internal-public-eth","internal-public-blockchain","internal-public-transaction-pool","internal-public-debug","debug-tracer"]
 }
 ```
-* şimdide nodumuzu başlatalım
+* şimdide nodumuzu başlatalım. dosyayı gorunduğu gibi düzenleyin.ctrl x y enterla kaydedin.
 ```
-docker restart juneogo
+nano /root/juneogo-docker/docker-compose.yml
 ```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/cdb374b2-4862-4ee8-aa14-f1e0ad353521)
+
 ```
-docker logs -f juneogo
+docker-compose up -d
 ```
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/487585da-0cb1-43de-9aa1-bf85998a3dd2)
+
+
+
+
 
 
 
