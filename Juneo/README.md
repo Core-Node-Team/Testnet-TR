@@ -171,7 +171,6 @@ nano .env
 ```
 * Portaldakiolusturduğumuz cüzdanın kelimelerini içine girelim tırnakları silmeden ctrl x y enter ile kaydedip çıkalım.
 ```
-```
 npx ts-node ./src/docs/crossJUNEtoJVM.ts
 ```
 ```
@@ -192,30 +191,45 @@ npx ts-node ./src/supernet/createSupernet.ts
 nano /root/juneojs-examples/src/supernet/addSupernetValidator.ts
 ```
 NOT: değişiklikleri yaptıktan sonra ctrl x y enter kaydedip cıkıyoruz.
+
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/121d6a08-38dd-41cb-8156-3b14a3da8e88)
 
-`const nodeId: string = 'NodeID-Buraya node-id nizi yazın'`
-
-`const supernetId: string = 'ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP- temin bele bişi aldıkya onu yazın'`
-
-`const durationInDays: number = 4 // number of days you will validate your Supernet # Burayı ellemiyoruz`
-
+- const nodeId: string = 'NodeID-Buraya node-id nizi yazın'
+- const supernetId: string = 'ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP- temin bele bişi aldıkya onu yazın'
+- const durationInDays: number = 4 // number of days you will validate your Supernet # Burayı ellemiyoruz
+```
 npx ts-node ./src/supernet/addSupernetValidator.ts
-
+```
 * supernet için değişiklikleri yaptık. bu nodumuzu supernet ağımız için doğrulayıcı olarak ekleyecek ancak bişi daha var yapılcak devam
 * şimdi nodu durdurmamız gerekiyor.
-
+```
 docker stop juneogo
-
+```
+```
 nano /root/juneogo-docker/juneogo/.juneogo/config.json
-
+```
 * burada alttaki kodu duzenleyip içersine eklememiz lazım. kendi node id nizi yazın daha sonra ilk parantezden sonra enter deyip boşluk bırakarak aynı izaha gelin yapıstırın ctrlx y enterla kaydedin. aşağıda nasıl görüneceğinin resmi var.
 
-`"track-supernets":"ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP"`
+* "track-supernets":"ZxTjijy4iNthRzuFFzMH5RS2BgJemYxwgZbzqzEhZJWqSnwhP"
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/abd179ca-c522-4af4-9d57-02ccb1ee57a9)
 
+* şimdi tekrar başlatalım
 
+docker restart juneogo
+
+docker logs -f juneogo
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/390b6e4f-475e-469c-ad1a-a671560b7666)
+
+NOT: !!!
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/dcdf092b-a205-47a5-b661-80576e7ef190)
+
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/c1cbbdc4-d80f-43fb-85bd-06c972d00893)
+
+-----------------------------------------------------------------------------
 
 
 
