@@ -203,13 +203,7 @@ npx ts-node ./src/supernet/addSupernetValidator.ts
 * supernet için değişiklikleri yaptık. bu nodumuzu supernet ağımız için doğrulayıcı olarak ekleyecek ancak bişi daha var yapılcak devam
 * şimdi nodu durdurmamız gerekiyor.
 ```
-cd
-```
-```
-cd juneogo-docker
-```
-```
-docker-compose down
+docker stop juneogo
 ```
 ```
 nano /root/juneogo-docker/juneogo/.juneogo/config.json
@@ -222,7 +216,7 @@ nano /root/juneogo-docker/juneogo/.juneogo/config.json
 
 * şimdi tekrar başlatalım
 ```
-docker-compose up -d juneogo
+docker restart juneogo
 ```
 ```
 docker logs -f juneogo
@@ -279,16 +273,7 @@ nano /root/juneogo-docker/juneogo/.juneogo/configs/chains/yukarıda verdiği adr
 ```
 * şimdide nodumuzu başlatalım
 ```
-cd
-```
-```
-cd juneogo-docker
-```
-```
-docker-compose down
-```
-```
-docker-compose up -d juneogo
+docker restart juneogo
 ```
 ```
 docker logs -f juneogo
