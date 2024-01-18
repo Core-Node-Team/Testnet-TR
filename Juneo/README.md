@@ -181,7 +181,7 @@ npx ts-node ./src/docs/crossJVMtoP.ts
 ```
 Not: yukarıda ki 2 işlemde ağlar arası mal taşımak için juneden jvmye ordanda 2ci kodla platform chaine 1.1 mal tasıyor. aslında bunları site üzerindende yapabilirsiniz ama kurulumunuzun doğru gittiğinden emin olmak için sunucuda yapıp yansıdığını sitede görüp devam etmek daha mantıklı. mumkunse işlemleri 2 şer kez yapınız.
 
-* şimdide sıper mi net net mi kuralım :D
+* şimdide super mi net net mi kuralım :D
 ```
 npx ts-node ./src/supernet/createSupernet.ts
 ```
