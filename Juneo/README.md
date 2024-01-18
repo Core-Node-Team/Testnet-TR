@@ -203,7 +203,13 @@ npx ts-node ./src/supernet/addSupernetValidator.ts
 * supernet için değişiklikleri yaptık. bu nodumuzu supernet ağımız için doğrulayıcı olarak ekleyecek ancak bişi daha var yapılcak devam
 * şimdi nodu durdurmamız gerekiyor.
 ```
-docker stop juneogo
+cd
+```
+```
+cd juneogo-docker
+```
+```
+docker-compose down
 ```
 ```
 nano /root/juneogo-docker/juneogo/.juneogo/config.json
@@ -215,10 +221,12 @@ nano /root/juneogo-docker/juneogo/.juneogo/config.json
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/abd179ca-c522-4af4-9d57-02ccb1ee57a9)
 
 * şimdi tekrar başlatalım
-
-docker restart juneogo
-
+```
+docker-compose up -d juneogo
+```
+```
 docker logs -f juneogo
+```
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/390b6e4f-475e-469c-ad1a-a671560b7666)
 
@@ -231,11 +239,60 @@ NOT: !!!
 
 -----------------------------------------------------------------------------
 
+# Deploy VM
 
+nano /root/juneojs-examples/src/supernet/createChain.ts
 
+* içersindeki değiştirmemiz gereken yerler var. chain id : burdaki numara eşsiz olmalı aynı numarayı yazmayın. şu aralıklarda numara girmeniz lazım `For Socotra v1, please use a random number from 300,000 - 399,999.`
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/587344b3-3d2c-4b11-b941-654af353956a)
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9e4355a4-adee-4f11-9348-532b695110ab)
 
+```
+cd
+```
+```
+cd juneojs-examples
+```
+```
+npx ts-node ./src/supernet/createChain.ts
+```
+Not: bize id veriyor kaydedin
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6fd463e5-e8d6-40ab-b67a-6b1cce319b65)
+
+NOT: yukarda id aldık yeni onu yazıcanız aşağıdaki son yere düzenleyin.
+```
+mkdir /root/juneogo-docker/juneogo/.juneogo/configs/chains/yukarıda verdiği adresi yazın
+```
+NOT: yine yukardaki adresi yazın...
+```
+nano /root/juneogo-docker/juneogo/.juneogo/configs/chains/yukarıda verdiği adresi yazın/config.json
+```
+* içersine aşağıdaki kod kopyalayıp yapıstırın ve ctrl x y enterla kaydedip cıkın
+```
+{
+"pruning-enabled": false,
+  "eth-apis": ["public-eth", "public-eth-filter","net","web3","internal-public-eth","internal-public-blockchain","internal-public-transaction-pool","internal-public-debug","debug-tracer"]
+}
+```
+* şimdide nodumuzu başlatalım
+```
+cd
+```
+```
+cd juneogo-docker
+```
+```
+docker-compose down
+```
+```
+docker-compose up -d juneogo
+```
+```
+docker logs -f juneogo
+```
 
 
 
