@@ -134,6 +134,9 @@ Node-id : NodeID- bele başlıyore mubarek
 
 * 2 gün kadar minimum çalışması lazım demişler. bu şekilde. devamı ondan sonra.
 
+* Not: stake etmek için öncelikle cross kısmından platform tarafına coinleri aktarmanız lazım 1010 kadar aktarım 1000 kadarını stake edebilirsiniz sonra. 
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8874fd8f-11c7-47e7-86ec-9f43aaa041f2)
 
 
 
