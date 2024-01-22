@@ -7,6 +7,13 @@
 
 ### Kurulum
 ```
+ufw allow 26657
+ufw allow 8545
+ufw allow 1317
+ufw allow 22
+```
+
+```
 curl -L https://dymensionxyz.github.io/roller/install.sh | bash
 ```
 ```
