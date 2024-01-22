@@ -27,7 +27,7 @@ roller config init --interactive
 
 👉 avail seçtim
 
-👉 3 adres çıkıcak 2 si dym 1 celesti discorda faucetleri var alın ve explorerden kontrol edin.
+👉 3 adres çıkıcak 2 si dym 1 avail discorda faucetleri var alın ve explorerden kontrol edin.
 
 * geldik çokomelli kısma availdeki cüzdanı import edelim
 ```
