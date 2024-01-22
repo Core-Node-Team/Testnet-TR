@@ -34,7 +34,7 @@ curl -sSL https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Casca
 ### Update
 ```
 apt update && apt upgrade -y
-apt install curl iptables build-essential git wget jq make gcc nano tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
+apt install curl iptables build-essential git wget jq make gcc nano tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev lz4 -y
 ```
 ### Go
 ```
