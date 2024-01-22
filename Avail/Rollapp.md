@@ -69,6 +69,11 @@ screen -S rol
 ```
 roller run
 ```
+
+NOT: screenden çıkmak için `ctrl ad`    ile çıkıyoruz tekrar bakmak için `screen -r rol`  giriyoruz
+NOT: `screen -ls`  açık screenleri gösterir ataç olmuş varsa `screen -d screen-adı` sonra `screen -r screen-adı`   kapamak için screene girin exit yazın...
+
+
 HAYIRLISI OLSUN.....
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/ceca0a28-6110-432e-a117-d443edede082)
