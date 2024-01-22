@@ -88,7 +88,7 @@ tail -f ~/.roller/rollapp/rollapp.log
 
 NOT:  komple okuyun ondan sonra başlıyacaksanız başlayın....
 
-* kanal buldu herşey tamamsa screenden ctrl ad ile çıkın. altkai github reposunu forklayın 
+* kanal buldu herşey tamamsa screenden ctrl ad ile çıkın. altkai github reposunu forklayın . bunun için elbette bir githun hesabınız olmalı
 
 https://github.com/dymensionxyz/rollapp-registry
 
