@@ -64,3 +64,20 @@ HAYIRLISI OLSUN.....
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/ceca0a28-6110-432e-a117-d443edede082)
 
+* kanal bulduğunuz sağ taraf bele gösterıcek. suan için eski rollapp uzerinden gösterıyorum..
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/ce032dab-f4dd-4451-a307-00e90b1aef85)
+
+
+* LOG lara bakmak için
+```
+tail -f ~/.roller/rollapp/rollapp.log
+```
+
+
+
+
+
+
+
+
