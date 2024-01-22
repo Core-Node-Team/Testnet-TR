@@ -70,8 +70,8 @@ screen -S rol
 roller run
 ```
 
-NOT: screenden çıkmak için `ctrl ad`    ile çıkıyoruz tekrar bakmak için `screen -r rol`  giriyoruz
-NOT: `screen -ls`  açık screenleri gösterir ataç olmuş varsa `screen -d screen-adı` sonra `screen -r screen-adı`   kapamak için screene girin exit yazın...
+👉NOT: screenden çıkmak için `ctrl ad`    ile çıkıyoruz tekrar bakmak için `screen -r rol`  giriyoruz
+👉NOT: `screen -ls`  açık screenleri gösterir ataç olmuş varsa `screen -d screen-adı` sonra `screen -r screen-adı`   kapamak için screene girin exit yazın...
 
 
 HAYIRLISI OLSUN.....
@@ -91,7 +91,7 @@ tail -f ~/.roller/rollapp/rollapp.log
 
 ### PR işlemleri
 
-NOT:  komple okuyun ondan sonra başlıyacaksanız başlayın....
+👉NOT:  komple okuyun ondan sonra başlıyacaksanız başlayın....
 
 * kanal buldu herşey tamamsa screenden ctrl ad ile çıkın. altkai github reposunu forklayın . bunun için elbette bir githun hesabınız olmalı
 
@@ -112,9 +112,9 @@ https://github.com/dymensionxyz/rollapp-registry
 * şimdi json dosyasına sağ tıklayıp düzenle diyoruz eğer gorunmuyorsa txt iken yapıp sonra jsona çevirirsiniz yada sorar neyle açayım die not defteri.
 
 * sunucumuza geliyoruz ve şu kodu yazıyoruz
-
+```
 roller config export
-
+```
 * çıkan çıktığı tırnaklı parantezlerden itibaren kopyalıyoruz. (sunucuda mause ile seçince otomatik kopyalar yazıyı) ve metin belgemize kopyalıyoruz. kopyala yaptığımız kısımları dikkatle bakın.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/e1f3e685-499e-4b86-8dab-68204e4e0037)
@@ -202,7 +202,7 @@ roller config export
 
 # Gelelim hali hazırda rollappı olanalra. ve avail de puan kasan cüzdana zaten sahip olanlara
 
-Not: eğer availle daha once ilgilenmediyseniz cevirdikten sonra alttaki kodla verdiği adrese faucet alıp scrrende roller run demeniz yeter...
+👉Not: eğer availle daha once ilgilenmediyseniz cevirdikten sonra alttaki kodla verdiği adrese faucet alıp scrrende roller run demeniz yeter...
 
 * screene gir ctrl c ile durdur. 
 ```
