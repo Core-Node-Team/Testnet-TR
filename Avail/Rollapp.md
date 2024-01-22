@@ -188,7 +188,7 @@ roller config export
 
 * şimdi yukarıdan sayfanın linkini kopyalayın avail discorda gidin https://discord.com/channels/1065831819154563132/1199048754569949285   rollapp veri.. kanalınaticket olusturun ve linkinizi atın
 
-* burda bir dapp mevzusu isteme durumu var basit bir nft mintleme olur vss istek usurumlarına göre ekleme olabilir sitenizi yaptığınızda adresini şuraya yazmanız gerekiyor. yukarıda json dosyasını düzenlerkene...
+* burda bir dapp mevzusu isteme durumu var basit bir nft mintleme olur vss istek durumlarına göre ekleme olabilir sitenizi yaptığınızda adresini şuraya yazmanız gerekiyor "website":  yukarıda json dosyasını düzenlerkene...
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/e1572a1d-a221-49de-b510-32a18240c78e)
 
