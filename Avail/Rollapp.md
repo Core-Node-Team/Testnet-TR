@@ -219,7 +219,7 @@ nano /root/.roller/rollapp/config/dymint.toml
 ```
 systemctl daemon-reload
 ```
-* screene gir roller run yaz başlat 
+* screene gir `roller run` yaz başlat 
 
 
 ### Bazı hatalar ve çözümleri
