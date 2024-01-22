@@ -46,9 +46,9 @@ nano /root/.roller/da-light-node/avail.toml
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/88abce80-006c-42b9-8f9d-c8ecb33d6140)
 
 * ve buradada kelimeleri değiştirin ctrl x y kaydedin
-
+```
 nano /root/.roller/rollapp/config/dymint.toml
-
+```
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7e033f59-26f2-4982-83b8-194b20dfb0d3)
 
 
@@ -80,10 +80,26 @@ HAYIRLISI OLSUN.....
 tail -f ~/.roller/rollapp/rollapp.log
 ```
 
+---------------------------
 
+# Gelelim hali hazırda rollappı olanalra. ve avail de puan kasan cüzdana zaten sahip olanlara
 
+Not: eğer availle daha once ilgilenmediyseniz cevirdikten sonra alttaki kodla verdiği adrese faucet alıp scrrende roller run demeniz yeter...
 
+* screene gir ctrl c ile durdur. 
 
+roller config set da avail
+
+* kelimeleri gir 2sindede ctrl x y enter kaydet
+
+```
+nano /root/.roller/da-light-node/avail.toml
+```
+```
+nano /root/.roller/rollapp/config/dymint.toml
+```
+
+* screene gir roller run yaz başlat 
 
 
 
