@@ -53,7 +53,7 @@ cd $HOME || return
 rm -rf $HOME/cascadia
 git clone https://github.com/cascadiafoundation/cascadia.git
 cd $HOME/cascadia || return
-git checkout v0.1.9
+git checkout v0.2.0
 
 make install
 ```
