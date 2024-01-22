@@ -35,6 +35,7 @@ roller config init --interactive
 👉 avail seçtim
 
 👉 3 adres çıkıcak 2 si dym 1 avail discorda faucetleri var alın ve explorerden kontrol edin. avail için cüzdan import edenler lütfen import ettikleri adrese faucet alsın
+* dym faucet için rollape yada rollappfam rolu gerekiyordu availle olan testleri için herkese açtılarmı bilmiyoruz lütfen discordan faucet alabiliyormusunuz kontrol edin.
 
 * geldik çokomelli kısma availdeki cüzdanı import edelim
 ```
