@@ -109,7 +109,7 @@ nano /root/.roller/rollapp/config/dymint.toml
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/31a4e00b-8697-4d2f-bb4f-55bad031969a)
 
 ```
-sed -i 's|wss://dymension-devnet.avail.tools/ws|wss://goldberg.avail.tools/ws|g' /root/rollapp/config/dymint.toml
+sed -i 's|wss://dymension-devnet.avail.tools/ws|wss://goldberg.avail.tools/ws|g' /root/.roller/rollapp/config/dymint.toml
 ```
 
 
