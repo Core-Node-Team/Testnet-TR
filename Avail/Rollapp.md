@@ -28,7 +28,7 @@ roller config init --interactive
 
 👉 roller adını yazın corenode gibimsi
 
-👉 sembolunu seçin Mll gibim
+👉 3 harfli her hangi bir coin kısa yolu yazınız Mll gibim
 
 👉 total mikarını belirleyin supply
 
@@ -41,7 +41,7 @@ roller config init --interactive
 nano /root/.roller/da-light-node/avail.toml
 ```
 * içindeki kelimeleri silin ekndi cüzdan kelimelerinizi girin
-* zaten cüzdanda az biraz avl var faucet alın...
+* avail faucet alın. discorddan pass onaylı olmak gerekiyor. eğer zaten eskiden katılan ve puan toplayansanız ilave alın.
 * daha sonra register edelim
 ```
 roller tx register
