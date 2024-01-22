@@ -87,9 +87,9 @@ tail -f ~/.roller/rollapp/rollapp.log
 Not: eğer availle daha once ilgilenmediyseniz cevirdikten sonra alttaki kodla verdiği adrese faucet alıp scrrende roller run demeniz yeter...
 
 * screene gir ctrl c ile durdur. 
-
+```
 roller config set da avail
-
+```
 * kelimeleri gir 2sindede ctrl x y enter kaydet
 
 ```
