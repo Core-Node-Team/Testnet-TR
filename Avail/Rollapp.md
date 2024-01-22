@@ -49,6 +49,9 @@ nano /root/.roller/da-light-node/avail.toml
 ```
 nano /root/.roller/rollapp/config/dymint.toml
 ```
+```
+systemctl daemon-reload
+```
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7e033f59-26f2-4982-83b8-194b20dfb0d3)
 
 
@@ -98,7 +101,9 @@ nano /root/.roller/da-light-node/avail.toml
 ```
 nano /root/.roller/rollapp/config/dymint.toml
 ```
-
+```
+systemctl daemon-reload
+```
 * screene gir roller run yaz başlat 
 
 
