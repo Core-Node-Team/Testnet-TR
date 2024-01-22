@@ -41,9 +41,15 @@ roller config init --interactive
 ```
 nano /root/.roller/da-light-node/avail.toml
 ```
-* içindeki kelimeleri silin ekndi cüzdan kelimelerinizi girin
+* içindeki kelimeleri silin ekndi cüzdan kelimelerinizi girin.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/88abce80-006c-42b9-8f9d-c8ecb33d6140)
+
+* ve buradada kelimeleri değiştirin ctrl x y kaydedin
+
+nano /root/.roller/rollapp/config/dymint.toml
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7e033f59-26f2-4982-83b8-194b20dfb0d3)
 
 
 * avail faucet alın. discorddan pass onaylı olmak gerekiyor. eğer zaten eskiden katılan ve puan toplayansanız ilave alın.
