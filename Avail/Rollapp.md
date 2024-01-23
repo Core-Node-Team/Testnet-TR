@@ -251,4 +251,9 @@ systemctl daemon-reload
 sed -i 's|wss://dymension-devnet.avail.tools/ws|wss://goldberg.avail.tools/ws|g' /root/.roller/rollapp/config/dymint.toml
 ```
 
+### eski rollapp sahipleri farklı cüzdan çıkanlar
 
+NOT: miktar kısmında istedikleri adedi yazmanız lazım mesela 0.001 at dediler. ya udym cinsinden yazın yada direk 0.001dym yazın. bunu rollapp çalışan sunucunuzda çalıştırıcaksınız
+```
+dymd tx bank send hub_sequencer dym-adresi miktar00000000000udym --home .roller/hub-keys/ --keyring-backend test --node http://65.108.206.118:60757/ --chain-id froopyland_100-1
+```
