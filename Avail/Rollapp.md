@@ -52,6 +52,11 @@ nano /root/.roller/rollapp/config/dymint.toml
 ```
 systemctl daemon-reload
 ```
+
+NOt: değişmişmi avail adres bakalım
+```
+roller keys list
+```
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7e033f59-26f2-4982-83b8-194b20dfb0d3)
 
 
