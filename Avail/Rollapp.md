@@ -165,8 +165,8 @@ roller config export
   "type": "RollApp",
   "da": "Avail",
   "description": "",
-  "goldberg": true
-  "availAddress": "CUZDAN"
+  "goldberg": true,
+  "availAddress": "CUZDAN",
   "analytics": true
 }
 ```
