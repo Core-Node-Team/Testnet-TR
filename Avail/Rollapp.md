@@ -133,6 +133,7 @@ rollapp_evm tx ibc-transfer transfer transfer channel-0 buraya-adres 1dym --from
 ```
 
 ### Rollapınızı metamaska ekleme
+NOT: zincir kimliğine rollapp adınızın ortadaki sayısını yazıyorsunuz sadece
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3305de9b-78c4-4f8b-90f6-b5c016b281c1)
 
