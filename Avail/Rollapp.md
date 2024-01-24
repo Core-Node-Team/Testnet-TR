@@ -90,6 +90,9 @@ $request cüzdan-adresiniz rollapp-idniz
 
 https://portal.dymension.xyz
 
+Not:  dizden rollap linki isterseler altaki siten arama yerine rollapp id nizi yazıp aratın cıkandan tıklayın o linki atın.
+
+https://fl.dym.fyi/rollapp/corenode_6886110-1
 
 ### başladı kanal buldu roller tx fund-faucet bu kodu 2 3 defa girin .....
 
