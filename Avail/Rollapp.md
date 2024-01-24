@@ -94,6 +94,10 @@ Not:  dizden rollap linki isterseler altaki siten arama yerine rollapp id nizi y
 
 https://fl.dym.fyi/rollapp/corenode_6886110-1
 
+
+
+
+
 ### başladı kanal buldu roller tx fund-faucet bu kodu 2 3 defa girin .....
 
 HAYIRLISI OLSUN.....
@@ -110,6 +114,23 @@ HAYIRLISI OLSUN.....
 tail -f ~/.roller/rollapp/rollapp.log
 ```
 
+### tx kasma
+
+
+öncelikle screende senin kanal sayını öğren biri sıfır diğeri kaçsa yaz bi yere
+
+
+kanalınız kaçsa 8424 onla değiştiriniz...
+Not: adres kısmına roller keys list yazdığınızda çıkan ilk dym adresini yazınız
+
+Bu kod siizn rollapp a ibc transfer yapar. altaki dym kısmına kendi coininizin sembolünüde yazarak deneyin mesela crn ise ucrn
+```
+dymd tx ibc-transfer -y transfer transfer channel-8424 buraya-adres 1dym --from hub_sequencer --keyring-backend test --home .roller/hub-keys/ --chain-id froopyland_100-1 --node http://65.108.206.118:60757/ -y
+```
+Bu kod sizin rollapp dan froopyland a transfer. altaki dym kısmına kendi coininizin sembolünüde yazarak deneyin mesela crn ise ucrn
+```
+rollapp_evm tx ibc-transfer transfer transfer channel-0 buraya-adres 1dym --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block -y
+```
 
 ### PR işlemleri
 
