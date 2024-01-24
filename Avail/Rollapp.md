@@ -5,6 +5,8 @@
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b8fa92da-cdbc-4442-8891-62b293c6c36e)
 
 
+# KOMPLE HERŞEYİ OKUYUN HEPSİNİ SONRA BAŞLAYIN...
+
 ### Kurulum
 ```
 ufw allow 26657
