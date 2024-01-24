@@ -118,7 +118,7 @@ tail -f ~/.roller/rollapp/rollapp.log
 
 ### tx kasma
 
-
+NOT: işlemler hemen yansımıyor aşağıdaki resimde zamnala txler gorunur
 öncelikle screende senin kanal sayını öğren biri sıfır diğeri kaçsa yaz bi yere
 
 
@@ -133,6 +133,9 @@ Bu kod sizin rollapp dan froopyland a transfer. altaki dym kısmına kendi coini
 ```
 rollapp_evm tx ibc-transfer transfer transfer channel-0 buraya-adres 1dym --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block -y
 ```
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/30753255-1caa-43d5-ad19-2a9b2502c19c)
+
 
 ### Rollapınızı metamaska ekleme
 NOT: zincir kimliğine rollapp adınızın ortadaki sayısını yazıyorsunuz sadece
