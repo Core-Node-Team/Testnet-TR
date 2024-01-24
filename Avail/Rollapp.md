@@ -137,6 +137,18 @@ NOT: zincir kimliğine rollapp adınızın ortadaki sayısını yazıyorsunuz sa
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3305de9b-78c4-4f8b-90f6-b5c016b281c1)
 
+### Adamalar sizden coin atmanızı istedi nasıl
+* öncelikle sunucunuzdan hub adresinin private keyini alın mm ekleyin yukarda ağınızı ekledik zaten
+
+roller keys export rollapp_sequencer
+
+* ee adamlar bize dym adresi verdi evm adresi nedir bu dymnin explorerde aratın verdikleri adresi alın size evm adresi atın mm dan
+
+https://fl.dym.fyi/address/dym1jq59qkt6vhvu4q368pyjllt8z96wxpcmfjwkf7
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6448e12a-703f-4bfe-b6a5-129c48c17207)
+
+
 
 ### PR işlemleri
 
