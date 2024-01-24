@@ -132,6 +132,11 @@ Bu kod sizin rollapp dan froopyland a transfer. altaki dym kısmına kendi coini
 rollapp_evm tx ibc-transfer transfer transfer channel-0 buraya-adres 1dym --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block -y
 ```
 
+### Rollapınızı metamaska ekleme
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/3305de9b-78c4-4f8b-90f6-b5c016b281c1)
+
+
 ### PR işlemleri
 
 👉NOT:  komple okuyun ondan sonra başlıyacaksanız başlayın....
