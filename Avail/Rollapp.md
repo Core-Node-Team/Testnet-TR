@@ -141,9 +141,9 @@ NOT: zincir kimliğine rollapp adınızın ortadaki sayısını yazıyorsunuz sa
 
 ### Adamalar sizden coin atmanızı istedi nasıl
 * öncelikle sunucunuzdan hub adresinin private keyini alın mm ekleyin yukarda ağınızı ekledik zaten
-
+```
 roller keys export rollapp_sequencer
-
+```
 * ee adamlar bize dym adresi verdi evm adresi nedir bu dymnin explorerde aratın verdikleri adresi alın size evm adresi atın mm dan
 
 https://fl.dym.fyi/address/dym1jq59qkt6vhvu4q368pyjllt8z96wxpcmfjwkf7
