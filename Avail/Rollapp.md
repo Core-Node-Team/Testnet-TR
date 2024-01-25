@@ -153,7 +153,9 @@ https://fl.dym.fyi/address/dym1jq59qkt6vhvu4q368pyjllt8z96wxpcmfjwkf7
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/6448e12a-703f-4bfe-b6a5-129c48c17207)
 
+👉NOT: siz dym ağında atacaksınız o yzuden ağı eklemek için portala mm bağlayın dym ağını otomatik ekler..
 
+https://portal.dymension.xyz
 
 ### PR işlemleri
 
