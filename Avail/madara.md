@@ -20,13 +20,13 @@
 | ✔️UBUNTU | 20+ |
 
 
-## Update ve gereklilikler
+## 💻Update ve gereklilikler
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl build-essential pkg-config libssl-dev git wget jq make gcc chrony clang -y
 apt-get install protobuf-compiler
 ```
-## Rust kurulum
+## 🚧Rust kurulum
 
 👉Not: soru sorucak `1` diyoruz...
 ```
@@ -47,7 +47,7 @@ rustc --version
 👉Not: çıktı böle olmalı `Version must be 1.75.0`
 
 
-## Docker kurulumu
+## 🚧Docker kurulumu
 
 ```
 sudo apt install docker.io
@@ -62,7 +62,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-## Madara dosyalarını çekelim
+## 🚧Madara dosyalarını çekelim
 ```
 git clone https://github.com/karnotxyz/madara-cli
 ```
@@ -74,7 +74,7 @@ Not: Uzun sürer bekleyeceksiniz.
 cargo build --release
 ```
 
-## init işlemi
+## 🚧init işlemi
 ```
 ./target/release/madara init
 ```
@@ -98,7 +98,7 @@ nano /root/.madara/app-chains/$appname/da-config.json
 * içersinde seed yazan kısımda `0x` li yeri silin tırnaklar kalsın cüzdanınızın kelimelerini buraya yapıstırın ve yine sondaki cüzdan adresini cüzdan adresinizle değiştirin `ctrl x y` enterla kaydedip çıkın.
 
 
-## Başlatalım
+## 🏆Başlatalım
 
 ```
 screen -S madara
@@ -112,7 +112,7 @@ cd
 
 * çalışmaya başladıktan sonra bişeye dokunmuyoruz screen içersinde çalışıcak. rpclerden oturu hata alabilirsiniz durabilir. yine yukarıdaki kodla çalışır. screenden çıkmak için `ctrl a d` eğer screene girmek istersenizde `screen -r madara` diyelim screene giremiyorsunuz `screen -ls` yazıyoruz eğer screenimiz görunuyorsa ama ataç yazıyorsa `screen -d madara` daha sonra `screen -r madara` 
 
-## Explorer çalıştıralım..
+## 🏆Explorer çalıştıralım..
 
 * screende madara çalışıyor ctrl ad ile çıktık artık screende değiliz..
 ```
@@ -127,7 +127,7 @@ docker logs -f madara-explorer
 http://SUNUCU-İP-YAZ:4000
 ```
 
-## PR işlemi..
+## 🏆PR işlemi..
 👉NOT: hata yapmamak için dikat edin basit ama boşluk kaldı sırası kaçtı gibi saçmalıklardan sıkıntı cıkabilior...
 
 * öncelikle aşağıdaki linkten repoyu forkluyoruz...
