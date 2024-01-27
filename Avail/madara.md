@@ -74,7 +74,7 @@ Not: Uzun sürer bekleyeceksiniz.
 cargo build --release
 ```
 
-## 🚧init işlemi
+## 🛠️init işlemi
 ```
 ./target/release/madara init
 ```
@@ -98,7 +98,7 @@ nano /root/.madara/app-chains/$appname/da-config.json
 * içersinde seed yazan kısımda `0x` li yeri silin tırnaklar kalsın cüzdanınızın kelimelerini buraya yapıstırın ve yine sondaki cüzdan adresini cüzdan adresinizle değiştirin `ctrl x y` enterla kaydedip çıkın.
 
 
-## 🏆Başlatalım
+## 🛠️Başlatalım
 
 ```
 screen -S madara
@@ -112,7 +112,7 @@ cd
 
 * çalışmaya başladıktan sonra bişeye dokunmuyoruz screen içersinde çalışıcak. rpclerden oturu hata alabilirsiniz durabilir. yine yukarıdaki kodla çalışır. screenden çıkmak için `ctrl a d` eğer screene girmek istersenizde `screen -r madara` diyelim screene giremiyorsunuz `screen -ls` yazıyoruz eğer screenimiz görunuyorsa ama ataç yazıyorsa `screen -d madara` daha sonra `screen -r madara` 
 
-## 🏆Explorer çalıştıralım..
+## 🛠️Explorer çalıştıralım..
 
 * screende madara çalışıyor ctrl ad ile çıktık artık screende değiliz..
 ```
