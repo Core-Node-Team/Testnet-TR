@@ -28,7 +28,7 @@ apt-get install protobuf-compiler
 ```
 ## Rust kurulum
 
-Not: soru sorucak `1` diyoruz...
+👉Not: soru sorucak `1` diyoruz...
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -44,7 +44,7 @@ rustup default 1.75.0
 ```
 rustc --version
 ```
-Not: çıktı böle olmalı `Version must be 1.75.0`
+👉Not: çıktı böle olmalı `Version must be 1.75.0`
 
 
 ## Docker kurulumu
@@ -88,7 +88,7 @@ cargo build --release
 * buraya kadar yeni kullanıcı iseniz yapacaksınız.. çıkan avail cüzdana faucet alıcaksınız avail discorda faucet alabilmek için `gitppas 20 puana` sahip olmak gerekiyor.
 * aşağıdaki kısım zaten `bir cüzdana sahipseniz import etmek için` kullanıcaksınız...
 
-Not: aşağıda `appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ` kısımda yukarıda rollapınıza verdiğiniz ismi yazıcaksınız. örneğin benim corenode bu şekil olur `appname=corenode`
+👉Not: aşağıda `appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ` kısımda yukarıda rollapınıza verdiğiniz ismi yazıcaksınız. örneğin benim corenode bu şekil olur `appname=corenode`
 ```
 appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ
 ```
@@ -128,7 +128,7 @@ http://SUNUCU-İP-YAZ:4000
 ```
 
 ## PR işlemi..
-NOT: hata yapmamak için dikat edin basit ama boşluk kaldı sırası kaçtı gibi saçmalıklardan sıkıntı cıkabilior...
+👉NOT: hata yapmamak için dikat edin basit ama boşluk kaldı sırası kaçtı gibi saçmalıklardan sıkıntı cıkabilior...
 
 * öncelikle aşağıdaki linkten repoyu forkluyoruz...
 
