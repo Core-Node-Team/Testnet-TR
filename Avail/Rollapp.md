@@ -32,7 +32,7 @@ roller config init --interactive
 
 👉 3 harfli her hangi bir coin kısa yolu yazınız Mll gibim
 
-👉 total mikarını belirleyin supply
+👉 total mikarını belirleyin supply. ancak hep az giriyorsunuz lütfen dokunmadan enterla geçin
 
 👉 avail seçtim
 
