@@ -160,6 +160,36 @@ https://github.com/karnotxyz/avail-campaign-listing
 * bu durumdan oturu onaylamaz hatanın sebebi metin belgesinde yazıp json dıyoruz ya ondan zaten yapmıs olanlar yukarıda dediğim gibi dosyasına kendi github forkladığı repoda girsin boşluk varmı die baksın commet deyip kaydedip çıksın düzelmesi lazım.
 
 
+### Logo yükleme
+
+* zaten daha once rollapplar için yukledik. yuklemediyseniz kendi githubunuzda herhangi bir reponuza add file deyip logonuzu upload  edin sona tıklayın 
+* mesela ben rollapp pr atmıstım dymensionun ister kendi reponuzdan isterseniz dymensionunkinden kendi logonuza tıklayıp logonuzu görün bele
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/f3bca48a-6026-4413-b875-6ab5b385bb36)
+
+YADA
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/a1d70d40-dd43-4bd2-8bab-486f690acf7c)
+
+* bulunduğunuz sayfanın linkinin sonuna gelin. sonuna şunu ekleyip enterlayın. `?raw=true`
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b4e6e365-8378-4601-8a92-1f2612459303)
+
+* artık bele görunecek link..
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9d2ef66e-9f75-4b2c-abc0-eb0070120550)
+
+* ekrandada böle logonuz gorunecek.
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/2640a771-3c66-4969-81ed-00de5d5f7246)
+
+* tamamdır artık bu linki kullanabilirsiniz.
+
+
+
+
+
+
 
 
 
