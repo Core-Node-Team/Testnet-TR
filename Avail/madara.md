@@ -160,7 +160,7 @@ https://github.com/karnotxyz/avail-campaign-listing
 * bu durumdan oturu onaylamaz hatanın sebebi metin belgesinde yazıp json dıyoruz ya ondan zaten yapmıs olanlar yukarıda dediğim gibi dosyasına kendi github forkladığı repoda girsin boşluk varmı die baksın commet deyip kaydedip çıksın düzelmesi lazım.
 
 
-### Logo yükleme
+### ✅ Logo yükleme
 
 * zaten daha once rollapplar için yukledik. yuklemediyseniz kendi githubunuzda herhangi bir reponuza add file deyip logonuzu upload  edin sona tıklayın 
 * mesela ben rollapp pr atmıstım dymensionun ister kendi reponuzdan isterseniz dymensionunkinden kendi logonuza tıklayıp logonuzu görün bele
