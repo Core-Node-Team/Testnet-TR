@@ -33,7 +33,7 @@ babylond q bank balances $(babylond keys show wallet -a)
  
 ## Validatör Oluştur
 ```
-babylond tx staking create-validator \
+babylond tx checkpointing create-validator \
 --amount 1000000ubbn \
 --pubkey $(babylond tendermint show-validator) \
 --moniker "MONİKER_İSMİNİZ" \
@@ -53,7 +53,7 @@ babylond tx staking create-validator \
 ```
 ## Validatörü Düzenle
 ```
-babylond tx staking edit-validator \
+babylond tx checkpointing edit-validator \
 --new-moniker "MONİKER_İSMİNİZ" \
 --identity "KEYBASE.İO_İD" \
 --details "DETAYLAR" \
