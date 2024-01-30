@@ -38,7 +38,7 @@ cd /root/avail-node/
 rm -rf data-avail
 ```
 ```
-wget https://github.com/availproject/avail/releases/download/v1.9.0.0/x86_64-ubuntu-2004-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 ```
 tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
