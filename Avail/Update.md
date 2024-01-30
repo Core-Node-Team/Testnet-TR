@@ -14,12 +14,14 @@ cd /root/avail-node/
 rm -rf data-avail
 ```
 ```
-wget https://github.com/availproject/avail/releases/download/v1.9.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
+wget http://37.120.189.81/avail/data-avail.tar.gz
 ```
 ```
-tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
+tar xvzf data-avail.tar.gz
 ```
-
+```
+chmod +x data-avail
+```
 ```
 sudo systemctl restart availd.service
 ```
