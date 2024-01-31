@@ -36,6 +36,16 @@ screen -S pac
 ### Claim..
 
 
-discordan olacak duyurucaz
+discordan olacak duyurucaz..
+
+# Yok ben mainnet çalıştırmayacam dıorsanız... window yada mac gui indirin
+* window
+https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0.0_windows_amd64_installer.exe
+* mac
+https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0.0_darwin_amd64.dmg
+
+* kurun gui çalıştırın zaten size yeni adres olusturayım mı die sorar açın eşleşsin bukadan
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/61af90b6-4514-455d-9b8b-f31794399c64)
 
 
