@@ -18,7 +18,7 @@ cd pactus-cli_1.0.0
 ```
 ./pactus-daemon init -w ~/pactus --restore "mnemonic"
 ```
-👉NOT: çıkan cıktıyı komple kaydedin...
+👉NOT: çıkan cıktıyı komple kaydedin... yok ben yeni cüzdan olsutrucam derseniz `./pactus-daemon init -w ~/pactus`
 ```
 apt install screen
 ```
