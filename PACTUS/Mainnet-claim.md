@@ -18,6 +18,7 @@ cd pactus-cli_1.0.0
 ```
 ./pactus-daemon init -w ~/pactus --restore "mnemonic"
 ```
+👉NOT: çıkan cıktıyı komple kaydedin...
 ```
 apt install screen
 ```
@@ -28,4 +29,10 @@ screen -S pac
 ./pactus-daemon start -w ~/pactus
 ```
 * çalışsın eşleşsin screenden çıkmak ıcın `ctrl ad` girmmek için `screen -r pac` yazıyoruz..
+
+### Claim..
+
+
+discordan olacak duyurucaz
+
 
