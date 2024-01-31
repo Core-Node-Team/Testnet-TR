@@ -37,6 +37,10 @@ screen -S pac
 ```
 * çalışsın eşleşsin screenden çıkmak ıcın `ctrl ad` girmmek için `screen -r pac` yazıyoruz..
 
+```
+./pactus-wallet --path ~/pactus/wallets/default_wallet address balance cüzdan-adresi
+```
+
 ### Claim..
 
 
