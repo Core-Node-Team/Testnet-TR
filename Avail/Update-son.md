@@ -2,7 +2,7 @@
 
 ![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
 
-NOT: Dökuman bizim repodan kuranalr için geçerlidir farklı bir kurulum yaptıysanız dosya yolları değiştirmeniz gerekebilir...
+👉NOT: Dökuman bizim repodan kuranalr için geçerlidir farklı bir kurulum yaptıysanız dosya yolları değiştirmeniz gerekebilir...
 
 ```
 systemctl stop availd
@@ -43,7 +43,7 @@ wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ub
 tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 ### Servis dosyası düzenlenecek mecburi
-NOT: "adınızı yazın" yazınız kısmını değiştirmeyi unutmayınız
+👉NOT: "adınızı yazın" yazınız kısmını değiştirmeyi unutmayınız
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
 [Unit]
@@ -75,7 +75,7 @@ EOF
 systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
 ```
 
-Not: başlangıcta sürümün 1.10 olduğunu görün bele
+👉Not: başlangıcta sürümün 1.10 olduğunu görün bele
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b13effd8-6e23-4961-b726-8a7215df6cbe)
 
