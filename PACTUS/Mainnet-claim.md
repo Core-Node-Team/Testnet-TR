@@ -7,6 +7,7 @@
 #  | [Twitter](https://twitter.com/pactuschain/) | [Discord](https://discord.gg/pactus-795592769300987944) | [Website](https://pactus.org/) | [Github](https://github.com/pactus-project) |
 
 
+### TEST i silicem diyorsanız `rm -rf pactus` girin
 
 ```
 curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus_downloader.sh | sh
