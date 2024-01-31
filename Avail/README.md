@@ -34,7 +34,7 @@ cd /root/avail-node/
 
 ### Dosyaları çekiyoruz
 ```
-wget http://37.120.189.81/avail/data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
 ```
 ------------------------
 Not: aşağıdaki ubuntu 20 için olan 2sini bir yapmıyorsunuz.  
@@ -44,11 +44,9 @@ wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ub
 ------------------------
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
 ```
-tar xvzf data-avail.tar.gz
+tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
-```
-chmod +x data-avail
-```
+
 
 ------------------
 Not: aşağısı ubuntu 20 için olan
