@@ -9,9 +9,6 @@ rm -rf /root/avail-node/data/chains/avail_goldberg_testnet/db/full
 ```
 ### Ubuntu 22
 ```
-sudo systemctl stop availd.service
-```
-```
 cd /root/avail-node/
 ```
 ```
@@ -24,9 +21,6 @@ wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ub
 tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 ### Ubuntu 20
-```
-sudo systemctl stop availd.service
-```
 ```
 cd /root/avail-node/
 ```
