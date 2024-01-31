@@ -1,5 +1,6 @@
+# <h1 align="center">Avail's Clash of Nodes Testnet Update</h1>
 
-# Avail Son güncelleme
+![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
 
 ```
 systemctl stop availd
