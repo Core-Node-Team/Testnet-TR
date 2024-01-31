@@ -30,7 +30,7 @@ rm -rf x86_64-ubuntu-2204-data-avail.tar.gz
 wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
 ```
 ```
-tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
+tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
 ```
 ### Ubuntu 20
 ```
