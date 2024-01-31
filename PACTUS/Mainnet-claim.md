@@ -1,7 +1,6 @@
 
 <h1 align="center"> Pactus Miannet</h1>
 
-<div align="center">
 
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/fc854b16-a554-419c-afbf-f99de720060a)
 
@@ -15,7 +14,7 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 ```
 cd pactus-cli_1.0.0
 ```
-NOT: "mnemonic" tırnakların içine mnemonic kelimelerinizi yazıcaksınız..
+👉NOT: "mnemonic" tırnakların içine mnemonic kelimelerinizi yazıcaksınız..
 ```
 ./pactus-daemon init -w ~/pactus --restore "mnemonic"
 ```
