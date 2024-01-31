@@ -43,6 +43,7 @@ wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ub
 tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 ### Servis dosyası düzenlenecek mecburi
+NOT: "adınızı yazın" yazınız kısmını değiştirmeyi unutmayınız
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
 [Unit]
