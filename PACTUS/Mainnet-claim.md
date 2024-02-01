@@ -19,13 +19,22 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 ```
 cd pactus-cli_1.0.0
 ```
-👉NOT: "mnemonic" tırnakların içine mnemonic kelimelerinizi yazıcaksınız..
+👉Mainnet için alttaki komutla  yeni cüzdan oluşturmalısınız.
 ```
-./pactus-daemon init -w ~/pactus --restore "mnemonic"
-```
-👉NOT: buraya kadar mainnet adresi almak için yapıyoruz eğer mainnet çalıştırmayacaksanız alt kısım gerekli değildir die dusunuyorum... discordan botla adres yazarak claimlenecek cunku
+./pactus-daemon init
 
-👉NOT: çıkan cıktıyı komple kaydedin... yok ben yeni cüzdan olsutrucam derseniz `./pactus-daemon init -w ~/pactus`
+Oluşturulan Cüzdanın Seed Kelimelerini Kaydedin ve Cüzdan Parolası Oluşturun Onu da Kaydedin.
+
+👉 Sonrasında Cüzdanınızı Sync Etmeniz Gerekli Yoksa Claim Edemezsiniz, Sync İçin Alttaki Komutu Kullanın.
+./pactus-daemon start -w ~/pactus
+
+👉 Sync Olduktan Sonra, Discordda robo-pac kanalına gidin.
+/claim [Testnet-validator-address] [Mainnet-Validator-address] olacak şekilde açılan pop-up'a areslerinizi girin. İşleminiz gerçekleşecektir.
+
+```
+👉NOT: buraya kadar mainnet adresi almak için yapıyoruz eğer mainnet çalıştırmayacaksanız alt kısım gerekli değildir die dusunuyorum... 
+
+👉NOT: çıkan cıktıyı komple kaydedin... yok ben yeni cüzdan olsutrucam derseniz `./pactus-daemon init`
 ```
 apt install screen
 ```
