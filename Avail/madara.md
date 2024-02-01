@@ -75,7 +75,7 @@ git clone https://github.com/karnotxyz/madara-cli
 ```
 cd madara-cli
 ```
-Not: Uzun sürer bekleyeceksiniz.
+Not: Uzun sürer bekleyeceksiniz. aşağıdaki kod uzun sürdüğünden hata verirse yada bağlantınız koaprsa diescreen açabılırısnız screen -S kurulum  çıkarakene ctrl ad girerkene screen -r kurulum ataçta kalmıssa screen -ls de gorunur screen -d kurulum yazarsanız ataçtan cıkar..
 ```
 cargo build --release
 ```
