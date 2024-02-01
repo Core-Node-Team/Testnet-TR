@@ -77,6 +77,19 @@ WantedBy=multi-user.target
 EOF
 ```
 ### Başlatalım
+
+* snap opsiyonel.
+```
+sudo apt update
+
+sudo apt install snapd -y
+
+sudo snap install lz4 curl
+
+curl -o - -L http://snapshots.staking4all.org/snapshots/avail/latest/avail.tar.lz4 | lz4 -c -d - | tar -x -C /root/avail-node/data/chains/avail_goldberg_testnet
+```
+
+
 ```
 systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
 ```
