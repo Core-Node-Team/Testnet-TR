@@ -19,7 +19,13 @@
 | ✔️Storage	| 40+ GB SSD |
 | ✔️UBUNTU | 20+ |
 
-
+#### Port açalım
+```
+ufw allow 4000
+ufw allow 30333
+ufw allow 9615
+ufw allow 9944
+```
 ## 💻Update ve gereklilikler
 ```
 sudo apt update && sudo apt upgrade -y
