@@ -80,6 +80,8 @@ EOF
 
 * snap opsiyonel.
 ```
+sudo systemctl stop availd
+
 sudo apt update
 
 sudo apt install snapd -y
