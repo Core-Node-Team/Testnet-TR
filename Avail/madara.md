@@ -141,8 +141,8 @@ https://github.com/karnotxyz/avail-campaign-listing
   "name": "rollap-isim",
   "logo": "logo-linkiniz",
   "rpc_url": "http://SUNUCU-İP-YAZ:9944",
-  "explorer_url": "SUNUCU-İP-YAZ:4000",
-  "metrics_endpoint": "SUNUCU-İP-YAZ:9615/metrics",
+  "explorer_url": "http://SUNUCU-İP-YAZ:4000",
+  "metrics_endpoint": "http://SUNUCU-İP-YAZ:9615/metrics",
   "id": "217c49f6-3cfb-4755-a8fc-001c9a7753af"
 }
 ```
