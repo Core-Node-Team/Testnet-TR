@@ -143,7 +143,7 @@ https://github.com/karnotxyz/avail-campaign-listing
   "rpc_url": "http://SUNUCU-İP-YAZ:9944",
   "explorer_url": "http://SUNUCU-İP-YAZ:4000",
   "metrics_endpoint": "http://SUNUCU-İP-YAZ:9615/metrics",
-  "id": "217c49f6-3cfb-4755-a8fc-001c9a7753af"
+  "id": "aldığınız uidi yazın"
 }
 ```
 
