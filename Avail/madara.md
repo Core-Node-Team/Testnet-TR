@@ -187,6 +187,36 @@ YADA
 
 
 
+# RPC değişme
+
+👉Not: aşağıda `appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ`
+```
+appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ
+```
+```
+nano /root/.madara/app-chains/$appname/da-config.json
+```
+
+* ekliyoruz diğerini silip 
+```
+wss://san1ty.avail.tools:443/ws
+```
+## 🛠️Başlatalım
+
+```
+screen -r madara
+```
+```
+cd
+```
+```
+./madara-cli/target/release/madara run
+```
+
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b9cff2c1-ba20-45a2-afcd-f7f37d2cde90)
+
+👉Not: kendi githubunuzda madara için forkladığınız repoya gelin kendi dosyanızı bulun düzenle deyin en altta satır kalmasın comiit edin bi nevi update edıyoruz olmassa bişiler yazıp silin :D sona prınıza bakın 
 
 
 
