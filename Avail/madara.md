@@ -135,7 +135,7 @@ http://SUNUCU-İP-YAZ:4000
 https://github.com/karnotxyz/avail-campaign-listing
 
 * app_chains klasörüne girin. add file deyip create new file deyin. https://www.uuidgenerator.net/ sitesine gidip generate tılayın sayfanın yukarısında bir key cıkıcak kopyalayın ve new file dediğimizde githubumuzda gelen ekranda yazıp sonuna .json yazın
-* daha sonra altaki kodları yapıstırıp kedinize göre düzenleyip yukarıdan commitle kaydedin.
+* daha sonra altaki kodları yapıstırıp kedinize göre düzenleyip yukarıdan commitle kaydedin. yukarda aldığımız uid sitesinden id yi aşağıda değiştireceksiniz
 ```
 {
   "name": "rollap-isim",
