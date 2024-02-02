@@ -81,7 +81,7 @@ roller run
 
 👉NOT: screenden çıkmak için `ctrl ad`    ile çıkıyoruz tekrar bakmak için `screen -r rol`  giriyoruz
 👉NOT: `screen -ls`  açık screenleri gösterir ataç olmuş varsa `screen -d screen-adı` sonra `screen -r screen-adı`   kapamak için screene girin exit yazın...
-👉NOT: rollapınız kanal buldu ehrsey hazır dym discorda pr attıktan sonra pr linkinizle portalda yayınlamak için modlara sorun. şuan için listelemeyi ve portala eklemek konusunda biraz akrısıklık var
+👉NOT: rollapınız kanal buldu hersey hazır. 
 ```
 roller tx fund-faucet
 ```
