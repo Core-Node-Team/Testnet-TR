@@ -31,7 +31,7 @@ ufw allow 9944
 sudo apt update && sudo apt upgrade -y
 ```
 ```
-sudo apt install curl build-essential pkg-config libssl-dev git wget jq make gcc chrony clang -y
+sudo apt install curl build-essential pkg-config libssl-dev git wget jq make gcc chrony clang screen -y
 ```
 ```
 apt-get install protobuf-compiler
