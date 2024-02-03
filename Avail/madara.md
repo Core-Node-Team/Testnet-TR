@@ -73,6 +73,10 @@ docker-compose --version
 ```
 
 ## 🚧Madara dosyalarını çekelim
+👉Not: bağlantı koparsa uzun sürdüğünden sunucuya bağlanın screen -r madara yazıp screene tekrar girin ataçta kalmıs olabilir screen -ls yazdığınızda görurrsunuz önce screen -d madara sonra ctrl ad yap ve screen -r madara       yazın....
+```
+screen -S madara
+```
 ```
 git clone https://github.com/karnotxyz/madara-cli
 ```
@@ -110,9 +114,7 @@ nano /root/.madara/app-chains/$appname/da-config.json
 
 ## 🛠️Başlatalım
 
-```
-screen -S madara
-```
+
 ```
 cd
 ```
