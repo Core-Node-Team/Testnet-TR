@@ -19,6 +19,24 @@
 | ✔️Storage	| 40+ GB SSD |
 | ✔️UBUNTU | 20+ |
 
+------------
+MAdara ve rollapp kullanalar için duyuru...
+
+NOT: tabiki madarayı once durduruyoruz işlemlerden sonra başlatıyoruz. vee rollapıda durdurun biraz bekleyin sonra başlatın
+
+madaranın rpc değişmiş aynı rpcye hem madara hem rollapla bağlanmak sıkıntı olusturuyor gibi gorunuyor. değiştiricez zaten yeni madara kuranalrda rpc değişik eskilerde var bu sorun kontrol edin
+```
+appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ
+```
+```
+nano /root/.madara/app-chains/$appname/da-config.json
+```
+- goldberg yerine bunu yazıyoruz zaten böle ise elleşmiyoruz.....
+```
+wss://karnot-rpc.avail.tools:443/ws
+```
+------------------
+
 #### Port açalım
 ```
 ufw allow 4000
