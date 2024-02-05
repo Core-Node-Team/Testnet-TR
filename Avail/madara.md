@@ -218,10 +218,13 @@ YADA
 
 
 ---------------------------
+
+# TX kasma
+
 //// ALINTIDIR /////
 
 ## Go (bu sürümü lazım)
-
+```
 ver="1.21.6"
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
@@ -230,7 +233,7 @@ rm "go$ver.linux-amd64.tar.gz"
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 go version
-
+```
 ## Dosyayı çekelim
 ```
 git clone https://github.com/sarox0987/avail-madara
