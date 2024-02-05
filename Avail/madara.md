@@ -120,6 +120,10 @@ cargo build --release
 * buraya kadar yeni kullanıcı iseniz yapacaksınız.. çıkan avail cüzdana faucet alıcaksınız avail discorda faucet alabilmek için `gitppas 20 puana` sahip olmak gerekiyor.
 * aşağıdaki kısım zaten `bir cüzdana sahipseniz import etmek için` kullanıcaksınız...
 
+## DYM Rollapp ve madara aynıu cüzdanda sıkıntı çıkarıyor... 
+
+NOT: ona göre aşağıyı yapıyorsunuz yoksa başlatalım adımına geçin.
+
 👉Not: aşağıda `appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ` kısımda yukarıda rollapınıza verdiğiniz ismi yazıcaksınız. örneğin benim corenode bu şekil olur `appname=corenode`
 ```
 appname=BURAYA-YUKARIDA-VERDİĞİNİZ-ROLLAPP-İSMİNİ-YAZINIZ
