@@ -259,7 +259,7 @@ screen -S tx
 ```
 go run main.go
 ```
-
+NOT: screenden cıkmak için ctrl ad girmek için screen -r tx
 
 
 
