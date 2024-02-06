@@ -56,4 +56,12 @@ https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/61af90b6-4514-455d-9b8b-f31794399c64)
 
+### Stake etme
+```
+cd
+cd pactus-cli_1.0.0
+```
+```
+./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
+```
 
