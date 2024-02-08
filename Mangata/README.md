@@ -113,7 +113,7 @@ eigenlayer operator config create
 
 - yukarıda girdiğiniz adresi girin yine
 
-- goerli rpc lazım ücretsiz https://app.infura.io temin ediyoruz hesap oluşturup.
+- goerli rpc lazım ücretsiz https://app.infura.io temin ediyoruz hesap oluşturup. YADA `https://rpc.ankr.com/eth_goerli` bunu kullanmayı deneyin.
 
 - `ecdsa key` dosya yolu : /root/.eigenlayer/operator_keys/user.ecdsa.key.json
 
