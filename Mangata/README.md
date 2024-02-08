@@ -260,7 +260,7 @@ docker ps
 docker logs -f --tail 100 docker-id
 ```
 
-- Loglar biraz aksın sonra resmini alın avs-operators kanalına atın discorda rol vericekler.Mangatarians diye ve bot var aynı kanalda tıklayarak node runner rolude alın.
+- Loglar biraz aksın sonra resmini alın avs-operators kanalına atın discorda rol vericekler.Mangatarians diye ve bot var aynı kanalda tıklayarak node runner rolude alın. discord linki sayfanın basındakilinklerde var.
 
 
 #### Operator durumu kontrol
