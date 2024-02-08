@@ -179,7 +179,7 @@ nano operator.yaml
 
 - `metadata_url` : `metadata.json` yüklemiştik githuba o dosyaya geldiğimizde sağ üst kısımda raw yazar tıklarsanız linkini kopyalar buraya onu yapıstırın...
 
-- `el_slasher_address`: 0xD11d60b669Ecf7bE10329726043B3ac07B380C22
+- `el_slasher_address`: 0x3865B5F5297f86c5295c7f818BAD1fA5286b8Be6
 
 - `bls_public_key_compendium_address`: 0xc81d3963087Fe09316cd1E032457989C7aC91b19
 
