@@ -22,6 +22,7 @@
 | ✔️Storage	| 160+ GB SSD |
 | ✔️UBUNTU | 22 |
 
+NOT: BAŞLAMADAN LÜTFEN ÖNCE DETAYLICA OKUYUN KURULUMUN 2 ÇEŞİDİ VAR. DETAYLAR İÇİN DUSK DİCORDA GİRİP BAKININ....
 
 ### Docker kurulumu ve gereklilikler.
 
