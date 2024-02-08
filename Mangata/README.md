@@ -276,4 +276,16 @@ eigenlayer operator status operator.yaml
 eigenlayer operator update operator.yaml
 ```
 
+### komple silmek
 
+```
+cd avs-operator-setup
+```
+```
+docker compose down -v
+```
+```
+cd 
+rm -rf avs-operator-setup
+rm -rf eigenlayer-cli
+```
