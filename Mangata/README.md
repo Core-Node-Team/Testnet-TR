@@ -259,6 +259,10 @@ docker ps
 ```
 docker logs -f --tail 100 docker-id
 ```
+YADA
+```
+docker logs -f --tail 100 mangata-finalizer-node
+```
 
 - Loglar biraz aksın sonra resmini alın avs-operators kanalına atın discorda rol vericekler.Mangatarians diye ve bot var aynı kanalda tıklayarak node runner rolude alın. discord linki sayfanın basındakilinklerde var.
 
