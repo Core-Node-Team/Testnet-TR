@@ -86,7 +86,7 @@ sudo cp eigenlayer-cli/build/eigenlayer /usr/local/bin/
 ```
 
 ### Key oluşturma
-NOT: şifre sayı buyuk harf ve özel karakter içermeli.Çıkan tum çıktıların yedeğini alıp kaydedin.
+NOT: şifre sayı buyuk harf ve sayı içermeli.Çıkan tum çıktıların yedeğini alıp kaydedin.
 ```
 eigenlayer operator keys create --key-type ecdsa user
 ```
