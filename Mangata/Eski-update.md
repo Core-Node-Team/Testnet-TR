@@ -32,6 +32,7 @@ sudo cp eigenlayer-cli/build/eigenlayer /usr/local/bin/
 ```
 
 ### Operator kayıt
+NOT: `nano operator.yaml` kodu yazıp içindekini bi yere kaydedin sona lazım olur... olur
 ```
 eigenlayer operator config create
 ```
