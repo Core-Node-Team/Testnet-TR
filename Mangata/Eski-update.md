@@ -63,11 +63,13 @@ nano operator.yaml
 
 
 ### register(kayıt)
+
+```
+cd
+eigenlayer operator register operator.yaml
+```
 ```
 cd avs-operator-setup
-```
-```
-eigenlayer operator register operator.yaml
 ```
 ```
 ./run.sh opt-in
