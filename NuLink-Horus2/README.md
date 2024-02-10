@@ -168,7 +168,21 @@ docker restart ursula
 
 
 
+# Daha sonra yapılacaklar
 
+- günlük ödülü claim edin sonra sayfayı yenile tekrar stake et mutlaka bu önemli
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9f58267d-03cd-4bcd-85e4-a881008dc6a7)
+
+
+- questler var. biraz uğraşın öğrenirsiniz...
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/e3b8de23-3c41-49e3-ab4f-2413e3a711fa)
+
+
+- staking sıralaması ve quest sıralaması ayrı önemli 2 side
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/69689ac6-a77d-4519-9193-3becdb3f5233)
 
 
 
