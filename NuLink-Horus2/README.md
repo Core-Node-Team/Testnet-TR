@@ -10,7 +10,7 @@
  * [NuLink Resmi Discord](https://discord.gg/25CQFUuwJS)
  * [NuLink Dökümantasyon](https://docs.nulink.org/products/stakers/nulink_worker/eth_account/)
  
-
+[VİDEO ANLATIM KURULUM TIKLA](https://www.youtube.com/watch?v=_wxAYMxd_WQ)
 
 ### Sistem Gereksinimleri
 
