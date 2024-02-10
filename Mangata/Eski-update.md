@@ -1,4 +1,5 @@
 ```
+cd
 cd avs-operator-setup
 ```
 ```
