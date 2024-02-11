@@ -163,7 +163,7 @@ https://portal.dymension.xyz
 
 * kanal buldu herşey tamamsa screenden ctrl ad ile çıkın. altkai github reposunu forklayın . bunun için elbette bir githun hesabınız olmalı
 
-https://github.com/dymensionxyz/rollapp-registry
+https://github.com/dymensionxyz/chain-registry
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/11225f8b-e46e-47e3-b58a-d4bf6a942ea8)
 
