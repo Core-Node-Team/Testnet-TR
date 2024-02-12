@@ -78,7 +78,9 @@ Not: şifre oluşturmanızı isteyecek 12345678 yapın geçin kafa karışmasın
 ```
 ![image](https://github.com/molla202/NuLink-Horus2/assets/91562185/5e0c45e8-da65-4f3f-9d2b-397a69976639)
 ### NuLink docker image çekelim
-
+```
+systemctl restart docker
+```
 ```
 docker pull nulink/nulink:latest
 ```
