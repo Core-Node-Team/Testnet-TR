@@ -76,6 +76,7 @@ systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo 
 
 👉Not: başlangıcta sürümün v1.11.0.0 olduğunu görün bele
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9682a35b-0dff-4b7c-91db-f0e60d86d905)
 
 
 
