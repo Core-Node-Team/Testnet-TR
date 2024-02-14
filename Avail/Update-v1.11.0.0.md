@@ -13,6 +13,9 @@
 
 ### Ubuntu 22
 ```
+systemctl stop availd
+```
+```
 cd /root/avail-node/
 ```
 ```
@@ -28,6 +31,9 @@ wget https://github.com/availproject/avail/releases/download/v1.11.0.0/x86_64-ub
 tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
 ```
 ### Ubuntu 20
+```
+systemctl stop availd
+```
 ```
 cd /root/avail-node/
 ```
