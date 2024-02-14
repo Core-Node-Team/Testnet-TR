@@ -9,7 +9,7 @@
 * [Github](https://github.com/availproject/avail/releases)
 
 👉NOT: Dökuman bizim repodan kuranalr için geçerlidir farklı bir kurulum yaptıysanız dosya yolları değiştirmeniz gerekebilir...
-
+👉NOT: EVET SERVİS DOSYASINIDA ESKİ HALİNE GETİRİYORUZ...
 
 ### Ubuntu 22
 ```
