@@ -10,12 +10,7 @@
 
 👉NOT: Dökuman bizim repodan kuranalr için geçerlidir farklı bir kurulum yaptıysanız dosya yolları değiştirmeniz gerekebilir...
 
-```
-systemctl stop availd
-```
-```
-rm -rf /root/avail-node/data/chains/avail_goldberg_testnet/db/full
-```
+
 ### Ubuntu 22
 ```
 cd /root/avail-node/
