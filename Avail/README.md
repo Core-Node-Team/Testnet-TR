@@ -34,12 +34,12 @@ cd /root/avail-node/
 
 ### Dosyaları çekiyoruz
 ```
-wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.11.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
 ```
 ------------------------
 Not: aşağıdaki ubuntu 20 için olan 2sini bir yapmıyorsunuz.  
 ```
-wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2004-data-avail.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.11.0.0/x86_64-ubuntu-2004-data-avail.tar.gz
 ```
 ------------------------
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
@@ -183,7 +183,7 @@ screen -S alight
 ```
 git clone https://github.com/availproject/avail.git
 cd avail
-git checkout v1.9.0.0
+git checkout v1.11.0.0
 ```
 ### Kuralım
 ```
