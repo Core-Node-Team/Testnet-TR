@@ -33,7 +33,7 @@ apt install screen
 screen -S pac
 ```
 ```
-./pactus-daemon start -w ~/pactus
+cd pactus-cli_1.0.0 && ./pactus-daemon start -w ~/pactus
 ```
 * çalışsın eşleşsin screenden çıkmak ıcın `ctrl ad` girmmek için `screen -r pac` yazıyoruz..
 
