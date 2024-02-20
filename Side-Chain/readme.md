@@ -157,7 +157,7 @@ sided keys add $WALLET --recover
 sided query bank balances $WALLET_ADDRESS
 ```
 ### 🏆Validator oluşturma
-NOT: validator ve cüzdan adınızı yaıznız
+NOT: validator ve cüzdan adınızı yaıznız. fauceti discordan alıcaksınız. link sayfanın basında var. `$request side-testnet-1 cüzdanadresi-yaz` Bu şekilde.
 ```
 sided tx staking create-validator \
 --amount 1000000uside \
