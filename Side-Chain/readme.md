@@ -146,11 +146,11 @@ sudo systemctl restart sided && sudo journalctl -u sided -f
 ```
 ### 🚧Cüzdan oluşturma - kelimeleri yedekleyin
 ```
-sided keys add $WALLET
+sided keys add cüzdan-adı-yaz
 ```
 ### 🚧Cüzdan import
 ```
-sided keys add $WALLET --recover
+sided keys add cüzdan-adı-yaz --recover
 ```
 ### 🚧Bakiye sorgulama
 ```
