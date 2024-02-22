@@ -125,7 +125,7 @@ Description=Side node
 After=network-online.target
 [Service]
 User=$USER
-WorkingDirectory=$HOME/.sidechain
+WorkingDirectory=$HOME/.side
 ExecStart=$(which sided) start --home $HOME/.side
 Restart=on-failure
 RestartSec=5
