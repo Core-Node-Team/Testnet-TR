@@ -75,7 +75,7 @@ mina libp2p generate-keypair -privkey-path /root/keys/keys
 ---------------
 
 
-* Tek seferde kopyala yapıştır. ama şifreleri yazmayıda unutma
+* Tek seferde kopyala yapıştır. ama şifreleri yazmayıda unutma. eğer eski mina varsa `mv /root/.mina-config /root/.mina-config2` değiştirelim ismini
 ```
 sudo tee /usr/lib/systemd/user/mina.service > /dev/null << EOF
 [Unit]
