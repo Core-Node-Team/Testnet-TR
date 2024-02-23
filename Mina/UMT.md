@@ -1,11 +1,20 @@
+
+
+
+
+
+```
 sudo rm /etc/apt/sources.list.d/mina*.list
-
+```
+```
 sudo echo "deb [trusted=yes] http://packages.o1test.net $(lsb_release -cs) umt" | sudo tee /etc/apt/sources.list.d/mina.list
-
+```
+```
 sudo apt-get update
-
+```
+```
 sudo apt-get install --allow-downgrades -y mina-mainnet=1.0.0umt-2025a73
-
+```
 
 * gelen zipli dosyayı mailden pcye indirin ve açın hebelehübele.zip
 * Sunucuda bir keys dosyası oluşturuyoruz ~/keys .
