@@ -1,6 +1,14 @@
 
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/42bd08c8-a812-4a31-beaf-ecfaa698e94e)
 
-
+NOT: ubuntu 20
+```
+sudo ufw allow 22
+sudo ufw allow 8301
+sudo ufw allow 8302
+sudo ufw allow 3089
+```
+### Mina
 
 
 ```
@@ -13,9 +21,25 @@ sudo echo "deb [trusted=yes] http://packages.o1test.net $(lsb_release -cs) umt" 
 sudo apt-get update
 ```
 ```
-sudo apt-get install --allow-downgrades -y mina-mainnet=1.0.0umt-2025a73
+sudo apt-get install -y mina-mainnet=1.0.0umt-2025a73
 ```
 
+
+----------------------
+Not: eğer eski kurulu varsa burdan başlanacak sıfırdan kurulucaksa bu çizgili alanlar yapılmayacak.
+```
+sudo rm /etc/apt/sources.list.d/mina*.list
+```
+```
+sudo echo "deb [trusted=yes] http://packages.o1test.net $(lsb_release -cs) umt" | sudo tee /etc/apt/sources.list.d/mina.list
+```
+```
+sudo apt-get update
+```
+```
+sudo apt-get install --allow-downgrades -y mina-mainnet=1.0.0umt-2025a73
+```
+-------------------------------
 * gelen zipli dosyayı mailden pcye indirin ve açın hebelehübele.zip
 * Sunucuda bir keys dosyası oluşturuyoruz ~/keys .
 ```
