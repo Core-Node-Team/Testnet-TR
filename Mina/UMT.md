@@ -26,7 +26,7 @@ sudo apt-get install -y mina-mainnet=1.0.0umt-2025a73
 
 
 ----------------------
-Not: eğer eski kurulu varsa burdan başlanacak sıfırdan kurulucaksa bu çizgili alanlar yapılmayacak.
+Not: eğer eski kurulu varsa burdan başlanacak sıfırdan kurulucaksa bu çizgili alanlar yapılmayacak. yani yukarısı sıfırdan kuracaklar için. burası zaten kuruluysa burdan baslanacak
 ```
 sudo rm /etc/apt/sources.list.d/mina*.list
 ```
