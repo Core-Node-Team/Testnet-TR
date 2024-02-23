@@ -42,7 +42,7 @@ sudo apt-get install --allow-downgrades -y mina-mainnet=1.0.0umt-2025a73
 -------------------------------
 * gelen zipli dosyayı mailden pcye indirin ve açın hebelehübele.zip
 * Sunucuda bir keys dosyası oluşturuyoruz ~/keys .
-* eğer eski keyler varsa. yeni verdikelri için mv ~/keys ~/keys1
+* eğer eski keyler varsa. yeni verdikelri için `mv ~/keys ~/keys1` girip eski key dosyası adını değiştirelim.
 ```
 mkdir ~/keys
 ```
