@@ -5,7 +5,7 @@
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/f52b6797-1e69-4d84-a5e3-8d84f9d0339e)
    
      
-# [Website](https://www.cess.cloud/) | [Twitter](https://twitter.com/CESS_Storage) | [Discord](https://discord.gg/dyMHNS6D) | [Github](https://github.com/CESSProject) | [Docs](https://docs.cess.cloud/cess-build-book/) | [Whitepaper](https://www.cess.cloud/theme/cess/globe/CESS--Cumulus_Encrypted_Storage_System_v0.4.pdf)  
+# [Website](https://www.cess.cloud/) | [Twitter](https://twitter.com/CESS_Storage) | [Discord](https://discord.gg/DyEzq6Js) | [Github](https://github.com/CESSProject) | [Docs](https://docs.cess.cloud/cess-build-book/)
      
  </div>
 
