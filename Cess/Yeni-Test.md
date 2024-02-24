@@ -11,7 +11,7 @@
 
 #
 
-## Merhaba arkadaşlar bugün [Cess](https://www.cess.cloud/) projesinin teşvikli testentine katılacağız. Başlamadan önce projenin dökümanlarını ve sosyal medya hesaplarını inceleyip kendi araştırmanızı yapın ve testnet ile ilgili bu [bloğu](https://medium.com/@CESS_LAB/cumulus-encrypted-storage-system-cess-testnet-v0-6-0-launches-on-july-4th-52c30686eb2f) okuyun.
+## Merhaba arkadaşlar bugün [Cess](https://www.cess.cloud/) projesinin teşvikli testentine katılacağız. Başlamadan önce projenin dökümanlarını ve sosyal medya hesaplarını inceleyip kendi araştırmanızı yapın.
 
 ## Cess açılımı Cumulus Encrypted Storage System. Kısacası merkezi olmayan bir yapıya sahip olan ve kullanıcıların verilerini güvenli bir şekilde depolamalarını sağlayan bir bulut depolama sistemidir.
 
