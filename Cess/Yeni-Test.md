@@ -19,7 +19,6 @@
 
 ## Mining, depolama alanı ile yapılıyor. Sunucu gereksinimleri 4Cpu 8Gb Ram Ssd miktarı ne kadar büyük olursa ***storage power*** da o kadar büyük olur dolayısıyla kazacağınız miktar da .
 
-## Storage minerelar  600,000 Cess tokena karşılık gelen 6000 puanı paylaşacak. Puanlar minerların storage powerlarına göre dağılıyor.
 
 # Kurulum
 > Komutları sırayla girin
