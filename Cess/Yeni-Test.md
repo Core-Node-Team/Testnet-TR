@@ -28,12 +28,12 @@ tar -xvf v0.5.4.tar.gz
 rm -rf v0.5.4.tar.gz
 cd cess-nodeadm-0.5.4/
 ./install.sh
-mkdir /opt/cess/storage/disk
+mkdir -p /opt/cess/storage/disk
 ```
 
 # Cüzdan 
 ### Storage miner olmak için iki adet cüzdana ihtiyacınız var. Birisi gelen ödülelrin yatacağı hesap diğeri stake etmek ve işlemleri imzalamak için kullanılacak hesap.
-### [Polkadot{.js}](https://polkadot.js.org/extension/) walletı açın ve iki tane yeni hesap oluşturun ardından [explorera](https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/accounts) gidin cüzdanı bağladıktan sonra ***accounts*** sekmesi altında adresleriniz görünecek.
+### [Polkadot{.js}](https://polkadot.js.org/extension/) walletı açın ve iki tane yeni hesap oluşturun ardından [explorera](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/accounts) gidin cüzdanı bağladıktan sonra ***accounts*** sekmesi altında adresleriniz görünecek.
 ### [Faucetten](https://testnet-faucet.cess.cloud/) test tokenları alın.
 
 # Başlatma
@@ -42,12 +42,14 @@ cess config set
 ```
 > ### Komutu girdikten sonra sırasıyla;
 > 1. soru storage yazın
-> 2. soru sunucunuzun ip adresini girin
-> 3. default port kullanmak istiyordanız enter değilse port numarası girin
-> 4. ödüllerin geleceği cüzdanın adresini girin
-> 5. stake için kullanacağınız cüzdanın mnemonic girin
-> 6. enter
-> 7. ne kadar depolama alını kullanmak istediğinizi girin
+> 2. default port kullanmak istiyordanız enter değilse port numarası girin
+> 3. ödüllerin geleceği cüzdanın adresini girin (bak adres diyorum)
+> 4. stake için kullanacağınız cüzdanın mnemonic girin(yeni cüzdan bu sadece stake için )
+> 5. enter (zaten dosyasını olusturduk enter dıyoruz)
+> 6. ne kadar depolama alını kullanmak istediğinizi girin (sadece sayı gb cinsinden 500gb sadece 500 yazıonuz)
+> 7. işlemci core sayısı 4 yazıyoruz
+> 8. diğer stake hesabını soruyor enter dıyoruz buna
+> 9. worker soruyor enter dıyoruz
 
 
 > ### Başlat
