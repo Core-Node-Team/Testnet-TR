@@ -21,7 +21,7 @@
 
 
 # Kurulum
-> Komutları sırayla girin
+> Komutları sırayla girin. UNUTMAYIN HERHANGİ BİR POLKA TABANLI PROJE VARSA SIKINTI ÇIKAR.
 ```
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.4.tar.gz
 tar -xvf v0.5.4.tar.gz
