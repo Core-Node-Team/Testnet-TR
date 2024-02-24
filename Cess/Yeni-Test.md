@@ -60,11 +60,11 @@ cess start
  ### Chain logları
  > `best` ulaştığınız blok yüksekliğiir [exploreri](https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/explorer) yakalayana kadar bekleyin
 ```
-docker logs chain
+docker logs -f chain
 ```
 ### Bucket logları
 ```
-docker logs bucket
+docker logs -f bucket
 ```
 ### Bucket durum
 ```
