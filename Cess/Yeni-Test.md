@@ -23,6 +23,7 @@
 # Kurulum
 > Komutları sırayla girin. UNUTMAYIN HERHANGİ BİR POLKA TABANLI PROJE VARSA SIKINTI ÇIKAR.
 ```
+ufw allow 4001
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.4.tar.gz
 tar -xvf v0.5.4.tar.gz
 rm -rf v0.5.4.tar.gz
