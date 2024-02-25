@@ -59,7 +59,7 @@ cess start
 ```
 # Kontrol
  ### Chain logları
- > `best` ulaştığınız blok yüksekliğiir [exploreri](https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/explorer) yakalayana kadar bekleyin
+ > `best` ulaştığınız blok yüksekliğiir [exploreri](https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/explorer) yakalayana kadar bekleyin farklı rpc [explorer](https://testnet.cess.cloud/?rpc=wss%3A%2F%2Ftestnet-rpc2.cess.cloud%2Fws%2F#/accounts)
 ```
 docker logs -f chain
 ```
