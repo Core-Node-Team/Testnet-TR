@@ -23,9 +23,9 @@
 
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
-| ✔️CPU |	2+ vcpu|
-| ✔️RAM	| 4+ GB |
-| ✔️Storage	| 160+ GB SSD |
+| ✔️CPU |	4+ vcpu|
+| ✔️RAM	| 8+ GB |
+| ✔️Storage	| 160+ GB SSD(nekadar-çok-okadar-ödül) |
 | ✔️UBUNTU | 22or20 |
 
 # Kurulum
