@@ -19,6 +19,14 @@
 
 ## Mining, depolama alanı ile yapılıyor. Sunucu gereksinimleri 4Cpu 8Gb Ram Ssd miktarı ne kadar büyük olursa ***storage power*** da o kadar büyük olur dolayısıyla kazacağınız miktar da .
 
+### Sistem Gereksinimleri
+
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| ✔️CPU |	2+ vcpu|
+| ✔️RAM	| 4+ GB |
+| ✔️Storage	| 160+ GB SSD |
+| ✔️UBUNTU | 22or20 |
 
 # Kurulum
 > Komutları sırayla girin. UNUTMAYIN HERHANGİ BİR POLKA TABANLI PROJE VARSA SIKINTI ÇIKAR.
