@@ -34,7 +34,7 @@ mkdir -p /opt/cess/storage/disk
 
 # Cüzdan 
 ### Storage miner olmak için iki adet cüzdana ihtiyacınız var. Birisi gelen ödülelrin yatacağı hesap diğeri stake etmek ve işlemleri imzalamak için kullanılacak hesap.
-### [Polkadot{.js}](https://polkadot.js.org/extension/) walletı açın ve iki tane yeni hesap oluşturun -ADRES CX İLE BAŞLAYACAK- ardından [explorera](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/accounts) gidin cüzdanı bağladıktan sonra ***accounts*** sekmesi altında adresleriniz görünecek. Farklı rpc [Explorer](https://testnet.cess.cloud/?rpc=wss%3A%2F%2Ftestnet-rpc2.cess.cloud%2Fws%2F#/accounts)
+### [Polkadot{.js}](https://polkadot.js.org/extension/) walletı açın ve iki tane yeni hesap oluşturun Cess test ağında olan adresleri alın-ADRES CX İLE BAŞLAYACAK- ardından [explorera](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet-rpc0.cess.cloud%2Fws%2F#/accounts) gidin cüzdanı bağladıktan sonra ***accounts*** sekmesi altında adresleriniz görünecek. Farklı rpc [Explorer](https://testnet.cess.cloud/?rpc=wss%3A%2F%2Ftestnet-rpc2.cess.cloud%2Fws%2F#/accounts)
 ### [Faucetten](https://cess.cloud/faucet.html) test tokenları alın.
 
 # Başlatma
