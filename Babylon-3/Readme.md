@@ -9,7 +9,7 @@
      
  </div>
 
-## Sistem Gereksinimleri
+## 💻Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
 | CPU |	6+ |
@@ -18,7 +18,7 @@
 
 NOT: BU AĞ SEÇİLENLERE ÖZELDİR. TEŞVİKLİ DEĞİLDİR. KURMAK ÖDÜL KAZANDIRMAZ. 
 
-### Go kuralım
+### 🚧Go kuralım
 ```
 ver="1.21.6"
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
@@ -29,7 +29,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 go version
 ```
-### Dosyaları çekelim ve kuralım
+### 🚧Dosyaları çekelim ve kuralım
 ```
 cd && rm -rf babylon
 git clone https://github.com/babylonchain/babylon
@@ -39,23 +39,23 @@ git checkout v0.8.3
 ```
 make build
 ```
-### Cosmovisor ayar
+### 🚧Cosmovisor ayar
 ```
 mkdir -p $HOME/.babylond/cosmovisor/genesis/bin
 mv build/babylond $HOME/.babylond/cosmovisor/genesis/bin/
 rm -rf build
 ```
-### System link
+### 🚧System link
 ```
 sudo ln -s $HOME/.babylond/cosmovisor/genesis $HOME/.babylond/cosmovisor/current -f
 sudo ln -s $HOME/.babylond/cosmovisor/current/bin/babylond /usr/local/bin/babylond -f
 ```
 
-### Cosmovisor indirelim
+### 🚧Cosmovisor indirelim
 ```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 ```
-### Servis oluşturalım
+### 🚧Servis oluşturalım
 ```
 sudo tee /etc/systemd/system/babylond.service > /dev/null << EOF
 [Unit]
@@ -82,26 +82,26 @@ sudo systemctl daemon-reload
 sudo systemctl enable babylon.service
 ```
 
-### Node ayarları
+### 🚧Node ayarları
 ```
 babylond config chain-id bbn-test-3
 babylond config keyring-backend test
 babylond config node tcp://localhost:16457
 ```
-### İnit
+### 🚧İnit
 ```
 babylond init $MONIKER --chain-id bbn-test-3
 ```
-### Genesis addrbook
+### 🚧Genesis addrbook
 ```
 curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/genesis.json > $HOME/.babylond/config/genesis.json
 curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/addrbook.json > $HOME/.babylond/config/addrbook.json
 ```
-### Seed
+### 🚧Seed
 ```
 sed -i -e 's|^seeds *=.*|seeds = "49b4685f16670e784a0fe78f37cd37d56c7aff0e@3.14.89.82:26656,9cb1974618ddd541c9a4f4562b842b96ffaf1446@3.16.63.237:26656"|' $HOME/.babylond/config/config.toml
 ```
-### Gas ayarı
+### 🚧Gas ayarı
 ```
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.00001ubbn\"|" $HOME/.babylond/config/app.toml
 ```
@@ -118,12 +118,12 @@ sed -i \
   -e 's|^pruning-interval *=.*|pruning-interval = "19"|' \
   $HOME/.babylond/config/app.toml
 ```
-### Port ayarı
+### 🚧Port ayarı
 ```
 sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:16458\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:16457\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:16460\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:16456\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":16466\"%" $HOME/.babylond/config/config.toml
 sed -i -e "s%^address = \"tcp://localhost:1317\"%address = \"tcp://0.0.0.0:16417\"%; s%^address = \":8080\"%address = \":16480\"%; s%^address = \"localhost:9090\"%address = \"0.0.0.0:16490\"%; s%^address = \"localhost:9091\"%address = \"0.0.0.0:16491\"%; s%:8545%:16445%; s%:8546%:16446%; s%:6065%:16465%" $HOME/.babylond/config/app.toml
 ```
-### Snap
+### 🚧Snap
 ```
 Download latest chain snapshot
 curl -L http://37.120.189.81/babylon_testnet/babylon_snap.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.babylond
@@ -137,12 +137,12 @@ sudo systemctl start babylond.service
 ```
 sudo journalctl -u babylond.service -f --no-hostname -o cat
 ```
-### Cüzdan oluşturalım
+### 🚧Cüzdan oluşturalım
 ```
 babylond keys add wallet
 ```
 
-### BLS key olusturalım
+### 🚧BLS key olusturalım
 ```
 babylond create-bls-key $(babylond keys show wallet -a)
 ```
@@ -157,7 +157,7 @@ sudo systemctl stop babylond
 sudo systemctl restart babylond
 ```
 
-### Validator oluşturma.
+### 🏆Validator oluşturma.
 
 nano /root/.babylond/validator.json
 
