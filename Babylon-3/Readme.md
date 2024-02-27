@@ -16,6 +16,8 @@
 | RAM	| 16+ GB |
 | Storage	| 500+ GB SSD |
 
+NOT: BU AĞ SEÇİLENLERE ÖZELDİR. TEŞVİKLİ DEĞİLDİR. KURMAK ÖDÜL KAZANDIRMAZ. 
+
 ### Go kuralım
 ```
 ver="1.21.6"
@@ -134,4 +136,131 @@ sudo systemctl start babylond.service
 ```
 ```
 sudo journalctl -u babylond.service -f --no-hostname -o cat
+```
+### Cüzdan oluşturalım
+```
+babylond keys add wallet
+```
+
+### BLS key olusturalım
+```
+babylond create-bls-key $(babylond keys show wallet -a)
+```
+```
+sed -i -e "s|^key-name *=.*|key-name = \"wallet\"|" $HOME/.babylond/config/app.toml
+sed -i -e "s|^timeout_commit *=.*|timeout_commit = \"30s\"|" $HOME/.babylond/config/config.toml
+```
+```
+sudo systemctl stop babylond
+```
+```
+sudo systemctl restart babylond
+```
+
+### Validator oluşturma.
+
+nano /root/.babylond/validator.json
+
+Not: aşağıdakileri koppyalayıp yapıştıralım düzenledikten sonra
+```
+{
+        "pubkey": $(babylond tendermint show-validator),
+        "amount": "1000000ubbn",
+        "moniker": "validator-adını-yaz",
+        "identity": "",
+        "website": "",
+        "security": "",
+        "details": "Core Node Community",
+        "commission-rate": "0.1",
+        "commission-max-rate": "0.2",
+        "commission-max-change-rate": "0.01",
+        "min-self-delegation": "1"
+}
+```
+```
+sudo systemctl stop babylond
+```
+```
+sudo systemctl restart babylond
+```
+```
+babylond tx checkpointing create-validator /root/.babylond/validator.json \
+    --chain-id=bbn-test-3 \
+    --gas=150000 \
+    --gas-adjustment=1.5 \
+    --gas-prices=0.025ubbn \
+    --from=wallet
+    -y
+ ```
+
+Not: rpc hatası verirse.. altakini dene
+ ```
+babylond tx checkpointing create-validator /root/.babylond/validator.json \
+    --chain-id=bbn-test-3 \
+    --gas=150000 \
+    --gas-adjustment=1.5 \
+    --gas-prices=0.025ubbn \
+    --from=molla202 \
+    --node=http://localhost:16457 
+    -y  
+ ```
+
+### Delege kodu kendine
+Not: Gas hatası alırsanız gası 85000den fazla yapmayı deneyin 100000 yada 150000 gibi gas-adjustment 1.2 den 1.3 .15 falan denersiniz...
+```
+babylond tx epoching delegate valoper-adresin-explorerde-yazar 1000000ubbn --from wallet --chain-id bbn-test-3 --gas 85000 --gas-adjustment 1.2 --gas-prices 0.025ubbn -y
+```
+
+# Yararlı komutlar...
+
+### Jailden Kurtulma
+```
+babylond tx slashing unjail --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Validator Bilgileri
+```
+babylond q epoching validator $(babylond keys show $WALLET --bech val -a) 
+```
+### Ödülleri Talep Etme
+```
+babylond tx distribution withdraw-all-rewards --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Komisyon ve Ödülleri Talep Etme
+```
+babylond tx distribution withdraw-rewards $(babylond keys show $WALLET --bech val -a) --commission --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Delege Etme Kendine
+```
+babylond tx epoching delegate $(babylond keys show $WALLET --bech val -a) 1000000ubbn --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Delege Etme Başkasına
+```
+babylond tx epoching delegate valoper-adresini-yazınız 1000000ubbn --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Redelegate (delege edilenden alıp baskasına delege etme)
+```
+babylond tx epoching redelegate valoper-adresini-yazınız valoper-adresini-yazınız 1000000ubbn --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Delegeyi Geri Çekme
+```
+babylond tx epoching unbond valoper-adresini-yazınız 1000000ubbn --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Başkasına Coin Gönderme
+```
+babylond tx bank send cüzdan-adresi 1000000ubbn --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y
+```
+### Oy Kullanma ( yes, no, no_with_veto yada abstain )
+```
+babylond tx gov vote 1 yes --from $WALLET --chain-id bbn-test-3 --gas-prices 0.1ubbn --gas-adjustment 1.5 --gas auto -y 
+```
+## Node Silme
+```
+sudo systemctl stop babylond && \
+sudo systemctl disable babylond && \
+rm /etc/systemd/system/babylond.service && \
+sudo systemctl daemon-reload && \
+cd $HOME && \
+rm -rf .babylond && \
+rm -rf babylon && \
+rm -rf $(which babylond)
 ```
