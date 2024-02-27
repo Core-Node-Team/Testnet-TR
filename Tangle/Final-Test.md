@@ -62,7 +62,7 @@ ExecStart=/usr/bin/tangle \
   --port 30333 \
   --rpc-port 9933 \
   --prometheus-port 9615 \
-  --auto-insert-keys \
+  --pruning archive \
   --validator \
   --telemetry-url "wss://telemetry.polkadot.io/submit 0" \
   --no-mdns
