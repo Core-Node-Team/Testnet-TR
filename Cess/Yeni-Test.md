@@ -54,7 +54,7 @@ cess config set
 > 2. default port kullanmak istiyordanız enter değilse port numarası girin
 > 3. ödüllerin geleceği cüzdanın adresini girin (bak adres diyorum)
 > 4. stake için kullanacağınız cüzdanın mnemonic girin(yeni cüzdan bu sadece stake için )
-> 5. enter (zaten dosyasını olusturduk enter dıyoruz)
+> 5. /opt/cess/storage/disk   bunu görüp enter. sayı yazmayın  (zaten dosyasını olusturduk enter dıyoruz)
 > 6. ne kadar depolama alını kullanmak istediğinizi girin (sadece sayı gb cinsinden 500gb sadece 500 yazıonuz)
 > 7. işlemci core sayısı 4 yazıyoruz
 > 8. diğer stake hesabını soruyor enter dıyoruz buna
