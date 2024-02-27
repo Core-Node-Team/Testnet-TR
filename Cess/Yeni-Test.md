@@ -83,34 +83,7 @@ cess bucket stat
 
 ## Yararlı komutlar
 
-### Stake miktarını yükselt
-```
-cess bucket increase <miktar>
-```
-### Withdraw
-```
-cess bucket withdraw
-```
-### Ödül bilgisi
-```
-cess bucket reward
-```
-### Claim
-```
-cess bucket claim
-```
-### Tüm servisleri güncelle
-``` 
-cess pullimg
-```
-### Tüm servisleri durdur ve sil
-```
-cess down
-```
-### Kazanç hesabını değiştir
-```
-cess bucket update earnings <cüzdan adresi>
-```
+
 
 <div align="center">
 
