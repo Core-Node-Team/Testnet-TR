@@ -181,8 +181,11 @@ sided tx staking create-validator \
 --fees 1000uside \
 -y
 ```
-
-
+### Delege
+$wallet yazan kısımlara cüzdan adını yazınız  1milyon uside 1 side edıyor
+```
+sided tx staking delegate $(sided keys show $WALLET --bech val -a) 1000000uside --from $WALLET --chain-id side-testnet-2 --gas auto --fees 1000uside -y
+```
 ### 🚧Delete node - Silme
 ```
 sudo systemctl stop sided
