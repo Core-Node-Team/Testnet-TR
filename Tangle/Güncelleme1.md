@@ -25,12 +25,12 @@ LimitNOFILE=65535
 ExecStart=/usr/bin/tangle \
   --base-path $HOME/.tangle/data/ \
   --name '$yourname' \
-  --chain $HOME/.tangle/tangle-standalone.json \
+  --chain tangle-testnet \
   --node-key-file "$HOME/.tangle/node-key" \
   --port 30333 \
   --rpc-port 9933 \
   --prometheus-port 9615 \
-  --auto-insert-keys \
+  --pruning archive \
   --validator \
   --telemetry-url "wss://telemetry.polkadot.io/submit 0" \
   --no-mdns
