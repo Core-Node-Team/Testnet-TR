@@ -15,10 +15,18 @@
 
 ## Cess açılımı Cumulus Encrypted Storage System. Kısacası merkezi olmayan bir yapıya sahip olan ve kullanıcıların verilerini güvenli bir şekilde depolamalarını sağlayan bir bulut depolama sistemidir.
 
-## Testnetine iki farklı şekilde katılınabilir. Bu rehberde ***storage miner*** kurulumunu anlatıcam ***consensus miner*** kurmak isteyenler için [rehber](https://docs.cess.cloud/cess-build-book/consensus-miners)
+## Testnetine iki farklı şekilde katılınabilir. Bu rehberde ***storage miner*** kurulumunu anlatıcam ***consensus miner*** kurmak isteyenler için [rehber](https://docs.cess.cloud/cess-build-book/consensus-miner)
 
 ## Mining, depolama alanı ile yapılıyor. Sunucu gereksinimleri 4Cpu 8Gb Ram Ssd miktarı ne kadar büyük olursa ***storage power*** da o kadar büyük olur dolayısıyla kazacağınız miktar da .
 
+### Sistem Gereksinimleri
+
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| ✔️CPU |	4+ vcpu|
+| ✔️RAM	| 8+ GB |
+| ✔️Storage	| 160+ GB SSD(nekadar-çok-okadar-ödül) |
+| ✔️UBUNTU | 22or20 |
 
 # Kurulum
 > Komutları sırayla girin. UNUTMAYIN HERHANGİ BİR POLKA TABANLI PROJE VARSA SIKINTI ÇIKAR.
