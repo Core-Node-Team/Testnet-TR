@@ -82,26 +82,26 @@ sudo systemctl daemon-reload
 sudo systemctl enable babylon.service
 ```
 
-# Set node configuration
+### Node ayarları
 ```
 babylond config chain-id bbn-test-3
 babylond config keyring-backend test
 babylond config node tcp://localhost:16457
 ```
-# Initialize the node
+### İnit
 ```
 babylond init $MONIKER --chain-id bbn-test-3
 ```
-# Download genesis and addrbook
+### Genesis addrbook
 ```
 curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/genesis.json > $HOME/.babylond/config/genesis.json
 curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Babylon/addrbook.json > $HOME/.babylond/config/addrbook.json
 ```
-# Add seeds
+### Seed
 ```
 sed -i -e 's|^seeds *=.*|seeds = "49b4685f16670e784a0fe78f37cd37d56c7aff0e@3.14.89.82:26656,9cb1974618ddd541c9a4f4562b842b96ffaf1446@3.16.63.237:26656"|' $HOME/.babylond/config/config.toml
 ```
-# Set minimum gas price
+### Gas ayarı
 ```
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.00001ubbn\"|" $HOME/.babylond/config/app.toml
 ```
@@ -210,6 +210,27 @@ Not: Gas hatası alırsanız gası 85000den fazla yapmayı deneyin 100000 yada 1
 ```
 babylond tx epoching delegate valoper-adresin-explorerde-yazar 1000000ubbn --from wallet --chain-id bbn-test-3 --gas 85000 --gas-adjustment 1.2 --gas-prices 0.025ubbn -y
 ```
+
+# Faydalı Linkler
+
+## [Komutlar](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Ortak-Komutlar.md)
+## [Node Yedekleme ve Taşıma](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Yedekleme%20ve%20Ta%C5%9F%C4%B1ma.md)
+## [Port Değiştirme](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Port%20de%C4%9Fi%C5%9Ftirme.md)
+## [Sync-Peer-FAQ](https://github.com/Core-Node-Team/Cosmos-Aglarinda-Node-Calistirmak/blob/main/Sync-Peer%20Nedir.md)
+
+
+<div align="center">
+
+# Core Node 
+
+#  [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)  
+
+![1500x500](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/92b50dd4-8043-4500-b906-bc8d15b75525)
+
+## Sorularınız olursa telegram sohbet grubumuz ve discord sunucumuza katılabilirsiniz.
+#
+
+</div>
 
 # Yararlı komutlar...
 
