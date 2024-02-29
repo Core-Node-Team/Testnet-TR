@@ -79,7 +79,7 @@ EOF
 ```
 ```
 sudo systemctl daemon-reload
-sudo systemctl enable babylon.service
+sudo systemctl enable babylond.service
 ```
 
 ### 🚧Node ayarları
