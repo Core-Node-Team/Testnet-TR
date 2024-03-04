@@ -15,10 +15,6 @@
 
 🔥 [CoreNode Twitter](https://twitter.com/corenodehq)
 
-💬 [Gökhan Molla Twitter](https://twitter.com/gokhan_molla)
-
-💬 [Gökhan Molla Telegram](https://t.me/gokhan_molla)
-
 💬 Sorularınız için yukarıdaki adreslerden ulaşabilirsiniz.
 
 
