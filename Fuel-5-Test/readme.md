@@ -68,7 +68,7 @@ fuel-core-keygen new --key-type peering
 ```
 Nodeadi=Adınızı yazınız
 RPCsep=Sepolia rpcnizi yazınız
-PRivkey=yukarıda çıktı aldığımzda kaydedin dediğimiz kısımda yazıor."secret": bele başlıyor.
+PRivkey=yukarıda çıktı aldığımzda kaydedin dediğimiz kısımda yazıor."secret": bele başlıyor. secreti yazmıyorsunuz heee bele private key gibim cüzdan adresim gibim kod
 ```
 👉ÖRNEK:
 ```
