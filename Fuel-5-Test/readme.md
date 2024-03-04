@@ -25,6 +25,7 @@
 | ✔️ RAM	| 2+ GB |
 | ✔️ Storage	| 80GB+ SSD |
 
+## 💬 Herhangi bir teşvik bulunmamaktadır.
 
 ### 🚧 Update ve güncellemeler
 ```
