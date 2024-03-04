@@ -37,7 +37,7 @@ ufw allow 22
 ufw allow 4000
 ufw allow 30333
 ```
-### Rust kuruyoruz.
+### 🚧Rust kuruyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -48,20 +48,20 @@ source ~/.profile
 ```
 source ~/.cargo/env
 ```
-### Fuel kurulum
+### 🚧Fuel kurulum
 ```
 curl https://install.fuel.network | sh
 ```
 ```
 source /root/.bashrc
 ```
-### Key oluşturma
+### 🚧Key oluşturma
 ```
 fuel-core-keygen new --key-type peering
 ```
 👉Not: çıkan çıktıyı kaydedin. bir tuşa basarak geçin..
 
-### Varyasyon atayalım
+### 🚧Varyasyon atayalım
 👉Not: bize burda sepolia RPC lazım. https://app.infura.io/ sitesinden ekliyoruz... rpc nasıl alınırla ilgili daha önce örnek vardı biz sepolia alıcaz unutmayın. örnek [BURADA](https://github.com/Core-Node-Team/Testnet-TR/blob/main/Mangata/RPC-Alma.md)
 ```
 Nodeadı=Adınızı yazınız
@@ -74,14 +74,14 @@ Nodeadı=CoreNode
 RPCsep=https://sepolia.infura.io/v3/hebele-hübele-api
 PRivkey=7e4868e36e890dsdsadadbb7f246b74bacc9bcfjhkıadhsakgdoasdjasdhasdhhaoıdasdashoıdh
 ```
-### Gerekli dosyaları çekelim
+### 🚧Gerekli dosyaları çekelim
 ```
 mkdir -p /root/fuel-test
 ```
 ```
 wget -O /root/fuel-test/chainConfig.json http://37.120.189.81/fuel/chainConfig.json
 ```
-### Servis oluşturalım
+### 🚧Servis oluşturalım
 
 ```
 sudo tee /etc/systemd/system/fueld.service > /dev/null << EOF
@@ -123,7 +123,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-### Başlatalım
+### 🚧Başlatalım
 ```
 sudo systemctl daemon-relod
 sudo systemctl enable fueld
