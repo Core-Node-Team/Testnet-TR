@@ -49,6 +49,7 @@ source ~/.profile
 source ~/.cargo/env
 ```
 ### 🚧Fuel kurulum
+👉NOt: bişi sorucak y yes deyin
 ```
 curl https://install.fuel.network | sh
 ```
