@@ -24,7 +24,7 @@
 | ✔️ CPU |	2+ |
 | ✔️ RAM	| 2+ GB |
 | ✔️ Storage	| 80GB+ SSD |
-| ✔️ System	| Ubuntu 22or20 |
+| ✔️ System	| Ubuntu 22 or 20 |
 
 ## 💬 Herhangi bir teşvik bulunmamaktadır.
 
