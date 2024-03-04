@@ -32,7 +32,11 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc -y
 ```
-
+```
+ufw allow 22
+ufw allow 4000
+ufw allow 30333
+```
 ### Rust kuruyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
