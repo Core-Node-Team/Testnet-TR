@@ -31,7 +31,7 @@
 ### 🚧 Update ve güncellemeler
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc -y
+sudo apt install screen git curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc -y
 ```
 ```
 ufw allow 22
@@ -66,7 +66,7 @@ fuel-core-keygen new --key-type peering
 ### 🚧Varyasyon atayalım
 👉Not: bize burda sepolia RPC lazım. https://app.infura.io/ sitesinden ekliyoruz... rpc nasıl alınırla ilgili daha önce örnek vardı biz sepolia alıcaz unutmayın. örnek [BURADA](https://github.com/Core-Node-Team/Testnet-TR/blob/main/Mangata/RPC-Alma.md)
 ```
-Nodeadı=Adınızı yazınız
+Nodeadi=Adınızı yazınız
 RPCsep=Sepolia rpcnizi yazınız
 PRivkey=yukarıda çıktı aldığımzda kaydedin dediğimiz kısımda yazıor."secret": bele başlıyor.
 ```
