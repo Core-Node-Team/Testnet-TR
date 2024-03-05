@@ -33,9 +33,9 @@
 ```
 ufw allow 4001
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.4.tar.gz
-tar -xvf v0.5.4.tar.gz
-rm -rf v0.5.4.tar.gz
-cd cess-nodeadm-0.5.4/
+tar -xvf v0.5.5.tar.gz
+rm -rf v0.5.5.tar.gz
+cd cess-nodeadm-0.5.5/
 ./install.sh
 mkdir -p /opt/cess/storage/disk
 ```
