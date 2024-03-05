@@ -48,7 +48,7 @@ cd $HOME
 rm -rf quicksilver
 git clone https://github.com/ingenuity-build/quicksilver.git
 cd quicksilver
-git checkout v1.4.5
+git checkout v1.4.7
 ```
 ```
 make build
