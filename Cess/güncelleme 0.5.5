@@ -1,1 +1,22 @@
+CESS GÜNCELLEME
+(LİNUX KERNEL 5.11 ÜZERİ OLMALIDIR. UBUNTU 20.04 DE ÇALIŞMAZ)
 
+
+Eskisini durduralım
+```sudo cess stop
+sudo cess down```
+
+Bütün eski datayı silelim
+```sudo cess purge```
+
+Güncellemeyi çekelim
+```wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.5.tar.gz
+tar -xvf v0.5.5.tar.gz
+rm -rf v0.5.5.tar.gz
+cd cess-nodeadm-0.5.5/
+./install.sh --skip-dep```
+
+Servisleri güncelleyelim
+```sudo cess pullimg```
+Tekrar çalıştıralım
+```sudo cess start```
