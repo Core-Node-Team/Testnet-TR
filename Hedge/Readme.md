@@ -8,10 +8,10 @@
 
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
- * [Side Website](https://side.one)<br>
- * [Blockchain Explorer](https://testnet.itrocket.net/side/staking)<br>
- * [Discord](https://discord.gg/sideprotocol)<br>
- * [Twitter](https://twitter.com/SideProtocol)<br>
+ * [Hedge Website](https://hedgeblock.io/)<br>
+ * [Blockchain Explorer](https://explorer.nodestake.org/hedge-testnet)<br>
+ * [Discord](https://discord.gg/HMVhE7recm)<br>
+ * [Twitter](https://twitter.com/hedgeblockio)<br>
 
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
