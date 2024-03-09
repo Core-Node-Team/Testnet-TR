@@ -1,3 +1,5 @@
+# We intend for this upgrade to happen at 6365700 on Tuesday 12th March at around 1615UTC.
+
 ## Manuel
 ```
 cd $HOME
