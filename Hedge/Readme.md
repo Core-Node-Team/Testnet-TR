@@ -141,7 +141,8 @@ hedged tx staking create-validator \
 --website "" \
 --security-contact "" \
 --from "cüzdan-adi-yaz" \
---gas "200000" \
+--node http://localhost:11857 \
+--fees 500uhedge \
 -y
 ```
 ### Edit validator
@@ -155,7 +156,8 @@ hedged tx staking edit-validator \
 --website "" \
 --security-contact "" \
 --from "cüzdan-adi-yaz" \
---gas "200000" \
+--node http://localhost:11857 \
+--fees 500uhedge \
 -y
 ```
 
