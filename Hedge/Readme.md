@@ -57,8 +57,8 @@ hedged config keyring-backend test
 hedged init "Moniker" --chain-id berberis-1
 ```
 ```
-sudo wget -O $HOME/.hedge/config/genesis.json "http://37.120.189.81/hedge_tesnet/genesis.json"
-sudo wget -O $HOME/.hedge/config/addrbook.json "http://37.120.189.81/hedge_tesnet/addrbook.json"
+sudo wget -O $HOME/.hedge/config/genesis.json "http://37.120.189.81/hedge_testnet/genesis.json"
+sudo wget -O $HOME/.hedge/config/addrbook.json "http://37.120.189.81/hedge_testnet/addrbook.json"
 ```
 ### 🚧 Gas ayarları
 ```
