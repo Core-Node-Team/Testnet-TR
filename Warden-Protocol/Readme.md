@@ -156,18 +156,18 @@ Not: öğrendiğin pubkeyi aşağıda nano ile içine akataracağın yere yazıc
 nano /root/wardenprotocol/validator.json
 ```
 ```
-{    
-    "pubkey": punkey yaz örnek {"@type":"/cosmos.crypto.ed25519.PubKey","key":"lR1d7YBVK5jYijOfWVKRFoWCsS4dg3kagT7LB9GnG8I="} ,
-    "amount": "9000000uward,
-    "moniker": "validator-adi",
-    "identity": "",
-    "website": "",
-    "security": "",
-    "details": "",
-    "commission-rate": "0.1",
-    "commission-max-rate": "0.2",
-    "commission-max-change-rate": "0.01",
-    "min-self-delegation": "1"
+{
+        "pubkey": pubyaz,
+        "amount": "1000000stake",
+        "moniker": "myvalidator",
+        "identity": "optional identity signature (ex. UPort or Keybase)",
+        "website": "validator's (optional) website",
+        "security": "validator's (optional) security contact email",
+        "details": "validator's (optional) details",
+        "commission-rate": "0.1",
+        "commission-max-rate": "0.2",
+        "commission-max-change-rate": "0.01",
+        "min-self-delegation": "1"
 }
 ```
 Not: ctrl xy enter kaydet çık.
