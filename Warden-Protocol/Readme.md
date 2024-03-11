@@ -176,7 +176,8 @@ Not: ctrl xy enter kaydet çık.
 wardend tx staking create-validator /root/wardenprotocol/validator.json \
     --from=cüzdan-adi \
     --chain-id=alfama \
-    --fees=500uward
+    --fees=500uward \
+    --node=http://localhost:11157
 ```
 
 
