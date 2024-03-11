@@ -173,18 +173,19 @@ nano /root/.babylond/validator.json
 Not: aşağıdakileri koppyalayıp yapıştıralım düzenledikten sonra
 ```
 {
-        "pubkey": $(babylond tendermint show-validator),
-        "amount": "1000000ubbn",
-        "moniker": "validator-adını-yaz",
-        "identity": "",
-        "website": "",
-        "security": "",
-        "details": "Core Node Community",
+        "pubkey": pubyaz,
+        "amount": "1000000stake",
+        "moniker": "myvalidator",
+        "identity": "optional identity signature (ex. UPort or Keybase)",
+        "website": "validator's (optional) website",
+        "security": "validator's (optional) security contact email",
+        "details": "validator's (optional) details",
         "commission-rate": "0.1",
         "commission-max-rate": "0.2",
         "commission-max-change-rate": "0.01",
         "min-self-delegation": "1"
 }
+
 ```
 ```
 sudo systemctl stop babylond
