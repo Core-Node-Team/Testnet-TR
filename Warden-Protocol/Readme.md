@@ -13,7 +13,7 @@
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
  * [Warden Website](https://wardenprotocol.org/)<br>
  * [Blockchain Explorer](https://warden-explorer.paranorm.pro/warden/block)<br>
- * [Discord](https://discord.gg/HMVhE7recm)<br>
+ * [Discord](https://discord.gg/gbPAKUhH)<br>
  * [Twitter](https://twitter.com/wardenprotocol)<br>
 
 ## 💻 Sistem Gereksinimleri
