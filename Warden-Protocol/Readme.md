@@ -158,7 +158,7 @@ nano /root/wardenprotocol/validator.json
 ```
 {
         "pubkey": pubyaz,
-        "amount": "1000000stake",
+        "amount": "1000000uward",
         "moniker": "myvalidator",
         "identity": "optional identity signature (ex. UPort or Keybase)",
         "website": "validator's (optional) website",
