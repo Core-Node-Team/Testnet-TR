@@ -112,13 +112,13 @@ sed -i.bak -e "s/^seeds =.*/seeds = \"$seeds\"/" $HOME/.warden/config/config.tom
 ```
 ### 🚧 Snap
 ```
-cd $HOME
-apt install lz4
-sudo systemctl stop wardend
-cp $HOME/.warden/data/priv_validator_state.json $HOME/.warden/priv_validator_state.json.backup
-rm -rf $HOME/.warden/data
-curl -o - -L http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.warden
-mv $HOME/.warden/priv_validator_state.json.backup $HOME/.warden/data/priv_validator_state.json
+wardend tendermint unsafe-reset-all --home $HOME/.warden
+if curl -s --head curl http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
+  curl http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.warden
+    else
+  echo no have snap
+fi
+
 ```
 
 ### 🚧 Port ayarı
