@@ -89,7 +89,7 @@ sudo systemctl enable wardend
 ```
 ### 🚧 İnit
 ```
-wardend init "CoreNode" --chain-id alfama
+wardend init "isim-yaz" --chain-id alfama
 ```
 ### 🚧 Genesis addrbook
 ```
