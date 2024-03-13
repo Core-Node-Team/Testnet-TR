@@ -181,7 +181,7 @@ wardend tx staking create-validator /root/wardenprotocol/validator.json \
 ```
 ### Delege 
 
-wardend tx staking delegate valoper-adresi miktar0000000uward \
+wardend tx staking delegate valoper-adresi miktar000000uward \
 --chain-id alfama \
 --from "cüzdan-adi" \
 --fees 500uward \
