@@ -29,8 +29,8 @@
 
 ### Kurulum
 
-👉* Alışa geldiğimiz sistemden biraz farklı arkadaslar kendi launcheri var. ve nodu kurması çok basit
-👉* https://launcher.humanode.io/      Sitesine gidelim ve indirip açalım.
+* 👉Alışa geldiğimiz sistemden biraz farklı arkadaslar kendi launcheri var. ve nodu kurması çok basit
+* 👉https://launcher.humanode.io/      Sitesine gidelim ve indirip açalım.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/56d2730d-bdee-42c5-85b4-f11c76de7586)
 
@@ -40,29 +40,29 @@
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/eb1b9956-8168-4bc5-9e9b-0adc8efe6659)
 
-👉* More connected deyip ayarladan şifre passwordu seçerek ip usere root yazıyoruz sonra sunucu şfresini yazıyoruz.
+* 👉More connected deyip ayarladan şifre passwordu seçerek ip usere root yazıyoruz sonra sunucu şfresini yazıyoruz.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8902fe6f-db10-4b1c-91cc-d0454da7dddb)
 
 
-👉* Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor. `MAİNNET SEÇİCEKSİNİZ.`
+* 👉Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor. `MAİNNET SEÇİCEKSİNİZ.`
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/bc5e4c62-9959-4716-bbff-4c32703803c8)
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/32c06cc9-1f12-463d-847e-f296b96c8be6)
 
-👉* Setting kısmından insert dıyoruz ve bize kelime olusturması için generate dıyoruz kaydediyoruz ınsert dıyoruz. aynı zamanda node adınıda yazalım.
+* 👉Setting kısmından insert dıyoruz ve bize kelime olusturması için generate dıyoruz kaydediyoruz ınsert dıyoruz. aynı zamanda node adınıda yazalım.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/fb21a64e-1488-4030-b05b-53fd5bdcef22)
 
-👉* Daha sonra yukarıdan humannode tıklıyoruz. start node dıyoruz ve eşleşme baslıyor ağ senkron olsaıya kadar bekleyecez baya uzun suruyor.
+* 👉Daha sonra yukarıdan humannode tıklıyoruz. start node dıyoruz ve eşleşme baslıyor ağ senkron olsaıya kadar bekleyecez baya uzun suruyor.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/d4b8ef8f-e772-479d-a1ff-fb420ccec8d3)
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/1380a0d2-4944-4c56-a1ad-f872f6bf0ab4)
 
-👉* Yukarıdaki log kısmında loglarınıza bakabilirsiniz. targetde yazan bloksayısına kadar gelmemiz gerekıyor. 
-👉* Devamı eşleştikten sonra....
+* 👉Yukarıdaki log kısmında loglarınıza bakabilirsiniz. targetde yazan bloksayısına kadar gelmemiz gerekıyor. 
+* 👉Devamı eşleştikten sonra....
 
 <div align="center">
 
