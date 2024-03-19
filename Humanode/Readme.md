@@ -45,7 +45,7 @@
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8902fe6f-db10-4b1c-91cc-d0454da7dddb)
 
 
-* Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor
+* Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor. MAİNNET SEÇİCEKSİNİZ.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/bc5e4c62-9959-4716-bbff-4c32703803c8)
 
