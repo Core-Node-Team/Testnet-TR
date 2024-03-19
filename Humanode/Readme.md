@@ -45,7 +45,7 @@
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8902fe6f-db10-4b1c-91cc-d0454da7dddb)
 
 
-* Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor. MAİNNET SEÇİCEKSİNİZ.
+* Gelen ekranda aşağıdaki gibi mainnet yazıyor onu seçiyoruz.yukluor. `MAİNNET SEÇİCEKSİNİZ.`
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/bc5e4c62-9959-4716-bbff-4c32703803c8)
 
@@ -64,7 +64,18 @@
 * Yukarıdaki log kısmında loglarınıza bakabilirsiniz. targetde yazan bloksayısına kadar gelmemiz gerekıyor. 
 * Devamı eşleştikten sonra....
 
-</h1>
+<div align="center">
+
+# Core Node 
+
+#  [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)  
+
+![1500x500](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/92b50dd4-8043-4500-b906-bc8d15b75525)
+
+## Sorularınız olursa telegram sohbet grubumuz ve discord sunucumuza katılabilirsiniz.
+#
+
+</div>
 
 
 
