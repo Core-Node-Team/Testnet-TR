@@ -67,6 +67,10 @@
 * açılan linke tıklayıp gelen ekranda node setuoo deyin
 * alttan enroll deyip yüzünüzü taratın
 * sonra sezon key deyin
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/23c809a0-52b4-4489-a550-33425bab9a4f)
+
+
 * back diyerek ana ekrana gelip auth deyip tekrar yüz okutun.
 * sonrası epoch bekleme...
 
