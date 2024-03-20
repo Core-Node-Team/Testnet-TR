@@ -64,7 +64,7 @@
 * 👉Yukarıdaki log kısmında loglarınıza bakabilirsiniz. targetde yazan bloksayısına kadar gelmemiz gerekıyor. 
 * 👉 https://play.google.com/store/apps/details?id=com.gamma.scan  androidler için ugulama elmalar için markete bakın yada grubda sorun bilenler vardır...
 * kurun ekrandaki barkodu okutun
-* açılan linke tıklayıp gelen ekranda node setuoo deyin
+* açılan linke tıklayıp gelen ekranda node setuop deyin
 * alttan enroll deyip yüzünüzü taratın
 * sonra sezon key deyin
 
