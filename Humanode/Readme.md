@@ -62,7 +62,13 @@
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/1380a0d2-4944-4c56-a1ad-f872f6bf0ab4)
 
 * 👉Yukarıdaki log kısmında loglarınıza bakabilirsiniz. targetde yazan bloksayısına kadar gelmemiz gerekıyor. 
-* 👉Devamı eşleştikten sonra....
+* 👉 https://play.google.com/store/apps/details?id=com.gamma.scan  androidler için ugulama elmalar için markete bakın yada grubda sorun bilenler vardır...
+* kurun ekrandaki barkodu okutun
+* açılan linke tıklayıp gelen ekranda node setuoo deyin
+* alttan enroll deyip yüzünüzü taratın
+* sonra sezon key deyin
+* back diyerek ana ekrana gelip auth deyip tekrar yüz okutun.
+* sonrası epoch bekleme...
 
 <div align="center">
 
