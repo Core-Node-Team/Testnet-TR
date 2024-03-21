@@ -129,7 +129,7 @@ EOF
 ```
 crossfid tendermint unsafe-reset-all --home $HOME/.mineplex-chain
 if curl -s --head curl http://37.120.189.81/crossfi_testnet/side_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl http://37.120.189.81/side_testnet/crossfi_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
+  curl http://37.120.189.81/crossfi_testnet/crossfi_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
     else
   echo no have snap
 fi
