@@ -8,7 +8,7 @@
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
  * [Side Website](https://side.one)<br>
- * [Blockchain Explorer](https://testnet.itrocket.net/side/staking)<br>
+ * [Blockchain Explorer](https://explorer.corenodehq.com/side/staking)<br>
  * [Discord](https://discord.gg/sideprotocol)<br>
  * [Twitter](https://twitter.com/SideProtocol)<br>
 
