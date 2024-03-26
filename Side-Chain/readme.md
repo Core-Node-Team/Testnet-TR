@@ -55,6 +55,8 @@ cd $HOME
 
 rm -rf sidechain
 
+rm -rf side
+
 git clone -b dev https://github.com/sideprotocol/side.git
 
 cd sidechain
