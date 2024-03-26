@@ -59,7 +59,7 @@ rm -rf side
 
 git clone -b dev https://github.com/sideprotocol/side.git
 
-cd sidechain
+cd side
 
 git checkout v0.7.0-rc2
 
