@@ -59,7 +59,7 @@ git clone -b dev https://github.com/sideprotocol/sidechain.git
 
 cd sidechain
 
-git checkout v0.6.0
+git checkout v0.7.0-rc2
 
 make install
 
