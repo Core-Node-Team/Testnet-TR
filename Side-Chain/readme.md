@@ -61,7 +61,7 @@ git clone -b dev https://github.com/sideprotocol/side.git
 
 cd side
 
-git checkout v0.7.0-rc2
+git checkout v0.7.0
 
 make install
 
@@ -136,7 +136,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-### 🚧Snap
+### 🚧Snap    NOT NOW!!!
 ```
 sided tendermint unsafe-reset-all --home $HOME/.sidechain
 if curl -s --head curl http://37.120.189.81/side_testnet/side_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
