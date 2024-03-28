@@ -9,7 +9,7 @@ cp $HOME/.warden/data/priv_validator_state.json $HOME/.warden/priv_validator_sta
 
 wardend tendermint unsafe-reset-all --home $HOME/.warden --keep-addr-book
 
-curl -L http://37.120.189.81/hedge_testnet/hedge_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.hedge
+curl -L http://37.120.189.81/hedge_testnet/warden_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.warden
 
 mv $HOME/.warden/priv_validator_state.json.backup $HOME/.warden/data/priv_validator_state.json
 
