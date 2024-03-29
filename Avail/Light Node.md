@@ -47,6 +47,8 @@ systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo 
 
 ---------------------------------------
 
+## BURDAN İTİBAREN AŞAĞISI KURULUMLAR İÇİN
+
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
