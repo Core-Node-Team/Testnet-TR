@@ -35,8 +35,17 @@ journalctl -u availd -fo cat
 ```
 -------
 
+## Cüzdan import yapacaksanız sadece bu
+```
+nano /identity.toml
+```
+- içerisindeki kelimelerle kendi cüzdanınızın kelimeleri değiştirip ctrl x y enterla kaydedelim
+```
+systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
+```
+- başlayınca cüzdan adresi görunecek sizin cüzdanınızmı kontrol edin
 
-
+---------------------------------------
 
 ## Update
 ```
