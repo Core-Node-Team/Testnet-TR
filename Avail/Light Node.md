@@ -19,6 +19,25 @@
 | ✔️RAM	| 4+ GB |
 | ✔️Storage	| 40+ GB SSD |
 | ✔️UBUNTU | 22 |
+
+
+--------
+## Güncelleme yapacaksanız sadece bu
+```
+systemctl stop availd
+cd
+wget https://github.com/availproject/avail-light/releases/download/v1.7.9/avail-light-linux-amd64.tar.gz
+tar -xvzf avail-light-linux-amd64.tar.gz
+mv avail-light-linux-amd64 avail-light
+rm -rf avail-light-linux-amd64.tar.gz
+systemctl restart availd
+journalctl -u availd -fo cat
+```
+-------
+
+
+
+
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
