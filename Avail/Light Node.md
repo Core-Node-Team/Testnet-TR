@@ -30,11 +30,21 @@ wget https://github.com/availproject/avail-light/releases/download/v1.7.9/avail-
 tar -xvzf avail-light-linux-amd64.tar.gz
 mv avail-light-linux-amd64 avail-light
 rm -rf avail-light-linux-amd64.tar.gz
+
+    rm -rf avail-light
+Update öncesi klasörü silmek
+güncellemeyi yaptıktan sonra identy.toml  dosyasını klasör içine atmak ve aşağıdaki buil tekrar yapmak  gerekiyor. Aksi halde bağlanmıyor
+cargo build --release
+
 systemctl restart availd
 journalctl -u availd -fo cat
 ```
 -------
 
+
+systemctl daemon-reload &&  systemctl enable availightd &&  systemctl start availightd
+systemctl status availightd.service
+journalctl -f -u availightd
 
 
 
