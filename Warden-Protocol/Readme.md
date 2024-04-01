@@ -192,7 +192,7 @@ wardend tx staking delegate valoper-adresi miktar000000uward \
 NOT: ayrıca platformdadan keplerle alabilirsiniz : https://spaceward.alfama.wardenprotocol.org/
 NOT: cüzdan adresi yazın
 ```
-screen - S faucet
+screen -S faucet
 ```
 ```
 nano script.sh
