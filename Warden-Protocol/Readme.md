@@ -188,4 +188,32 @@ wardend tx staking delegate valoper-adresi miktar000000uward \
 --node=http://localhost:11157
 ```
 
+### OTO faucet isteme 
+NOT: cüzdan adresi yazın
+```
+screen - S faucet
+```
+```
+nano script.sh
+```
+```
+#!/bin/bash
 
+# Sonsuz döngü başlat
+while true; do
+  # Komutunuzu burada çalıştırın
+  /usr/bin/curl --data '{"address":"cüzdan-adresi-yaz"}' https://faucet.alfama.wardenprotocol.org/
+
+  # 12 saat (43200 saniye) bekleyin
+  sleep 43200
+done
+```
+
+- cttl y x enter
+```
+chmod +x script.sh
+```
+```
+./script.sh
+```
+- CRTL+A D  bas çık
