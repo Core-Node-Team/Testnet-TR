@@ -35,6 +35,17 @@ journalctl -u availd -fo cat
 ```
 -------
 
+## Güncelleme ubuntu 20de çalıştıranalr için sadece
+```
+systemctl stop availd
+cd
+wget https://github.com/molla202/Avail/raw/main/avail-light.tar.gz
+tar -xvzf avail-light.tar.gz
+chmod 744 avail-light
+systemctl restart availd
+journalctl -u availd -fo cat
+```
+
 ## Cüzdan import yapacaksanız sadece bu
 ```
 nano /identity.toml
