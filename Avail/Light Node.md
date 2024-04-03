@@ -188,7 +188,7 @@ curl "http://localhost:7000/v1/latest_block"
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+sudo apt install make gcc clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
 ```
 
 
