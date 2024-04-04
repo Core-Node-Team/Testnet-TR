@@ -14,10 +14,10 @@ cd && rm -rf pactus
 ## kurulum
 
 ```
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.0.2/pactus_downloader.sh | sh
 ```
 ```
-cd pactus-cli_1.0.0
+cd pactus-cli_1.0.2
 ```
 👉NOT: "mnemonic" tırnakların içine mnemonic kelimelerinizi yazıcaksınız..
 ```
@@ -48,9 +48,9 @@ discordan olacak duyurucaz..
 
 # Yok ben mainnet çalıştırmayacam dıorsanız... window yada mac gui indirin
 * window
-https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0.0_windows_amd64_installer.exe
+https://github.com/pactus-project/pactus/releases/download/v1.0.2/pactus-gui_1.0.2_windows_amd64_installer.exe
 * mac
-https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0.0_darwin_amd64.dmg
+https://github.com/pactus-project/pactus/releases/download/v1.0.2/pactus-gui_1.0.2_darwin_amd64.dmg
 
 * kurun gui çalıştırın zaten size yeni adres olusturayım mı die sorar açın eşleşsin bukadan
 
@@ -59,7 +59,7 @@ https://github.com/pactus-project/pactus/releases/download/v1.0.0/pactus-gui_1.0
 ### Stake etme
 ```
 cd
-cd pactus-cli_1.0.0
+cd pactus-cli_1.0.2
 ```
 ```
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
