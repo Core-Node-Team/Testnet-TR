@@ -181,6 +181,13 @@ alignedlayerd tx staking create-validator $HOME/validator.json \
 --from wallet --chain-id alignedlayer \
 --fees 50stake
 ```
+NOT: rpc hatası verebilir o yuzden yukardaki kodu değiştirmek gerekecek nasıl önce portu öğrenmeniz gerek. `sudo lsof -i -P -n | grep LISTEN`  bu kodu yazın poeru öğrenin alttaki port yazan yere nuamrasını yazıcaksınız sonu 7 didir. PORT yazısını sil port numarasını yaz
+```
+alignedlayerd tx staking create-validator $HOME/validator.json \
+--from wallet --chain-id alignedlayer \
+--fees 50stake \
+--node http://localhost:PORT
+```
 ### Kendinize Delege edecekseniz
 NOT: wallet adınız wallet değilse değiştirin
 ```
