@@ -146,14 +146,6 @@ sudo systemctl restart availd
 ```
 journalctl -u availd -fo cat
 ```
-
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/d376265b-d818-4056-a991-f1707c24d085)
-
-Not: eğer hata verirse resimdeki gibi [bu kısımdaki](https://github.com/Core-Node-Team/Testnet-TR/blob/main/Avail/Light%20Node.md#rust-kural%C4%B1m) (rust kuralım kısmı sadece)kurulumu yapıp restart edip deneyin.
-```
-sudo systemctl restart availd
-journalctl -u availd -fo cat
-```
 #### Son blok görüntüleme
 ```
 curl "http://localhost:7000/v1/latest_block"
