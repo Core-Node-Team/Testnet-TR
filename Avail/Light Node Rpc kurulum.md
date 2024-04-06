@@ -86,7 +86,19 @@ journalctl -u availd -fo cat
 ```
 curl "http://localhost:7000/v1/latest_block"
 ```
-
+## Cüzdan import yapacaksanız sadece bu
+```
+nano /identity.toml
+```
+- görunmuyorsa bu
+```
+nano /root/.avail/identity/identity.toml
+```
+- içerisindeki kelimelerle kendi cüzdanınızın kelimeleri değiştirip ctrl x y enterla kaydedelim
+```
+systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
+```
+- başlayınca cüzdan adresi görunecek sizin cüzdanınızmı kontrol edin
 -------------------
 
 ## <h1 align="center">Avail Light Node ubuntu 20 kısa yol </h1>
@@ -150,3 +162,16 @@ journalctl -u availd -fo cat
 ```
 curl "http://localhost:7000/v1/latest_block"
 ```
+## Cüzdan import yapacaksanız sadece bu
+```
+nano /identity.toml
+```
+- görunmuyorsa bu
+```
+nano /root/.avail/identity/identity.toml
+```
+- içerisindeki kelimelerle kendi cüzdanınızın kelimeleri değiştirip ctrl x y enterla kaydedelim
+```
+systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
+```
+- başlayınca cüzdan adresi görunecek sizin cüzdanınızmı kontrol edin
