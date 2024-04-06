@@ -195,7 +195,7 @@ alignedlayerd tx staking delegate $(alignedlayerd keys show wallet --bech val -a
 --from wallet --chain-id alignedlayer \
 --fees 50stake
 ```
-
+NOT: rpc hatası verirse yukarıda validator olustururkene port ekleme yaptığımız işlemi ekleyeceksiniz.
 ### Delete node
 ```
 cd $HOME
