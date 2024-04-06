@@ -21,6 +21,9 @@
 | ✔️Storage	| 40+ GB SSD |
 | ✔️UBUNTU | 22 |
 
+
+### NOT : Cüzdan import edecekseniz. kurulumun sonunda yapıp öyle pubkey alıcaksınız. unutmayınız. ilk kurulumda otomatik cüzdan olusturur eğer onu kullanacaksanız kelimeleri yedeklemeniz lazım kelimeleride cüzdan importtaki nano komutlarında girince bulabilirsiniz. 
+
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
