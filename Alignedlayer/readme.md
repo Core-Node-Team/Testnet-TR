@@ -133,6 +133,20 @@ sed -i.bak -e "s%:26657%:${port}657%g" $HOME/.alignedlayer/config/client.toml
 sudo systemctl daemon-reload
 sudo systemctl restart alignedlayerd && sudo journalctl -u alignedlayerd -f --no-hostname -o cat
 ```
+### Snap
+
+sudo apt install liblz4-tool
+
+systemctl stop alignedlayerd
+
+cp $HOME/.alignedlayerd/data/priv_validator_state.json $HOME/.alignedlayerd/priv_validator_state.json.backup
+
+alignedlayerd tendermint unsafe-reset-all --home $HOME/.evmosd --keep-addr-book
+
+curl -L http://37.120.189.81/alignedlayer_testnet/alignedlayer_snap.tar.lz4 | tar -xf - -C $HOME/.alignedlayer/data/
+
+mv $HOME/.alignedlayerd/priv_validator_state.json.backup $HOME/.alignedlayerd/data/priv_validator_state.json
+
 ### Başlatalım
 ```
 cd $HOME
