@@ -154,6 +154,11 @@ NOT:wallet adınızı yazınız
 ```
 echo "0x$(evmosd debug addr $(evmosd keys show wallet-adınızı-yazınız -a) | grep hex | awk '{print $3}')"
 ```
+> evm scan :   https://scan-testnet.0g.ai
+> evm için private key alma mm ekleme aynı cüzdanı. cüzdna adınızı yazınız.
+```
+evmosd keys unsafe-export-eth-key cüzdan-adi-yaz
+```
 ### FAUCET
 
 https://faucet.0g.ai/
