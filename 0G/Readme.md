@@ -197,7 +197,11 @@ https://scan-testnet.0g.ai/tool
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/36d5d3ee-85a2-4d7a-ae56-8784b0fa8c1c)
 
 
-
+### Kendine delege
+NOT: wallet kısmına cuzdan adı yazınız 2yerede. miktar kısmınada sayıyı yazın 1 dane edeceksenız mıktarı sil 1 yaz olmassa 1 sıfır falan dusur
+```bash
+evmosd tx staking delegate $(evmosd keys show wallet --bech val -a)  miktar0000000000000000aevmos --from wallet --gas=500000 --gas-prices=99999aevmos -y
+```
 
 
 
