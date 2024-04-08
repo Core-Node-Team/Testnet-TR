@@ -60,7 +60,7 @@ PEER_ADDRESSES=("91.107.239.79" "116.203.81.174" "88.99.174.203" "128.140.3.188"
 ### İnit
 NOT: nodename kendi node adınızı ayzabilirsiniz.
 ```
-alignedlayer init NodeName \
+alignedlayerd init NodeName \
     --chain-id alignedlayer --overwrite
 ```
 ### Genesis Addrbook ve Ayarlar
