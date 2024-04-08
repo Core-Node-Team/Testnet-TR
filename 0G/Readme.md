@@ -160,10 +160,14 @@ echo "0x$(evmosd debug addr $(evmosd keys show wallet-adınızı-yazınız -a) |
 evmosd keys unsafe-export-eth-key cüzdan-adi-yaz
 ```
 ### FAUCET
-
+NOt: faucet suan 
 https://faucet.0g.ai/
 
 ### 🚧Validator oluşturma
+NOT: discorddan rollerinizi de alın ki kanallar açılsın
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/2b73ebc0-0880-4237-be41-aeb739f2d325)
+
 
 NOT: cüzdan adını moniker adınızı yazınız
 ```
