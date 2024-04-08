@@ -21,6 +21,9 @@
 | RAM	| 8+ GB |
 | Storage	| 400 GB SSD |
 
+
+UBUNTU 22
+
 ### 🚧Gerekli kurulumlar
 ```
 sudo apt update && sudo apt upgrade -y
