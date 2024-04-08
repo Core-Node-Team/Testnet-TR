@@ -150,8 +150,9 @@ NOT: cüzdan adınızı yazınız
 evmosd keys add cuzdan-adini-yaz
 ```
 ### 🚧Cüzdan evm adresi alma
+NOT:wallet adınızı yazınız
 ```
-echo "0x$(evmosd debug addr $(evmosd keys show $WALLET_NAME -a) | grep hex | awk '{print $3}')"
+echo "0x$(evmosd debug addr $(evmosd keys show wallet-adınızı-yazınız -a) | grep hex | awk '{print $3}')"
 ```
 ### FAUCET
 
