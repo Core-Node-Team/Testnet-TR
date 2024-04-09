@@ -23,8 +23,7 @@ mv tangle /usr/bin/
 tangle --version
 ```
 ```
-wget https://github.com/webb-tools/tangle/blob/main/chainspecs/mainnet/tangle-mainnet.json
-mv $HOME/tangle-mainnet.json $HOME/.tangle/tangle-mainnet.json
+wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Tangle-Mainnet/tangle-mainnet.json
 ```
 ### Servis oluşturuyoruz
 Not: node adini yaz kısmına adınızı yazınız....
