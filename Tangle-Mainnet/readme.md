@@ -132,4 +132,4 @@ https://app.tangle.tools/claim
 
 - Telemetry
 
-https://telemetry.avail.so/#list/0xd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70
+yakında
