@@ -47,7 +47,7 @@ ExecStart=/usr/bin/tangle \
   --rpc-port 9934 \
   --prometheus-port 9616 \
   --validator \
-  --telemetry-url "wss://telemetry.polkadot.io/submit 0" \
+  --telemetry-url "wss://telemetry.polkadot.io/submit/ 1" \
   --no-mdns
 [Install]
 WantedBy=multi-user.target
@@ -131,4 +131,4 @@ https://app.tangle.tools/claim
 
 - Telemetry
 
-yakında
+https://telemetry.polkadot.io/#list/0x44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0
