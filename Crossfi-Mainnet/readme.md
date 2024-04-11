@@ -102,8 +102,8 @@ cp -r $HOME/mainnet/config/* $HOME/.mineplex-chain/config
 ```
 ### Genesis ve Addrbook
 ```
-wget -O $HOME/.mineplex-chain/config/genesis.json http://37.120.189.81/crossfi_mainnet/genesis.json
-wget -O $HOME/.mineplex-chain/config/addrbook.json http://37.120.189.81/crossfi_mainnet/addrbook.json
+wget -O $HOME/.mineplex-chain/config/genesis.json https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Crossfi-Mainnet/genesis.json
+wget -O $HOME/.mineplex-chain/config/addrbook.json https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Crossfi-Mainnet/addrbook.json
 ```
 ### Port
 ```
