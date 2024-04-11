@@ -180,7 +180,7 @@ crossfid tx staking create-validator \
 --min-self-delegation 1 \
 --pubkey $(crossfid tendermint show-validator) \
 --moniker "Adini-yaz" \
---chain-id crossfi-mineplex-mainnet-1 \
+--chain-id mineplex-mainnet-1 \
 --node http://localhost:36657 \
 --identity="" \
 --website="" \
