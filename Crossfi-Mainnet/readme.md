@@ -97,6 +97,7 @@ sudo systemctl enable crossfid.service
 crossfid config node tcp://localhost:${CROSSFI_PORT}657
 crossfid config keyring-backend os
 crossfid config chain-id crossfi-mineplex-mainnet-1
+crossfid init node-adi-yaz --chain-id crossfi-mineplex-mainnet-1
 git clone https://github.com/crossfichain/mainnet.git
 cp -r $HOME/mainnet/config/* $HOME/.mineplex-chain/config
 ```
