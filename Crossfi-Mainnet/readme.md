@@ -186,8 +186,8 @@ crossfid tx staking create-validator \
 --website="" \
 --details="" \
 --security-contact="" \
---fees 150000000000000000mpx \
---gas 300000 \
---gas-adjustment 1.3 \
+--fees 2100000000000000000mpx \
+--gas auto \
+--gas-adjustment 1.1 \
 -y
 ```
