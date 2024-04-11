@@ -151,7 +151,7 @@ systemctl stop crossfid
 
 cp $HOME/.mineplex-chain/data/priv_validator_state.json $HOME/.mineplex-chain/priv_validator_state.json.backup
 
-curl -L http://37.120.189.81/crossfi_testnet/crossfi_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.mineplex-chain
+curl -L http://37.120.189.81/crossfi_mainnet/crossfi_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.mineplex-chain
 
 mv $HOME/.mineplex-chain/priv_validator_state.json.backup $HOME/.mineplex-chain/data/priv_validator_state.json
 
