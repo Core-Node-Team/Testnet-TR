@@ -49,13 +49,16 @@ echo "export CROSSFI_PORT="37"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 ### Dosyaları çekelim
+wget https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+tar -xzfv mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+mv mineplex-chaind crossfid
 ```
 cd $HOME
 mkdir -p $HOME/.mineplex-chain/cosmovisor/genesis/bin
-wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
-tar -xvf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
-chmod +x $HOME/bin/crossfid
-mv $HOME/bin/crossfid $HOME/.mineplex-chain/cosmovisor/genesis/bin
+wget https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+tar -xzfv mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+mv mineplex-chaind crossfid
+mv $HOME/crossfid $HOME/.mineplex-chain/cosmovisor/genesis/bin
 ```
 ```
 sudo ln -s $HOME/.mineplex-chain/cosmovisor/genesis $HOME/.mineplex-chain/cosmovisor/current -f
