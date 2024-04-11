@@ -44,7 +44,7 @@ Not: ismini-yaz kısmına adınızı yazınız..
 ```
 echo "export WALLET="wallet"" >> $HOME/.bash_profile
 echo "export MONIKER="ismini-yaz"" >> $HOME/.bash_profile
-echo "export CROSSFI_CHAIN_ID="crossfi-mineplex-mainnet-1"" >> $HOME/.bash_profile
+echo "export CROSSFI_CHAIN_ID="mineplex-mainnet-1"" >> $HOME/.bash_profile
 echo "export CROSSFI_PORT="37"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
@@ -97,10 +97,10 @@ NOT: node adı yaz
 ```
 crossfid config node tcp://localhost:${CROSSFI_PORT}657
 crossfid config keyring-backend os
-crossfid config chain-id crossfi-mineplex-mainnet-1
+crossfid config chain-id mineplex-mainnet-1
 ```
 ```
-crossfid init node-adi-yaz --chain-id crossfi-mineplex-mainnet-1
+crossfid init node-adi-yaz --chain-id mineplex-mainnet-1
 ```
 ```
 git clone https://github.com/crossfichain/mainnet.git
