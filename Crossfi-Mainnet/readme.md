@@ -75,7 +75,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which cosmovisor) run start
+ExecStart=$(which cosmovisor) run start --home $HOME/.mineplex-chain
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
@@ -145,7 +145,6 @@ sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.mineplex-chain/config/con
 
 ### Snap
 ```
-crossfid tendermint unsafe-reset-all --home $HOME/.mineplex-chain
 if curl -s --head curl http://37.120.189.81/crossfi_mainnet/crossfi_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
   curl http://37.120.189.81/crossfi_mainnet/crossfi_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
     else
