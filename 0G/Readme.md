@@ -118,8 +118,25 @@ sed -i "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00252aevmos\"/" $HOM
 ```
 ### 🚧Port Ayarları
 ```
-sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:16458\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:16457\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:16460\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:16456\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":16466\"%" $HOME/.evmosd/config/config.toml
-sed -i -e "s%^address = \"tcp://localhost:1317\"%address = \"tcp://0.0.0.0:16417\"%; s%^address = \":8080\"%address = \":16480\"%; s%^address = \"localhost:9090\"%address = \"0.0.0.0:16490\"%; s%^address = \"localhost:9091\"%address = \"0.0.0.0:16491\"%; s%:8545%:16445%; s%:8546%:16446%; s%:6065%:16465%" $HOME/.evmosd/config/app.toml
+echo "export G_PORT="16"" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+```
+```
+sed -i.bak -e "s%:1317%:${G_PORT}317%g;
+s%:8080%:${G_PORT}080%g;
+s%:9090%:${G_PORT}090%g;
+s%:9091%:${G_PORT}091%g;
+s%:8545%:${G_PORT}545%g;
+s%:8546%:${G_PORT}546%g;
+s%:6065%:${G_PORT}065%g" $HOME/.evmosd/config/app.toml
+```
+```
+sed -i.bak -e "s%:26658%:${CROSSFI_PORT}658%g;
+s%:26657%:${G_PORT}657%g;
+s%:6060%:${G_PORT}060%g;
+s%:26656%:${G_PORT}656%g;
+s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${G_PORT}656\"%;
+s%:26660%:${G_PORT}660%g" $HOME/.evmosd/config/config.toml
 ```
 ### 🚧Snap
 ```
