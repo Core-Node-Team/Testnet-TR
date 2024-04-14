@@ -65,3 +65,21 @@ cd pactus-cli_1.1.0
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
 ```
 
+-------------------------------------- Güncelleme-----------------------------
+```
+cd
+wget https://github.com/pactus-project/pactus/releases/download/v1.1.0/pactus-cli_1.1.0_linux_amd64.tar.gz
+tar -xvf pactus-cli_1.1.0_linux_amd64.tar.gz
+```
+### Screen'e girelim. 
+```
+screen -r pactus
+```
+##### Ardından CTRL+C ile durduralım.
+```
+cd
+cd pactus-cli_1.1.0
+```
+```
+./pactus-daemon start -w ~/pactus
+```
