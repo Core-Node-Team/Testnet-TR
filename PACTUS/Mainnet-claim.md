@@ -7,10 +7,7 @@
 #  | [Twitter](https://twitter.com/pactuschain/) | [Discord](https://discord.gg/pactus-795592769300987944) | [Website](https://pactus.org/) | [Github](https://github.com/pactus-project) |
 
 
-### TEST i silicem diyorsanız 
-```
-cd && rm -rf pactus
-```
+
 ## kurulum
 
 ```
