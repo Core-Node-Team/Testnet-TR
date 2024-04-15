@@ -69,7 +69,7 @@ alignedlayerd init NodeName \
 ### Genesis Addrbook ve Ayarlar
 ```
 curl -Ls https://raw.githubusercontent.com/molla202/AlignedLayer/main/genesis.json > $HOME/.alignedlayer/config/genesis.json
-curl -Ls https://raw.githubusercontent.com/molla202/AlignedLayer/main/addrbook.json > $HOME/.alignedlayer/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Alignedlayer/addrbook.json > $HOME/.alignedlayer/config/addrbook.json
 
 
 for ADDR in "${PEER_ADDRESSES[@]}"; do
@@ -142,13 +142,13 @@ sudo apt install liblz4-tool
 
 systemctl stop alignedlayerd
 
-cp $HOME/.alignedlayerd/data/priv_validator_state.json $HOME/.alignedlayerd/priv_validator_state.json.backup
+cp $HOME/.alignedlayer/data/priv_validator_state.json $HOME/.alignedlayer/priv_validator_state.json.backup
 
-alignedlayerd tendermint unsafe-reset-all --home $HOME/.evmosd --keep-addr-book
+alignedlayerd tendermint unsafe-reset-all --home $HOME/.alignedlayer --keep-addr-book
 
 curl -L http://37.120.189.81/alignedlayer_testnet/alignedlayer_snap.tar | tar -xf - -C $HOME/.alignedlayer/data/
 
-mv $HOME/.alignedlayerd/priv_validator_state.json.backup $HOME/.alignedlayerd/data/priv_validator_state.json
+mv $HOME/.alignedlayer/priv_validator_state.json.backup $HOME/.alignedlayer/data/priv_validator_state.json
 ```
 ### Başlatalım
 ```
