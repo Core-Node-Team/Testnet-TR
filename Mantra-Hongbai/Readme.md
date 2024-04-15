@@ -107,6 +107,8 @@ mantrachaind init NODE-ADI-YAZ --chain-id mantra-hongbai-1
 ### 🚧Genesis addrbook
 ```
 curl -Ls https://raw.githubusercontent.com/MANTRA-Finance/public/main/mantrachain-hongbai/genesis.json > $HOME/.mantrachain/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/molla202/Mantra-Hongbai/main/addrbook.json > $HOME/.mantrachain/config/addrbook.json
+
 ```
 ### 🚧Seed
 
