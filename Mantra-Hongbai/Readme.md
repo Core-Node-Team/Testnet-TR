@@ -6,7 +6,7 @@
 
 `Discord` : https://discord.gg/tSgpKbaP
 
-`Explorer` : 
+`Explorer` : https://explorer.hongbai.mantrachain.io/mantrachain
 
 ## Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
