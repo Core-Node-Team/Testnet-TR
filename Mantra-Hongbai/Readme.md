@@ -168,7 +168,7 @@ mantrachaind keys add cuzdan-adini-yaz
 Not: cüzdan ve moniker adınızı yazınız....
 ```
 mantrachaind tx staking create-validator \
---amount 1000000uaum \
+--amount 1000000uom \
 --from cüzdan-adınızı-yazınız \
 --commission-rate 0.1 \
 --commission-max-rate 0.2 \
@@ -179,7 +179,8 @@ mantrachaind tx staking create-validator \
 --identity "" \
 --details "corenode.info" \
 --chain-id mantra-hongbai-1 \
---gas auto --gas-adjustment 1.5 \
---fees 50uaum \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 50uom \
 -y
 ```
