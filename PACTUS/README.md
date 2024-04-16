@@ -11,7 +11,7 @@
 ## kurulum
 
 ```
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/tag/v1.1.0/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.1.0/pactus_downloader.sh | sh
 ```
 ```
 cd pactus-cli_1.1.0
