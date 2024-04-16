@@ -6,6 +6,8 @@
 
 `Discord` : https://discord.gg/tSgpKbaP
 
+`Explorer` : https://explorer.corenodehq.com/Mantra-Testnet%20Hongbai./staking                    
+
 `Explorer` : https://explorer.hongbai.mantrachain.io/mantrachain
 
 ## Sistem Gereksinimleri
