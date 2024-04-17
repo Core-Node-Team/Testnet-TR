@@ -62,6 +62,14 @@ cd pactus-cli_1.1.0
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
 ```
 
+### Baska adrese coin gönderme
+```
+cd
+cd pactus-cli_1.1.0
+```
+```
+./pactus-wallet --path ~/pactus/wallets/default_wallet tx transfer  gönderici-adres alıcı-adres gönderilecek-miktar
+```
 -------------------------------------- Güncelleme-----------------------------
 ```
 cd
