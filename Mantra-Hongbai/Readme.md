@@ -184,5 +184,6 @@ mantrachaind tx staking create-validator \
 --gas auto \
 --gas-adjustment 1.5 \
 --fees 50uom \
+--node http://localhost:23657 \
 -y
 ```
