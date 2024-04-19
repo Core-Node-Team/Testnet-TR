@@ -215,3 +215,16 @@ chmod +x script.sh
 ./script.sh
 ```
 - CRTL+A D  bas çık
+
+
+### Komple Silme
+```
+sudo systemctl stop wardend
+sudo systemctl disable wardend
+sudo rm -rf /etc/systemd/system/wardend.service
+sudo rm $(which wardend)
+sudo rm -rf $HOME/.warden
+sed -i "/WARDEN_/d" $HOME/.bash_profile
+```
+
+
