@@ -45,10 +45,6 @@ source $HOME/.bash_profile
 
 ### 🚧 Dosyaları çekelim ve kuralım
 
-cd $HOME
-rm -rf wardenprotocol
-git clone --depth 1 --branch v0.3.0 https://github.com/warden-protocol/wardenprotocol/
-cd wardenprotocol
 ```
 cd $HOME
 mkdir -p $HOME/.warden/cosmovisor/genesis/bin
@@ -99,8 +95,8 @@ wardend init "isim-yaz" --chain-id buenavista-1
 ```
 ### 🚧 Genesis addrbook
 ```
-wget -O $HOME/.warden/config/genesis.json "http://37.120.189.81/warden_testnet/genesis.json"
-wget -O $HOME/.warden/config/addrbook.json "http://37.120.189.81/warden_testnet/addrbook.json"
+wget -O $HOME/.warden/config/genesis.json "https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Warden-buenavista/genesis.json"
+wget -O $HOME/.warden/config/addrbook.json "https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Warden-buenavista/addrbook.json"
 ```
 ### 🚧 Gas ayarı
 ```
