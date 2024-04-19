@@ -54,7 +54,7 @@ cd wardenprotocol
 make build
 ```
 ```
-mv wardend $HOME/.warden/cosmovisor/genesis/bin/
+mv /root/wardenprotocol/build/wardend $HOME/.warden/cosmovisor/genesis/bin/
 ```
 ```
 sudo ln -s $HOME/.warden/cosmovisor/genesis $HOME/.warden/cosmovisor/current -f
