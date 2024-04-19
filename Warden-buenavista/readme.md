@@ -110,13 +110,7 @@ sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persisten
 ```
 ### 🚧 Snap
 ```
-wardend tendermint unsafe-reset-all --home $HOME/.warden
-if curl -s --head curl http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.warden
-    else
-  echo no have snap
-fi
-
+soon
 ```
 
 ### 🚧 Port ayarı
