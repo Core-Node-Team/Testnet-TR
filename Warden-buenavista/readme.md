@@ -169,7 +169,7 @@ wardend tx staking create-validator /root/wardenprotocol/validator.json \
     --from=cüzdan-adi \
     --chain-id=buenavista-1 \
     --fees=500uward \
-    --node=http://localhost:11157
+    --node=http://localhost:11257
 ```
 ### Delege 
 ```
@@ -177,7 +177,7 @@ wardend tx staking delegate valoper-adresi miktar000000uward \
 --chain-id buenavista-1 \
 --from "cüzdan-adi" \
 --fees 500uward \
---node=http://localhost:11157
+--node=http://localhost:11257
 ```
 
 ### OTO faucet isteme 
