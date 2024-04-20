@@ -50,3 +50,9 @@ Ekranı kapatmak için CTRL tuşunu basılı tutarak A tuşuna ve ardından D tu
  screen -r risczero 
 ```
 komutunu kullanın.
+
+### işlemler başarılı şekilde bitince altaki kodu çalıştırın
+```
+npx phase2cli clean
+```
+
