@@ -171,7 +171,7 @@ NOT: baska bele validator olusturmalı proje kuruluysa içi dolu olabilir. önem
 Not: ctrl xy enter kaydet çık.
 ### Validator olusturucaz ama eşleşmesini beklemeniz gerek....
 ```
-wardend tx staking create-validator /root/wardenprotocol/validator.json \
+wardend tx staking create-validator /root/validator.json \
     --from=cüzdan-adi \
     --chain-id=buenavista-1 \
     --fees=500uward \
