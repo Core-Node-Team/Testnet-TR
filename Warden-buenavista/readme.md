@@ -150,8 +150,9 @@ wardend comet show-validator
 ```
 Not: öğrendiğin pubkeyi aşağıda nano ile içine akataracağın yere yazıcan
 ```
-nano /root/wardenprotocol/validator.json
+nano /root/validator.json
 ```
+NOT: baska bele validator olusturmalı proje kuruluysa içi dolu olabilir. önemli değil zaten bikere kullanıyoruz sil bastan ekle yok sa zaten içi boş
 ```
 {
         "pubkey": pubyaz,
