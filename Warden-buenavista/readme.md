@@ -48,13 +48,13 @@ source $HOME/.bash_profile
 ```
 cd $HOME
 mkdir -p $HOME/.warden/cosmovisor/genesis/bin
-rm -rf wardenprotocol
-git clone --depth 1 --branch v0.3.0 https://github.com/warden-protocol/wardenprotocol/
-cd wardenprotocol
-make build
+wget https://github.com/warden-protocol/wardenprotocol/releases/download/v0.3.0/wardend_Linux_x86_64.zip
+unzip wardend_Linux_x86_64.zip
+rm -rf wardend_Linux_x86_64.zip
+chmod +x wardend
 ```
 ```
-mv /root/wardenprotocol/build/wardend $HOME/.warden/cosmovisor/genesis/bin/
+mv wardend $HOME/.warden/cosmovisor/genesis/bin/
 ```
 ```
 sudo ln -s $HOME/.warden/cosmovisor/genesis $HOME/.warden/cosmovisor/current -f
