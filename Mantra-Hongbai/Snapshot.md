@@ -9,7 +9,7 @@ cp $HOME/.mantrachain/data/priv_validator_state.json $HOME/.mantrachain/priv_val
 
 mantrachaind tendermint unsafe-reset-all --home $HOME/.mantrachain --keep-addr-book
 
-curl -L http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.mantrachain
+curl -L http://37.120.189.81/mantra_testnet/mantra_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.mantrachain
 
 mv $HOME/.mantrachain/priv_validator_state.json.backup $HOME/.mantrachain/data/priv_validator_state.json
 
