@@ -138,6 +138,7 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.ga
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.galactica/config/app.toml
 ```
 ### 🚧Gas ve index ayarı
+```
 sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "10agnet"|g' $HOME/.galactica/config/app.toml
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.galactica/config/config.toml
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.galactica/config/config.toml
@@ -160,6 +161,7 @@ galacticad keys add cüzdan-adi-yaz
 galacticad keys add cüzdan-adi-yaz --recover
 ```
 ### Cüzdan EVM adresi al
+NOT: ALDIĞINIZ ADRES İLE LİNKLERDEKİ FAUCETTEN COİN İSTEYİNİZ.
 ```
 galacticad keys convert-bech32-to-hex $(galacticad keys show cüzdan-adi-yaz -a)
 ```
@@ -168,19 +170,20 @@ galacticad keys convert-bech32-to-hex $(galacticad keys show cüzdan-adi-yaz -a)
 galacticad keys unsafe-export-eth-key cüzdan-adi-yaz
 ```
 ### Validator oluştur
+NOT: cüzdan ve vali adını yazınız
 ```
 galacticad tx staking create-validator \
 --amount 1000000agnet \
---from $WALLET \
+--from Cüzdan-adi \
 --commission-rate 0.1 \
 --commission-max-rate 0.2 \
 --commission-max-change-rate 0.01 \
 --min-self-delegation 1 \
 --pubkey $(galacticad tendermint show-validator) \
---moniker "molla202" \
+--moniker "vali-adi-yaz" \
 --identity "" \
 --website "" \
---details "I love blockchain ❤️" \
+--details "" \
 --chain-id galactica_9302-1 \
 --gas 200000 --gas-prices 15agnet \
 -y
@@ -189,14 +192,16 @@ galacticad tx staking create-validator \
 ```
 galacticad tx staking edit-validator \
 --commission-rate 0.1 \
---new-moniker "$MONIKER" \
+--new-moniker "vali-adi" \
 --identity "" \
---details "I love blockchain ❤️" \
---from $WALLET \
+--details "" \
+--from cüzdan-adi \
 --chain-id galactica_9302-1 \
 --gas 200000 --gas-prices 15agnet \
 -y 
 ```
+- $WALLET onlan yerleri hata alırsanız cüzdan adınızı yazınız...
+
 ### jailden çık
 ```
 galacticad tx slashing unjail --from $WALLET --chain-id galactica_9302-1 --gas 200000 --gas-prices 10agnet -y 
@@ -217,21 +222,12 @@ galacticad tx staking delegate <TO_VALOPER_ADDRESS> 1000000agnet --from $WALLET 
 ```
 galacticad query bank balances $WALLET_ADDRESS
 ```
-
-
-
-
-
-
-
-
-
-
-
-
+### Node silme
+```
 sudo systemctl stop galacticad
 sudo systemctl disable galacticad
 sudo rm -rf /etc/systemd/system/galacticad.service
 sudo rm $(which galacticad)
 sudo rm -rf $HOME/.galactica
 sed -i "/GALACTICA_/d" $HOME/.bash_profile
+```
