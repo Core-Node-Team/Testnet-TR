@@ -110,7 +110,7 @@ journalctl -f -u availd.service
 
 ### Cüzdan olusturma
 
-https://temp-explorer.avail.so/#/staking/actions
+https://explorer.avail.so/?rpc=wss%3A%2F%2Fturing-rpc.corenode.info&light=https%3A%2F%2Fapi.lightclient.turing.avail.so%2Fv1#/explorer
 
 not: telemetry den ismizi yazarak bakınız.
 
