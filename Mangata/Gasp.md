@@ -30,7 +30,7 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 sudo apt-get update
 ```
 ```
-sudo apt-get install ca-certificates curl gnupg
+sudo apt-get install ca-certificates curl gnupg git
 ```
 ```
 sudo install -m 0755 -d /etc/apt/keyrings
