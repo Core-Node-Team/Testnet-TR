@@ -13,6 +13,8 @@
 * [Docs](https://docs.availproject.org/clash-of-nodes/challenges/)
 * [Github](https://github.com/availproject/avail/releases)
 
+FAUCET : https://faucet.avail.tools/ 
+
 # Public RPC
 ```
 https://turing-rpc.corenode.info
