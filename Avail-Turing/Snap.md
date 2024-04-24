@@ -30,9 +30,7 @@ curl -o - -L http://37.120.189.81/avail/avail.tar.lz4 | lz4 -c -d - | tar -x -C 
 systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
 ```
 
-👉Not: başlangıcta sürümün 1.10 olduğunu görün bele
 
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/b13effd8-6e23-4961-b726-8a7215df6cbe)
 
 
 
