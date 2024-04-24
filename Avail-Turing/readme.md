@@ -24,7 +24,7 @@ wss://turing-rpc.corenode.info
 ```
 #### Kurulum Video : [LINK](https://www.youtube.com/watch?v=po4sDoMie6Q&t)
 
-## NOT: eski avail yerine kuracaksanız alt kısma bakın. lütfen tüm dokumanı okuyun.
+
 
 Not: Ubuntu 22 istiyore ancak 20 binary de eklendi kurarken ona dikkat edin ubuntunuz neyse onu kurun 20 özellikle belirtilmiştir.
 
