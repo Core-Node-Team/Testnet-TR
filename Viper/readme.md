@@ -79,6 +79,11 @@ cd ~/.viper/config
 ```
 wget https://raw.githubusercontent.com/vipernet-xyz/genesis/main/testnet/genesis.json genesis.json
 ```
+NOT inmiyorsa genesi bunu deneyin.
+```
+wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Viper/genesis.json genesis.json
+```
+
 ```
 ulimit -Sn 16384
 ```
