@@ -16,6 +16,7 @@
 sudo apt -q update
 sudo apt -qy install curl git jq lz4 build-essential
 sudo apt -qy upgrade
+sudo apt-get install git build-essential curl file nginx certbot python3-certbot-nginx jq -y
 ```
 ### 🚧GO
 ```
