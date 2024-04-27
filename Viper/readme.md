@@ -83,7 +83,9 @@ NOT inmiyorsa genesi bunu deneyin.
 ```
 wget https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Viper/genesis.json genesis.json
 ```
-
+```
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Viper/addrbook.json > $HOME/.viper/config/addrbook.json
+```
 ```
 ulimit -Sn 16384
 ```
