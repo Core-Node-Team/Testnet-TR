@@ -30,7 +30,7 @@ rm -r data
 rm -r viper_evidence.db
 rm -r viper_result.db
 sudo git clone https://github.com/vishruthsk/data.git data
-sudo chown -R viper ~/.viper/data
+sudo chown -R root ~/.viper/data
 cd config
 rm addrbook.json
 ```
