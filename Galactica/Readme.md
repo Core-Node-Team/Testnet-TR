@@ -53,8 +53,8 @@ git checkout v0.1.2
 make build
 ```
 ```
-mkdir -p ~/.galactica/cosmovisor/upgrades/v0.1.2/bin
-mv $HOME/go/bin/galacticad ~/.galactica/cosmovisor/upgrades/v0.1.2/bin/
+mkdir -p ~/.galactica/cosmovisor/genesis/bin
+mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/genesis/bin/
 ```
 ```
 sudo ln -s ~/.galactica/cosmovisor/genesis ~/.galactica/cosmovisor/current -f
@@ -73,7 +73,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which cosmovisor) run start
+ExecStart=$(which cosmovisor) run start --home $HOME/.galactica --chain-id galactica_9302-1
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
