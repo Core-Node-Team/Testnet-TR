@@ -55,6 +55,8 @@ make build
 ```
 mkdir -p ~/.galactica/cosmovisor/genesis/bin
 mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/genesis/bin/
+mkdir -p ~/.galactica/cosmovisor/upgrades/v0.1.2/bin
+cp ~/.galactica/cosmovisor/genesis/bin/galacticad ~/.galactica/cosmovisor/upgrades/v0.1.2/bin/
 ```
 ```
 sudo ln -s ~/.galactica/cosmovisor/genesis ~/.galactica/cosmovisor/current -f
