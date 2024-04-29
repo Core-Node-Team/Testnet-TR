@@ -54,7 +54,7 @@ make build
 ```
 ```
 mkdir -p ~/.galactica/cosmovisor/upgrades/0.1.2/bin
-mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/upgrades/v0.1.2/bin/
+mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/upgrades/0.1.2/bin/
 
 ```
 ```
