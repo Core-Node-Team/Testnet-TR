@@ -53,13 +53,12 @@ git checkout v0.1.2
 make build
 ```
 ```
-mkdir -p ~/.galactica/cosmovisor/genesis/bin
-mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/genesis/bin/
-mkdir -p ~/.galactica/cosmovisor/upgrades/0.1.2/bin
-cp ~/.galactica/cosmovisor/genesis/bin/galacticad ~/.galactica/cosmovisor/upgrades/0.1.2/bin/
+mkdir -p ~/.galactica/cosmovisor/upgrades/v0.1.2/bin
+mv $HOME/galactica/build/galacticad ~/.galactica/cosmovisor/upgrades/v0.1.2/bin/
+
 ```
 ```
-sudo ln -s ~/.galactica/cosmovisor/genesis ~/.galactica/cosmovisor/current -f
+sudo ln -s ~/.galactica/cosmovisor/upgrades/0.1.2 ~/.galactica/cosmovisor/current -f
 sudo ln -s ~/.galactica/cosmovisor/current/bin/galacticad /usr/local/bin/galacticad -f
 ```
 ### 🚧Cosmovisor kuralım
