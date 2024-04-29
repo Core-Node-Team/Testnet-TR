@@ -20,6 +20,10 @@ journalctl -u viper -f
 
 
 ### Wrong block hatası alırsanız
+
+```
+sudo systemctl stop viper.service
+```
 ```
 cd ~/.viper
 rm -r data
