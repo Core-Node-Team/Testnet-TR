@@ -177,6 +177,35 @@ wardend tx staking create-validator /root/validator.json \
     --fees=500uward \
     --node=http://localhost:11257
 ```
+### oto validator olusturma yukardaki ile yapamadıysız deneyin
+```
+cd $HOME
+```
+# Create validator.json file
+```
+echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(wardend comet show-validator | grep -Po '\"key\":\s*\"\K[^"]*')\"},
+    \"amount\": \"1000000uward\",
+    \"moniker\": \"nodeismin\",
+    \"identity\": \"keybasecode\",
+    \"website\": \"\",
+    \"security\": \"\",
+    \"details\": \"details\",
+    \"commission-rate\": \"0.1\",
+    \"commission-max-rate\": \"0.2\",
+    \"commission-max-change-rate\": \"0.01\",
+    \"min-self-delegation\": \"1\"
+}" > validator.json
+```
+# Create a validator using the JSON configuration
+```
+wardend tx staking create-validator validator.json \
+    --from cuzdanismin \
+    --chain-id buenavista-1 \
+    --gas auto --gas-adjustment 1.5 --fees 600uward \
+    --node=http://localhost:11257
+```
+
+
 ### Delege 
 ```
 wardend tx staking delegate valoper-adresi miktar000000uward \
