@@ -15,7 +15,7 @@ Tanssi, geliştiricileri, uygulama dağıtımını hızlı ve zahmetsiz hale get
  [Twitter](https://twitter.com/TanssiNetwork)<br>
  [Doc](https://docs.tanssi.network/node-operators/block-producers/onboarding/run-a-block-producer/block-producer-systemd/)<br>
  [Explorer](https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/extrinsics)<br>
-
+ [Telemetry](https://telemetry.polkadot.io/#stats/0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea)<br>
 
 </h1>
 
