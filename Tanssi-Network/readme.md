@@ -29,7 +29,7 @@ Tanssi, geliştiricileri, uygulama dağıtımını hızlı ve zahmetsiz hale get
 
 
 ```
-wget https://github.com/moondance-labs/tanssi/releases/download/v0.6.0/tanssi-node && \
+wget https://github.com/moondance-labs/tanssi/releases/download/v0.6.1/tanssi-node && \
 chmod +x ./tanssi-node
 
 sudo mkdir /root/tanssi-data/
