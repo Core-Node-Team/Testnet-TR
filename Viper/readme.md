@@ -149,7 +149,7 @@ https://freedns.afraid.org/subdomain/
 - sunucu işlemlerine geçelim
 
 ```
-echo "export HOSTNAME="viper-molla202.strangled.net"" >> $HOME/.bash_profile
+echo "export HOSTNAME="buraya aldığınız domain adresi yazılacak"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 HOSTNAME=buraya yukardaki resimdeki gibi aldığınız adresi yazıcaksınız.
