@@ -7,7 +7,7 @@ systemctl stop sided
 
 cp $HOME/.side/data/priv_validator_state.json $HOME/.side/priv_validator_state.json.backup
 
-pryzmd tendermint unsafe-reset-all --home $HOME/.side --keep-addr-book
+sided tendermint unsafe-reset-all --home $HOME/.side --keep-addr-book
 
 curl -L http://37.120.189.81/side_testnet/side_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.side
 
