@@ -105,6 +105,7 @@ NOT: node adınızı yazınız.
 ```
 rm ~/.0gchain/config/genesis.json
 curl -Ls https://github.com/0glabs/0g-chain/releases/download/v0.1.0/genesis.json > $HOME/.0gchain/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/0G-Newton/addrbook.json > $HOME/.0gchain/config/addrbook.json
 ```
 OR
 ```
