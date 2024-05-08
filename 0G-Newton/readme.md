@@ -217,6 +217,7 @@ NOT: cüzdan adını moniker adınızı yazınız
 
 https://scan-testnet.0g.ai/tool
 
+
 - adresine gidiyoruz cüzdanımızı bağlıyoruz. ağı otomatik ekler. sonra herhangi ufak bir resim dosya seçiyouruz ve upload ediyoruz onay verıyoruz.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/36d5d3ee-85a2-4d7a-ae56-8784b0fa8c1c)
