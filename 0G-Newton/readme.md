@@ -63,7 +63,7 @@ mv /root/0g-chain/out/linux/0gchaind $HOME/.0gchain/cosmovisor/genesis/bin/
 ### 🚧System link
 ```
 sudo ln -s $HOME/.0gchain/cosmovisor/genesis $HOME/.0gchain/cosmovisor/current -f
-sudo ln -s $HOME/.0gchain/cosmovisor/current/bin/evmosd /usr/local/bin/0gchaind -f
+sudo ln -s $HOME/.0gchain/cosmovisor/current/bin/0gchaind /usr/local/bin/0gchaind -f
 ```
 ### 🚧Cosmovisor indirelim
 ```
