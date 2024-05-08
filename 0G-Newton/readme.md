@@ -45,20 +45,15 @@ source $HOME/.bash_profile
 ```
 
 ### 🚧Dosyaları çekelim
-
+```
 git clone -b v0.1.0 https://github.com/0glabs/0g-chain.git
 ./0g-chain/networks/testnet/install.sh
 source .profile
-
-
 ```
-git clone -b v0.1.0 https://github.com/0glabs/0g-chain.git
-cd 0g-chain
-make build
-```
+
 ```
 mkdir -p $HOME/.0gchain/cosmovisor/genesis/bin
-mv /root/0g-chain/out/linux/0gchaind $HOME/.0gchain/cosmovisor/genesis/bin/
+mv /root/root/go/bin/0gchaind $HOME/.0gchain/cosmovisor/genesis/bin/
 ```
 ### 🚧System link
 ```
