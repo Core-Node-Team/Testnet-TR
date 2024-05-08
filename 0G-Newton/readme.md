@@ -123,9 +123,16 @@ PEERS="c4d619f6088cb0b24b4ab43a0510bf9251ab5d7f@54.241.167.190:26656,44d11d4ba92
 SEEDS="c4d619f6088cb0b24b4ab43a0510bf9251ab5d7f@54.241.167.190:26656,44d11d4ba92a01b520923f51632d2450984d5886@54.176.175.48:26656,f2693dd86766b5bf8fd6ab87e2e970d564d20aff@54.193.250.204:26656,f878d40c538c8c23653a5b70f615f8dccec6fb9f@54.215.187.94:26656" && \
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.0gchain/config/config.toml
 ```
-### 🚧Gas ayarı
+### 🚧Gas pruning ayarı
 ```
-sed -i "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00252ua0gi\"/" $HOME/.0gchain/config/app.toml
+
+sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" $HOME/.0gchain/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.0gchain/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.0gchain/config/app.toml
+
+sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0ua0gi"|g' $HOME/.0gchain/config/app.toml
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.0gchain/config/config.toml
+sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.0gchain/config/config.toml
 ```
 ### 🚧Port Ayarları
 ```
@@ -165,7 +172,7 @@ sudo journalctl -u 0gchaind.service -f --no-hostname -o cat
 ### 🚧Cüzdan oluşturma
 NOT: cüzdan adınızı yazınız
 ```
-0gchaind keys add cuzdan-adini-yaz
+0gchaind keys add cuzdan-adini-yaz --eth
 ```
 ### 🚧Cüzdan evm adresi alma
 NOT:wallet adınızı yazınız
@@ -218,7 +225,7 @@ https://scan-testnet.0g.ai/tool
 ### Kendine delege
 NOT: wallet kısmına cuzdan adı yazınız 2yerede. miktar kısmınada sayıyı yazın 1 dane edeceksenız mıktarı sil 1 yaz olmassa 1 sıfır falan dusur
 ```bash
-evmosd tx staking delegate $(evmosd keys show wallet --bech val -a)  miktar0000000000000000aevmos --from wallet --gas=500000 --gas-prices=99999aevmos -y
+0gchaind tx staking delegate $(0gchaind keys show wallet --bech val -a)  miktar0000000000000000ua0gi --from wallet --gas=500000 --gas-prices=99999ua0gi -y
 ```
 
 
