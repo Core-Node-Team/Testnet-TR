@@ -97,7 +97,7 @@ sudo systemctl enable 0gchaind.service
 ```
 ### 🚧Node ayarları
 ```
-evmosd config chain-id zgtendermint_9000-1
+evmosd config chain-id zgtendermint_16600-1
 evmosd config keyring-backend os
 evmosd config node tcp://localhost:16457
 ```
