@@ -193,7 +193,7 @@ NOT: discorddan rollerinizi de alın ki kanallar açılsın
 NOT: cüzdan adını moniker adınızı yazınız
 ```
 0gchaind tx staking create-validator \
-  --amount=10000000000000000ua0gi \
+  --amount=1000000ua0gi \
   --pubkey=$(0gchaind tendermint show-validator) \
   --moniker=MONIKER-YAZ \
   --chain-id=zgtendermint_16600-1 \
@@ -205,8 +205,6 @@ NOT: cüzdan adını moniker adınızı yazınız
   --identity="" \
   --website="" \
   --details="" \
-  --gas=500000 \
-  --gas-prices=99999ua0gi \
   -y
 ```
 ### Test dosya yuklemesi deneme
@@ -222,7 +220,7 @@ https://scan-testnet.0g.ai/tool
 ### Kendine delege
 NOT: wallet kısmına cuzdan adı yazınız 2yerede. miktar kısmınada sayıyı yazın 1 dane edeceksenız mıktarı sil 1 yaz olmassa 1 sıfır falan dusur
 ```bash
-0gchaind tx staking delegate $(0gchaind keys show wallet --bech val -a)  miktar0000000000000000ua0gi --from wallet --gas=500000 --gas-prices=99999ua0gi -y
+0gchaind tx staking delegate $(0gchaind keys show wallet --bech val -a)  miktar000000ua0gi --from wallet -y
 ```
 
 
