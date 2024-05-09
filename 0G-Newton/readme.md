@@ -205,6 +205,7 @@ NOT: cüzdan adını moniker adınızı yazınız
   --identity="" \
   --website="" \
   --details="" \
+  --node=http://localhost:16657 \
   -y
 ```
 ### Test dosya yuklemesi deneme
