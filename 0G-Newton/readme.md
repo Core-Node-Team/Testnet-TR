@@ -170,6 +170,10 @@ NOT: cüzdan adınızı yazınız
 ```
 0gchaind keys add cuzdan-adini-yaz --eth
 ```
+- Eski cüzdan import ederkene bele
+```
+0gchaind keys add wallet --eth --recover
+```
 ### 🚧Cüzdan evm adresi alma
 NOT:wallet adınızı yazınız
 ```
