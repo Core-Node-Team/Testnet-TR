@@ -21,6 +21,7 @@
 
 --------------
 
+
 ### Daha once test1 kurduysanız.
 ```
 sudo systemctl stop sided
@@ -52,6 +53,10 @@ mv $HOME/.side/priv_validator_state.json.backup $HOME/.side/data/priv_validator_
 
 sudo systemctl restart sided && sudo journalctl -u sided -fo cat
 ```
+# FAUCET
+
+https://testnet.side.one/faucet
+
 ### 🚧Gerekli kurulumlar
 ```
 sudo apt update && sudo apt upgrade -y
