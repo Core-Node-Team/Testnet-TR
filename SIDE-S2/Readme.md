@@ -74,10 +74,10 @@ Not: adınızı yazın
 ```
 sided config node tcp://localhost:${SIDE_PORT}657
 sided config keyring-backend os
-sided config chain-id S2-testnet-1
+sided config chain-id S2-testnet-2
 ```
 ```
-sided init "Adını-yaz" --chain-id S2-testnet-1
+sided init "Adını-yaz" --chain-id S2-testnet-2
 ```
 ### 🚧Genesis ve addrbook
 ```
@@ -191,14 +191,14 @@ sided tx staking create-validator \
 --moniker "Adını-yaz" \
 --identity "" \
 --details "" \
---chain-id S2-testnet-1 \
+--chain-id S2-testnet-2 \
 --fees 1000uside \
 -y
 ```
 ### Delege
 $wallet yazan kısımlara cüzdan adını yazınız  1milyon uside 1 side edıyor
 ```
-sided tx staking delegate $(sided keys show $WALLET --bech val -a) 1000000uside --from $WALLET --chain-id S2-testnet-1 --gas auto --fees 1000uside -y
+sided tx staking delegate $(sided keys show $WALLET --bech val -a) 1000000uside --from $WALLET --chain-id S2-testnet-2 --gas auto --fees 1000uside -y
 ```
 ### 🚧Delete node - Silme
 ```
