@@ -93,7 +93,7 @@ git clone https://github.com/sideprotocol/side.git
 
 cd side
 
-git checkout v0.8.0
+git checkout v0.8.1
 
 make install
 
