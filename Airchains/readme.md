@@ -188,8 +188,14 @@ Not: alttaki kodu düzenleyin sonra üsteki kodu yazıp düzenlediğinizi içine
 ```
 junctiond tx staking create-validator $HOME/validator.json --from cüzdan-adi --chain-id junction --fees 5000amf --node http://localhost:63657
 ```
-
-
+### Kendinize stake
+```
+junctiond tx staking delegate $(junctiond keys show cüzdan-adi-yaz --bech val -a) 1000000amf --from cüzdan-adi-yaz --chain-id junction --fees 5000amf -y
+```
+### Jailden çıkma
+```
+junctiond tx slashing unjail --from cüzdan-adi-yaz --chain-id junction --fees 5000amf -y
+```
 
 
 
