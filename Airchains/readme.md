@@ -141,7 +141,7 @@ sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.junction/config/config.to
 ```
 ### Snap 
 ```
-mantrachaind tendermint unsafe-reset-all --home $HOME/.mantrachain
+junctiond tendermint unsafe-reset-all --home $HOME/.junction
 if http://37.120.189.81/airchain_testnet/air_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
   curl -L http://37.120.189.81/airchain_testnet/air_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.junction
     else
