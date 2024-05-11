@@ -190,11 +190,11 @@ junctiond tx staking create-validator $HOME/validator.json --from cüzdan-adi --
 ```
 ### Kendinize stake
 ```
-junctiond tx staking delegate $(junctiond keys show cüzdan-adi-yaz --bech val -a) 1000000amf --from cüzdan-adi-yaz --chain-id junction --fees 5000amf -y
+junctiond tx staking delegate $(junctiond keys show cüzdan-adi-yaz --bech val -a) 1000000amf --from cüzdan-adi-yaz --chain-id junction --fees 5000amf --node=http://localhost:63657 -y
 ```
 ### Jailden çıkma
 ```
-junctiond tx slashing unjail --from cüzdan-adi-yaz --chain-id junction --fees 5000amf -y
+junctiond tx slashing unjail --from cüzdan-adi-yaz --chain-id junction --fees 5000amf --node=http://localhost:63657 -y
 ```
 
 
