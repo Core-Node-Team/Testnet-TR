@@ -154,7 +154,9 @@ s%:26660%:${G_PORT}660%g" $HOME/.0gchain/config/config.toml
 ```
 ### 🚧Snap
 ```
-yakında
+sudo apt install liblz4-tool
+0gchaind tendermint unsafe-reset-all --home $HOME/.0gchain --keep-addr-book
+curl -L http://37.120.189.81/0g_testnet/0g_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.0gchain
 ```
 ### 🚧Başlatalım   
 ```
