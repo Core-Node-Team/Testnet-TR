@@ -1,6 +1,7 @@
 
 ### Güncelleme
 ```
+cd
 sudo systemctl stop viper.service
 ```
 ```
