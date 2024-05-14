@@ -188,6 +188,9 @@ initiad tx staking create-validator \
   --website="" \
   --details="" \
   --node=http://localhost:15657 \
+  --gas-adjustment 1.4 \
+  --gas auto \
+  --gas-prices 0.15uinit \
   -y
 ```
 ### Kendine delege
