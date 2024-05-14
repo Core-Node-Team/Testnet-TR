@@ -13,7 +13,9 @@
  * [Twitter](https://twitter.com/0G_labs)<br>
  * [Discord](https://discord.gg/initia)<br>
 
+## FAUCET 
 
+https://faucet.testnet.initia.xyz/
 
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
