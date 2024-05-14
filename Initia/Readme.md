@@ -95,6 +95,11 @@ sudo systemctl enable initiad.service
 ### 🚧İnit
 NOT: node adınızı yazınız.
 ```
+initiad config set client chain-id initiation-1
+initiad config set client node tcp://localhost:15657
+initiad config set client keyring-backend test
+```
+```
 initiad init NODE-ADI-YAZ --chain-id initiation-1
 ```
 ### 🚧Genesis addrbook
