@@ -178,7 +178,7 @@ initiad keys add wallet --recover
 
 NOT: cüzdan adını moniker adınızı yazınız
 ```
-initiad tx staking create-validator \
+initiad tx mstaking create-validator \
   --amount=5000000uinit \
   --pubkey=$(initiad tendermint show-validator) \
   --moniker=MONIKER-YAZ \
@@ -200,7 +200,7 @@ initiad tx staking create-validator \
 ### Kendine delege
 NOT: 
 ```bash
-initiad tx staking delegate $(initiad keys show wallet --bech val -a)  miktar000000uinit --from wallet --node=http://localhost:15657 -y
+initiad tx mstaking delegate $(initiad keys show wallet --bech val -a)  miktar000000uinit --from wallet --node=http://localhost:15657 -y
 ```
 
 
