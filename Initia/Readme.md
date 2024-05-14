@@ -27,7 +27,7 @@ https://scan.testnet.initia.xyz/initiation-1
 | CPU |	4|
 | RAM	| 8+ GB |
 | Storage	| 400 GB SSD |
-| System	| Ubuntu 22.04 |
+| System	| Ubuntu 22.04 OR 20.04 |
 
 ### 🚧Gerekli kurulumlar
 ```
