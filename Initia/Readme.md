@@ -186,7 +186,6 @@ initiad tx mstaking create-validator \
   --commission-rate=0.05 \
   --commission-max-rate=0.10 \
   --commission-max-change-rate=0.01 \
-  --min-self-delegation=1 \
   --from=CUZDAN-ADI-YAZ \
   --identity="" \
   --website="" \
