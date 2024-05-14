@@ -17,6 +17,10 @@
 
 https://faucet.testnet.initia.xyz/
 
+## Explorer
+
+https://scan.testnet.initia.xyz/initiation-1
+
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
