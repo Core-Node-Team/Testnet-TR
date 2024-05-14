@@ -106,7 +106,7 @@ initiad init NODE-ADI-YAZ --chain-id initiation-1
 ```
 rm ~/.initia/config/genesis.json
 curl -Ls https://raw.githubusercontent.com/molla202/pokemon/main/genesis.json > $HOME/.initia/config/genesis.json
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Initia/addrbook.json  $HOME/.initia/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Initia/addrbook.json > $HOME/.initia/config/addrbook.json
 ```
 ### 🚧Port Ayarları
 ```
