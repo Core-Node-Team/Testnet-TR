@@ -209,7 +209,7 @@ initiad tx mstaking edit-validator \
 ### Kendine delege
 NOT: 
 ```bash
-initiad tx mstaking delegate $(initiad keys show wallet --bech val -a)  miktar000000uinit --from wallet --node=http://localhost:15657 -y
+initiad tx mstaking delegate $(initiad keys show wallet --bech val -a)  miktar000000uinit --from wallet --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit --node=http://localhost:15657 -y
 ```
 
 
