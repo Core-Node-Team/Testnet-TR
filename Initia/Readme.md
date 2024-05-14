@@ -21,6 +21,7 @@
 | CPU |	4|
 | RAM	| 8+ GB |
 | Storage	| 400 GB SSD |
+| System	| Ubuntu 22.04 |
 
 ### 🚧Gerekli kurulumlar
 ```
