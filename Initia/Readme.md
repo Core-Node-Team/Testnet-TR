@@ -196,6 +196,16 @@ initiad tx mstaking create-validator \
   --gas-prices 0.15uinit \
   -y
 ```
+### Edit validator
+```
+initiad tx mstaking edit-validator \
+--moniker "isim-yaz" \
+--from cüzdan-adi-yaz \
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.15uinit \
+-y
+```
 ### Kendine delege
 NOT: 
 ```bash
