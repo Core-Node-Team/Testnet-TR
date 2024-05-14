@@ -131,7 +131,7 @@ sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persisten
 ```
 ### 🚧Gas pruning ayarı
 ```
-...
+sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.15uinit,0.01uusdc\"|" $HOME/.initia/config/app.toml
 ```
 ### 🚧Pruning
 ```
