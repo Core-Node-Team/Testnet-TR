@@ -13,6 +13,14 @@
  * [Discord](https://discord.gg/jsy8ZqrD)<br>
  * [Twitter](https://twitter.com/airchains_io)<br>
 
+### Public RPC
+
+RPC : https://airchains-testnet-rpc.corenode.info/
+
+API : https://airchains-testnet-api.corenode.info/
+
+GRPC : https://airchains-testnet-grpc.corenode.info/
+
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
