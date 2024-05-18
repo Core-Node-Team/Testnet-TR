@@ -24,3 +24,8 @@ sudo systemctl daemon-reload
 systemctl restart 0gchaind
 journalctl -u 0gchaind -fo cat
 ```
+### Kontrol
+```
+curl -X POST http://localhost:16545 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7f58b195-2a5b-42d4-8cae-2e06deeeec50)
