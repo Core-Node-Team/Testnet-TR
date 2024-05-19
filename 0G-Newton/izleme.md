@@ -1,4 +1,12 @@
 ```
+nano /root/.0gchain/config/app.toml
+```
+ctrl w ile aratma yerine 16545 yazalım ve aşaıdaki gibi gorunmesi gerekıyor 
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/c5e182c1-94b7-4d17-9fa1-64ee0cec31e7)
+
+
+```
 sudo tee /etc/systemd/system/0gchaind.service > /dev/null << EOF
 [Unit]
 Description=0gchaind node service
