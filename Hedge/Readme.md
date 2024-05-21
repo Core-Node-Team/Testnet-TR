@@ -45,6 +45,7 @@ sudo wget -O hedged https://github.com/hedgeblock/testnets/releases/download/v0.
 chmod +x hedged
 mkdir -p $HOME/go/bin
 sudo mv hedged $HOME/go/bin
+rm -rf /usr/lib/libwasmvm.x86_64.so
 set -eux; \
   wget -O /lib/libwasmvm.x86_64.so https://github.com/CosmWasm/wasmvm/releases/download/v1.3.0/libwasmvm.x86_64.so
 ```
