@@ -13,7 +13,8 @@ chmod +x /usr/local/bin/viper
 viper network version
 ```
 
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9b2bf717-8fe3-4288-a99c-c0b20c4c8df3)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/4a21a813-25ca-4bcc-98db-c8c7c81f8f12)
+
 
 
 ```
