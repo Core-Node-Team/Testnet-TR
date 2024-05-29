@@ -19,6 +19,13 @@ viper network version
 
 
 ```
+cd
+cd ~/.viper
+rm -r data
+sudo git clone https://github.com/vishruthsk/data.git data
+sudo chown -R root ~/.viper/data
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl restart viper.service
 journalctl -u viper -f
