@@ -1,5 +1,5 @@
 
-<h1 align="center"> Pactus Miannet</h1>
+<h1 align="center"> Pactus Mainnet</h1>
 
 
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/fc854b16-a554-419c-afbf-f99de720060a)
@@ -76,8 +76,8 @@ cd pactus-cli_1.1.4
 -------------------------------------- Güncelleme-----------------------------
 ```
 cd
-wget https://github.com/pactus-project/pactus/releases/download/v1.1.0/pactus-cli_1.1.4_linux_amd64.tar.gz
-tar -xvf pactus-cli_1.1.4_linux_amd64.tar.gz
+wget https://github.com/pactus-project/pactus/releases/download/v1.1.5/pactus-cli_1.1.5_linux_amd64.tar.gz
+tar -xvf pactus-cli_1.1.5_linux_amd64.tar.gz
 ```
 ### Screen'e girelim. 
 ```
@@ -86,7 +86,7 @@ screen -r pactus
 ##### Ardından CTRL+C ile durduralım.
 ```
 cd
-cd pactus-cli_1.1.4
+cd pactus-cli_1.1.5
 ```
 ```
 ./pactus-daemon start -w ~/pactus
