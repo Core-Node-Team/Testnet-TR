@@ -18,4 +18,5 @@ cd pactus-cli_1.1.6
 ./pactus-daemon start -w ~/pactus
 ```
 
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/8b95d265-4941-459d-84f5-20382e2fdd8f)
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/7834e042-8050-47b3-8d28-f801da54e149)
+
