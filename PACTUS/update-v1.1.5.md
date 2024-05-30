@@ -1,6 +1,7 @@
 -------------------------------------- Güncelleme-----------------------------
 ```
 cd
+rm -rf pactus-cli_1.1.5_linux_amd64.tar.gz
 wget https://github.com/pactus-project/pactus/releases/download/v1.1.5/pactus-cli_1.1.5_linux_amd64.tar.gz
 tar -xvf pactus-cli_1.1.5_linux_amd64.tar.gz
 ```
