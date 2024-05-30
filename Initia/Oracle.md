@@ -33,7 +33,11 @@ EOF
 ### Başlatalım
 ```
 sudo systemctl daemon-reload
+```
+```
 sudo systemctl enable slinkyd.service
+```
+```
 sudo systemctl restart slinkyd.service
 ```
 ### Loglara bakmak isterseniz
