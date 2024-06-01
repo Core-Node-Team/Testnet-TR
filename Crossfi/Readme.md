@@ -51,6 +51,7 @@ source $HOME/.bash_profile
 ### Dosyaları çekelim
 ```
 cd $HOME
+mkdir -p $HOME/go/bin
 wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
 tar -xvf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
 chmod +x $HOME/bin/crossfid
