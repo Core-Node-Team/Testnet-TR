@@ -7,6 +7,16 @@ wget http://37.120.189.81/crossfi_testnet/crossfid && chmod +x crossfid
 mkdir -p $HOME/.mineplex-chain/cosmovisor/upgrades/v0.3.0-prebuild9/bin
 mv crossfid $HOME/.mineplex-chain/cosmovisor/upgrades/v0.3.0-prebuild9/bin/
 ```
+
+Not konusunda isim teyit edemedim o yuzden bölede bişi yapmak lazım..
+
+erc20-cheque-testnet
+
 ```
-sudo systemctl restart crossfid && sudo journalctl -u crossfid -fo cat
+cd $HOME
+wget http://37.120.189.81/crossfi_testnet/crossfid && chmod +x crossfid
+```
+```
+mkdir -p $HOME/.mineplex-chain/cosmovisor/upgrades/erc20-cheque-testnet/bin
+mv crossfid $HOME/.mineplex-chain/cosmovisor/upgrades/erc20-cheque-testnet/bin/
 ```
