@@ -61,9 +61,7 @@ rm -rf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz $HOME/bin
 ```
 git clone https://github.com/crossfichain/testnet.git
 mv $HOME/testnet/ $HOME/.mineplex-chain/
-crossfid config node tcp://localhost:${CROSSFI_PORT}657
-crossfid config keyring-backend os
-crossfid config chain-id crossfi-evm-testnet-1
+
 ```
 ```
 cd $HOME
@@ -77,7 +75,11 @@ mv $HOME/bin/crossfid $HOME/.mineplex-chain/cosmovisor/genesis/bin
 sudo ln -s $HOME/.mineplex-chain/cosmovisor/genesis $HOME/.mineplex-chain/cosmovisor/current -f
 sudo ln -s $HOME/.mineplex-chain/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
 ```
-
+```
+crossfid config node tcp://localhost:${CROSSFI_PORT}657
+crossfid config keyring-backend os
+crossfid config chain-id crossfi-evm-testnet-1
+```
 ### Download and install Cosmovisor
 ```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
