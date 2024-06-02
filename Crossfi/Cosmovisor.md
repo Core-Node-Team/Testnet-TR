@@ -51,6 +51,22 @@ source $HOME/.bash_profile
 ### Dosyaları çekelim
 ```
 cd $HOME
+mkdir -p $HOME/go/bin
+wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
+tar -xvf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
+chmod +x $HOME/bin/crossfid
+mv $HOME/bin/crossfid $HOME/go/bin
+rm -rf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz $HOME/bin
+```
+```
+git clone https://github.com/crossfichain/testnet.git
+mv $HOME/testnet/ $HOME/.mineplex-chain/
+crossfid config node tcp://localhost:${CROSSFI_PORT}657
+crossfid config keyring-backend os
+crossfid config chain-id crossfi-evm-testnet-1
+```
+```
+cd $HOME
 mkdir -p $HOME/.mineplex-chain/cosmovisor/genesis/bin
 wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
 tar -xvf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
@@ -92,16 +108,7 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable crossfid.service
 ```
-### İnit
-NOT: node adı yaz
-```
-crossfid config node tcp://localhost:${CROSSFI_PORT}657
-crossfid config keyring-backend os
-crossfid config chain-id crossfi-evm-testnet-1
-rm -rf testnet ~/.mineplex-chain
-git clone https://github.com/crossfichain/testnet.git
-mv $HOME/testnet/ $HOME/.mineplex-chain/
-```
+
 ### Genesis ve Addrbook
 ```
 wget -O $HOME/.mineplex-chain/config/genesis.json http://37.120.189.81/crossfi_testnet/genesis.json
