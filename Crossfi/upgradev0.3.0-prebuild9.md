@@ -10,7 +10,6 @@ mv crossfid $HOME/.mineplex-chain/cosmovisor/upgrades/v0.3.0-prebuild9/bin/
 
 Not konusunda isim teyit edemedim o yuzden bölede bişi yapmak lazım..
 
-erc20-cheque-testnet
 
 ```
 cd $HOME
