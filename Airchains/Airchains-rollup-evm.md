@@ -209,5 +209,11 @@ Not: çalıştırdıktan sonra yukardaki gibi görunce ctrl a+d ile çıkalım. 
 - cüzdan kelimeleriniz leap walleta import edip bağlaıyınız.puan kazanmak zaman alıyor.
 - https://points.airchains.io/
 
+### Hangi portlar kullanılıyor.
+- kod ile bakın eğer kullanmıyorsa sunucunuzda kurabilirsiniz.
+```
+sudo lsof -i -P -n | grep LISTEN
+```
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/a0bd638f-4ff8-4bcd-9614-dffdd7234f3e)
 
 
