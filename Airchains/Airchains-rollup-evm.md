@@ -107,6 +107,8 @@ s%:26660%:${G_PORT}660%g" $HOME/.evmosd/config/config.toml
 - çalıştıysa bloklar akar ctrl + a + d screenden çıkın
 
 ```shell
+cd
+cd evm-station
 /bin/bash ./scripts/local-keys.sh
 ```
 
