@@ -195,7 +195,7 @@ go run cmd/main.go create-station --accountName cüzdan-adini-yaz --accountPath 
 
 ### Başlatalım
 ```
-screen -S evm
+screen -S etm
 ```
 ```shell
 go run cmd/main.go start
