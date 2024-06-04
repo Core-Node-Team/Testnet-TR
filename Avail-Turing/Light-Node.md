@@ -42,10 +42,14 @@ chmod +x avail-light
 rm -rf avail-light-linux-amd64.tar.gz
 ```
 ```
-
+mkdir -p $HOME/.avail/turing/bin
+mkdir -p $HOME/.avail/turing/data
+mkdir -p $HOME/.avail/turing/config
+mkdir -p $HOME/.avail/identity
 ```
-
-
+```
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Avail-Turing/config.yml
+```
 #### Servis dosyasını oluşturalım.
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<EOF
