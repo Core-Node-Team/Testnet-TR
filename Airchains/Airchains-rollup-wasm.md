@@ -91,7 +91,7 @@ s%:8546%:${G_PORT}546%g;
 s%:6065%:${G_PORT}065%g" $HOME/.wasmstationd/config/app.toml
 ```
 ```
-sed -i.bak -e "s%:26658%:${CROSSFI_PORT}658%g;
+sed -i.bak -e "s%:26658%:${G_PORT}658%g;
 s%:26657%:${G_PORT}657%g;
 s%:6060%:${G_PORT}060%g;
 s%:26656%:${G_PORT}656%g;
