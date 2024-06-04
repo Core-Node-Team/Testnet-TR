@@ -47,6 +47,9 @@ systemctl enable availd
 ```
 sudo systemctl restart availd && journalctl -u availd -fo cat
 ```
+- kontrol edelim hala aynı adresmi çıkıor daha once kaydetmiştik aynıysa tamamsınız.
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/399bdbd0-f78b-44d9-8d74-6c09d0113c72)
 
 ## Loglar
 ```
