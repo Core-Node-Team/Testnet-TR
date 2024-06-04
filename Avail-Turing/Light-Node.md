@@ -81,7 +81,7 @@ sudo systemctl daemon-reload
 systemctl enable availd
 ```
 ```
-sudo systemctl restart availd
+sudo systemctl restart availd && journalctl -u availd -fo cat
 ```
 
 ## Loglar
