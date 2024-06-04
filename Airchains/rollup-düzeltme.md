@@ -59,9 +59,9 @@ journalctl -u availd -fo cat
 ------------------------------
 
 - şimdide dosya içinde dakey duzenliyelim. resimdede gorulduğu gibi dakey kısmına cüzdan adresimizi yazıp ctrl x+y enterla kaydedip çıkalım.
-
+```
 nano /root/.tracks/config/sequencer.toml
-
+```
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/70a5195e-e88b-4312-baba-528745b0cd0e)
 ```
 screen -r etm
