@@ -33,7 +33,7 @@ https://explorer.corenodehq.com/Airchains-Testnet.
 | Storage	| 100+ GB SSD |
 
 
-
+NOT: UFAK TEFEK RESİMELRDE DEĞİŞİKLİK OLABİLİR GUNCELLEYECEĞİM YAKINDA.
 
 ### 🚧Gerekli kurulumlar
 ```
