@@ -66,7 +66,7 @@ nano /root/.tracks/config/sequencer.toml
 ```
 screen -r etm
 ```
-- çalışıorsa durdurun ve aşağıdaki kodla tekrar başlatın.
+- çalışıorsa durdurun ctrl c ile ve aşağıdaki kodla tekrar başlatın.
 ```
 go run cmd/main.go start
 ```
