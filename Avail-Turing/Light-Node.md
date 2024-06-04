@@ -76,7 +76,11 @@ EOF
 #### Başlatalım
 ```
 sudo systemctl daemon-reload
+```
+```
 systemctl enable availd
+```
+```
 sudo systemctl restart availd
 ```
 
