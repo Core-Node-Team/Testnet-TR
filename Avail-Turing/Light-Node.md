@@ -48,7 +48,7 @@ mkdir -p $HOME/.avail/turing/config
 mkdir -p $HOME/.avail/identity
 ```
 ```
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Avail-Turing/config.yml > $HOME/.avail/config/config.ym
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Avail-Turing/config.yml > $HOME/.avail/turing/config/config.ym
 ```
 #### Servis dosyasını oluşturalım.
 ```
