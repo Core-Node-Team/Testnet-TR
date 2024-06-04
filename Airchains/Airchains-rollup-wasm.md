@@ -148,7 +148,7 @@ https://faucet.avail.tools
 
 - şimdi aşağıdaki koduda düzenlediğimizde girince track dataları oluşucak
 ```shell
-go run cmd/main.go init --daRpc "http://127.0.0.1:7000" --daKey "avail kelimeler yaz" --daType "avail" --moniker "moniker-adini-yaz" --stationRpc "http://127.0.0.1:16545" --stationAPI "http://127.0.0.1:16317" --stationType "wasm"
+go run cmd/main.go init --daRpc "http://127.0.0.1:7000" --daKey "cüzdan-adresi-yaz" --daType "avail" --moniker "moniker-adini-yaz" --stationRpc "http://127.0.0.1:16545" --stationAPI "http://127.0.0.1:16317" --stationType "wasm"
 ```
 
 - Aşağıdaki kodda cüzdan-adi-yaz kısmına adınızı yaıznız cüzdanın çıktıyı koomple kaydedin lazımdır. keplerede ekleyin adrese discordan faucet istiyoruz
