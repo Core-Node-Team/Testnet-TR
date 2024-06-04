@@ -28,9 +28,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt-get install make curl clang pkg-config libssl-dev build-essential
 ```
-```
-screen -S alight
-```
+
 
 ### Avail Light Client'i yükleyin UBUNTU 22
 ```
