@@ -121,7 +121,9 @@ https://github.com/Core-Node-Team/Testnet-TR/blob/main/Avail-Turing/Light-Node.m
 
 
 ## Track kurulum
-
+```
+cd && rm -rf tracks
+```
 ```shell
 cd
 cd tracks
