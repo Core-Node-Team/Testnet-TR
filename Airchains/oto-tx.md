@@ -12,7 +12,10 @@ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 ```
-sudo apt install nodejs npm
+sudo apt install nodejs npm 
+```
+```
+npm install -g npm@10.8.1
 ```
 ```
 npm install web3@1.5.3
