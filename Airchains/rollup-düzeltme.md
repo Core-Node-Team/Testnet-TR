@@ -58,11 +58,13 @@ journalctl -u availd -fo cat
 
 ------------------------------
 
-- şimdide dosya içinde dakey duzenliyelim. resimdede gorulduğu gibi dakey kısmına cüzdan adresimizi yazıp ctrl x+y enterla kaydedip çıkalım.
+- şimdide dosya içinde dakey duzenliyelim. resimdede gorulduğu gibi dakey kısmına cüzdan pubkeyimizi yazıp ctrl x+y enterla kaydedip çıkalım.
 ```
 nano /root/.tracks/config/sequencer.toml
 ```
-![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/70a5195e-e88b-4312-baba-528745b0cd0e)
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/f8c82af7-d3fa-435a-a6d5-b44f4b018336)
+
 ```
 screen -r etm
 ```
@@ -70,3 +72,5 @@ screen -r etm
 ```
 go run cmd/main.go start
 ```
+
+
