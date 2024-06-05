@@ -1,6 +1,9 @@
 
 Not: manuel çalıştırmayı otoya çeviriyoruz.
 ```
+sudo apt install -y curl git jq lz4 build-essential cmake perl automake autoconf libtool wget libssl-dev
+```
+```
 screen -r avail
 ```
 - ctrl c ile durdurun exit yazıp çıkın
