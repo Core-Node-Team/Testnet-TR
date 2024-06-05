@@ -248,7 +248,7 @@ screen -S etm
 Not: çalıştırdıktan sonra yukardaki gibi görunce ctrl a+d ile çıkalım. screenlere bakmak için her zaman bu kodu kullanıyoruz screen -r screen-adi   screene ne ad verdiysek onu yazıcaz cıkarken yıne ctrl ad
 
 ### Tracks servisle çalıştırma
-Not: zaten çalışıyorsa işlem yapıyorsa durdurmayın hata verirse yada işlemi bitirip beklemedeyse ctrl c ile durdurup servis yapın
+Not: zaten çalışıyorsa işlem yapıyorsa durdurmayın hata verirse yada işlemi bitirip beklemedeyse ctrl c ile durdurup servis yapın. evet screen açmıştık eğer servisle çalıştırıcaksanız açmanıza gerek yok
 ```
 sudo tee /etc/systemd/system/tracksd.service > /dev/null <<EOF
 [Unit]
