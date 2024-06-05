@@ -113,6 +113,7 @@ s%:26660%:${G_PORT}660%g" $HOME/.evmosd/config/config.toml
 ```
 
 ### oluşan cüzdanımızın private keyini allım 
+NOT: bu aynı zamanda ototx işleminde private key alma işlemi ile aynı işlemdir.
 ```shell
 cd
 cd evm-station
