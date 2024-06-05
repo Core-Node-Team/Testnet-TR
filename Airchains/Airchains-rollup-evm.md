@@ -247,6 +247,37 @@ screen -S etm
 
 Not: çalıştırdıktan sonra yukardaki gibi görunce ctrl a+d ile çıkalım. screenlere bakmak için her zaman bu kodu kullanıyoruz screen -r screen-adi   screene ne ad verdiysek onu yazıcaz cıkarken yıne ctrl ad
 
+### Tracks servisle çalıştırma
+Not: zaten çalışıyorsa işlem yapıyorsa durdurmayın hata verirse yada işlemi bitirip beklemedeyse ctrl c ile durdurup servis yapın
+```
+sudo tee /etc/systemd/system/tracksd.service > /dev/null <<EOF
+[Unit]
+Description=tracksd node
+After=network-online.target
+
+[Service]
+User=$USER
+WorkingDirectory=$HOME/.tracks
+ExecStart=/root/tracks/build/tracks start
+
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+```
+sudo systemctl daemon-reload
+sudo systemctl enable tracksd
+sudo systemctl restart tracksd
+```
+### Log
+```
+sudo journalctl -u tracksd -fo cat
+```
+
+
 ### Puan kontrol
 - cüzdan kelimeleriniz leap walleta import edip bağlaıyınız.puan kazanmak zaman alıyor.
 - https://points.airchains.io/
