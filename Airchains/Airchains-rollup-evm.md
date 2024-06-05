@@ -114,7 +114,7 @@ cd evm-station
 
 
 ## Avail light node kuralım
-- aşağıdaki repodan kuralım servisle durduydu ettiydiyle uğraşmayalım temiz.
+- aşağıdaki repodan kuralım servisle durduydu ettiydiyle uğraşmayalım temiz. başlatınca cüzdan adresi ve pubkey gorunur alıp kaydedin
 
 https://github.com/Core-Node-Team/Testnet-TR/blob/main/Avail-Turing/Light-Node.md
 
@@ -128,7 +128,7 @@ cd tracks
 ```shell
 go mod tidy
 ```
-- Dakey : avail kurduğumuzda başlarken yazan cüzdan adresimiz
+- Dakey : avail kurduğumuzda başlarken yazan pubkey başına 0x koyuyoruz.
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/2831e936-b6c6-43ce-a057-9b47a2c0ecb6)
 
@@ -145,7 +145,7 @@ https://faucet.avail.tools
 
 - şimdi aşağıdaki koduda düzenlediğimizde girince track dataları oluşucak
 ```shell
-go run cmd/main.go init --daRpc "http://127.0.0.1:7000" --daKey "avail-cüzdan-adresi" --daType "avail" --moniker "moniker-adini-yaz" --stationRpc "http://127.0.0.1:16545" --stationAPI "http://127.0.0.1:16545" --stationType "evm"
+go run cmd/main.go init --daRpc "http://127.0.0.1:7000" --daKey "avail-pubkey-başı-0x-şekilde" --daType "avail" --moniker "moniker-adini-yaz" --stationRpc "http://127.0.0.1:16545" --stationAPI "http://127.0.0.1:16545" --stationType "evm"
 ```
 
 - Aşağıdaki kodda cüzdan-adi-yaz kısmına adınızı yaıznız cüzdanın çıktıyı koomple kaydedin lazımdır. keplerede ekleyin adrese discordan faucet istiyoruz
