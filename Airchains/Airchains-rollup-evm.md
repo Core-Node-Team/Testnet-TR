@@ -261,7 +261,7 @@ WorkingDirectory=$HOME/.tracks
 ExecStart=/root/tracks start
 
 Restart=on-failure
-RestartSec=5
+RestartSec=10
 LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
