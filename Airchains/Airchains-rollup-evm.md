@@ -258,7 +258,7 @@ After=network-online.target
 [Service]
 User=$USER
 WorkingDirectory=$HOME/.tracks
-ExecStart=/root/tracks/build/tracks start
+ExecStart=/root/tracks start
 
 Restart=on-failure
 RestartSec=5
