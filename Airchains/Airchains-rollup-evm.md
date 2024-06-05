@@ -33,7 +33,16 @@ https://explorer.corenodehq.com/Airchains-Testnet.
 | Storage	| 100+ GB SSD |
 
 
-
+## ♥ Silip kurucam diyenler
+NOt: avail servis oalrak çalışıor bişileri değiştirmemize tekrar kurmamıza gerek yok.
+```
+cd
+rm-rf .evm-station
+rm-rf tracks
+rm-rf .tracks
+rm-rf evm-station
+rm-rf .evmosd
+```
 
 ### 🚧Gerekli kurulumlar
 ```
