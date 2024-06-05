@@ -1,5 +1,10 @@
 ### Oto tx
-
+```
+sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip screen -y
+```
+```
+sudo apt install -y curl git jq lz4 build-essential cmake perl automake autoconf libtool wget libssl-dev -y
+```
 ```
 curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 ```
