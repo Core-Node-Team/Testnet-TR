@@ -39,6 +39,7 @@ https://explorer.corenodehq.com/Airchains-Testnet.
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip screen -y
+sudo apt install -y curl git jq lz4 build-essential cmake perl automake autoconf libtool wget libssl-dev -y
 ```
 
 
