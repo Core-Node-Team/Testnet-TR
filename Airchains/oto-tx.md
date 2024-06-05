@@ -23,7 +23,7 @@ npm install web3@1.5.3
 ```
 nano corenodetx.js
 ```
-- içersine aşağıdakileri kopyalayıp yapıstırın ctrl x+y enterla kaydedip çıkın.
+- içersine aşağıdakileri kopyalayıp yapıstırın ctrl x+y enterla kaydedip çıkın.bişi değişmeyecek kaydet çık çalıştırınca o zatn sorucak siz
 ```
 const readline = require('readline');
 const Web3 = require('web3');
