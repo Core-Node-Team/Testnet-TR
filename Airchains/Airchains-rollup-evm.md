@@ -37,11 +37,11 @@ https://explorer.corenodehq.com/Airchains-Testnet.
 NOt: avail servis oalrak çalışıor bişileri değiştirmemize tekrar kurmamıza gerek yok.
 ```
 cd
-rm-rf .evm-station
-rm-rf tracks
-rm-rf .tracks
-rm-rf evm-station
-rm-rf .evmosd
+rm -rf .evm-station
+rm -rf tracks
+rm -rf .tracks
+rm -rf evm-station
+rm -rf .evmosd
 ```
 
 ### 🚧Gerekli kurulumlar
@@ -260,9 +260,10 @@ User=$USER
 WorkingDirectory=$HOME/.tracks
 ExecStart=/root/tracks start
 
-Restart=on-failure
-RestartSec=10
+Restart=always
+RestartSec=5
 LimitNOFILE=65535
+SuccessExitStatus=0 1
 [Install]
 WantedBy=multi-user.target
 EOF
