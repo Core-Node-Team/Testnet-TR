@@ -193,6 +193,9 @@ https://faucet.avail.tools
 - Moniker : MONİKER İSMİNİZ
 
 - şimdi aşağıdaki koduda düzenlediğimizde girince track dataları oluşucak
+```
+cd
+```
 ```shell
 ./tracks init --daRpc "http://127.0.0.1:7000" --daKey "avail-pubkey-başı-0x-şekilde" --daType "avail" --moniker "moniker-adini-yaz" --stationRpc "http://127.0.0.1:16545" --stationAPI "http://127.0.0.1:16545" --stationType "evm"
 ```
