@@ -264,7 +264,7 @@ WorkingDirectory=$HOME/.tracks
 ExecStart=/root/tracks start
 
 Restart=always
-RestartSec=5
+RestartSec=10
 LimitNOFILE=65535
 SuccessExitStatus=0 1
 [Install]
