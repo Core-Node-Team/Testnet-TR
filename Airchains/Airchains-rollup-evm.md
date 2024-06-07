@@ -70,7 +70,7 @@ go version
 git clone https://github.com/airchains-network/evm-station.git
 ```
 ```shell
-wget https://github.com/airchains-network/tracks/releases/download/v0.0.3/tracks
+wget http://37.120.189.81/airchain_testnet/tracks
 chmod +x tracks
 ```
 
