@@ -82,7 +82,7 @@ cd evm-station
 ```shell
 go mod tidy
 ```
-- Chainid belirleyelim resimdeki gibi isim yazın tr karakter olmadan ve sayılarıda değştirebilirsiniz ama unutmayın ne yazdığınızı klaydedin. ctrl xy enterla kaydediyoruz.
+- Chainid belirleyelim resimdeki gibi isim yazın tr karakter olmadan ve sayılarıda değştirebilirsiniz ama unutmayın ne yazdığınızı klaydedin. ctrl xy enterla kaydediyoruz. sadece isim yazıyoruz tr karakter olmadan sayıları ellemeyin sadece harflerden olusan birisim mesela halay_1254-1  yada banaparamiver_1254-1  yada mafolduk_1254-1
 ```
 nano /root/evm-station/scripts/local-setup.sh
 ```
