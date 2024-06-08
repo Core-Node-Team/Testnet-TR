@@ -75,7 +75,11 @@ git clone https://github.com/airchains-network/evm-station.git
 wget http://37.120.189.81/airchain_testnet/tracks
 chmod +x tracks
 ```
-
+Not: eğer versiyonunuz ubuntu 20 ise bunu yapıcaksınız  tracks için
+```shell
+wget http://37.120.189.81/airchain_testnet/ubuntu20/tracks
+chmod +x tracks
+```
 ### Evm-Station
 
 ```shell
