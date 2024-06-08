@@ -36,6 +36,8 @@ https://explorer.corenodehq.com/Airchains-Testnet.
 ## ♥ Silip kurucam diyenler
 NOt: avail servis oalrak çalışıor bişileri değiştirmemize tekrar kurmamıza gerek yok.
 ```
+systemctl stop evmosd
+systemctl stop tracksd
 cd
 rm -rf .evm-station
 rm -rf tracks
