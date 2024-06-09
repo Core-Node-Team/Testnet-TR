@@ -21,5 +21,5 @@ mv Cosmos\ Relayer_0.3.1-v2.5.2-relayer_linux_amd64/rly /usr/local/bin/roller_bi
 ```
 - roller run diyerek başlatalım kısa sürede bulacaktır.
 ```
-roller ru
+roller run
 ```
