@@ -40,7 +40,7 @@ sudo ufw allow 26656
 ```
 ### Dosyaları çekelim
 ```
-wget -O /usr/local/bin/viper http://37.120.189.81/viper/viper4
+wget -O /usr/local/bin/viper http://37.120.189.81/viper/viper7
 ```
 ```
 chmod +x /usr/local/bin/viper
