@@ -56,7 +56,7 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
-git clone -b v0.2.0 https://github.com/0glabs/0g-storage-node.git
+git clone -b v0.3.0 https://github.com/0glabs/0g-storage-node.git
 ```
 ### Build edelim
 Not: uzun sürer.
