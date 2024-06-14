@@ -234,7 +234,7 @@ sudo systemctl status celd
 sudo journalctl -u celd.service -f
 ```
 
-## Eigen 
+## Eigen (çatır çutur)
 ```
 cd $HOME
 wget https://github.com/airchains-network/tracks/releases/download/v0.0.2/eigenlayer
