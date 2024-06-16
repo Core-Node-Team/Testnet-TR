@@ -1,5 +1,7 @@
 - Tracks gas hatasına dusunce rollback yapmayı getirmişler geçici bir çözüm sıkıntıyı tamamıyla çözmeleri gerekıyor şimdilik böyle idare edicez. tx screeninie girip ctrl c ile durdurun
-
+```
+systemctl stop tracksd
+```
 ```
 cd
 ```
@@ -7,7 +9,7 @@ cd
 rm -rf tracks
 ```
 ```
-wget http://37.120.189.81/airchain_testnet/tracks
+wget http://37.120.189.81/airchain_testnet/fees/tracks
 ```
 ```
 chmod +x tracks
