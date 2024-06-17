@@ -12,6 +12,14 @@ make build
 ```
 mv build/slinky /usr/local/bin/
 ```
+### Portunuzu kontrol edin
+```
+echo "$(curl -s ifconfig.me)$(grep -A 6 "\[grpc\]" ~/.initia/config/app.toml | egrep -o ":[0-9]+")"
+```
+### Servis dosyanızdaki port kısmına değişken olarak ayarlayın
+```
+PORT=GRPC_PORT_NUMARANIZI_YAZIN
+```
 ### Servis olusturalım
 ```
 sudo tee /etc/systemd/system/slinkyd.service > /dev/null <<EOF
@@ -21,7 +29,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which slinky) --oracle-config-path $HOME/slinky/config/core/oracle.json --market-map-endpoint 127.0.0.1:15090
+ExecStart=$(which slinky) --oracle-config-path $HOME/slinky/config/core/oracle.json --market-map-endpoint 127.0.0.1:$PORT
 Restart=on-failure
 RestartSec=30
 LimitNOFILE=65535
