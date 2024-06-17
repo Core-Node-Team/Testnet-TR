@@ -16,7 +16,7 @@ mv build/slinky /usr/local/bin/
 ```
 echo "$(curl -s ifconfig.me)$(grep -A 6 "\[grpc\]" ~/.initia/config/app.toml | egrep -o ":[0-9]+")"
 ```
-### Servis dosyanızdaki port kısmına değişken olarak ayarlayın
+### Servis dosyanızdaki port kısmına değişken atayın
 ```
 PORT=GRPC_PORT_NUMARANIZI_YAZIN
 ```
