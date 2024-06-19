@@ -294,7 +294,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-
+WorkingDirectory=/root/aligned_layer
 ExecStart=/root/aligned_layer/operator/build/aligned-operator start --config /root/aligned_layer/config-files/config-operator.yaml
 
 Restart=always
