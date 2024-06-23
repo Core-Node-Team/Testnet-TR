@@ -239,7 +239,7 @@ nano /root/.tracks/config/sequencer.toml
 
 
 ```shell
-./tracks create-station --accountName cüzdan-adini-yaz --accountPath $HOME/.tracks/junction-accounts/keys --jsonRPC "https://airchains-testnet-rpc.cosmonautstakes.com/" --info "EVM Track" --tracks cüzdan-adresini-yaz --bootstrapNode "/ip4/SUNUCU-İP-YAZ/tcp/2300/p2p/NODE-ID-YAZ"
+./tracks create-station --accountName cüzdan-adini-yaz --accountPath $HOME/.tracks/junction-accounts/keys --jsonRPC "https://junction-testnet-rpc.synergynodes.com/" --info "EVM Track" --tracks cüzdan-adresini-yaz --bootstrapNode "/ip4/SUNUCU-İP-YAZ/tcp/2300/p2p/NODE-ID-YAZ"
 ```
 
 ![image](https://github.com/molla202/Airchains-rollup/assets/91562185/fe107d45-9253-49a9-8bcc-b9d60f4433a0)
