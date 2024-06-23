@@ -19,7 +19,7 @@ viper network version
 
 
 
-## 4278 öncesi bir blokta sıkıştıysanız ilerlemıyorsa altakini yapıyorsunuz.
+## loglarda wrong block goruyorsanız yapın
 ```
 cd
 cd ~/.viper
