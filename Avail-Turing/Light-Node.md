@@ -48,6 +48,21 @@ mkdir -p $HOME/.avail/identity
 ```
 curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Avail-Turing/config.yml > $HOME/.avail/turing/config/config.yml
 ```
+### Avail Light Client'i yükleyin UBUNTU 20
+```
+cd
+wget http://37.120.189.81/avail/ubuntu20/avail-light
+chmod +x avail-light
+```
+```
+mkdir -p $HOME/.avail/turing/bin
+mkdir -p $HOME/.avail/turing/data
+mkdir -p $HOME/.avail/turing/config
+mkdir -p $HOME/.avail/identity
+```
+```
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Avail-Turing/config.yml > $HOME/.avail/turing/config/config.yml
+```
 #### Servis dosyasını oluşturalım.
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<EOF
