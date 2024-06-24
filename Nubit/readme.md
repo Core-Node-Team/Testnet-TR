@@ -35,7 +35,7 @@ Not: hersey yuklenince başlar sonra ctrl c ile durdurun.
 ### Eğer daha önce görevleri yaptığınız keplr cüzdanı import edicekseniz kelimeleri alın alttaki kodla  import edin sorucak üzerine yazammı die oh yeahhh diyoruz :D
 
 ```
-/root/nubit-node/bin/nkey add my_nubit_key --recovery --p2p.network nubit-alphatestnet-1 --node.type light
+/root/nubit-node/bin/nkey add my_nubit_key --recover --p2p.network nubit-alphatestnet-1 --node.type light
 ```
 
 ### Servissiz olmaz
