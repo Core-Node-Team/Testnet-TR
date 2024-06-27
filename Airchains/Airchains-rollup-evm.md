@@ -71,12 +71,7 @@ go version
 ```shell
 git clone https://github.com/airchains-network/evm-station.git
 ```
-```shell
-wget http://37.120.189.81/airchain_testnet/station-evm
-chmod +x station-evm
-rm -rf /root/evm-station/build/station-evm
-mv station-evm /root/evm-station/build/station-evm
-```
+
 ```shell
 wget http://37.120.189.81/airchain_testnet/tracks
 chmod +x tracks
@@ -93,6 +88,12 @@ cd evm-station
 ```
 ```shell
 go mod tidy
+```
+```shell
+wget http://37.120.189.81/airchain_testnet/station-evm
+chmod +x station-evm
+rm -rf /root/evm-station/build/station-evm
+mv station-evm /root/evm-station/build/station-evm
 ```
 - Chainid belirleyelim resimdeki gibi isim yazın tr karakter olmadan ve sayılarıda değştirebilirsiniz ama unutmayın ne yazdığınızı klaydedin. ctrl xy enterla kaydediyoruz. sadece isim yazıyoruz tr karakter olmadan sayıları ellemeyin sadece harflerden olusan birisim mesela halay_1254-1  yada banaparamiver_1254-1  yada mafolduk_1254-1
 ```
