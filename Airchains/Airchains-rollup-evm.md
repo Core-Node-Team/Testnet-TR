@@ -72,6 +72,12 @@ go version
 git clone https://github.com/airchains-network/evm-station.git
 ```
 ```shell
+wget http://37.120.189.81/airchain_testnet/station-evm
+chmod +x station-evm
+rm -rf /root/evm-station/build/station-evm
+mv station-evm /root/evm-station/build/station-evm
+```
+```shell
 wget http://37.120.189.81/airchain_testnet/tracks
 chmod +x tracks
 ```
