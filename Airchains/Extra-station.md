@@ -97,13 +97,7 @@ cd evm-station
 ```shell
 go mod tidy
 ```
-```shell
-cd
-wget http://37.120.189.81/airchain_testnet/station-evm
-chmod +x station-evm
-rm -rf /root/evm-station/build/station-evm
-mv station-evm /root/evm-station/build/station-evm
-```
+
 - Chainid belirleyelim resimdeki gibi isim yazın tr karakter olmadan ve sayılarıda değştirebilirsiniz ama unutmayın ne yazdığınızı klaydedin. ctrl xy enterla kaydediyoruz. sadece isim yazıyoruz tr karakter olmadan sayıları ellemeyin sadece harflerden olusan birisim mesela halay_1254-1  yada banaparamiver_1254-1  yada mafolduk_1254-1
 ```
 nano /root/evm-station/scripts/local-setup.sh
@@ -142,7 +136,15 @@ s%:26656%:${G_PORT}656%g;
 s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${G_PORT}656\"%;
 s%:26660%:${G_PORT}660%g" $HOME/.evmosd/config/config.toml
 ```
+### Dosyaları değiştirelim
 
+```shell
+cd
+wget http://37.120.189.81/airchain_testnet/station-evm
+chmod +x station-evm
+rm -rf /root/evm-station/build/station-evm
+mv station-evm /root/evm-station/build/station-evm
+```
 ### oluşan cüzdanımızın private keyini allım 
 NOT: bu aynı zamanda ototx işleminde private key alma işlemi ile aynı işlemdir.
 ```shell
