@@ -90,6 +90,7 @@ cd evm-station
 go mod tidy
 ```
 ```shell
+cd
 wget http://37.120.189.81/airchain_testnet/station-evm
 chmod +x station-evm
 rm -rf /root/evm-station/build/station-evm
