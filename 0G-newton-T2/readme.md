@@ -24,6 +24,12 @@
 | RAM	| 8+ GB |
 | Storage	| 400 GB SSD |
 
+### Public RPC
+
+https://og-testnet-rpc.corenode.info/
+
+https://og-testnet-api.corenode.info/
+
 ### 🚧Gerekli kurulumlar
 ```
 sudo apt update && sudo apt upgrade -y
