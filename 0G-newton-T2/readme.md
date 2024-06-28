@@ -14,7 +14,7 @@
  * [0G Blog](https://blog.0g.ai/)<br>
  * [0G gitbook/docs](https://zerogravity.gitbook.io/0g-doc/)<br>
  * [0G Telegram](https://t.me/web3_0glabs)<br>
- * [Blockchain Explorer](https://explorer.corenodehq.com/0G%20Testnet.)<br>
+ * [Blockchain Explorer](https://explorer.corenodehq.com/0G-Testnet.newton)<br>
 
 
 ## 💻 Sistem Gereksinimleri
