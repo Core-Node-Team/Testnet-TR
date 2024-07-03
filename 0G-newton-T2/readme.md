@@ -33,7 +33,7 @@ https://og-testnet-api.corenode.info/
 ### 🚧Gerekli kurulumlar
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip clang cmake build-essential -y
+sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip gcc clang cmake build-essential -y
 ```
 
 ### 🚧 Go kurulumu
