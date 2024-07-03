@@ -166,5 +166,5 @@ ls ~/0g-storage-node/run/log/
 ```
 # check your last log
 ```
-tail -f ~/0g-storage-node/run/log/zgs.log.$(date +%Y-%m-%d)
+tail -f -n 20 "$ZGS_LOG_DIR/$(ls -Art $ZGS_LOG_DIR | tail -n 1)"
 ```
