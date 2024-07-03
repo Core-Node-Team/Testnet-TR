@@ -79,10 +79,10 @@ export WATCH_LOOP_WAIT_TIME_MS=1000
 NOT: bu kısım node çalıştırdığınız sunucudaki cüzdanınızın privatesini almak içindir.
 ```
 0gchaind keys unsafe-export-eth-key Cüzdan-adını-yaz
-read -sp "Enter your extracted private key: " PRIVATE_KEY && echo
 ```
+Not: private-yaz yerine yaz
 ```
-sed -i 's|^miner_key = ""|miner_key = "'"$PRIVATE_KEY"'"|' $HOME/0g-storage-node/run/config.toml
+sed -i 's|^miner_key = ""|miner_key = "'"private-yaz"'"|' $HOME/0g-storage-node/run/config.toml
 ```
 ### Ayarlamaları yapalım
 ```
