@@ -134,7 +134,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-### Eğer port 8545 farklı ise
+### Eğer port 8545 farklı ise değişecek mesela bizim port 56545 ozaman 56545 yazacağız
 👉NOT: aynı sunucuda çalıştırıyorsanı elleşcek yer yok
 ```
 JSON_PORT=8545
