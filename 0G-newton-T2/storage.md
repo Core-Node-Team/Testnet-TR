@@ -76,8 +76,9 @@ export ZGS_LOG_SYNC_BLOCK=802
 export WATCH_LOOP_WAIT_TIME_MS=1000
 ```
 ### 1.private key alalım validator çalışan yerden
+NOT: bu kısım node çalıştırdığınız sunucudaki cüzdanınızın privatesini almak içindir.
 ```
-0gchaind keys unsafe-export-eth-key $WALLET_NAME
+0gchaind keys unsafe-export-eth-key Cüzdan-adını-yaz
 read -sp "Enter your extracted private key: " PRIVATE_KEY && echo
 ```
 ```
