@@ -44,7 +44,7 @@ source $HOME/.bash_profile
 [ ! -d ~/go/bin ] && mkdir -p ~/go/bin
 ```
 ### Rust kuralım
-Not: 1 seçelim
+👉Not: 1 seçelim
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -59,14 +59,14 @@ source ~/.cargo/env
 git clone -b v0.3.2 https://github.com/0glabs/0g-storage-node.git
 ```
 ### Build edelim
-Not: uzun sürer.
+👉Not: uzun sürer.
 ```
 cd $HOME/0g-storage-node
 git submodule update --init
 cargo build --release
 ```
 ### varyasyonları atayalım
-Not: bişi değişmicek
+👉Not: bişi değişmicek
 ```
 export ZGS_LOG_DIR="$HOME/0g-storage-node/run/log"
 export ZGS_LOG_CONFIG_FILE="$HOME/0g-storage-node/run/log_config"
@@ -76,11 +76,13 @@ export ZGS_LOG_SYNC_BLOCK=802
 export WATCH_LOOP_WAIT_TIME_MS=1000
 ```
 ### 1.private key alalım validator çalışan yerden
-NOT: bu kısım node çalıştırdığınız sunucudaki cüzdanınızın privatesini almak içindir.
+👉NOT: bu kısım node çalıştırdığınız sunucudaki cüzdanınızın privatesini almak içindir.
 ```
 0gchaind keys unsafe-export-eth-key Cüzdan-adını-yaz
 ```
-Not: üsteki kısım nodunuzun vali olan sunucusunda altaki kısım storage kurulu olan yerde düzenlenip girilcek private-yaz yerine yaz
+👉Not: aynı zamanada validator çalıştırdığınız sunucuda port açmak gerek nasıl `nano /root/.0gchain/config/app.toml` kodunu girin `56545` pornun başında şöledir `127.0.0.1:56545` bunu `0.0.0.0:56545` yapıyoruz `ctrl xy enterla kaydet çık`. sonra `systemctl daemon-reload && systemctl restart 0gchaind` girelim. sonra port sorgulama koduyla `sudo lsof -i -P -n | grep LISTEN` bakalım biraz bekledikten sonra `56545` portu ogchainde `*:56545` gibi gorunecek tamamsın.
+
+👉Not: üsteki kısım nodunuzun vali olan sunucusunda altaki kısım storage kurulu olan yerde düzenlenip girilcek private-yaz yerine yaz
 ```
 sed -i 's|^miner_key = ""|miner_key = "'"private-yaz"'"|' $HOME/0g-storage-node/run/config.toml
 ```
@@ -133,7 +135,7 @@ WantedBy=multi-user.target
 EOF
 ```
 ### Eğer port 8545 farklı ise
-NOT: aynı sunucuda çalıştırıyorsanı elleşcek yer yok
+👉NOT: aynı sunucuda çalıştırıyorsanı elleşcek yer yok
 ```
 JSON_PORT=8545
 ```
@@ -144,7 +146,7 @@ echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_pr
 echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
 ```
 ### Rpc oalrak kullanılacak og node aynı sunucuda değil ise bu
-NOT: buraya ip yaz yazan yere og nodun kurulu olduğu sunucu ipsi yazılacak. tabi sunucunuzda 8545 yerine yada hangi portta ise o portuda ufw allow PORT yazarak açın. portuda yazıcanız altaki ilk satırda
+👉NOT: buraya ip yaz yazan yere og nodun kurulu olduğu sunucu ipsi yazılacak. tabi sunucunuzda 8545 yerine yada hangi portta ise o portuda ufw allow PORT yazarak açın. portuda yazıcanız altaki ilk satırda
 ```
 BLOCKCHAIN_RPC_ENDPOINT="http://buraya-ip-yaz:PORT"
 sed -i 's|^blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
