@@ -80,7 +80,7 @@ NOT: bu kısım node çalıştırdığınız sunucudaki cüzdanınızın private
 ```
 0gchaind keys unsafe-export-eth-key Cüzdan-adını-yaz
 ```
-Not: private-yaz yerine yaz
+Not: üsteki kısım nodunuzun vali olan sunucusunda altaki kısım storage kurulu olan yerde düzenlenip girilcek private-yaz yerine yaz
 ```
 sed -i 's|^miner_key = ""|miner_key = "'"private-yaz"'"|' $HOME/0g-storage-node/run/config.toml
 ```
@@ -133,6 +133,7 @@ WantedBy=multi-user.target
 EOF
 ```
 ### Eğer port 8545 farklı ise
+NOT: aynı sunucuda çalıştırıyorsanı elleşcek yer yok
 ```
 JSON_PORT=8545
 ```
@@ -143,12 +144,9 @@ echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_pr
 echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
 ```
 ### Rpc oalrak kullanılacak og node aynı sunucuda değil ise bu
-NOT: buraya ip yaz yazan yere og nodun kurulu olduğu sunucu ipsi yazılacak. tabi sunucunuzda 8545 yerine yada hangi portta ise o portuda ufw allow PORT yazarak açın.
+NOT: buraya ip yaz yazan yere og nodun kurulu olduğu sunucu ipsi yazılacak. tabi sunucunuzda 8545 yerine yada hangi portta ise o portuda ufw allow PORT yazarak açın. portuda yazıcanız altaki ilk satırda
 ```
-JSON_PORT=8545
-```
-```
-BLOCKCHAIN_RPC_ENDPOINT="http://buraya-ip-yaz:$JSON_PORT"
+BLOCKCHAIN_RPC_ENDPOINT="http://buraya-ip-yaz:PORT"
 sed -i 's|^blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
 echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_profile
 echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
