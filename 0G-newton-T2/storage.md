@@ -72,7 +72,7 @@ export ZGS_LOG_DIR="$HOME/0g-storage-node/run/log"
 export ZGS_LOG_CONFIG_FILE="$HOME/0g-storage-node/run/log_config"
 export LOG_CONTRACT_ADDRESS="0x8873cc79c5b3b5666535C825205C9a128B1D75F1"
 export MINE_CONTRACT="0x85F6722319538A805ED5733c5F4882d96F1C7384"
-export ZGS_LOG_SYNC_BLOCK=802 # flow contract deployed block
+export ZGS_LOG_SYNC_BLOCK=802
 export WATCH_LOOP_WAIT_TIME_MS=1000
 ```
 ### 1.private key alalım validator çalışan yerden
