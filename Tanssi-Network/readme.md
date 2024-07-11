@@ -38,6 +38,8 @@ cd /root/tanssi-data/
 
 mv /root/tanssi-node /root/tanssi-data
 
+/root/tanssi-data/tanssi-node key generate-node-key --file /root/tanssi-data/node-key
+
 ```
 NOT: molla202 yazan yerleri kendi adınızla değiştirin
 ```
