@@ -85,7 +85,7 @@ ExecStart=/root/tanssi-data/tanssi-node \
 --sync=fast \
 --base-path=/root/tanssi-data/relay \
 --state-pruning=2000 \
---blocks-pruning=2000 
+--blocks-pruning=2000 \
 --database paritydb \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 
