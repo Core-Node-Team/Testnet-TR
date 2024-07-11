@@ -45,8 +45,6 @@ cd /root/tanssi-data/
 
 mv /root/tanssi-node /root/tanssi-data
 
-/root/tanssi-data/tanssi-node key generate-node-key --file /root/tanssi-data/node-key
-
 ```
 NOT: molla202 yazan yerleri kendi adınızla değiştirin
 ```
@@ -67,27 +65,28 @@ KillSignal=SIGHUP
 ExecStart=/root/tanssi-data/tanssi-node \
 --chain=dancebox \
 --name=molla202 \
+--unsafe-force-node-key-generation \
 --sync=warp \
 --base-path=/root/tanssi-data/para \
 --state-pruning=2000 \
 --blocks-pruning=2000 \
 --collator \
---database paritydb \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
---node-key-file /root/tanssi-data/node-key \
+--database paritydb \
 -- \
 --name=molla202 \
 --base-path=/root/tanssi-data/container \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 -- \
 --chain=westend_moonbase_relay_testnet \
 --name=molla202 \
+--unsafe-force-node-key-generation \
 --sync=fast \
 --base-path=/root/tanssi-data/relay \
 --state-pruning=2000 \
 --blocks-pruning=2000 \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 
 [Install]
 WantedBy=multi-user.target
@@ -101,6 +100,7 @@ sudo systemctl restart tanssid.service
 ```
 journalctl -u tanssid -fo cat
 ```
+
 
 ## Key olusturalım.
 ```
