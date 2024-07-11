@@ -26,6 +26,13 @@ Tanssi, geliştiricileri, uygulama dağıtımını hızlı ve zahmetsiz hale get
 | RAM	| 4+ GB |
 | Storage	| 160+ GB SSD |
 
+### Öcelikle form dolduralım
+
+https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/accounts
+
+* Adres olsuturun veya varsa adresinizi alın ve formu doldurun
+
+https://www.tanssi.network/block-producer-form
 
 
 ```
@@ -105,7 +112,24 @@ curl http://127.0.0.1:9944 -H \
     "params": []
   }'
 ```
-## 
+## KEyi kaydedelim
+* Linke gidelim.
+
+https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/extrinsics
+
+* 1 cüzdanı seçin olusturmadıysanız accountan olusturup bilgilerini yedekleyin. yok oluşturcam derseniz sunucundanda olusturabilirsiniz `/root/tanssi-data/tanssi-node key generate -w 24`
+* 2 resimdeki gibi seçin `setkeys(keys,proof)`
+* 3 key olusturmustuk onu girin
+* 4 girin `0x`
+> 5 Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
+
+![image](https://github.com/molla202/Tanssi/assets/91562185/028512d5-82f3-415e-8bc6-f23a860db449)
+
+NOT: şimdi faucet için bir form doldurmalı ve discordan rol almalıyız. dokumanın basında bu kısım var sadece hatırlatma amacıyla yazıyorum.
+
+ https://www.tanssi.network/block-producer-form
+
+## Bond işlemi
 
 
 
