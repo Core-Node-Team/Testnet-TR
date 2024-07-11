@@ -39,6 +39,7 @@ cd /root/tanssi-data/
 mv /root/tanssi-node /root/tanssi-data
 
 ```
+NOT: molla202 yazan yerleri kendi adınızla değiştirin
 ```
 sudo tee /etc/systemd/system/tanssid.service > /dev/null <<'EOF'
 [Unit]
