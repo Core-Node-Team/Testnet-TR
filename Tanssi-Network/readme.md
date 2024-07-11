@@ -73,7 +73,8 @@ ExecStart=/root/tanssi-data/tanssi-node \
 --blocks-pruning=2000 \
 --collator \
 --database paritydb \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
+--node-key-file /root/tanssi-data/node-key \
 -- \
 --name=molla202 \
 --base-path=/root/tanssi-data/container \
