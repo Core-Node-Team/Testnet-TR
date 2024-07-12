@@ -10,3 +10,4 @@ tangle --version
 systemctl daemon-reload
 systemctl restart tangle && journalctl -u tangle -f -o cat
 ```
+![image](https://github.com/user-attachments/assets/f092b061-4215-47ec-86e5-f1830cbf3334)
