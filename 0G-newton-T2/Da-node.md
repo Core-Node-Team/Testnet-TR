@@ -149,3 +149,4 @@ sudo systemctl start da
 ```
 sudo journalctl -u da -f -o cat
 ```
+NOT: husonius ayağına taş takılanyusun katkılarıyla :D
