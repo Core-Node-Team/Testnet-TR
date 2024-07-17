@@ -60,6 +60,8 @@ NOT: storage nodu için 2 ip port yazıyoruz böle virgülle > http://STORAGE_NO
 
 NOT: burayada json rpc soracak  normal nodunuzun ipsi > http://NODE_IP:56545
 
+NOT: kendi soruyor.
+
    ```bash
    read -p "Enter json-rpc: " BLOCKCHAIN_RPC_ENDPOINT && echo "Current json-rpc: $BLOCKCHAIN_RPC_ENDPOINT" &&
    read -p "Enter storage node urls: " ZGS_NODE && echo "Current storage node urls: $ZGS_NODE" &&
