@@ -187,9 +187,11 @@ tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
 ## ------ GUNCELLEME------
 
 ```
+cd
 sudo systemctl stop zgsd
 ```
 ```
+cd
 mv /root/0g-storage-node /root/0g-storage-nodeydk
 git clone -b v0.3.4 https://github.com/0glabs/0g-storage-node.git
 cd $HOME/0g-storage-node
