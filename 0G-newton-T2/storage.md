@@ -185,7 +185,7 @@ Direk eşleşmeyi tx üzerinden takip etmek için
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
 ```
 ## ------ GUNCELLEME------
-
+NOT: eski repoyu ydkledik içndeki configden private keyinizi ve rpcnize bakabilirsiniz. diğer ayarlamalar otomatik geliyor artık.
 ```
 cd
 sudo systemctl stop zgsd
