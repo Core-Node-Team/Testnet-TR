@@ -184,3 +184,56 @@ Direk eşleşmeyi tx üzerinden takip etmek için
 ```
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
 ```
+------ GUNCELLEME------
+
+```
+sudo systemctl stop zgsd
+```
+```
+mv /root/0g-storage-node /root/0g-storage-nodeydk
+git clone -b v0.3.4 https://github.com/0glabs/0g-storage-node.git
+cd $HOME/0g-storage-node
+git submodule update --init
+cargo build --release
+```
+```
+$HOME/0g-storage-node/target/release/zgs_node --version
+```
+
+```
+MEKEY=privatekeyini yaz
+MERPC=validator nodunun rpcsini(portlu) yada sağlam bir indexerli rpc yazıcaz.
+```
+
+```
+sudo tee /etc/systemd/system/zgsd.service > /dev/null <<EOF
+[Unit]
+Description=ZGS Node
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=$HOME/0g-storage-node/run
+ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config config-testnet.toml --miner-key $MEKEY --blockchain-rpc-endpoint $MERPC
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+```
+sudo systemctl daemon-reload && sudo systemctl restart zgsd
+```
+```
+tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
+```
+```
+curl -X POST http://localhost:5678 -H “Content-Type: application/json” -d '{“jsonrpc”: “2.0”, “method”: “zgs_getStatus”, “params”:[], “id”:1}' | jq
+```
+
+
+
+
+
