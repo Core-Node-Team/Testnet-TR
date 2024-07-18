@@ -235,7 +235,12 @@ tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 curl -X POST http://localhost:5678 -H “Content-Type: application/json” -d '{“jsonrpc”: “2.0”, “method”: “zgs_getStatus”, “params”:[], “id”:1}' | jq
 ```
 
-
-
+### Loglardan bıktım 
+NOT: az yer tutsun dersen
+```
+systemctl stop zgsd
+curl -Ls https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/0G-newton-T2/log_config > $HOME/0g-storage-node/run/log_config
+sudo systemctl daemon-reload && sudo systemctl restart zgsd
+```
 
 
