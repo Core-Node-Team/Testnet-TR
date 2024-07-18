@@ -56,9 +56,9 @@ source ~/.cargo/env
 ```
 
 ### 4. set vars
-NOT: storage nodu için 2 ip port yazıyoruz böle virgülle > http://STORAGE_NODE_IP:5678,http://STORAGE_NODE_IP:5679
+NOT: storage nodu için 2 ip port yazıyoruz böle virgülle  http://STORAGE_NODE_IP:5678,http://STORAGE_NODE_IP:5679
 
-NOT: burayada json rpc soracak  normal nodunuzun ipsi > http://NODE_IP:56545
+NOT: burayada json rpc soracak  normal nodunuzun ipsi  http://NODE_IP:56545
 
 NOT: kendi soruyor.
 
