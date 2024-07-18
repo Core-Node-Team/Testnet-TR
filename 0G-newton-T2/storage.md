@@ -216,7 +216,7 @@ After=network.target
 [Service]
 User=root
 WorkingDirectory=$HOME/0g-storage-node/run
-ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config config-testnet.toml --miner-key $MEKEY --blockchain-rpc-endpoint $MERPC
+ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config $HOME/0g-storage-node/run/config-testnet.toml --miner-key $MEKEY --blockchain-rpc-endpoint $MERPC
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
