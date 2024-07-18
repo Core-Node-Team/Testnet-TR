@@ -184,7 +184,7 @@ Direk eşleşmeyi tx üzerinden takip etmek için
 ```
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
 ```
------- GUNCELLEME------
+## ------ GUNCELLEME------
 
 ```
 sudo systemctl stop zgsd
