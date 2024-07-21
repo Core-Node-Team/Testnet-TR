@@ -232,7 +232,7 @@ sudo systemctl daemon-reload && sudo systemctl restart zgsd
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 ```
 ```
-curl -X POST http://localhost:5678 -H “Content-Type: application/json” -d '{“jsonrpc”: “2.0”, “method”: “zgs_getStatus”, “params”:[], “id”:1}' | jq
+curl -X POST http://localhost:5678 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"zgs_getStatus","params":[],"id":1}'  | jq
 ```
 
 ### Loglardan bıktım 
