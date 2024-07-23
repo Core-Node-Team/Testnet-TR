@@ -4,7 +4,7 @@
 
 
 
-# <h1 align="center">Avail-Maiinet</h1>
+# <h1 align="center">Avail-Mainnet</h1>
 ![image](https://github.com/molla202/Avail/assets/91562185/a6461113-7737-40a0-9d2a-3049a7097663)
 
 * [Twitter](https://twitter.com/AvailProject)
