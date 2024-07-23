@@ -116,7 +116,8 @@ not: telemetry den ismizi yazarak bakınız.
 
 https://telemetry.avail.so/#list/0xb91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a
 
-![image](https://github.com/molla202/Avail/assets/91562185/85b2a9c3-7821-41f0-86c6-9b4a1b175cc3)
+![image](https://github.com/user-attachments/assets/5d53a337-954e-4df3-88e3-057620da2e7e)
+
 
 
 
