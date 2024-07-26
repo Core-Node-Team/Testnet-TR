@@ -138,7 +138,7 @@ curl -Ls http://37.120.189.81/router_mainnet/addrbook.json > $HOME/.routerd/conf
 
 ### 🚧 Seeds
 ```
-sed -i -e "s|^seeds *=.*|seeds = \"5f5cfac5c38506fbb4275c19e87c4107ec48808d@seeds.nodex.one:12410\"|" $HOME/.routerd/config/config.toml
+sed -i -e "s|^seeds *=.*|seeds = \"11956b7fa4428725ade3ae4a1793c1e07e7ca25c@65.21.221.110:12456\"|" $HOME/.routerd/config/config.toml
 ```
 ### 🚧 Gas ayarı
 ```
