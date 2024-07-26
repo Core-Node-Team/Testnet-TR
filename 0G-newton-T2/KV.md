@@ -67,8 +67,8 @@ NOT: kendi soruyor.
    read -p "Enter storage node urls: " ZGS_NODE && echo "Current storage node urls: $ZGS_NODE" &&
    echo 'export ZGS_LOG_SYNC_BLOCK="802"' >> ~/.bash_profile
    echo "export ZGS_NODE=\"$ZGS_NODE\"" >> ~/.bash_profile
-   echo 'export LOG_CONTRACT_ADDRESS="0x8873cc79c5b3b5666535C825205C9a128B1D75F1"' >> ~/.bash_profile
-   echo 'export MINE_CONTRACT="0x85F6722319538A805ED5733c5F4882d96F1C7384"' >> ~/.bash_profile
+   echo 'export LOG_CONTRACT_ADDRESS="0xB7e39604f47c0e4a6Ad092a281c1A8429c2440d3"' >> ~/.bash_profile
+   echo 'export MINE_CONTRACT="0x6176AA095C47A7F79deE2ea473B77ebf50035421"' >> ~/.bash_profile
    echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_profile
    ```
 ```
@@ -80,13 +80,13 @@ NOT: kendi soruyor.
 
 ### 5. Dosyaları çekelim
    ```bash
-   cd $HOME
-   git clone https://github.com/0glabs/0g-storage-kv.git
-   cd $HOME/0g-storage-kv
-   git fetch
-   git checkout tags/v1.1.0-testnet
-   git submodule update --init
-   sudo apt install cargo
+  git clone https://github.com/0glabs/0g-storage-node.git
+cd $HOME/0g-storage-node
+git stash
+git tag -d v0.3.4
+git fetch --all --tags
+git checkout 7d73ccd
+git submodule update --init
    ```
 ### 5-2. Kuralım
    ```bash
