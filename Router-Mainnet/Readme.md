@@ -22,9 +22,9 @@
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
-| CPU |	4|
-| RAM	| 8+ GB |
-| Storage	| 400 GB SSD |
+| CPU |	8|
+| RAM	| 32+ GB |
+| Storage	| 1 tB nvme |
 
 ### 💻 Public RPC And Explorer
 
