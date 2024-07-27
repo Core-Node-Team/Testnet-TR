@@ -79,15 +79,15 @@ NOT: kendi soruyor.
    ```
 
 ### 5. Dosyaları çekelim
-   ```bash
-  git clone https://github.com/0glabs/0g-storage-node.git
-cd $HOME/0g-storage-node
-git stash
-git tag -d v0.3.4
-git fetch --all --tags
-git checkout 7d73ccd
+```bash
+cd $HOME
+git clone https://github.com/0glabs/0g-storage-kv.git
+cd $HOME/0g-storage-kv
+git fetch
+git checkout tags/v1.1.0-testnet
 git submodule update --init
-   ```
+sudo apt install cargo
+```
 ### 5-2. Kuralım
    ```bash
    cargo build --release
