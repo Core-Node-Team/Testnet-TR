@@ -56,12 +56,16 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
-git clone -b v0.3.2 https://github.com/0glabs/0g-storage-node.git
+git clone https://github.com/0glabs/0g-storage-node.git
+cd $HOME/0g-storage-node
+git stash
+git tag -d v0.3.4
+git fetch --all --tags
+git checkout 7d73ccd
 ```
 ### Build edelim
 👉Not: uzun sürer.
 ```
-cd $HOME/0g-storage-node
 git submodule update --init
 cargo build --release
 ```
