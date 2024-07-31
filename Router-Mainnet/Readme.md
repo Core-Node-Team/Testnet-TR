@@ -16,7 +16,7 @@
  * [Router Stake](https://hub.routerprotocol.com/staking)<br>
  * [Router Hub/Token-Migrate](https://hub.routerprotocol.com/token/migrate)<br>
  * [Router gitbook/docs](https://docs.routerprotocol.com/networks)<br>
- * [Router Blockchain Explorer](https://explorer.corenodehq.com/Router%20Mainnet)<br>
+ * [Router Blockchain Explorer](https://explorer.corenodehq.com/Router%20Mainnet.)<br>
 
 
 ## 💻 Sistem Gereksinimleri
@@ -32,7 +32,7 @@ https://router-rpc.corenode.info/
 
 https://router-api.corenode.info/
 
-https://explorer.corenodehq.com/Router%20Mainnet
+https://explorer.corenodehq.com/Router%20Mainnet.
 
 Token migrate : https://hub.routerprotocol.com/token/migrate
 
