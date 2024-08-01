@@ -1,6 +1,8 @@
 ```
 systemctl stop wardend
 
+cp -r /root/.warden/cosmovisor/genesis/bin/wardend /root/.warden/cosmovisor/upgrades/v03-to-v04/bin/
+
 cp $HOME/.warden/data/priv_validator_state.json $HOME/.warden/priv_validator_state.json.backup
 
 wardend tendermint unsafe-reset-all --home $HOME/.warden --keep-addr-book
