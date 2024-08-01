@@ -18,10 +18,10 @@
 
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
- * [Symphony Website](https://wardenprotocol.org/)<br>
- * [Blockchain Explorer](https://explorer.corenodehq.com/Warden%20Testnet)<br>
- * [Discord](https://discord.gg/7rzkxXRK)<br>
- * [Twitter](https://twitter.com/wardenprotocol)<br>
+ * [Symphony Website](https://orchestralabs.org/)<br>
+ * [Blockchain Explorer](https://testnet.ping.pub/symphony)<br>
+ * [Discord](https://discord.gg/qEBPwncrSV)<br>
+ * [Twitter](https://twitter.com/orchestra_labs)<br>
  * [Faucet](https://testnet.ping.pub/symphony/faucet)<br>
 
 ## 💻 Sistem Gereksinimleri
