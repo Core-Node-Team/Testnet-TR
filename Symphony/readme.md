@@ -111,7 +111,8 @@ symphonyd init "NODE-NAME" --chain-id symphony-testnet-2
 ```
 ### ➡️ Genesis addrbook
 ```
-
+curl https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Symphony/genesis.json -o ~/.symphonyd/config/genesis.json
+curl https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Symphony/addrbook.json -o ~/.symphonyd/config/addrbook.json
 ```
 ### ➡️ Port
 ```
