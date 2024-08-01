@@ -1,5 +1,5 @@
 # Snapshot
-
+1.534.500
 ```bash
 sudo apt install liblz4-tool
 
