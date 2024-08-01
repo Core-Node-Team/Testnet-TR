@@ -1,5 +1,14 @@
+```
+systemctl stop wardend
 
+cp $HOME/.warden/data/priv_validator_state.json $HOME/.warden/priv_validator_state.json.backup
 
+wardend tendermint unsafe-reset-all --home $HOME/.warden --keep-addr-book
+
+curl -L http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.warden
+
+mv $HOME/.warden/priv_validator_state.json.backup $HOME/.warden/data/priv_validator_state.json
+```
 ```
 sudo tee /etc/systemd/system/wardend.service > /dev/null << EOF
 [Unit]
@@ -24,4 +33,7 @@ EOF
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable wardend
+```
+```
+sudo systemctl restart wardend && sudo journalctl -u wardend -fo cat
 ```
