@@ -52,7 +52,7 @@ source $HOME/.bash_profile
 ```
 ### 2️⃣ Install node
 ```
-echo "export SYMPHONY_PORT="35"" >> $HOME/.bash_profile
+echo "export SYMPHONY_PORT="39"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 ```
