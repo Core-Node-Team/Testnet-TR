@@ -40,5 +40,8 @@ PEERS="92ba004ac4bcd5afbd46bc494ec906579d1f5c1d@52.30.124.80:26656,ed5781ea586d8
 sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.warden/config/config.toml
 ```
 ```
+rm -rf $HOME/.warden/config/addrbook.json
+```
+```
 sudo systemctl restart wardend && sudo journalctl -u wardend -fo cat
 ```
