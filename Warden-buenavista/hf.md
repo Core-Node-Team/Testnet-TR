@@ -1,5 +1,5 @@
 NOT: genesis dosyası buyuk başlaması zaman alabilir. mutlaka yedekelrinizi manuel olarakta alın.
-
+NOT: hazırlık HAZEN tarafından yapılmıştır. bazı ufak düzeltmeler olmuştur. corenode çalışıyor :D
 ```
 sudo systemctl stop wardend
 sudo systemctl disable wardend
