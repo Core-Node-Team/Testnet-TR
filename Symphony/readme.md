@@ -24,6 +24,13 @@
  * [Twitter](https://twitter.com/orchestra_labs)<br>
  * [Faucet](https://testnet.ping.pub/symphony/faucet)<br>
 
+## Pulic RPC
+
+https://symphony-testnet-rpc.corenode.info
+
+https://symphony-testnet-api.corenode.info
+
+
 ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
