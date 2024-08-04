@@ -125,7 +125,7 @@ sudo systemctl stop wardend
 cp $HOME/.warden/data/priv_validator_state.json $HOME/.warden/priv_validator_state.json.backup
 
 rm -rf $HOME/.warden/data $HOME/.warden/wasm
-curl https://server-4.itrocket.net/testnet/warden/warden_2024-08-04_1540384_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.warden
+curl http://37.120.189.81/warden_testnet/warden_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.warden
 
 mv $HOME/.warden/priv_validator_state.json.backup $HOME/.warden/data/priv_validator_state.json
 
