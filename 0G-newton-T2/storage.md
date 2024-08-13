@@ -56,12 +56,14 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
+cd
+systemctl stop zgsd
+mv 0g-storage-node 0g-storage-nodeydk2
 git clone https://github.com/0glabs/0g-storage-node.git
 cd $HOME/0g-storage-node
-git stash
-git tag -d v0.3.4
-git fetch --all --tags
-git checkout 7d73ccd
+git checkout tags/v0.4.1
+git submodule update --init
+cargo build --release
 ```
 ### Build edelim
 👉Not: uzun sürer.
@@ -74,9 +76,9 @@ cargo build --release
 ```
 export ZGS_LOG_DIR="$HOME/0g-storage-node/run/log"
 export ZGS_LOG_CONFIG_FILE="$HOME/0g-storage-node/run/log_config"
-export LOG_CONTRACT_ADDRESS="0xB7e39604f47c0e4a6Ad092a281c1A8429c2440d3"
-export MINE_CONTRACT="0x6176AA095C47A7F79deE2ea473B77ebf50035421"
-export ZGS_LOG_SYNC_BLOCK=401178
+export LOG_CONTRACT_ADDRESS="0xbD2C3F0E65eDF5582141C35969d66e34629cC768"
+export MINE_CONTRACT="0x6815F41019255e00D6F34aAB8397a6Af5b6D806f"
+export ZGS_LOG_SYNC_BLOCK=595059
 export WATCH_LOOP_WAIT_TIME_MS=1000
 ```
 ### 1.private key alalım validator çalışan yerden
@@ -187,53 +189,6 @@ tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 Direk eşleşmeyi tx üzerinden takip etmek için
 ```
 tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
-```
-## ------ GUNCELLEME------
-NOT: eski repoyu ydkledik içndeki configden private keyinizi ve rpcnize bakabilirsiniz. diğer ayarlamalar otomatik geliyor artık.
-```
-cd
-sudo systemctl stop zgsd
-```
-```
-cd
-mv /root/0g-storage-node /root/0g-storage-nodeydk
-git clone -b v0.3.4 https://github.com/0glabs/0g-storage-node.git
-cd $HOME/0g-storage-node
-git submodule update --init
-cargo build --release
-```
-```
-$HOME/0g-storage-node/target/release/zgs_node --version
-```
-
-```
-MEKEY=privatekeyini yaz
-MERPC=validator nodunun rpcsini(portlu) yada sağlam bir indexerli rpc yazıcaz.
-```
-
-```
-sudo tee /etc/systemd/system/zgsd.service > /dev/null <<EOF
-[Unit]
-Description=ZGS Node
-After=network.target
-
-[Service]
-User=root
-WorkingDirectory=$HOME/0g-storage-node/run
-ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config config-testnet.toml --miner-key $MEKEY --blockchain-rpc-endpoint $MERPC
-Restart=on-failure
-RestartSec=10
-LimitNOFILE=65535
-
-[Install]
-WantedBy=multi-user.target
-EOF
-```
-```
-sudo systemctl daemon-reload && sudo systemctl restart zgsd
-```
-```
-tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 ```
 ```
 curl -X POST http://localhost:5678 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"zgs_getStatus","params":[],"id":1}'  | jq
