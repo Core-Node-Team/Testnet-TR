@@ -63,10 +63,6 @@ chmod +x ./0gchaind-linux-v0.3.1.alpha.1
 mkdir -p /root/.0gchain/cosmovisor/upgrades/v0.3.1/bin
 sudo mv ./0gchaind-linux-v0.3.1.alpha.1 /root/.0gchain/cosmovisor/upgrades/v0.3.1/bin/0gchaind
 ```
-```
-mkdir -p $HOME/.0gchain/cosmovisor/genesis/bin
-mv /root/0gchaind $HOME/.0gchain/cosmovisor/genesis/bin/
-```
 ### 🚧System link
 ```
 sudo ln -s $HOME/.0gchain/cosmovisor/genesis $HOME/.0gchain/cosmovisor/current -f
