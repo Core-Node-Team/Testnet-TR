@@ -62,8 +62,6 @@ mv 0g-storage-node 0g-storage-nodeydk2
 git clone https://github.com/0glabs/0g-storage-node.git
 cd $HOME/0g-storage-node
 git checkout tags/v0.4.1
-git submodule update --init
-cargo build --release
 ```
 ### Build edelim
 👉Not: uzun sürer.
