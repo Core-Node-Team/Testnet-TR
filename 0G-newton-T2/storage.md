@@ -69,6 +69,9 @@ git checkout tags/v0.4.1
 git submodule update --init
 cargo build --release
 ```
+```
+$HOME/0g-storage-node/target/release/zgs_node --version
+```
 ### varyasyonları atayalım
 👉Not: bişi değişmicek
 ```
