@@ -39,7 +39,7 @@ sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip g
 ### 🚧 Go kurulumu
 ```
 cd $HOME
-VER="1.21.3"
+VER="1.22.3"
 wget "https://golang.org/dl/go$VER.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf "go$VER.linux-amd64.tar.gz"
