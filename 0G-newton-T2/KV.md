@@ -66,7 +66,7 @@ NOT: kendi soruyor.
    ```bash
    read -p "Enter json-rpc: " BLOCKCHAIN_RPC_ENDPOINT && echo "Current json-rpc: $BLOCKCHAIN_RPC_ENDPOINT" &&
    read -p "Enter storage node urls: " ZGS_NODE && echo "Current storage node urls: $ZGS_NODE" &&
-   echo 'export ZGS_LOG_SYNC_BLOCK="401178"' >> ~/.bash_profile
+   echo 'export ZGS_LOG_SYNC_BLOCK="595059"' >> ~/.bash_profile
    echo "export ZGS_NODE=\"$ZGS_NODE\"" >> ~/.bash_profile
    echo 'export LOG_CONTRACT_ADDRESS="0xbD2C3F0E65eDF5582141C35969d66e34629cC768"' >> ~/.bash_profile
    echo 'export MINE_CONTRACT="0x6815F41019255e00D6F34aAB8397a6Af5b6D806f"' >> ~/.bash_profile
