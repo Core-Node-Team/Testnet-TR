@@ -55,7 +55,11 @@ source $HOME/.bash_profile
 wget https://zgchaind-test.s3.ap-east-1.amazonaws.com/0gchaind-linux-v0.3.0
 chmod +x ./0gchaind-linux-v0.3.0
 mkdir -p /root/.0gchain/cosmovisor/upgrades/v0.3.0/bin
-sudo mv ./0gchaind-linux-v0.3.0 /root/.0gchain/cosmovisor/upgrades/v0.3.0/bin/0gchaind
+sudo cp -r ./0gchaind-linux-v0.3.0 /root/.0gchain/cosmovisor/upgrades/v0.3.0/bin/0gchaind
+```
+```
+mkdir -p $HOME/.0gchain/cosmovisor/genesis/bin
+mv /root/0gchaind-linux-v0.3.0 $HOME/.0gchain/cosmovisor/genesis/bin/0gchaind
 ```
 ```
 wget https://github.com/0glabs/0g-chain/releases/download/v0.3.1.alpha.1/0gchaind-linux-v0.3.1.alpha.1
