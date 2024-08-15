@@ -67,15 +67,15 @@ cd $HOME
 rm -rf symphony
 git clone https://github.com/Orchestra-Labs/symphony
 cd symphony
-git checkout v0.2.1
+git checkout v0.3.0
 make build
 ```
 ```
-mkdir -p ~/.symphonyd/cosmovisor/upgrades/0.2.1/bin
-mv $HOME/symphony/build/symphonyd ~/.symphonyd/cosmovisor/upgrades/0.2.1/bin/
+mkdir -p ~/.symphonyd/cosmovisor/upgrades/0.3.0/bin
+mv $HOME/symphony/build/symphonyd ~/.symphonyd/cosmovisor/upgrades/0.3.0/bin/
 ```
 ```
-sudo ln -s ~/.symphonyd/cosmovisor/upgrades/0.2.1 ~/.symphonyd/cosmovisor/current -f
+sudo ln -s ~/.symphonyd/cosmovisor/upgrades/0.3.0 ~/.symphonyd/cosmovisor/current -f
 sudo ln -s ~/.symphonyd/cosmovisor/current/bin/symphonyd /usr/local/bin/symphonyd -f
 ```
 ```
@@ -111,10 +111,10 @@ sudo systemctl enable symphonyd
 ```
 ### ➡️ Initialize the node
 ```
-symphonyd config chain-id symphony-testnet-2
+symphonyd init "NODE-NAME" --chain-id symphony-testnet-2
+symphonyd config chain-id symphony-testnet-3
 symphonyd config keyring-backend test
 symphonyd config node tcp://localhost:${SYMPHONY_PORT}657
-symphonyd init "NODE-NAME" --chain-id symphony-testnet-2
 ```
 ### ➡️ Genesis addrbook
 ```
@@ -141,8 +141,8 @@ s%:26660%:${SYMPHONY_PORT}660%g" $HOME/.symphonyd/config/config.toml
 ```
 ### ➡️ Peers and Seeds
 ```
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:29156"
-PEERS="bbf8ef70a32c3248a30ab10b2bff399e73c6e03c@65.21.198.100:24856,f3c40275b0e198bef1c79111a04d0fed572a44da@94.72.100.234:45656,710976805e0c3069662e63b9f244db68654e2f15@65.109.93.124:29256,5660a533218eed9dbbc569f38e6bc44666b1eb17@65.21.10.105:26656,77ce4b0a96b3c3d6eb2beb755f9f6f573c1b4912@178.18.251.146:22656"
+SEEDS="10838131d11f546751178df1e1045597aad6366d@34.41.169.77:26656"
+PEERS="eea2dc7e9abfd18787d4cc2c728689ad658cd3a2@34.66.161.223:26656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.symphonyd/config/config.toml
 ```
 ### ➡️ Pruning
@@ -162,6 +162,8 @@ sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/.symphonyd/config/config.tom
 ```
 ### ➡️ Starter Snap (soon)
 ```
+??????????    Old snap no need ??????????
+
 sudo apt install liblz4-tool
 
 cp $HOME/.symphonyd/data/priv_validator_state.json $HOME/.symphonyd/priv_validator_state.json.backup
@@ -202,7 +204,7 @@ symphonyd tx staking create-validator \
   --identity "optional identity signature (ex. UPort or Keybase)" \
   --details "validator's (optional) details" \
   --website "validator's (optional) website" \
-  --chain-id symphony-testnet-2 \
+  --chain-id symphony-testnet-3 \
   --commission-rate "0.05" \
   --commission-max-rate "0.2" \
   --commission-max-change-rate "0.01" \
@@ -215,7 +217,7 @@ symphonyd tx staking create-validator \
 ### ➡️ Delegate to Yourself
 ```
 symphonyd tx staking delegate $(symphonyd keys show wallet-name --bech val -a) amount0000note \
---chain-id symphony-testnet-2 \
+--chain-id symphony-testnet-3 \
 --from "wallet-name" \
 --fees "800note" \
 --node=http://localhost:${SYMPHONY_PORT}657 \
@@ -224,7 +226,7 @@ symphonyd tx staking delegate $(symphonyd keys show wallet-name --bech val -a) a
 ### ➡️ Edit Validator
 ```
 symphonyd tx staking edit-validator \
---chain-id symphony-testnet-2 \
+--chain-id symphony-testnet-3 \
 --commission-rate 0.05 \
 --new-moniker "validator-name" \
 --identity "" \
