@@ -116,12 +116,12 @@ s|network_enr_address = ""|network_enr_address = "'"$ZGS_IP"'"|g
 ```
 ```
 sed -i '
-s|^log_sync_start_block_number = .*|log_sync_start_block_number = '"$ZGS_LOG_SYNC_BLOCK"'|g
-s|^log_config_file = .*|log_config_file = "'"$ZGS_LOG_CONFIG_FILE"'"|g
-s|^log_directory = .*|log_directory = "'"$ZGS_LOG_DIR"'"|g
-s|^mine_contract_address = .*|mine_contract_address = "'"$MINE_CONTRACT"'"|g
-s|^log_contract_address = .*|log_contract_address = "'"$LOG_CONTRACT_ADDRESS"'"|g
-s|^watch_loop_wait_time_ms = .*|watch_loop_wait_time_ms = '"$WATCH_LOOP_WAIT_TIME_MS"'|g
+s|# log_sync_start_block_number = .*|log_sync_start_block_number = '"$ZGS_LOG_SYNC_BLOCK"'|g
+s|# log_config_file = .*|log_config_file = "'"$ZGS_LOG_CONFIG_FILE"'"|g
+s|# log_directory = .*|log_directory = "'"$ZGS_LOG_DIR"'"|g
+s|# mine_contract_address = .*|mine_contract_address = "'"$MINE_CONTRACT"'"|g
+s|# log_contract_address = .*|log_contract_address = "'"$LOG_CONTRACT_ADDRESS"'"|g
+s|# watch_loop_wait_time_ms = .*|watch_loop_wait_time_ms = '"$WATCH_LOOP_WAIT_TIME_MS"'|g
 ' $HOME/0g-storage-node/run/config.toml
 ```
 ## Servisi kuralım
@@ -150,7 +150,7 @@ JSON_PORT=8545
 ```
 ```
 BLOCKCHAIN_RPC_ENDPOINT="http://$(wget -qO- eth0.me):$JSON_PORT"
-sed -i 's|^blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
+sed -i 's|# blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
 echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_profile
 echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
 ```
@@ -158,7 +158,7 @@ echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
 👉NOT: buraya ip yaz yazan yere og nodun kurulu olduğu sunucu ipsi yazılacak. tabi sunucunuzda 8545 yerine yada hangi portta ise o portuda ufw allow PORT yazarak açın. portuda yazıcanız altaki ilk satırda
 ```
 BLOCKCHAIN_RPC_ENDPOINT="http://buraya-ip-yaz:PORT"
-sed -i 's|^blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
+sed -i 's|# blockchain_rpc_endpoint = ".*"|blockchain_rpc_endpoint = "'"$BLOCKCHAIN_RPC_ENDPOINT"'"|' $HOME/0g-storage-node/run/config.toml
 echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_profile
 echo "BLOCKCHAIN_RPC_ENDPOINT: $BLOCKCHAIN_RPC_ENDPOINT"
 ```
