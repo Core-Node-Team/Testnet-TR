@@ -121,7 +121,7 @@ encoder_params_dir = "params/"
 # grpc server listen address
 grpc_listen_address = "0.0.0.0:34000"
 # chain eth rpc endpoint
-eth_rpc_endpoint = "http://ognode-sunucu-ipsi-yaz:56545"
+eth_rpc_endpoint = "http://ognode-sunucu-ipsi-yaz:56545" # node çalıştırmıyorsanız bunu kullanabilirsiniz https://evmrpc-testnet.0g.ai VEDE buyazının basındaki kare işretinden itibaren kaldırın.burası bilgilendirme amaçlı belki sıkıntı yapabilir
 # public grpc service socket address to register in DA contract
 # ip:34000 (keep same port as the grpc listen address)
 # or if you have dns, fill your dns
