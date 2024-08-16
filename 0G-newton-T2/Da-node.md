@@ -59,12 +59,15 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
-git clone https://github.com/0glabs/0g-da-node.git
-```
-```
-cd && cd 0g-da-node
-```
-```
+cd
+systemctl stop da
+mv 0g-da-node 0g-da-nodeydk
+git clone -b v1.0.2 https://github.com/0glabs/0g-da-node.git
+cd $HOME/0g-da-node
+git stash
+git fetch --all --tags
+git checkout 31060b7 
+git submodule update --init
 cargo build --release
 ```
 ```
