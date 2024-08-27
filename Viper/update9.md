@@ -13,7 +13,8 @@ chmod +x /usr/local/bin/viper
 viper network version
 ```
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/78b509c4-5c61-4793-9eff-9983fa0ea994)
+
 
 
 ### işlemler tamamsa başlatalım
