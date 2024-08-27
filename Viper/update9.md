@@ -13,6 +13,7 @@ chmod +x /usr/local/bin/viper
 viper network version
 ```
 
+![Uploading image.png…]()
 
 
 ### işlemler tamamsa başlatalım
