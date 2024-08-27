@@ -16,10 +16,10 @@ viper network version
 ![image](https://github.com/user-attachments/assets/78b509c4-5c61-4793-9eff-9983fa0ea994)
 
 ### Düzeltme
-
+```
 nano ~/.viper/config/blockchains.json
-
-içerisindekileri bir metin belgesine kaydedin.alttaki kodu düzenleyip sunucudaki içeriği silip(ctrl+k basarak silin) düzenlendiğiniz içeriği içine yapıstırın ctrl +xy enterla kaydedip çıkın.
+```
+NOT: içerisindekileri bir metin belgesine kaydedin.alttaki kodu düzenleyip sunucudaki içeriği silip(ctrl+k basarak silin) düzenlendiğiniz içeriği içine yapıstırın ctrl +xy enterla kaydedip çıkın.
 
 
 ```
