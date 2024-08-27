@@ -34,7 +34,7 @@ NOT: içerisindekileri bir metin belgesine kaydedin.alttaki kodu düzenleyip sun
     }
   },
   {
-    "id": "002",
+    "id": "0002",
     "url": "http://localhost:8545",
     "websocket_url": "wss://localhost:8545",
     "basic_auth": {
@@ -43,7 +43,7 @@ NOT: içerisindekileri bir metin belgesine kaydedin.alttaki kodu düzenleyip sun
     }
   },
   {
-    "id": "003",
+    "id": "0003",
     "url": "https://rpc-testnet.suiscan.xyz:443/",
     "websocket_url": "wss://rpc-testnet.suiscan.xyz:443/",
     "basic_auth": {
