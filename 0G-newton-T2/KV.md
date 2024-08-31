@@ -85,7 +85,7 @@ cd $HOME
 git clone https://github.com/0glabs/0g-storage-kv.git
 cd $HOME/0g-storage-kv
 git fetch
-git checkout tags/v1.1.0-testnet
+git checkout 97ba360
 git submodule update --init
 sudo apt install cargo
 ```
@@ -156,4 +156,33 @@ sudo apt install cargo
    sudo systemctl disable zgskv
    sudo rm -rf /etc/systemd/system/zgskv.service
    sudo rm -rf 0g-storage-kv
+   ```
+
+# Güncelleme
+
+```bash
+ sudo systemctl stop zgskv
+```
+
+```bash
+cd $HOME
+cd $HOME/0g-storage-kv
+git stash
+git fetch --all --tags
+git checkout 97ba360  
+git submodule update --init
+cargo build --release
+```
+
+### baslatalım
+   ```bash
+   sudo systemctl daemon-reload && \
+   sudo systemctl enable zgskv && \
+   sudo systemctl start zgskv && \
+   sudo systemctl status zgskv
+   ```
+
+### loglara bakalım
+   ```bash
+   sudo journalctl -u zgskv -fn 100 -o cat
    ```
