@@ -68,7 +68,7 @@ NOT: kendi soruyor.
    read -p "Enter storage node urls: " ZGS_NODE && echo "Current storage node urls: $ZGS_NODE" &&
    echo 'export ZGS_LOG_SYNC_BLOCK="595059"' >> ~/.bash_profile
    echo "export ZGS_NODE=\"$ZGS_NODE\"" >> ~/.bash_profile
-   echo 'export LOG_CONTRACT_ADDRESS="0xbD2C3F0E65eDF5582141C35969d66e34629cC768"' >> ~/.bash_profile
+   echo 'export LOG_CONTRACT_ADDRESS="0x0460aA47b41a66694c0a73f667a1b795A5ED3556"' >> ~/.bash_profile
    echo 'export MINE_CONTRACT="0x6815F41019255e00D6F34aAB8397a6Af5b6D806f"' >> ~/.bash_profile
    echo "export BLOCKCHAIN_RPC_ENDPOINT=\"$BLOCKCHAIN_RPC_ENDPOINT\"" >> ~/.bash_profile
    ```
@@ -186,3 +186,7 @@ cargo build --release
    ```bash
    sudo journalctl -u zgskv -fn 100 -o cat
    ```
+
+NOT: EĞER BAĞLAMASSA LOG GÖRMESSENİZ BİR SÜRE BEKLEYİN OLMASSA DURDURUN DOSYALARIN İSMİNİ DEĞİŞTİRİP BAŞLATIN SS DEKİ GİBİ 
+
+![image](https://github.com/user-attachments/assets/4dd5d0fe-6223-483e-baa0-405d73bc137b)
