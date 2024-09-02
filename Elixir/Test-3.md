@@ -79,6 +79,9 @@ https://dashboard.elixir.finance/
 
 ![image](https://github.com/user-attachments/assets/f0845b42-b7fc-4d27-83dc-668cf8ae60c5)
 
+- azbi zaman sona
+
+![image](https://github.com/user-attachments/assets/2570ca14-5efc-422c-ad99-6b81dbf5ee97)
 
 
 
