@@ -53,7 +53,7 @@ docker run -d \
 ```
 ### Log kontrol
 ```
-docker logs -f --tail 100 ev
+docker logs -f --tail 100 elixir
 ```
 ### Platform üzerinden işlemler
 
