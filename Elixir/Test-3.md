@@ -27,26 +27,29 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 
 ### Dockerfile çekiyoruz
-```
-wget https://files.elixir.finance/Dockerfile
-```
-- Düzenliyoruz
-```
-nano Dockerfile
-```
-Not: alttaki çıktı için yeni bir mm adresi olusturun goerli eth faucet bulun... gerekli olanalrı yazıp ctrl x y enterla kaydedip çıkın.
 
-ENV ADDRESS=metamask adresi
+```
+nano validator.env
+```
+Not: alttakileri düzenle yapıstır ctrl xy enterla kaydet çık. eskiden katıldıysan o cüzdanı kullanabilirsin(sormadan söyleyim :D). evet evet daha iyi olur.
+```
+ENV=testnet-3
 
-ENV PRIVATE_KEY=private key
-
-ENV VALIDATOR_NAME=discord adı
-
+STRATEGY_EXECUTOR_IP_ADDRESS=sunucu-ip-yaz
+STRATEGY_EXECUTOR_DISPLAY_NAME=vali-adi-yaz
+STRATEGY_EXECUTOR_BENEFICIARY=cüzdan-adresi-yaz
+SIGNER_PRIVATE_KEY=private-key-yaz
+```
 ### Güncel image çekip Çalıştıralım
 ```
-docker build . -f Dockerfile -t elixir-validator
 docker pull elixirprotocol/validator:testnet-3
-docker run -d --restart unless-stopped --name ev elixir-validator
+```
+```
+docker run -d \
+  --env-file /root/validator.env \
+  --name elixir \
+  --restart unless-stopped \
+  elixirprotocol/validator:v3
 ```
 ### Log kontrol
 ```
@@ -58,17 +61,25 @@ docker logs -f --tail 100 ev
  
 https://dashboard.elixir.finance/
 
-- Elixir claimliyoruz
+- mock mintliyoruz.
 
-![image](https://github.com/molla202/Elixir/assets/91562185/e13722d8-fc45-4428-a48e-877298bc5592)
+![image](https://github.com/user-attachments/assets/372d88f9-4764-4edb-9d67-b3970853611d)
+
+![image](https://github.com/user-attachments/assets/a8df72f0-609a-4bd1-84da-dcd51b6206aa)
 
 - Stake ediyoruz
-- Sonra enroll diyoruz.
 
-![image](https://github.com/molla202/Elixir/assets/91562185/baf5f2b9-d5f3-4ce4-9ff5-138a63be2569)
+![image](https://github.com/user-attachments/assets/29154f78-0b07-4cd8-8bbb-7d0ec8963e3f)
 
-- Twitter bağlıyoruz. discord adımızı yazıp rolümüzü claimliyoruz.
 
-![image](https://github.com/molla202/Elixir/assets/91562185/53cdc0e9-830d-451e-b223-9661281bcc6b)
+- şimdide custom validator yazısına tıklayıp cüzdan adresimizi yazalım. ve delegate deyip cüzdandna onaylayalım.
+
+![image](https://github.com/user-attachments/assets/66ac61b9-9bf2-4641-8ed0-8220630ad5b7)
+
+
+![image](https://github.com/user-attachments/assets/f0845b42-b7fc-4d27-83dc-668cf8ae60c5)
+
+
+
 
 
