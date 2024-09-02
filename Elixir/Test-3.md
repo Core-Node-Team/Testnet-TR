@@ -59,7 +59,7 @@ docker logs -f --tail 100 elixir
 
 - Siteye gidiyoruz
  
-https://dashboard.elixir.finance/
+https://testnet-3.elixir.xyz/
 
 - mock mintliyoruz.
 
