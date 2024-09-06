@@ -68,7 +68,7 @@ cargo build --release
 ./dev_support/download_params.sh
 ```
 ```
-sudo cp -R /root/0g-da-node/dev_support/params /root/0g-da-node/target/release
+sudo cp -R /root/0g-da-node/params /root/0g-da-node/target/release
 ```
 ### BLS key olusturalım
 ```
