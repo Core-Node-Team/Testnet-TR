@@ -131,7 +131,7 @@ signer_bls_private_key = "bls key yaz"
 signer_eth_private_key = "private key yaz"
 
 # whether to enable data availability sampling
-enable_das = "false"
+enable_das = "true"
 ```
 
 ![image](https://github.com/user-attachments/assets/2ab7c0f5-9463-4ea5-ab28-c231011853da)
