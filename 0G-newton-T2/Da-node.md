@@ -59,6 +59,8 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
+cd
+mv 0g-da-node 0g-da-nodeydk7
 git clone https://github.com/0glabs/0g-da-node.git
 cd 0g-da-node
 git checkout tags/v1.1.2 -b v1.1.2
