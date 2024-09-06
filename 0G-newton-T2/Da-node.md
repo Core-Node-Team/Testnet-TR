@@ -145,4 +145,8 @@ sudo systemctl start da
 ```
 sudo journalctl -u da -f -o cat
 ```
+
+![image](https://github.com/user-attachments/assets/8c8e9f8e-5b47-4bf7-a36a-80455b15e8a8)
+
+
 NOT: husonius ayağına taş takılanyusun katkılarıyla :D
