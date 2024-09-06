@@ -59,20 +59,10 @@ source ~/.cargo/env
 ```
 ### Repoyu çekelim
 ```
-cd
-systemctl stop da
-mv 0g-da-node 0g-da-nodeydk
-git clone -b v1.0.2 https://github.com/0glabs/0g-da-node.git
-cd $HOME/0g-da-node
-git stash
-git fetch --all --tags
-git checkout 31060b7 
-git submodule update --init
+git clone https://github.com/0glabs/0g-da-node.git
+git checkout tags/v1.1.2 -b v1.1.2
 cargo build --release
-```
-```
-cd dev_support
-./download_params.sh
+./dev_support/download_params.sh
 ```
 ```
 sudo cp -R /root/0g-da-node/dev_support/params /root/0g-da-node/target/release
@@ -121,16 +111,16 @@ encoder_params_dir = "params/"
 # grpc server listen address
 grpc_listen_address = "0.0.0.0:34000"
 # chain eth rpc endpoint
-eth_rpc_endpoint = "http://ognode-sunucu-ipsi-yaz:56545" # node çalıştırmıyorsanız bunu kullanabilirsiniz https://evmrpc-testnet.0g.ai VEDE buyazının basındaki kare işretinden itibaren kaldırın.burası bilgilendirme amaçlı belki sıkıntı yapabilir
+eth_rpc_endpoint = "http://ognode-sunucu-ipsi-yaz:56545" # node çalıştırmıyorsanız bunu kullanabilirsiniz https://rpc-testnet.0g.ai VEDE buyazının basındaki kare işretinden itibaren kaldırın.burası bilgilendirme amaçlı belki sıkıntı yapabilir
 # public grpc service socket address to register in DA contract
 # ip:34000 (keep same port as the grpc listen address)
 # or if you have dns, fill your dns
 socket_address = "sunucuipsiyaz:34000"
 
 # data availability contract to interact with
-da_entrance_address = "0xDFC8B84e3C98e8b550c7FEF00BCB2d8742d80a69"
+da_entrance_address = "0x857C0A28A8634614BB2C96039Cf4a20AFF709Aa9"
 # deployed block number of da entrance contract
-start_block_number = 802
+start_block_number = 940000
 
 # signer BLS private key
 signer_bls_private_key = "bls key yaz"
