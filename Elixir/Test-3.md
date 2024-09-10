@@ -42,7 +42,7 @@ SIGNER_PRIVATE_KEY=private-key-yaz
 ```
 ### Güncel image çekip Çalıştıralım
 ```
-docker pull elixirprotocol/validator:testnet-3
+docker pull elixirprotocol/validator:v3 --platform linux/amd64
 ```
 ```
 docker run -d \
@@ -83,6 +83,20 @@ https://testnet-3.elixir.xyz/
 
 ![image](https://github.com/user-attachments/assets/2570ca14-5efc-422c-ad99-6b81dbf5ee97)
 
-
+### Güncelleme
+```
+docker pull elixirprotocol/validator:v3 --platform linux/amd64
+```
+```
+docker stop elixir
+docker rm elixir
+```
+```
+docker run -d \
+  --env-file /root/validator.env \
+  --name elixir \
+  --restart unless-stopped \
+  elixirprotocol/validator:v3
+```
 
 
