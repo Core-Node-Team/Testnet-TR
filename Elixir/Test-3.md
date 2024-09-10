@@ -98,5 +98,7 @@ docker run -d \
   --restart unless-stopped \
   elixirprotocol/validator:v3
 ```
-
+```
+docker logs -f --tail 100 elixir
+```
 
