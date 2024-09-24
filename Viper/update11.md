@@ -6,7 +6,7 @@ sudo systemctl stop viper.service
 ```
 ```
 rm -rf /usr/local/bin/viper
-wget -O /usr/local/bin/viper http://37.120.189.81/viper/viper10
+wget -O /usr/local/bin/viper http://37.120.189.81/viper/viper11
 chmod +x /usr/local/bin/viper
 ```
 ```
