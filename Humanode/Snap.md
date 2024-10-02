@@ -18,7 +18,7 @@
  * [Doc](https://gitbook.humanode.io/mainnet-guide)<br>
  * [Github](https://github.com/humanode-network/humanode)<br>
 
-### -- Block
+### 9.583.444 Block
 
 - Launcher çalıştırın. kurulumu yapın loglar akmaya baslayınca sycn olurken durdurun log kısmından. sonra aşağıdaki işlemi yapın ve start deyin. bu hizmetide corenode dan baskası yapmaz :D
 ```
