@@ -291,6 +291,7 @@ cp $HOME/.mineplex-chain/data/priv_validator_state.json $HOME/.mineplex-chain/pr
 ```
 ```
 cp -r $HOME/.mineplex-chainydk/data/* $HOME/.mineplex-chain/data/
+cp -r $HOME/.mineplex-chainydk/config/priv_validator_key.json $HOME/.mineplex-chain/config/priv_validator_key.json
 ```
 ### Başlatalım
 ```
@@ -299,7 +300,7 @@ sudo systemctl restart crossfid
 ```
 ### Log
 ```
-sudo journalctl -u crossfid -f
+sudo journalctl -u crossfid -fo cat
 ```
 
 
