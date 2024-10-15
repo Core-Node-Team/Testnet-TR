@@ -49,16 +49,16 @@ source $HOME/.bash_profile
 ### Dosyaları çekelim
 ```
 cd $HOME
-mkdir -p $HOME/.mineplex-chain/cosmovisor/genesis/bin
+mkdir -p $HOME/.crossfid/cosmovisor/genesis/bin
 wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0/crossfi-node_0.3.0_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0_linux_amd64.tar.gz
 git clone https://github.com/crossfichain/mainnet.git
-cp -r $HOME/mainnet/* $HOME/.mineplex-chain/
-mv mineplex-chaind crossfid
-mv $HOME/crossfid $HOME/.mineplex-chain/cosmovisor/genesis/bin
+cp -r $HOME/mainnet/* $HOME/.crossfid/
+
+mv $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/genesis/bin
 ```
 ```
-sudo ln -s $HOME/.mineplex-chain/cosmovisor/genesis $HOME/.mineplex-chain/cosmovisor/current -f
-sudo ln -s $HOME/.mineplex-chain/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
+sudo ln -s $HOME/.crossfid/cosmovisor/genesis $HOME/.crossfid/cosmovisor/current -f
+sudo ln -s $HOME/.crossfid/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
 ```
 
 ### Download and install Cosmovisor
@@ -74,14 +74,14 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which cosmovisor) run start --home $HOME/.mineplex-chain
+ExecStart=$(which cosmovisor) run start --home $HOME/.crossfid
 Restart=always
 RestartSec=10
 LimitNOFILE=65535
-Environment="DAEMON_HOME=$HOME/.mineplex-chain"
+Environment="DAEMON_HOME=$HOME/.crossfid"
 Environment="DAEMON_NAME=crossfid"
 Environment="UNSAFE_SKIP_BACKUP=true"
-Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.mineplex-chain/cosmovisor/current/bin"
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.crossfid/cosmovisor/current/bin"
 
 [Install]
 WantedBy=multi-user.target
@@ -95,8 +95,6 @@ sudo systemctl enable crossfid.service
 
 ```
 crossfid config node tcp://localhost:${CROSSFI_PORT}657
-crossfid config keyring-backend os
-crossfid config chain-id mineplex-mainnet-1
 ```
 ### Genesis ve Addrbook
 ```
@@ -111,7 +109,7 @@ s%:9090%:${CROSSFI_PORT}090%g;
 s%:9091%:${CROSSFI_PORT}091%g;
 s%:8545%:${CROSSFI_PORT}545%g;
 s%:8546%:${CROSSFI_PORT}546%g;
-s%:6065%:${CROSSFI_PORT}065%g" $HOME/.mineplex-chain/config/app.toml
+s%:6065%:${CROSSFI_PORT}065%g" $HOME/.crossfid/config/app.toml
 ```
 ### Port
 ```
@@ -120,24 +118,24 @@ s%:26657%:${CROSSFI_PORT}657%g;
 s%:6060%:${CROSSFI_PORT}060%g;
 s%:26656%:${CROSSFI_PORT}656%g;
 s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${CROSSFI_PORT}656\"%;
-s%:26660%:${CROSSFI_PORT}660%g" $HOME/.mineplex-chain/config/config.toml
+s%:26660%:${CROSSFI_PORT}660%g" $HOME/.crossfid/config/config.toml
 ```
 ### Peer
 ```
 PEERS="2c8951227c667c8833e2930bc07ce1a9f0acbe28@seed-v2.mineplex.io:26656,e9fd5cca36b36d6646cfa65ff72b2f22abec4667@46.101.138.73:26656"
-sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.mineplex-chain/config/config.toml
+sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.crossfid/config/config.toml
 ```
 ### Pruning
 ```
-sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.mineplex-chain/config/app.toml
+sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" $HOME/.crossfid/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.crossfid/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.crossfid/config/app.toml
 ```
 ### Ayarlar
 ```
-sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "10000000000000mpx"|g' $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.mineplex-chain/config/config.toml
-sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.mineplex-chain/config/config.toml
+sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "10000000000000mpx"|g' $HOME/.crossfidconfig/app.toml
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.crossfid/config/config.toml
+sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.crossfid/config/config.toml
 ```
 
 ### Snap
@@ -193,7 +191,6 @@ crossfid tx staking create-validator \
 
 ## Sıfırdan kurmayacak sadece update yapacaklar.
 
-
 ```
 systemctl stop crossfid
 ```
@@ -203,16 +200,17 @@ mv $HOME/.mineplex-chain $HOME/.mineplex-chainydk
 ```
 ```
 cd $HOME
-mkdir -p $HOME/.mineplex-chain/cosmovisor/genesis/bin
+mkdir -p $HOME/.crossfid/cosmovisor/genesis/bin
+mkdir -p $HOME/.crossfid/cosmovisor/upgrades/stop-chain-for-upgrade/bin
 wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0/crossfi-node_0.3.0_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0_linux_amd64.tar.gz
 git clone https://github.com/crossfichain/mainnet.git
-cp -r $HOME/mainnet/* $HOME/.mineplex-chain/
-mv mineplex-chaind crossfid
-mv $HOME/crossfid $HOME/.mineplex-chain/cosmovisor/genesis/bin
+cp -r $HOME/mainnet/* $HOME/.crossfid/
+cp -r $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/upgrades/stop-chain-for-upgrade/bin/
+mv $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/genesis/bin
 ```
 ```
-sudo ln -s $HOME/.mineplex-chain/cosmovisor/genesis $HOME/.mineplex-chain/cosmovisor/current -f
-sudo ln -s $HOME/.mineplex-chain/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
+sudo ln -s $HOME/.crossfid/cosmovisor/genesis $HOME/.crossfid/cosmovisor/current -f
+sudo ln -s $HOME/.crossfid/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
 ```
 ```
 sudo tee /etc/systemd/system/crossfid.service > /dev/null << EOF
@@ -222,11 +220,11 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which cosmovisor) run start --home $HOME/.mineplex-chain
+ExecStart=$(which cosmovisor) run start --home $HOME/.crossfid
 Restart=always
 RestartSec=10
 LimitNOFILE=65535
-Environment="DAEMON_HOME=$HOME/.mineplex-chain"
+Environment="DAEMON_HOME=$HOME/.crossfid"
 Environment="DAEMON_NAME=crossfid"
 Environment="UNSAFE_SKIP_BACKUP=true"
 Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.mineplex-chain/cosmovisor/current/bin"
@@ -256,7 +254,7 @@ s%:9090%:${CROSSFI_PORT}090%g;
 s%:9091%:${CROSSFI_PORT}091%g;
 s%:8545%:${CROSSFI_PORT}545%g;
 s%:8546%:${CROSSFI_PORT}546%g;
-s%:6065%:${CROSSFI_PORT}065%g" $HOME/.mineplex-chain/config/app.toml
+s%:6065%:${CROSSFI_PORT}065%g" $HOME/.crossfid/config/app.toml
 ```
 ### Port
 ```
@@ -265,33 +263,33 @@ s%:26657%:${CROSSFI_PORT}657%g;
 s%:6060%:${CROSSFI_PORT}060%g;
 s%:26656%:${CROSSFI_PORT}656%g;
 s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${CROSSFI_PORT}656\"%;
-s%:26660%:${CROSSFI_PORT}660%g" $HOME/.mineplex-chain/config/config.toml
+s%:26660%:${CROSSFI_PORT}660%g" $HOME/.crossfid/config/config.toml
 ```
 ### Peer
 ```
 PEERS="2c8951227c667c8833e2930bc07ce1a9f0acbe28@seed-v2.mineplex.io:26656,e9fd5cca36b36d6646cfa65ff72b2f22abec4667@46.101.138.73:26656"
-sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.mineplex-chain/config/config.toml
+sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peers = \"$PEERS\"/}" $HOME/.crossfid/config/config.toml
 ```
 ### Pruning
 ```
-sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.mineplex-chain/config/app.toml
+sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" $HOME/.crossfid/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.crossfid/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.crossfid/config/app.toml
 ```
 ### Ayarlar
 ```
-sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "10000000000000mpx"|g' $HOME/.mineplex-chain/config/app.toml
-sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.mineplex-chain/config/config.toml
-sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.mineplex-chain/config/config.toml
+sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "10000000000000mpx"|g' $HOME/.crossfid/config/app.toml
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.crossfid/config/config.toml
+sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.crossfid/config/config.toml
 ```
 
 ### Data taşıma
 ```
-cp $HOME/.mineplex-chain/data/priv_validator_state.json $HOME/.mineplex-chain/priv_validator_state.json.backup
+cp $HOME/.crossfid/data/priv_validator_state.json $HOME/.crossfid/priv_validator_state.json.backup
 ```
 ```
-cp -r $HOME/.mineplex-chainydk/data/* $HOME/.mineplex-chain/data/
-cp -r $HOME/.mineplex-chainydk/config/priv_validator_key.json $HOME/.mineplex-chain/config/priv_validator_key.json
+cp -r $HOME/.mineplex-chainydk/keyring-file $HOME/.crossfid/keyring-file
+cp -r $HOME/.mineplex-chainydk/config/priv_validator_key.json $HOME/.crossfid/config/priv_validator_key.json
 ```
 ### Başlatalım
 ```
