@@ -288,7 +288,7 @@ sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.crossfid/config/config.to
 cp $HOME/.crossfid/data/priv_validator_state.json $HOME/.crossfid/priv_validator_state.json.backup
 ```
 ```
-cp -r $HOME/.mineplex-chainydk/keyring-file $HOME/.crossfid/keyring-file
+cp -r $HOME/.mineplex-chainydk/keyring-file $HOME/.crossfid/
 cp -r $HOME/.mineplex-chainydk/config/priv_validator_key.json $HOME/.crossfid/config/priv_validator_key.json
 ```
 ### Başlatalım
