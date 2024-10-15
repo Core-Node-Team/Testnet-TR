@@ -50,9 +50,11 @@ source $HOME/.bash_profile
 ```
 cd $HOME
 mkdir -p $HOME/.crossfid/cosmovisor/genesis/bin
+mkdir -p $HOME/.crossfid/cosmovisor/upgrades/stop-chain-for-upgrade/bin
 wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0/crossfi-node_0.3.0_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0_linux_amd64.tar.gz
 git clone https://github.com/crossfichain/mainnet.git
 cp -r $HOME/mainnet/* $HOME/.crossfid/
+cp -r $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/upgrades/stop-chain-for-upgrade/bin/
 mv $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/genesis/bin
 ```
 ```
