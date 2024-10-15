@@ -59,7 +59,9 @@ mv $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/genesis/bin
 sudo ln -s $HOME/.crossfid/cosmovisor/genesis $HOME/.crossfid/cosmovisor/current -f
 sudo ln -s $HOME/.crossfid/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
 ```
-
+```
+wget -O $HOME/.crossfid/config/app.toml https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/refs/heads/main/Crossfi-Mainnet/app.toml
+```
 ### Download and install Cosmovisor
 ```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
@@ -207,6 +209,9 @@ mv $HOME/bin/crossfid $HOME/.crossfid/cosmovisor/genesis/bin
 ```
 sudo ln -s $HOME/.crossfid/cosmovisor/genesis $HOME/.crossfid/cosmovisor/current -f
 sudo ln -s $HOME/.crossfid/cosmovisor/current/bin/crossfid /usr/local/bin/crossfid -f
+```
+```
+wget -O $HOME/.crossfid/config/app.toml https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/refs/heads/main/Crossfi-Mainnet/app.toml
 ```
 ```
 sudo tee /etc/systemd/system/crossfid.service > /dev/null << EOF
