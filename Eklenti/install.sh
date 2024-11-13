@@ -94,12 +94,12 @@ echo "Running Chromium container..."
 cd $HOME/chromium
 docker-compose up -d
 
-IPVPS=$(curl -s ifconfig.me)
+IPVPS=$(curl -s ipinfo.io/ip)
 
 echo "Access Chromium in your browser at: http://$IPVPS:3010/ or https://$IPVPS:3011/"
 echo "Username: $CUSTOM_USER"
 echo "Password: $PASSWORD"
-echo "Please save your data, or you will lose access! KAYDET KAYDET KAYDET"
+echo " KAYDET KAYDET KAYDET "
 
 docker system prune -f
 echo "Setup complete! Subscribe: https://t.me/corenodeduyuru"
