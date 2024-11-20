@@ -4,7 +4,6 @@
 ```
 cd $HOME
 wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.7.2-amd64
-mv quicksilverd-v1.7.2-amd64 quicksilverd
 chmod +x quicksilverd
 sudo mv $HOME/quicksilverd $(which quicksilverd)
 sudo systemctl restart quicksilverd && sudo journalctl -u quicksilverd -f
@@ -42,7 +41,6 @@ rm -rf build
 ```
 cd $HOME
 wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.7.2-amd64
-mv quicksilverd-v1.7.2-amd64 quicksilverd
 chmod +x quicksilverd
 mkdir -p $HOME/.quicksilverd/cosmovisor/upgrades/v1.7.2/bin
 mv $HOME/quicksilverd $HOME/.quicksilverd/cosmovisor/upgrades/v1.7.2/bin/
