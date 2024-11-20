@@ -64,7 +64,14 @@ Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
 WantedBy=multi-user.target
 EOF
 
-# Upgrade
+# Upgrade story and geth
+
+cd $HOME
+systemctl stop story-geth
+rm -rf geth-linux-amd64
+wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.1/geth-linux-amd64
+chmod +x $HOME/geth
+mv $HOME/geth ~/go/bin/
 
 # Step 1: Download the new binary for Story v0.13.0
 rm -rf story-linux-amd64
@@ -79,11 +86,15 @@ mkdir -p /root/.story/story/cosmovisor/upgrades/v0.13.0/bin
 # Step 4: Move the binary to the Cosmovisor upgrade directory
 sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.13.0/bin/story
 
-
+cd $HOME
+wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.0/geth-linux-amd64
+chmod +x $HOME/geth
+mv $HOME/geth ~/go/bin/
 
 
 # Restarting and enabling the service
 echo "Restarting the service..."
+sudo systemctl restart story-geth
 sudo systemctl daemon-reload
 sudo systemctl enable $SERVICE_NAME
 sudo systemctl stop $SERVICE_NAME # Stop the current service
