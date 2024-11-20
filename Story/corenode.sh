@@ -74,10 +74,10 @@ wget https://github.com/piplabs/story/releases/download/v0.13.0/story-linux-amd6
 chmod +x ./story-linux-amd64
 
 # Step 3: Create the Cosmovisor upgrade directory
-mkdir -p /root/.story/cosmovisor/upgrades/v0.13.0/bin
+mkdir -p /root/.story/story/cosmovisor/upgrades/v0.13.0/bin
 
 # Step 4: Move the binary to the Cosmovisor upgrade directory
-sudo mv ./story-linux-amd64 /root/.story/cosmovisor/upgrades/v0.13.0/bin/story
+sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.13.0/bin/story
 
 
 
