@@ -89,7 +89,7 @@ sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.13.0/bin/s
 cd $HOME
 wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.0/geth-linux-amd64
 chmod +x $HOME/geth
-mv $HOME/geth ~/go/bin/
+mv $HOME/geth $HOME/go/bin/
 
 
 # Restarting and enabling the service
