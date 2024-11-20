@@ -3,7 +3,7 @@
 ## Manuel
 ```
 cd $HOME
-wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.6.4-amd64
+wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.7.2-amd64
 mv quicksilverd-v1.7.2-amd64 quicksilverd
 chmod +x quicksilverd
 sudo mv $HOME/quicksilverd $(which quicksilverd)
@@ -41,7 +41,7 @@ rm -rf build
 
 ```
 cd $HOME
-wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.6.4-amd64
+wget -O quicksilverd https://github.com/ingenuity-build/quicksilver/releases/download/v1.7.2/quicksilverd-v1.7.2-amd64
 mv quicksilverd-v1.7.2-amd64 quicksilverd
 chmod +x quicksilverd
 mkdir -p $HOME/.quicksilverd/cosmovisor/upgrades/v1.7.2/bin
