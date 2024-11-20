@@ -87,7 +87,7 @@ mkdir -p /root/.story/story/cosmovisor/upgrades/v0.13.0/bin
 sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.13.0/bin/story
 
 cd $HOME
-wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.0/geth-linux-amd64
+wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.1/geth-linux-amd64
 chmod +x $HOME/geth
 mv $HOME/geth $HOME/go/bin/
 
