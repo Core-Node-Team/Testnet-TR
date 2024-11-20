@@ -86,6 +86,20 @@ mkdir -p /root/.story/story/cosmovisor/upgrades/v0.13.0/bin
 # Step 4: Move the binary to the Cosmovisor upgrade directory
 sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.13.0/bin/story
 
+# Step 1: Download the new binary for Story v0.12.1
+rm -rf story-linux-amd64
+wget https://github.com/piplabs/story/releases/download/v0.12.1/story-linux-amd64
+
+# Step 2: Make the binary executable
+chmod +x ./story-linux-amd64
+
+# Step 3: Create the Cosmovisor upgrade directory
+mkdir -p /root/.story/story/cosmovisor/upgrades/v0.12.1/bin
+
+# Step 4: Move the binary to the Cosmovisor upgrade directory
+sudo mv ./story-linux-amd64 /root/.story/story/cosmovisor/upgrades/v0.12.1/bin/story
+
+
 cd $HOME
 wget -O geth https://github.com/piplabs/story-geth/releases/download/v0.10.1/geth-linux-amd64
 chmod +x $HOME/geth
