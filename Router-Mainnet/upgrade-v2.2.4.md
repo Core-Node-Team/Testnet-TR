@@ -1,7 +1,7 @@
 
 Upgrade Summary:
-Upgrade Height: 10133000
-Date & Time:  21 October 2024, 05:00:22 UTC
+Upgrade Height: 10776000
+Date & Time:  22nd November 2024, 19:00:00 UTC
 ```
 cd $HOME
 wget https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.4/linux/routerd.tar.gz
