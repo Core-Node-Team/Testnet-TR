@@ -32,7 +32,7 @@ wget https://raw.githubusercontent.com/Glacier-Labs/node-bootstrap/refs/heads/ma
 wget -O verifier https://github.com/Glacier-Labs/node-bootstrap/releases/download/v0.0.1-beta/verifier_linux_amd64
 chmod +x $HOME/glacier/verifier
 ```
-NOT: config.yaml içinde private yazılacak.
+NOT: config.yaml içinde private yazılacak. nasıl.  `nano $HOME/glacier/config.yaml`
 ### Servis kurulum
 ```
 sudo tee /etc/systemd/system/glacierd.service > /dev/null <<EOF
