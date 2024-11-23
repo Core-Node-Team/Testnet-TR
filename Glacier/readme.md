@@ -4,6 +4,8 @@
 
 ☄️Glacir Verifier Node
 
+FORM : https://docs.google.com/forms/d/e/1FAIpQLSfE1QDdVzW5X9i1UZRpeqK00xcI0B89A8hbvVlZ3X87JDRrnQ/viewform
+
 👉Adres kayıt
 ```
 https://www.glacier.io/points/?inviter=0x05f16A0217e7973Df6288708b769d72e241A5e6a
