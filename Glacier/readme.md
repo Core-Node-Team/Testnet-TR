@@ -2,7 +2,24 @@
 
 ![image](https://github.com/user-attachments/assets/5c22af91-0609-4738-88df-44a924caf2c8)
 
+☄️Glacir Verifier Node
 
+👉Adres kayıt
+```
+https://www.glacier.io/points/?inviter=0x05f16A0217e7973Df6288708b769d72e241A5e6a
+```
+👉Test bnb yi opbnb ye aktarıın ufak
+```
+https://opbnb-testnet-bridge.bnbchain.org/deposit
+```
+👉Node kontrol sitesi
+```
+https://testnet.nodes.glacier.io/status
+```
+🕹Galxy görevi
+```
+https://app.galxe.com/quest/glacierlabs/GChNBtVG6A
+```
 ### Dosyaları çekelim
 ```
 cd
