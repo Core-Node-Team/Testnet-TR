@@ -29,7 +29,7 @@ mkdir -p glacier
 cd glacier
 wget https://glacier-labs.github.io/node-bootstrap/config.yaml
 wget https://raw.githubusercontent.com/Glacier-Labs/node-bootstrap/refs/heads/main/testnet.yaml
-wget -O verifier https://github.com/Glacier-Labs/node-bootstrap/releases/download/v0.0.1-beta/verifier_linux_amd64
+wget -O verifier https://github.com/Glacier-Labs/node-bootstrap/releases/download/v0.0.2-beta/verifier_linux_amd64
 chmod +x $HOME/glacier/verifier
 ```
 NOT: config.yaml içinde private yazılacak. nasıl.  `nano $HOME/glacier/config.yaml`
@@ -77,7 +77,7 @@ https://opbnb-testnet-bridge.bnbchain.org/deposit
 ```
 👉Tek kod privateni yazıycaksın. Docker kurulu olması lazım yoksa diğer projelerden birinde yazıyordur yada ekleriz.
 ```
-docker run -d -e PRIVATE_KEY="Ha-bura-private-yaz-cıfırsız" --name glacier-verifier docker.io/glaciernetwork/glacier-verifier:v0.0.1
+docker run -d -e PRIVATE_KEY="Ha-bura-private-yaz-cıfırsız" --name glacier-verifier docker.io/glaciernetwork/glacier-verifier:v0.0.2
 ```
 👉Loglara bakalım
 ```
