@@ -12,9 +12,9 @@ https://pacviewer.com/
 
 ```
 cd
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.4.0/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.6.0/pactus_downloader.sh | sh
 mkdir -p pac
-cp -r pactus-cli_1.4.0/* pac/
+cp -r pactus-cli_1.6.0/* pac/
 cd pac
 ```
 - Yeni kurucaksanız.
