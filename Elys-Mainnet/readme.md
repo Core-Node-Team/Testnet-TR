@@ -170,8 +170,27 @@ elysd keys add wallet --recover
 ```
 
 ### 🚧Validator oluşturma
-
-
+```
+cd $HOME
+echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(elysd comet show-validator | grep -Po '\"key\":\s*\"\K[^"]*')\"},
+    \"amount\": \"1000000uelys\",
+    \"moniker\": \"test\",
+    \"identity\": \"\",
+    \"website\": \"\",
+    \"security\": \"\",
+    \"details\": \"\",
+    \"commission-rate\": \"0.1\",
+    \"commission-max-rate\": \"0.2\",
+    \"commission-max-change-rate\": \"0.01\",
+    \"min-self-delegation\": \"1\"
+}" > validator.json
+```
+```
+elysd tx staking create-validator validator.json \
+    --from cüzdan yaz \
+    --chain-id elys-1 \
+	--gas auto --gas-adjustment 1.5
+```
 
 
 
