@@ -19,9 +19,13 @@
 | RAM	| 32+ GB |
 | Storage	| 400 GB SSD |
 
-### Public RPC
+### Public RPC & Explorer
 
-SOON....
+https://elys-api.corenode.info/
+
+https://elys-rpc.corenode.info/
+
+https://explorer.corenodehq.com/ELYS-Mainnet/staking/elysvaloper1nrywjuy8sud3ehdw5y08yqnl8dl5vzt635e2pl
 
 ### 🚧Gerekli kurulumlar
 ```
