@@ -148,7 +148,12 @@ sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peer
 ```
 ### 🚧Snap
 ```
-SOON
+elysd tendermint unsafe-reset-all --home $HOME/.elys
+if curl -s --head curl http://37.120.189.81/elys_mainnet/elys_snap.lz4 | head -n 1 | grep "200" > /dev/null; then
+  curl http://37.120.189.81/elys_mainnet/elys_snap.lz4 | lz4 -dc - | tar -xf - -C $HOME/.elys
+    else
+  echo "no snapshot found"
+fi
 ```
 ### 🚧Başlatalım   
 ```
