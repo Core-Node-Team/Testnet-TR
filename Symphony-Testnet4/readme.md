@@ -191,27 +191,43 @@ symphonyd keys add wallet-name --recover
 ```
 ### ➡️ Create Validator
 ❗️100000note = 0.1 MLD❗️
+NOT: pubkey alıp json içindekine yazıcaz düzenlemelerinizi yapın.
 ```
 cd $HOME
 ```
 ```
-symphonyd tx staking create-validator \
-  --amount "90000note" \
-  --pubkey $(symphonyd tendermint show-validator) \
-  --moniker "myvalidator" \
-  --identity "optional identity signature (ex. UPort or Keybase)" \
-  --details "validator's (optional) details" \
-  --website "validator's (optional) website" \
-  --chain-id symphony-testnet-3 \
-  --commission-rate "0.05" \
-  --commission-max-rate "0.2" \
-  --commission-max-change-rate "0.01" \
-  --min-self-delegation "1" \
-  --fees "800note" \
-  --from wallet \
-  --node=http://localhost:(whatever you typed in custom_port)657 \
-  -y
-  ```
+symphonyd tendermint show-validator
+```
+```
+rm -rf /root/validator.json
+```
+```
+nano /root/validator.json
+```
+```
+{
+  "pubkey": {"@type":"/cosmos.crypto.ed25519.PubKey.......},
+  "amount": "1000000note",
+  "moniker": "",
+  "identity": "",
+  "website": "",
+  "security": "",
+  "details": "",
+  "commission-rate": "0.1",
+  "commission-max-rate": "0.2",
+  "commission-max-change-rate": "0.01",
+  "min-self-delegation": "1"
+}
+```
+```
+symphonyd tx staking create-validator $HOME/validator.json \
+--from=wallet-name \
+--chain-id=symphony-testnet-4 \
+--gas-adjustment 1.5 \
+--gas-prices 0.025note \
+--gas auto
+-y
+```
 ### ➡️ Delegate to Yourself
 ```
 symphonyd tx staking delegate $(symphonyd keys show wallet-name --bech val -a) amount0000note \
