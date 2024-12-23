@@ -67,15 +67,15 @@ cd $HOME
 rm -rf symphony
 git clone https://github.com/Orchestra-Labs/symphony
 cd symphony
-git checkout v0.3.0
+git checkout v0.4.1
 make build
 ```
 ```
-mkdir -p ~/.symphonyd/cosmovisor/upgrades/0.3.0/bin
-mv $HOME/symphony/build/symphonyd ~/.symphonyd/cosmovisor/upgrades/0.3.0/bin/
+mkdir -p ~/.symphonyd/cosmovisor/upgrades/0.4.1/bin
+mv $HOME/symphony/build/symphonyd ~/.symphonyd/cosmovisor/upgrades/0.4.1/bin/
 ```
 ```
-sudo ln -s ~/.symphonyd/cosmovisor/upgrades/0.3.0 ~/.symphonyd/cosmovisor/current -f
+sudo ln -s ~/.symphonyd/cosmovisor/upgrades/0.4.1 ~/.symphonyd/cosmovisor/current -f
 sudo ln -s ~/.symphonyd/cosmovisor/current/bin/symphonyd /usr/local/bin/symphonyd -f
 ```
 ```
