@@ -27,10 +27,11 @@ git clone https://github.com/cmancrypto/symphony-oracle-voter.git
 cd symphony-oracle-voter
 git checkout v0.0.5
 ```
+NOT: cüzdan adını girin. wallet değişcek.
 ```
 sudo tee .env > /dev/null << EOF
-VALIDATOR_ADDRESS= $(symphonyd keys show molla202 --bech val -a)
-VALIDATOR_ACC_ADDRESS= $(symphonyd keys show molla202 -a)
+VALIDATOR_ADDRESS= $(symphonyd keys show wallet --bech val -a)
+VALIDATOR_ACC_ADDRESS= $(symphonyd keys show wallet -a)
 KEY_BACKEND = test
 SYMPHONY_LCD= http://localhost:35317
 TENDERMINT_RPC= http://localhost:35657
