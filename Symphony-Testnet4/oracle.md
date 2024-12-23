@@ -57,7 +57,7 @@ After=network.target
 
 [Service]
 # Environment variables
-Environment="SYMPHONYD_PATH=$(which symphonys)"
+Environment="SYMPHONYD_PATH=$(which symphonyd)"
 Environment="PYTHON_ENV=production"
 Environment="LOG_LEVEL=INFO"
 Environment="DEBUG=false"
