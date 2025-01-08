@@ -64,7 +64,7 @@ mv 0g-storage-node 0g-storage-nodeydk4
 git clone https://github.com/0glabs/0g-storage-node.git
 cd $HOME/0g-storage-node
 git fetch --all --tags
-git checkout v0.8.0
+git checkout v0.8.4
 ```
 ### Build edelim
 👉Not: uzun sürer.
