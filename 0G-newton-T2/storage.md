@@ -151,7 +151,7 @@ systemctl stop zgsd
 cp -r 0g-storage-node 0g-storage-nodeydk060
 cd $HOME/0g-storage-node
 git fetch --all --tags
-git checkout v0.7.3
+git checkout v0.8.4
 git submodule update --init
 cargo build --release
 ```
