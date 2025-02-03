@@ -17,10 +17,10 @@ FAUCET : https://faucet.avail.tools/
 
 # Public RPC
 ```
-https://mainnet-rpc.corenode.info
+https://mainnet-rpc.corenodehq.xyz
 ```
 ```
-wss://mainnet-rpc.corenode.info
+wss://mainnet-rpc.corenodehq.xyz
 ```
 #### Kurulum Video : [LINK](https://www.youtube.com/watch?v=po4sDoMie6Q&t)
 
