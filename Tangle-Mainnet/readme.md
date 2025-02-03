@@ -5,6 +5,11 @@
 
 </h1>
 
+### Public RPC
+
+
+wss://tangle-rpc.corenodehq.xyz
+
 ## NOT: ubuntu 22
 ### Update
 ```
