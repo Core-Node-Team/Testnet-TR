@@ -26,9 +26,9 @@
 
 ### Public RPC
 
-https://og-testnet-rpc.corenode.info/
+https://og-testnet-rpc.corenodehq.xyz
 
-https://og-testnet-api.corenode.info/
+https://og-testnet-api.corenodehq.xyz
 
 ### 🚧Gerekli kurulumlar
 ```
