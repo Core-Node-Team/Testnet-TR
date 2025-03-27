@@ -1,4 +1,4 @@
-<h1 align="center"> 0G
+<h1 align="center"> 
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/9d9b2b64-736b-4921-aa50-ae87f6d8d34b)
 
