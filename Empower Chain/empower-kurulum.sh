@@ -86,9 +86,9 @@ empowerd config chain-id circulus-1
 empowerd config keyring-backend test
 empowerd config node tcp://localhost:15057
 empowerd init $MONIKER --chain-id circulus-1
-curl -Ls https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Empower%20Chain/genesis.json > $HOME/.empowerchain/config/genesis.json
+curl -Ls https://ss-t.empower.nodestake.top/genesis.json > $HOME/.empowerchain/config/genesis.json
 sleep 1
-curl -Ls https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Empower%20Chain/addrbook.json > $HOME/.empowerchain/config/addrbook.json
+curl -Ls https://ss-t.empower.nodestake.top/addrbook.json > $HOME/.empowerchain/config/addrbook.json
 sleep 1
 seeds="d6a7cd9fa2bafc0087cb606de1d6d71216695c25@51.159.161.174:26656"
 peers="e8b3fa38a15c426e046dd42a41b8df65047e03d5@95.217.144.107:26656,89ea54a37cd5a641e44e0cee8426b8cc2c8e5dfb@51.159.141.221:26656,0747860035271d8f088106814a4d0781eb7b2bc7@142.132.203.60:27656,3c758d8e37748dc692621a0d59b454bacb69b501@65.108.224.156:26656,41b97fced48681273001692d3601cd4024ceba59@5.9.147.185:26656"
