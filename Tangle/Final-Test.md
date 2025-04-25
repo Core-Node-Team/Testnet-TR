@@ -64,6 +64,7 @@ ExecStart=/usr/bin/tangle \
   --prometheus-port 9615 \
   --pruning archive \
   --validator \
+  --auto-insert-keys \
   --telemetry-url "wss://telemetry.polkadot.io/submit 0" \
   --no-mdns
 [Install]

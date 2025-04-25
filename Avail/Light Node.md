@@ -19,6 +19,47 @@
 | ✔️RAM	| 4+ GB |
 | ✔️Storage	| 40+ GB SSD |
 | ✔️UBUNTU | 22 |
+
+
+--------
+## Güncelleme yapacaksanız sadece bu
+```
+systemctl stop availd
+cd
+wget https://github.com/availproject/avail-light/releases/download/v1.7.10/avail-light-linux-amd64.tar.gz
+tar -xvzf avail-light-linux-amd64.tar.gz
+mv avail-light-linux-amd64 avail-light
+rm -rf avail-light-linux-amd64.tar.gz
+systemctl restart availd
+journalctl -u availd -fo cat
+```
+-------
+
+## Güncelleme ubuntu 20de çalıştıranalr için sadece
+```
+systemctl stop availd
+cd
+wget https://github.com/molla202/Avail/raw/main/avail-light.tar.gz
+tar -xvzf avail-light.tar.gz
+chmod 744 avail-light
+systemctl restart availd
+journalctl -u availd -fo cat
+```
+
+## Cüzdan import yapacaksanız sadece bu
+```
+nano /identity.toml
+```
+- içerisindeki kelimelerle kendi cüzdanınızın kelimeleri değiştirip ctrl x y enterla kaydedelim
+```
+systemctl daemon-reload && systemctl restart availd && journalctl -u availd -fo cat
+```
+- başlayınca cüzdan adresi görunecek sizin cüzdanınızmı kontrol edin
+
+---------------------------------------
+
+## BURDAN İTİBAREN AŞAĞISI KURULUMLAR İÇİN
+
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
@@ -31,7 +72,7 @@ screen -S alight
 ### Avail Light Client'i yükleyin
 ```
 cd
-wget https://github.com/availproject/avail-light/releases/download/v1.7.8/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.10/avail-light-linux-amd64.tar.gz
 tar -xvzf avail-light-linux-amd64.tar.gz
 mv avail-light-linux-amd64 avail-light
 rm -rf avail-light-linux-amd64.tar.gz
@@ -147,7 +188,7 @@ curl "http://localhost:7000/v1/latest_block"
 ## Update
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+sudo apt install make gcc clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
 ```
 
 
@@ -169,7 +210,7 @@ screen -S alight
 ```
 git clone https://github.com/availproject/avail-light.git
 cd avail-light
-git checkout v1.7.8
+git checkout v1.7.10
 ```
 ### Kuralım
 ```

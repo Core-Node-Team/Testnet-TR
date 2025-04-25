@@ -7,7 +7,6 @@
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)
  * [Mangata Resmi Websitesi](https://mangata.finance/)
  * [Mangata Resmi Twitter](https://twitter.com/MangataFinance)
- * [Mangata Resmi Discord](https://discord.gg/mangata)
  * [Mangata Dökümantasyon](https://docs.mangata.finance/welcome/)
  
 
@@ -257,7 +256,7 @@ docker logs -f --tail 100 docker-id
 ```
 YADA
 ```
-docker logs -f --tail 100 mangata-finalizer-node
+docker logs -f --tail 100 avs-finalizer-node
 ```
 
 - Loglar biraz aksın sonra resmini alın avs-operators kanalına atın discorda rol vericekler.Mangatarians diye ve bot var aynı kanalda tıklayarak node runner rolude alın. discord linki sayfanın basındakilinklerde var.

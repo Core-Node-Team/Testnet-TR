@@ -1,84 +1,101 @@
 
-<h1 align="center"> Pactus Testnet</h1>
+<h1 align="center"> Pactus Mainnet</h1>
 
-<div align="center">
 
 ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/fc854b16-a554-419c-afbf-f99de720060a)
 
 #  | [Twitter](https://twitter.com/pactuschain/) | [Discord](https://discord.gg/pactus-795592769300987944) | [Website](https://pactus.org/) | [Github](https://github.com/pactus-project) |
 
-</div>
 
-<h1 align="center">Pactus</h1>
+# EXPLORER
 
-- `500 kişi` ile sınırlı idi 500 ilave geldi
-- Ödül `100 PAC` tokenidir.
+https://pacviewer.com/
 
+## kurulum
 
+```
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.1.4/pactus_downloader.sh | sh
+```
+```
+cd pactus-cli_1.1.4
+```
+👉NOT: "mnemonic" tırnakların içine mnemonic kelimelerinizi yazıcaksınız..
+```
+./pactus-daemon init -w ~/pactus --restore "mnemonic"
+```
+👉NOT: buraya kadar mainnet adresi almak için yapıyoruz eğer mainnet çalıştırmayacaksanız alt kısım gerekli değildir die dusunuyorum... discordan botla adres yazarak claimlenecek cunku
 
-<h1 align="center">Donanım</h1>
-
-- 8080 portunu kullanıyor
-
-
-### Minimum
-1 CPU 1 RAM - Ubuntu 22
-
-### Port kontrol
+👉NOT: çıkan cıktıyı komple kaydedin... yok ben yeni cüzdan olsutrucam derseniz `./pactus-daemon init -w ~/pactus`
 ```
-lsof -i -P -n | grep LISTEN
-```
-
-<h1 align="center">Kurulum</h1>
-
-```console
-sudo apt update -y && sudo apt upgrade -y
-sudo apt install screen
+apt install screen
 ```
 ```
-curl --proto '=https' --tlsv1.2 -sSL  https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/PACTUS/pactus_downloader.sh | sh
-```
-```
-cd pactus-cli_0.18.1
-```
-### 12 kelimenizi alın ve şifrenizi yedekleyin.
-```
-./pactus-daemon init -w ~/pactus --testnet
-```
-# 7 sayısına enter diyin - çıktıyı yedekleyin
---------------------
-Not: eğer taşıyorsanız. üsteki kod yerine bunu giriceksiniz
-```
-./pactus-daemon init -w ~/pactus --testnet --restore "mnemonic"
-```
-------------------
-```
-screen -S pactus
+screen -S pac
 ```
 ```
 ./pactus-daemon start -w ~/pactus
 ```
-### sync olmasını bekleyin
-explorer: https://explorer.codeblocklabs.com/pactus/validator.php (Şu an için çalışmayabilir.)
+* çalışsın eşleşsin screenden çıkmak ıcın `ctrl ad` girmmek için `screen -r pac` yazıyoruz..
 
-- Sync olduktan sonra 1. validatör adresine token isteyin.
-
-- reward adreslerinin ilkinde kazançlar zamanla gorulmeye baslanıcak ve artıcak
-
-- Bu aşamada bu adresinize otomatik `delege` edilecek ve `discord=validatör` bağlantısı yapılacak
-
-### Cüzdan bakiye kontrol
-Not: ilk validator adresine sonrada ilk reward adresinize bakınız reward adresinde bakiye toplandıysa tekrar kendinize stake edebilirsiniz.
 ```
-cd
-cd pactus-cli_0.18.1
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address balance cüzdan-adresi
 ```
+
+### Claim..
+
+
+discordan olacak duyurucaz..
+
+# Yok ben mainnet çalıştırmayacam dıorsanız... window yada mac gui indirin
+* window
+https://github.com/pactus-project/pactus/releases/download/v1.1.0/pactus-gui_1.1.0_windows_amd64_installer.exe
+* mac
+https://github.com/pactus-project/pactus/releases/download/v1.1.0/pactus-gui_1.1.0_darwin_amd64.dmg
+
+* kurun gui çalıştırın zaten size yeni adres olusturayım mı die sorar açın eşleşsin bukadan
+
+![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/61af90b6-4514-455d-9b8b-f31794399c64)
+
 ### Stake etme
 ```
 cd
-cd pactus-cli_0.18.1
+cd pactus-cli_1.1.4
 ```
 ```
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond reward-adres-1 validator-adres-1 stake-miktarı
 ```
+
+### Baska adrese coin gönderme
+```
+cd
+cd pactus-cli_1.1.4
+```
+```
+./pactus-wallet --path ~/pactus/wallets/default_wallet tx transfer  gönderici-adres alıcı-adres gönderilecek-miktar
+```
+-------------------------------------- Güncelleme-----------------------------
+```
+cd
+wget https://github.com/pactus-project/pactus/releases/download/v1.1.5/pactus-cli_1.1.5_linux_amd64.tar.gz
+tar -xvf pactus-cli_1.1.5_linux_amd64.tar.gz
+```
+### Screen'e girelim. 
+```
+screen -r pactus
+```
+##### Ardından CTRL+C ile durduralım.
+```
+cd
+cd pactus-cli_1.1.5
+```
+```
+./pactus-daemon start -w ~/pactus
+```
+### Snap
+```
+wget -P $HOME http://37.120.189.81/pactus/pactus.zip
+unzip -d $HOME/pactus $HOME/pactus.zip
+```
+
+
+

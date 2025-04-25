@@ -1,0 +1,767 @@
+{
+    "genesis_time": "2024-04-20T15:43:34.117516421Z",
+    "chain_id": "testnet",
+    "consensus_params": {
+        "block": {
+            "max_bytes": "15000",
+            "max_gas": "-1",
+            "time_iota_ms": "1"
+        },
+        "evidence": {
+            "max_age": "1000000"
+        },
+        "validator": {
+            "pub_key_types": [
+                "ed25519"
+            ]
+        }
+    },
+    "app_hash": "",
+    "app_state": {
+        "requestor": {
+            "params": {
+                "minimum_number_servicers": "1",
+                "maximum_number_servicers": "25",
+                "minimum_requestor_stake": "10000",
+                "relays_per_vipr": "100000",
+                "unstaking_time": "1814400000000000",
+                "max_requestors": "9223372036854775807",
+                "stability_modulation": "0",
+                "participation_rate": false,
+                "maximum_chains": "15",
+                "stake_fee": "10000",
+                "unstake_fee": "10000",
+                "unjail_fee": "10000"
+            },
+            "requestors": [
+                {
+                    "address": "859674aa64c0ee20ebce8a50e69390698750a65f",
+                    "public_key": "38a40f3fa195788a4569d28d87708ee0b9a63523f86555b462b94d95d6fcdfdf",
+                    "jailed": false,
+                    "chains": [
+                        "0001",
+                        "0002",
+                        "0003",
+                        "0004",
+                        "0005"
+                    ],
+                    "max_relays": "10000000000000",
+                    "status": 2,
+                    "staked_tokens": "10000000000000",
+                    "geo_zone": [
+                        "0001",
+                        "0A00",
+                        "0B00",
+                        "0D00",
+                        "0E00"
+                    ],
+                    "num_servicers": "25",
+                    "unstaking_time": "0001-01-01T00:00:00Z"
+                }
+            ],
+            "exported": false
+        },
+        "authentication": {
+            "params": {
+                "max_memo_characters": "256",
+                "tx_sig_limit": "7",
+                "fee_multipliers": {
+                    "fee_multiplier": null,
+                    "default": "1"
+                }
+            },
+            "accounts": [
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "16000000000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "38a40f3fa195788a4569d28d87708ee0b9a63523f86555b462b94d95d6fcdfdf"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "eec6c84a7ededa6ee2fa25e3da3ff821d965f94d",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "16000000000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "64e2a1dd34235e2f042e789706a087b4646482f32bdc21079168c3b9ed9d1373"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "81f4c53ccbb36e190f4fc5220727e25c3186bfeb",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "16000000000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "175c400f9692e408c88bd9c748a48ab52c5ccc2820e362b966c6f46d55d605c2"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "d53f620caab13785d9db01515b01d6f21ab26d54",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "16000000000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "19ca2e95be457bf32b3ce91881f1958b67ac3034b49bdd1299d7da6fc2b6ef0d"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "e2b1dc002270c8883abad96520a2fe5982cb3013",
+                        "coins": [
+                            {
+                                "denom": "uvipr",
+                                "amount": "16000000000000000000"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "798aa9d2e7506d9970ff0fe8b99c67ab9e02938d9ed3d4c0d336dbf634b19d9e"
+                        }
+                    }
+                }
+            ],
+            "supply": []
+        },
+        "ibc": {
+            "client_genesis": {
+                "clients": [],
+                "clients_consensus": [],
+                "clients_metadata": null,
+                "params": {
+                    "allowed_clients": [
+                        "06-solomachine",
+                        "07-tendermint"
+                    ]
+                }
+            },
+            "connection_genesis": {
+                "connections": [],
+                "client_connection_paths": [],
+                "params": {
+                    "max_expected_time_per_block": "30000000000"
+                }
+            },
+            "channel_genesis": {
+                "channels": [],
+                "acknowledgements": [],
+                "commitments": [],
+                "receipts": [],
+                "send_sequences": [],
+                "recv_sequences": [],
+                "ack_sequences": []
+            }
+        },
+        "governance": {
+            "params": {
+                "acl": [
+                    {
+                        "acl_key": "requestor/MinimumRequestorStake",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/RequestorUnstakingTime",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/RelaysPerVIPR",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/MaxRequestors",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/MaximumChains",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/ParticipationRate",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/StabilityModulation",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/MinNumServicers",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/MaxNumServicers",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/StakeFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/UnstakeFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "requestor/UnjailFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "authentication/MaxMemoCharacters",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "authentication/TxSigLimit",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "authentication/FeeMultipliers",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/acl",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/governor",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/upgrade",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/GovernorTransferFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/ChangeParamFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/GenerateDiscountKeyFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "governance/UpgradeFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/CommitExpirationPeriod",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/ReplayAttackPenaltyFactor",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/ProofSubmissionWindow",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/MinimumProofsRequired",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/SupportedBlockchains",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/SupportedGeoZones",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/MinSampleRelaysThreshold",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/ReportSubmissionWindow",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/CommitFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/ReportFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "vipernet/VerificationFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/BlocksPerSession",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/GovernorAllocation",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/RequestorAllocation",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/DowntimeJailDuration",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxEvidenceAge",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaximumChains",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxJailedBlocks",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxValidators",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MinSignedPerWindow",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/TokenRewardFactor",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/SignedBlocksWindow",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/SlashFractionDoubleSign",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/SlashFractionDowntime",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/StakeDenom",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/StakeMinimum",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/UnstakingTime",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/ServicerCountLock",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/BurnActive",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MinPauseTime",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxFishermen",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/FishermenCount",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/SlashFractionNoActivity",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/ProposerPercentage",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/FishermenAllocation",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/LatencyScoreWeight",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/AvailabilityScoreWeight",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/ReliabilityScoreWeight",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/RelaysToTokensChainMultiplierMap",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/RelaysToTokensGeoZoneMultiplierMap",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxFreeTierRelaysPerSession",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MaxNonPerformantBlocks",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/MinScore",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/StakeFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/UnstakeFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/UnjailFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/SendFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/PauseFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    },
+                    {
+                        "acl_key": "servicers/UnPauseFee",
+                        "address": "859674aa64c0ee20ebce8a50e69390698750a65f"
+                    }
+                ],
+                "governor": "859674aa64c0ee20ebce8a50e69390698750a65f",
+                "upgrade": {
+                    "Height": "0",
+                    "Version": "0"
+                },
+                "governor_transfer_fee": "10000",
+                "change_param_fee": "10000",
+                "upgrade_fee": "10000",
+                "generate_discount_key_fee": "10000"
+            },
+            "Governor_Tokens": "60000000000000"
+        },
+        "servicers": {
+            "params": {
+                "latency_score_weight": "0.400000000000000000",
+                "availability_score_weight": "0.300000000000000000",
+                "reliability_score_weight": "0.300000000000000000",
+                "relays_to_tokens_multiplier": "1000",
+                "governor_allocation": "10",
+                "requestor_allocation": "5",
+                "proposer_allocation": "5",
+                "fisherman_allocation": "5",
+                "maximum_chains": "15",
+                "relays_to_tokens_chain_multiplier_map": {},
+                "relays_to_tokens_geozone_multiplier_map": {},
+                "unstaking_time": "1814400000000000",
+                "max_validators": "100",
+                "stake_denom": "uvipr",
+                "minimum_stake": "10000000000",
+                "session_block_frequency": "4",
+                "max_jailed_blocks": "2000",
+                "max_evidence_age": "120000000000",
+                "signed_blocks_window": "10",
+                "min_signed_per_window": "0.500000000000000000",
+                "burn_active": false,
+                "min_pause_time": "600000000000",
+                "max_fishermen": "5",
+                "downtime_jail_duration": "3600000000000",
+                "slash_fraction_double_sign": "0.000100000000000000",
+                "slash_fraction_downtime": "0.000100000000000000",
+                "servicer_count_lock": false,
+                "fishermen_count": "1",
+                "slash_fraction_noactivity": "0.000100000000000000",
+                "slash_fraction_fisherman": "0.020000000000000000",
+                "maximum_free_tier_relays_per_session": "5000",
+                "maximum_missed_report_cards": "3",
+                "maximum_non_performant_blocks": "5",
+                "minimum_score": "0.670000000000000000",
+                "slash_fraction_bad_performance": "0.001000000000000000",
+                "stake_fee": "10000",
+                "unstake_fee": "10000",
+                "unjail_fee": "10000",
+                "send_fee": "10000",
+                "pause_fee": "10000",
+                "unpause_fee": "10000"
+            },
+            "prevState_total_power": "0",
+            "prevState_validator_powers": null,
+            "validators": [
+                {
+                    "address": "859674aa64c0ee20ebce8a50e69390698750a65f",
+                    "public_key": "38a40f3fa195788a4569d28d87708ee0b9a63523f86555b462b94d95d6fcdfdf",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "https://mynode1.testnet.vipernet.xyz:443",
+                    "tokens": "999999999999990",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "859674aa64c0ee20ebce8a50e69390698750a65f",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                },
+                {
+                    "address": "eec6c84a7ededa6ee2fa25e3da3ff821d965f94d",
+                    "public_key": "64e2a1dd34235e2f042e789706a087b4646482f32bdc21079168c3b9ed9d1373",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "https://mynode2.testnet.vipernet.xyz:443",
+                    "tokens": "999999999999990",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "eec6c84a7ededa6ee2fa25e3da3ff821d965f94d",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                },
+                {
+                    "address": "81f4c53ccbb36e190f4fc5220727e25c3186bfeb",
+                    "public_key": "175c400f9692e408c88bd9c748a48ab52c5ccc2820e362b966c6f46d55d605c2",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "https://mynode3.testnet.vipernet.xyz:443",
+                    "tokens": "999999999999990",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "81f4c53ccbb36e190f4fc5220727e25c3186bfeb",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                },
+                {
+                    "address": "d53f620caab13785d9db01515b01d6f21ab26d54",
+                    "public_key": "19ca2e95be457bf32b3ce91881f1958b67ac3034b49bdd1299d7da6fc2b6ef0d",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "https://mynode4.testnet.vipernet.xyz:443",
+                    "tokens": "999999999999990",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "d53f620caab13785d9db01515b01d6f21ab26d54",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                },
+                {
+                    "address": "e2b1dc002270c8883abad96520a2fe5982cb3013",
+                    "public_key": "798aa9d2e7506d9970ff0fe8b99c67ab9e02938d9ed3d4c0d336dbf634b19d9e",
+                    "jailed": false,
+                    "paused": false,
+                    "status": 2,
+                    "chains": [
+                        "0001"
+                    ],
+                    "node_url": "https://mynode5.testnet.vipernet.xyz:443",
+                    "tokens": "999999999999990",
+                    "geo_zone": [
+                        "0001"
+                    ],
+                    "unstaking_time": "0001-01-01T00:00:00Z",
+                    "output_address": "e2b1dc002270c8883abad96520a2fe5982cb3013",
+                    "report_card": {
+                        "total_sessions": 0,
+                        "total_latency_score": "1.000000000000000000",
+                        "total_availability_score": "1.000000000000000000",
+                        "total_reliability_score": "1.000000000000000000",
+                        "total_score": "1"
+                    }
+                }            
+            ],
+            "exported": false,
+            "signing_infos": {},
+            "missed_blocks": {},
+            "previous_proposer": ""
+        },
+        "transfer": {
+            "port_id": "transfer",
+            "denom_traces": [],
+            "params": {
+                "send_enabled": true,
+                "receive_enabled": true
+            }
+        },
+        "vipernet": {
+            "params": {
+                "min_sample_relays_threshold": "25",
+                "report_submission_window": "3",
+                "commit_expiration_period": "24",
+                "replay_attack_penalty_factor": "3",
+                "proof_submission_window": "3",
+                "supported_blockchains": [
+                    "0001",
+                    "0002",
+                    "0003",
+                    "0004",
+                    "0005",
+                    "0006",
+                    "0007",
+                    "0008",
+                    "0009",
+                    "000A",
+                    "000B",
+                    "000C",
+                    "000D",
+                    "000E",
+                    "000F",
+                    "0010",
+                    "0011",
+                    "0012",
+                    "0013",
+                    "0014",
+                    "0015",
+                    "0016",
+                    "0017",
+                    "0018",
+                    "0019",
+                    "001A",
+                    "001B",
+                    "001C",
+                    "001D",
+                    "001E",
+                    "001F",
+                    "0020",
+                    "0021",
+                    "0022",
+                    "0023",
+                    "0024",
+                    "0025",
+                    "0026",
+                    "0027",
+                    "0028",
+                    "0029",
+                    "002A",
+                    "002B",
+                    "002C",
+                    "002D",
+                    "002E",
+                    "002F",
+                    "0030",
+                    "0031",
+                    "0032",
+                    "0033",
+                    "0034",
+                    "0035"                    
+                ],
+                "minimum_proofs_required": "500",
+                "block_size": "160000000",
+                "supported_geo_zones": [
+                    "0001",
+                    "0A00",
+                    "0A01",
+                    "0A02",
+                    "0A03",
+                    "0A04",
+                    "0B00",
+                    "0B01",
+                    "0B02",
+                    "0C00",
+                    "0C01",
+                    "0C02",
+                    "0C03",
+                    "0D00",
+                    "0D01",
+                    "0D02",
+                    "0D03",
+                    "0D04",
+                    "0E00",
+                    "0E01",
+                    "0E02",
+                    "0E03"                   
+                ],
+                "commit_fee": "10000",
+                "report_fee": "10000",
+                "verification_fee": "10000"
+            },
+            "commits": null,
+            "report_cards": null
+        },
+        "capability": {
+            "index": "1",
+            "owners": []
+        }
+    }
+}

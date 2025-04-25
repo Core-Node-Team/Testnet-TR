@@ -7,7 +7,6 @@
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)
  * [Mangata Resmi Websitesi](https://mangata.finance/)
  * [Mangata Resmi Twitter](https://twitter.com/MangataFinance)
- * [Mangata Resmi Discord](https://discord.gg/mangata)
  * [Mangata Dökümantasyon](https://docs.mangata.finance/welcome/)
  
 

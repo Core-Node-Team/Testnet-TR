@@ -8,7 +8,7 @@
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
  * [Side Website](https://side.one)<br>
- * [Blockchain Explorer](https://testnet.itrocket.net/side/staking)<br>
+ * [Blockchain Explorer](https://explorer.corenodehq.com/side/staking)<br>
  * [Discord](https://discord.gg/sideprotocol)<br>
  * [Twitter](https://twitter.com/SideProtocol)<br>
 
@@ -55,11 +55,13 @@ cd $HOME
 
 rm -rf sidechain
 
-git clone -b dev https://github.com/sideprotocol/sidechain.git
+rm -rf side
 
-cd sidechain
+git clone -b dev https://github.com/sideprotocol/side.git
 
-git checkout v0.6.0
+cd side
+
+git checkout v0.7.0
 
 make install
 
@@ -70,10 +72,10 @@ Not: adınızı yazın
 ```
 sided config node tcp://localhost:${SIDE_PORT}657
 sided config keyring-backend os
-sided config chain-id side-testnet-2
+sided config chain-id side-testnet-3
 ```
 ```
-sided init "Adını-yaz" --chain-id side-testnet-2
+sided init "Adını-yaz" --chain-id side-testnet-3
 ```
 ### 🚧Genesis ve addrbook
 ```
@@ -82,8 +84,8 @@ wget -O $HOME/.side/config/addrbook.json http://37.120.189.81/side_testnet/addrb
 ```
 ### Seed peer
 ```
-SEEDS="871aea8a3cccd58a01dbdba6cd7de52b7eb26d73@rpc-t.side.nodestake.org:666"
-PEERS="6def6906f05a0d10a671d3cd2005529d320bb3c7@152.228.208.164:26656,85a16af0aa674b9d1c17c3f2f3a83f28f468174d@167.235.242.236:26656,6202f202f52aca046f749ce8fc58ebf06a01e272@65.108.200.40:49656,d9911bd0eef9029e8ce3263f61680ef4f71a87c4@13.230.121.124:26656,027ef6300590b1ca3a2b92a274247e24537bd9c9@65.109.65.248:49656"
+SEEDS="9c14080752bdfa33f4624f83cd155e2d3976e303@side-testnet-seed.itrocket.net:45656"
+PEERS="bbbf623474e377664673bde3256fc35a36ba0df1@side-testnet-peer.itrocket.net:45656,f379c81afd53ecb5c77a4f4521b0ae63d676ff42@95.216.246.20:36656,d2f461128781967d73aaecd9b8299c1bc817ec2f@5.104.86.185:656,572a44f91202908f5057ebdbb8a616bdb1f79498@65.109.113.228:60756,a70265a28a06e5a7d525920514ae17406dbeffd0@104.236.66.76:26656,027ef6300590b1ca3a2b92a274247e24537bd9c9@65.109.65.248:49656,91ae0fe0e7298b1fa5ce4ed06ce7afc1435d8be3@159.203.79.119:26656,2803ac0536102d14d1231ee2ba2401220e6e5161@188.40.66.173:26356,87a70a7d6302a288dd00ee6c09e840b123260190@78.46.79.238:11356,453a0a58f8e189d1682b3b3daefb4bfe3ca44c03@144.217.68.182:26356,dbe7d91d84f183cf26409cc42eb0c2a2c67de62a@167.235.178.134:26356"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.side/config/config.toml
 ```
 ### 🚧Port ayar
@@ -134,7 +136,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-### 🚧Snap
+### 🚧Snap    NOT NOW!!!
 ```
 sided tendermint unsafe-reset-all --home $HOME/.sidechain
 if curl -s --head curl http://37.120.189.81/side_testnet/side_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
@@ -177,14 +179,14 @@ sided tx staking create-validator \
 --moniker "Adını-yaz" \
 --identity "" \
 --details "" \
---chain-id side-testnet-2 \
+--chain-id side-testnet-3 \
 --fees 1000uside \
 -y
 ```
 ### Delege
 $wallet yazan kısımlara cüzdan adını yazınız  1milyon uside 1 side edıyor
 ```
-sided tx staking delegate $(sided keys show $WALLET --bech val -a) 1000000uside --from $WALLET --chain-id side-testnet-2 --gas auto --fees 1000uside -y
+sided tx staking delegate $(sided keys show $WALLET --bech val -a) 1000000uside --from $WALLET --chain-id side-testnet-3 --gas auto --fees 1000uside -y
 ```
 ### 🚧Delete node - Silme
 ```

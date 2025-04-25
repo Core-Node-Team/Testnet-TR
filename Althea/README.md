@@ -1,101 +1,177 @@
-# Manuel Kurulum
+![logo-blue-orange-dot](https://github.com/molla202/Babylon/assets/91562185/fdae1a09-6805-4384-9a58-62c279ed89e1)
 
-![althea](https://github.com/Core-Node-Team/Services/assets/108215275/f60e222e-5cd7-45a6-96e3-bdaa4041021d)
 
-## Sunucuyu Hazırlayın
-```bash
-sudo apt-get update && sudo apt-get upgrade -y
+<h1 align="center"> Althea Network L1 </h1>
 
-sudo apt install curl tar wget tmux htop net-tools clang pkg-config libssl-dev jq build-essential git screen make ncdu -y
+ * [Topluluk kanalımız](https://t.me/corenodechat)<br>
+ * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
+ * [Core Node Site](https://corenode.info/)<br>
+ * [AltheaNetwork Website](https://www.althea.net/)<br>
+ * [Blockchain Explorer](https://althea.explorers.guru/)<br>
+ * [Discord](https://discord.gg/V7NGnHq3)<br>
+ * [AltheaNetwork Twitter](https://twitter.com/AltheaNetwork)<br>
 
+
+## Sistem Gereksinimleri
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| ✔️CPU |	4 |
+| ✔️RAM	| 8 GB |
+| ✔️Storage	| 250 GB SSD |
+| ✔️UBUNTU | 22 |
+### Update ve kütüphane kurulumu
+```
+sudo apt update
+sudo apt install -y curl git jq lz4 build-essential unzip
+
+```
+### Go kurulumu yapalım
+```
 cd $HOME
-wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
-echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
-echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
-echo 'export GO111MODULE=on' >> $HOME/.bash_profile
-echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile && source $HOME/.bash_profile
-rm -rf go1.20.4.linux-amd64.tar.gz
-```
-## Binary Kurulumu
-
-#### ubuntu 22
-```bash
-mkdir -p $HOME/go/bin
-wget -O $HOME/go/bin/althea https://github.com/althea-net/althea-L1/releases/download/v0.5.5/althea-linux-amd64
-chmod +x $HOME/go/bin/althea
+! [ -x "$(command -v go)" ] && {
+VER="1.19.3"
+wget "https://golang.org/dl/go$VER.linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf "go$VER.linux-amd64.tar.gz"
+rm "go$VER.linux-amd64.tar.gz"
+[ ! -f ~/.bash_profile ] && touch ~/.bash_profile
+echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
 source $HOME/.bash_profile
+}
+[ ! -d ~/go/bin ] && mkdir -p ~/go/bin
 ```
-#### ubuntu 20
 ```
-mkdir -p $HOME/go/bin
-wget http://37.120.189.81/althea_testnet/althea.tar.gz
-tar xvzf althea.tar.gz
-mv althea $HOME/go/bin/althea
-chmod +x $HOME/go/bin/althea
-source $HOME/.bash_profile
+# Download project binaries
+
+mkdir -p $HOME/.althea/cosmovisor/genesis/bin
+wget -O $HOME/.althea/cosmovisor/genesis/bin/althea https://github.com/althea-net/althea-L1/releases/download/v1.0.0-rc1/althea-linux-amd64
+chmod +x $HOME/.althea/cosmovisor/genesis/bin/althea
 ```
-## İnitalize
-```bash
-althea config chain-id althea_417834-3
-althea config keyring-backend test
-althea config node tcp://localhost:31557
-althea init $MONIKER --chain-id althea_417834-3
 ```
-
-## Yapılandırma
-```bash
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/scripts/main/althea/addrbook.json > $HOME/.althea/config/addrbook.json
-curl -Ls https://raw.githubusercontent.com/Core-Node-Team/scripts/main/althea/genesis.json > $HOME/.althea/config/genesis.json
-
-PEERS="6e1396c306d2d7f41dc199b16ecff2fd914eaa15@althea-testnet-peer.itrocket.net:19656,ff90784f12f93758d7e475a21ed9148c893bd8d9@65.109.231.70:26656,b757144eb49932f1d979b78f82f1d08f878310ef@[2a01:4f9:3051:19c2::2]:10056,d5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:15256,019988ce47565ad683b7675216e8fbcb171b841c@107.155.125.170:26656,bbf8ef70a32c3248a30ab10b2bff399e73c6e03c@65.21.198.100:21156,49a36f841a109b5fe3bc7cccea931e6e43ed450f@142.132.202.50:47656,c27cad7798d63dce11c1fa2ed5e6644537271ea4@95.165.149.94:26656,79875677d71e3213d34bd0fb8ede172d376bcff5@144.76.97.251:35656,f83cbd080df3486ff30ec91a6e134a17f00318ff@5.75.153.46:17886"
-sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.althea/config/config.toml
-
-sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0001aalthea"|g' $HOME/.althea/config/app.toml
-sed -i 's|^prometheus *=.*|prometheus = true|' $HOME/.althea/config/config.toml
-
-# puruning
-sed -i \
-  -e 's|^pruning *=.*|pruning = "custom"|' \
-  -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
-  -e 's|^pruning-keep-every *=.*|pruning-keep-every = "0"|' \
-  -e 's|^pruning-interval *=.*|pruning-interval = "10"|' \
-  $HOME/.althea/config/app.toml
-
-# custom port
-CustomPort="315"
-sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:${CustomPort}58\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:${CustomPort}57\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:${CustomPort}60\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:${CustomPort}56\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":${CustomPort}66\"%" $HOME/.althea/config/config.toml
-sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CustomPort}17\"%; s%^address = \":8080\"%address = \":${CustomPort}80\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:${CustomPort}90\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:${CustomPort}91\"%; s%:8545%:${CustomPort}45%; s%:8546%:${CustomPort}46%; s%:6065%:${CustomPort}65%" $HOME/.althea/config/app.toml
-sed -i -e "s%^address = \"tcp://localhost:1317\"%address = \"tcp://localhost:${CustomPort}17\"%; s%^address = \":8080\"%address = \":${CustomPort}80\"%; s%^address = \"localhost:9090\"%address = \"localhost:${CustomPort}90\"%; s%^address = \"localhost:9091\"%address = \"localhost:${CustomPort}91\"%; s%:8545%:${CustomPort}45%; s%:8546%:${CustomPort}46%; s%:6065%:${CustomPort}65%" $HOME/.althea/config/app.toml
+# Create application symlinks
+sudo ln -s $HOME/.althea/cosmovisor/genesis $HOME/.althea/cosmovisor/current -f
+sudo ln -s $HOME/.althea/cosmovisor/current/bin/althea /usr/local/bin/althea -f
 ```
-
-
-## Snapshot
-```bash
-curl -L http://37.120.189.81/althea_testnet/althea_snap.tar.lz4 | tar -I lz4 -xf - -C $HOME/.althea
 ```
-## Service
-```bash
-sudo tee /etc/systemd/system/althea.service > /dev/null <<EOF
+# Download and install Cosmovisor
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.4.0
+```
+```
+# Create service
+sudo tee /etc/systemd/system/althea.service > /dev/null << EOF
 [Unit]
-Description=Althea Node
+Description=althea node service
 After=network-online.target
+
 [Service]
 User=$USER
-ExecStart=$(which althea) start --home $HOME/.althea
+ExecStart=$(which cosmovisor) run start
 Restart=on-failure
-RestartSec=3
+RestartSec=10
 LimitNOFILE=65535
+Environment="DAEMON_HOME=$HOME/.althea"
+Environment="DAEMON_NAME=althea"
+Environment="UNSAFE_SKIP_BACKUP=true"
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/.althea/cosmovisor/current/bin"
+
 [Install]
 WantedBy=multi-user.target
 EOF
-
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable althea
 ```
-## Nodu Başlatın ve Logları Görüntüleyin
-```bash
-sudo systemctl start althea && sudo journalctl -u althea -fo cat
+```
+# Set node configuration
+althea config chain-id althea_417834-4
+althea config keyring-backend test
+althea config node tcp://localhost:15257
+```
+### $MONIKER değiştirelim.
+```
+# Initialize the node
+althea init $MONIKER --chain-id althea_417834-4
+```
+```
+# Download genesis and addrbook
+curl -Ls https://github.com/molla202/ALTHEA/raw/main/genesis.json > $HOME/.althea/config/genesis.json
+curl -Ls https://github.com/molla202/ALTHEA/raw/main/addrbook.json > $HOME/.althea/config/addrbook.json
+```
+```
+sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.0aalthea\"/;" ~/.althea/config/app.toml
+external_address=$(wget -qO- eth0.me) 
+sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:26656\"/" $HOME/.althea/config/config.toml
+peers="ab9a9e6ea747839652dfe4480e66a5eb78a385e8@51.81.167.60:17200,cbdcc6edc9b2cbd652fe94ef774e1f483095a8a3@66.172.36.142:14656"
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.althea/config/config.toml
+seeds=""
+sed -i.bak -e "s/^seeds =.*/seeds = \"$seeds\"/" $HOME/.althea/config/config.toml
+sed -i 's/max_num_inbound_peers =.*/max_num_inbound_peers = 50/g' $HOME/.althea/config/config.toml
+sed -i 's/max_num_outbound_peers =.*/max_num_outbound_peers = 50/g' $HOME/.althea/config/config.toml
+
+indexer="null" && \
+sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.althea/config/config.toml
+
+# Set pruning
+pruning="custom"
+pruning_keep_recent="1000"
+pruning_keep_every="0"
+pruning_interval="10"
+sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.althea/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.althea/config/app.toml
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.althea/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.althea/config/app.toml
+```
+### Port farklı olsun derseniz. PORT:15
+```
+# Set custom ports
+sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:15258\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:15257\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:15260\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:15256\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":15266\"%" $HOME/.althea/config/config.toml
+sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:15217\"%; s%^address = \":8080\"%address = \":15280\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:15290\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:15291\"%; s%:8545%:15245%; s%:8546%:15246%; s%:6065%:15265%" $HOME/.althea/config/app.toml
+```
+### Snap Atam hızlı olsun
+```
+cd $HOME
+apt install lz4
+sudo systemctl stop althea
+cp $HOME/.althea/data/priv_validator_state.json $HOME/.althea/priv_validator_state.json.backup
+rm -rf $HOME/.althea/data
+curl -o - -L http://37.120.189.81/althea_testnet/althea_snap.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.althea --strip-components 2
+mv $HOME/.althea/priv_validator_state.json.backup $HOME/.althea/data/priv_validator_state.json
+```
+### Hadi başlatalım
+```
+sudo systemctl restart althea && sudo journalctl -u althea -f --no-hostname -o cat
 ```
 
-### [**Valitatör Oluşturma**](active-testnets/Althea/Kurulum.md#validatör-olun) adımları ile devam edin
+### Cüzdan Oluşturma
+
+* Yeni Cüzdan
+```
+althea keys add wallet
+```
+* Cüzdan import
+```
+althea keys add wallet --recover
+```
+### Validator kurulumu
+
+NOT: Moniker adınızı ve cüzdan adınızı yazınız.
+```
+althea tx staking create-validator \
+--amount 1000000aalthea \
+--pubkey $(althea tendermint show-validator) \
+--moniker "YOUR_MONIKER_NAME" \
+--identity "YOUR_KEYBASE_ID" \
+--details "YOUR_DETAILS" \
+--website "YOUR_WEBSITE_URL" \
+--chain-id althea_417834-4 \
+--commission-rate 0.05 \
+--commission-max-rate 0.20 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--from wallet \
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0aalthea \
+-y
+```
