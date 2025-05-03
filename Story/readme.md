@@ -93,7 +93,9 @@ sudo systemctl restart story-geth
 ```
 sudo systemctl status story-geth
 ```
-
+```
+journalctl -u story-geth -f -o cat
+```
 
 
 ```
@@ -137,7 +139,7 @@ sudo systemctl enable story
 sudo systemctl restart story
 ```
 ```
-journalctl -u cosmovisor -f -o cat
+journalctl -u story -f -o cat
 ```
 
 
