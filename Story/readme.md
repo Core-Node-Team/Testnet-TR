@@ -50,7 +50,7 @@ source $HOME/.bash_profile
 
 ```
 cd $HOME
-wget https://github.com/piplabs/story-geth/releases/download/v1.0.1/geth-linux-amd64
+wget https://github.com/piplabs/story-geth/releases/download/v1.0.2/geth-linux-amd64
 sudo mv ./geth-linux-amd64 story-geth
 sudo chmod +x story-geth
 sudo mv ./story-geth $HOME/go/bin/
@@ -92,7 +92,7 @@ sudo systemctl status story-geth
 
 ```
 cd $HOME
-wget https://github.com/piplabs/story/releases/download/v1.0.0/story-linux-amd64
+wget https://github.com/piplabs/story/releases/download/v1.1.1/story-linux-amd64
 sudo mv story-linux-amd64 story
 sudo chmod +x story
 sudo mv ./story $HOME/go/bin/
