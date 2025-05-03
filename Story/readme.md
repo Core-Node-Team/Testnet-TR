@@ -62,6 +62,7 @@ git colone https://github.com/piplabs/story-geth.git
 go build -v ./cmd/geth
 mv ./geth $HOME/go/bin/story-geth
 ```
+```
 story-geth version
 ```
 
