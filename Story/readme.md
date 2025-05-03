@@ -100,7 +100,7 @@ journalctl -u story-geth -f -o cat
 ### Story
 ```
 cd $HOME
-wget https://github.com/piplabs/story/releases/download/v1.1.1/story-linux-amd64
+wget https://github.com/piplabs/story/releases/download/v1.2.0/story-linux-amd64
 sudo mv story-linux-amd64 story
 sudo chmod +x story
 sudo mv ./story $HOME/go/bin/
