@@ -84,7 +84,7 @@ LimitNOFILE=4096
 WantedBy=multi-user.target
 EOF
 ```
-# Start service
+#### Start service
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable story-geth
@@ -97,7 +97,7 @@ sudo systemctl status story-geth
 journalctl -u story-geth -f -o cat
 ```
 
-
+### Story
 ```
 cd $HOME
 wget https://github.com/piplabs/story/releases/download/v1.1.1/story-linux-amd64
@@ -109,7 +109,7 @@ story version
 ```
 
 ```
-story init --network aeneid
+story init --network aeneid --moniker corenode
 ```
 
 ```
