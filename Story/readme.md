@@ -56,6 +56,11 @@ sudo chmod +x story-geth
 sudo mv ./story-geth $HOME/go/bin/
 source $HOME/.bashrc
 ```
+NOT: yukarıdaki ubuntu 24 için aşağıdan build edin daha dusuk surumde ubuntunuz varsa
+```
+git colone https://github.com/piplabs/story-geth.git
+go build -v ./cmd/geth
+mv ./geth $HOME/go/bin/story-geth
 ```
 story-geth version
 ```
