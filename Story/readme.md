@@ -1,5 +1,6 @@
 <h1 align="center"> Story Test </h1>
 
+![image](https://github.com/user-attachments/assets/18a1eb57-1fd5-41f4-8645-2d7cd4e1477c)
 
 
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
