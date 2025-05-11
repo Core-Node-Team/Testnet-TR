@@ -3,9 +3,8 @@
 systemctl stop story
 cd $HOME
 wget https://github.com/piplabs/story/releases/download/v1.2.0/story-linux-amd64
-sudo mv story-linux-amd64 story
-sudo chmod +x story
-sudo mv ./story $HOME/go/bin/
+sudo chmod +x story-linux-amd64
+sudo mv ./story-linux-amd64 $HOME/go/bin/story
 source $HOME/.bashrc
 story version
 ```
