@@ -60,6 +60,7 @@ source $HOME/.bashrc
 NOT: yukarıdaki ubuntu 24 için aşağıdan build edin daha dusuk surumde ubuntunuz varsa
 ```
 git colone https://github.com/piplabs/story-geth.git
+cd story-geth
 go build -v ./cmd/geth
 mv ./geth $HOME/go/bin/story-geth
 ```
