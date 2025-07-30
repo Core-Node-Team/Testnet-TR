@@ -68,6 +68,10 @@ systemctl enable tangle
 NOT:kelimeleri yaz   kısmına explorerde bir cüzdan oluşturup onun kelimelerini yazın kaydetmeyide unutmayın...
 #### Account Keys
 ```
+tangle key generate-node-key --file $HOME/.tangle/node-key
+```
+
+```
 tangle key insert \
 --scheme Sr25519 \
 --suri "kelimeleri yaz" \
