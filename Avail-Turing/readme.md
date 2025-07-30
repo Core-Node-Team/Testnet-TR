@@ -46,12 +46,12 @@ cd /root/avail-node/
 
 ### Dosyaları çekiyoruz
 ```
-wget https://github.com/availproject/avail/releases/download/v2.2.4.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz
+wget https://github.com/availproject/avail/releases/download/v2.3.1.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz
 ```
 ------------------------
 Not: aşağıdaki ubuntu 20 için olan 2sini bir yapmıyorsunuz.  
 ```
-wget https://github.com/availproject/avail/releases/download/v2.2.4.0-rc1/x86_64-ubuntu-2004-avail-node.tar.gz
+wget https://github.com/availproject/avail/releases/download/v2.3.1.0-rc1/x86_64-ubuntu-2004-avail-node.tar.gz
 ```
 ------------------------
 ### Zipten dosyaları çı çı çıkraaa :D (çıkaralım)
