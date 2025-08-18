@@ -60,3 +60,21 @@ opside-chain/show-beaconChain-log.sh
 ```
 opside-chain/show-validator-log.sh
 ```
+
+## OLMADI MI?  speciel teknik...
+
+v3 kuruyoruz bizden menemonic isteyecek menemoniclerimizi girip denedik ama aynı pubkeyi vermediyse.   v3 menemonic istediğinde menemoniclerin ilk 4 harfini yazaıyoruz hata vericek amaçta bu hata verip cüzdan eklememesi FATAL görücez . çok güzel :D  alttaki kodu yazıp durduralım.
+```
+cd
+cd testnet-auto-install-v3
+opside-chain/stop-all.sh
+```
+### v2 deyken aldığım yedek dosyalarını validator dosyalarını sunucumuza yukleyelim ardından başlatalım.
+```
+cd
+testnet-auto-install-v3/opside-chain/start-geth.sh
+testnet-auto-install-v3/opside-chain/start-beaconChain.sh
+testnet-auto-install-v3/opside-chain/start-validator.sh
+```
+
+### NOT: daha sonra control panelinden 8 ze sona zaten 1 çıkıyor basıp çıkan pubkeyin bizim yedekteki dosya ile aynı pubkey olduğundan emin olalım. ve ardından validator loglarımıza bakalım deposit bakiye yukleme beklenıor gibi değilde normal loglar gelmeye baslıyacaktır. uzun zaman alıyor site üzerinde düzelmesi validator logları duzgunse sorun yok.
