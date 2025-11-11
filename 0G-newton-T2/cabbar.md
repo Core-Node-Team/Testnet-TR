@@ -32,6 +32,7 @@ https://0g-mainnet-2.corenodehq.xyz
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git wget htop tmux build-essential jq cmake make pkg-config libclang-dev libssl-dev lz4 gcc unzip -y
+apt-get install protobuf-compiler
 ```
 
 ### 🚧 Go kurulumu
